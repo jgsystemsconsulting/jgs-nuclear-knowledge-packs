@@ -1106,13 +1106,13 @@ jobs:
           # tooling/test_ci_gate.py EMPTY_TREE_PAIR can catch drift the same
           # way ROUTING_MAP_PAIR pins routing literals. Runtime asserts keep
           # the pin values honest inside this self-contained gate.
-          # THRESHOLDS: dict[str, int] = {}  # empty-tree: zero-tolerant name-keyed minimums
-          # EXPECTED_NOTES_COUNT = 0
+          # THRESHOLDS: dict[str, int] = {"Life Cycle & Requirements": 3, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 5}  # live catalogue: name-keyed chapter minimums
+          # EXPECTED_NOTES_COUNT = 10
           # expected_signposts: list[str] = []
-          THRESHOLDS = {}
-          EXPECTED_NOTES_COUNT = 0
+          THRESHOLDS = {"Life Cycle & Requirements": 3, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 5}
+          EXPECTED_NOTES_COUNT = 10
           expected_signposts = []
-          if THRESHOLDS != {} or EXPECTED_NOTES_COUNT != 0 or list(expected_signposts) != []:
+          if THRESHOLDS != {"Life Cycle & Requirements": 3, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 5} or EXPECTED_NOTES_COUNT != 10 or list(expected_signposts) != []:
               print(f"::error::[map-data] empty-tree constant pin drift "
                     f"(THRESHOLDS={THRESHOLDS!r} EXPECTED_NOTES_COUNT={EXPECTED_NOTES_COUNT!r} "
                     f"expected_signposts={expected_signposts!r})")

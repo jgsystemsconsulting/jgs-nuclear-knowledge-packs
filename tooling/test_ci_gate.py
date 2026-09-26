@@ -134,8 +134,12 @@ ROUTING_MAP_PAIR = [
 # Empty-tree constant pins (Task 5 twin values). Each literal must appear
 # verbatim in validate.yml's data-invariants step AND in the named twin.
 EMPTY_TREE_PAIR = [
-    ("THRESHOLDS empty", "THRESHOLDS: dict[str, int] = {}", MAP_TWIN),
-    ("EXPECTED_NOTES_COUNT zero", "EXPECTED_NOTES_COUNT = 0", GEN_TWIN),
+    (
+        "THRESHOLDS live",
+        'THRESHOLDS: dict[str, int] = {"Life Cycle & Requirements": 3, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 5}',
+        MAP_TWIN,
+    ),
+    ("EXPECTED_NOTES_COUNT ten", "EXPECTED_NOTES_COUNT = 10", GEN_TWIN),
     ("expected_signposts empty", "expected_signposts: list[str] = []", RULES_TWIN),
 ]
 
