@@ -25,13 +25,13 @@ Supporting files: `glossary.md`, `cheatsheet.md`.
 ## Core Frameworks & Mental Models
 
 ### Regulatory Guides, the SRP, and BTP 7-14: how the pieces fit
-Three documents at three levels. NRC regulations set the high-level software requirements for safety-system instrumentation and control. **Regulatory Guides (RGs)** describe one way the agency considers acceptable for meeting them: following an RG is voluntary in the legal sense, and an applicant may propose alternatives with adequate demonstration, but the RG path is the well-traveled one. The **Standard Review Plan (SRP, NUREG-0800)** is the staff's own guidance for reviewing applications; it does not impose new requirements, it tells reviewers what to check. **BTP 7-14** is a branch technical position inside SRP Chapter 7 that applies both ideas to digital computer software: it opens with background on how software risk is organized into safety significance categories, states what information an applicant should provide, and then sets the acceptance criteria the staff applies to plans, implementation, and design outputs. The mental model: the six RGs tell applicants what to do; BTP 7-14 tells reviewers what to look for. They are two perspectives on one body of practice, and the pack keeps both visible: ch02-ch06 carry the RG voice, ch07 carries the staff-review voice, and ch01 introduces the family as a whole.
+Three documents at three levels. NRC regulations set the high-level software requirements for safety-system instrumentation and control. **Regulatory Guides (RGs)** describe one way the agency considers acceptable for meeting them: following an RG is voluntary in the legal sense, and an applicant may propose alternatives with adequate demonstration, but the RG path is the well-traveled one. The **Standard Review Plan (SRP, NUREG-0800)** is the staff's own guidance for reviewing applications; it does not impose new requirements, it tells reviewers what to check. **BTP 7-14** is a branch technical position inside SRP Chapter 7 that applies both ideas to digital computer software: its background grounds staff acceptance of software in acceptable life cycle plans, evidence that the plans were followed, and design outputs the process produced, gives the regulatory basis for software reviews, and draws its review approach from NUREG/CR-6101 and the SRP Appendix 7.0-A review process; it then states what information an applicant should provide and sets the acceptance criteria the staff applies to plans, implementation, and design outputs. The mental model: the six RGs tell applicants what to do; BTP 7-14 tells reviewers what to look for. They are two perspectives on one body of practice, and the pack keeps both visible: ch02-ch06 carry the RG voice, ch07 carries the staff-review voice, and ch01 introduces the family as a whole.
 
 ### The six-RG life cycle map
-The July 2013 family divides software assurance by life cycle concern. **RG 1.173** covers developing software life cycle processes: defining the processes themselves, their inputs and outputs, and integrating them. **RG 1.172** covers the software requirements specification, including for complex electronics, and the qualities a requirements set should have. **RG 1.169** covers software configuration management plans: configuration identification, configuration control, interface control, and configuration accounting. **RG 1.170** covers test documentation across test plans, designs, cases, procedures, and results; **RG 1.171** covers unit testing of individual software units. **RG 1.168** is the umbrella: verification and validation, the life cycle reviews (management, requirements, design, implementation, testing, installation, operation, and maintenance reviews), and audits. The mental model for placing any question: 1.173 builds the process, 1.172 specifies the software, 1.169 controls change, 1.170 and 1.171 produce test evidence, and 1.168 audits the whole. Each guide also endorses a matching IEEE standard (828 to 1.169, 829 to 1.170, 830 to 1.172, 1008 to 1.171, 1012 and 1028 to 1.168, 1074 to 1.173), so the family maps one-to-one onto the standards named in ch08. The six guides share a common skeleton (purpose, discussion, staff regulatory guidance, implementation), so an answer from one family member reads like the others.
+The July 2013 family divides software assurance by life cycle concern. **RG 1.173** covers developing software life cycle processes: defining the processes themselves, their inputs and outputs, and integrating them. **RG 1.172** covers the software requirements specification, including for complex electronics, and the qualities a requirements set should have. **RG 1.169** covers software configuration management plans: configuration identification, configuration control, interface control, and configuration status accounting. **RG 1.170** covers test documentation across test plans, designs, cases, procedures, and results; **RG 1.171** covers unit testing of individual software units. **RG 1.168** is the umbrella: verification and validation (its staff positions cover software integrity, software reliability, independence of software verification and validation, conformance of materials, quality assurance, tools for software development, and verification and validation tasks) plus reviews and audits. The mental model for placing any question: 1.173 builds the process, 1.172 specifies the software, 1.169 controls change, 1.170 and 1.171 produce test evidence, and 1.168 audits the whole. Each guide also endorses a matching IEEE standard (828 to 1.169, 829 to 1.170, 830 to 1.172, 1008 to 1.171, 1012 and 1028 to 1.168, 1074 to 1.173), so the family maps one-to-one onto the standards named in ch08. The six guides share a common skeleton (purpose, discussion, staff regulatory guidance, implementation), so an answer from one family member reads like the others.
 
 ### What staff examine: the BTP 7-14 review structure
-BTP 7-14 runs from background through review areas. It first describes the software aspects of the application and the information to be reviewed, then sets acceptance criteria in three blocks. **Planning (B.3.1)**: the software management plan (SMP) and the software development, quality assurance (SQAP), integration, installation, maintenance, training, operations, and safety (SSP) plans (B.3.1.1 to B.3.1.9), plus the verification and validation plan review (B.3.1.10), the configuration management plan review (B.3.1.11), and the test plan review (B.3.1.12). **Implementation (B.3.2)**: criteria for implementing the requirements, architecture, and design in code. **Design outputs (B.3.3)**: the software requirements specification (SRS), architecture description (SAD), and design description (SDD), then the code listing (CL), software build description (SBD), integration and checkout (ICT), and the operation and maintenance manuals (OM), the software modification manual (SMM), and the software test manual (STM) (B.3.3.1 to B.3.3.9). **B.4** closes with review procedures: how the staff sequences the review and what it does with findings. The mental model: a review walks plans, then implementation, then outputs, and each criterion asks whether the submitted material is complete, correct, consistent, and traceable.
+BTP 7-14 runs from background through review areas. It first describes the software aspects of the application and the information to be reviewed, then sets acceptance criteria in three blocks. **Planning (B.3.1)**: the software management plan (SMP) and the software development, quality assurance (SQAP), integration, installation, maintenance, training, operations, and safety (SSP) plans (B.3.1.1 to B.3.1.9), plus the verification and validation plan review (B.3.1.10), the configuration management plan review (B.3.1.11), and the test plan review (B.3.1.12). **Implementation (B.3.2)**: criteria for implementing the requirements, architecture, and design in code. **Design outputs (B.3.3)**: the software requirements specification (SRS), software architecture description (SAD), and software design specification (SDS), then the code listings (CL), system build documents (SBDs), installation configuration tables (ICTs), operations manuals (OMs), software maintenance manuals (SMMs), and software training manuals (STMs) (B.3.3.1 to B.3.3.9). **B.4** closes with review procedures: how the staff sequences the review and what it does with findings. The mental model: a review walks plans, then implementation, then outputs, and each criterion asks whether the submitted material is complete, correct, consistent, and traceable.
 
 ### The edition rule and the name-only rule
 Two rules govern every answer. **The edition rule**: this pack pins RG 1.168 Rev 2 and RG 1.169 to 1.173 Rev 1 (all July 2013) and BTP 7-14 Rev 6 (August 2016). Which revision actually applies to a given plant is decided by its licensing basis: a plant committed to an earlier revision is reviewed against that revision, and revisions are not retroactive. Cite the pinned edition, then flag the licensing-basis caveat rather than assuming currency. The agency does revise guidance over time, so currency questions deserve a check of the current NRC listing, and later agency actions are otherwise out of scope. **The name-only rule**: each RG endorses IEEE standards with stated qualifications (603-1991 for safety-system criteria, 7-4.3.2-2003 for programmable digital devices, and 828, 829, 830, 1008, 1012, 1028, and 1074 matching the life cycle topics), and the family references IEC 60880, IEC 61513, IEC 62138, and IAEA guides. Those texts are copyrighted; the pack restates only what the NRC documents say about them, including the qualifications and conditions the RGs attach to the endorsement, and cites the standards by designation and edition. Chapter 08 holds that orientation layer and names the adjacent current documents (RG 1.152 Rev 4 for non-safety programmable logic controllers, BTP 7-18, BTP 7-19 Rev 9) that sit outside the pack.
@@ -58,40 +58,40 @@ Two rules govern every answer. **The edition rule**: this pack pins RG 1.168 Rev
 - Acceptance criteria for planning → ch02
 - Audits → ch05
 - BTP 7-14 review structure → ch01, ch07
-- Code listing (CL) review → ch07
+- Code listings (CL) review → ch07
 - Complex electronics requirements → ch03
-- Configuration accounting → ch04
 - Configuration identification → ch04
 - Configuration management plan (SCMP) review → ch04
+- Configuration status accounting → ch04
 - Design outputs → ch07
 - Endorsed IEEE standards (name-only) → ch08
 - IAEA guides (name-only) → ch08
 - IEC 60880 / 61513 / 62138 (name-only) → ch08
 - Installation and integration plans → ch02
-- Integration and checkout (ICT) review → ch07
+- Installation configuration tables (ICTs) review → ch07
 - Life cycle processes, developing → ch02
 - Licensing basis and applicable revision → ch01, ch08
-- Life cycle reviews (management, requirements, design, implementation, testing, installation, operation, maintenance) → ch05
 - Maintenance and training plans → ch02
 - Operations and safety plans → ch02
 - Requirements traceability → ch03, ch07
 - Review procedures (B.4) → ch07
 - Software architecture description (SAD) → ch07
-- Software build description (SBD) → ch07
-- Software design description (SDD) → ch07
+- Software design specification (SDS) → ch07
 - Software development and management plans → ch02
+- Software integrity, software reliability, independence of V&V, conformance of materials, quality assurance, tools for software development, V&V tasks (RG 1.168 staff positions) → ch05
 - Software quality assurance plan → ch02
 - Software requirements specification (SRS) → ch03, ch07
 - Software test plan (STP) review → ch06
 - Software verification and validation plan (SVVP) review → ch05
 - Standard Review Plan (NUREG-0800) → ch01, ch07
+- System build documents (SBDs) → ch07
 - Test documentation → ch06
 - Unit testing → ch06
 - Verification and validation → ch05
 
 ## Supporting Files
 
-- `glossary.md`: key terms (BTP, CL, ICT, ML accession, OM, SAD, SBD, SDD, SDS, SIntP, SInstP, SMaintP, SMP, SOP, SQAP, SRP, SRS, SSP, STM, STP, STrngP, SVVP) with chapter references.
+- `glossary.md`: key terms (BTP, CL, ICT, ML accession, OM, SAD, SBD, SDS, SIntP, SInstP, SMaintP, SMP, SOP, SQAP, SRP, SRS, SSP, STM, STP, STrngP, SVVP) with chapter references.
 - `cheatsheet.md`: decision rules (which document answers which question, which chapter, which BTP 7-14 review section applies, which edition governs).
 
 ## Scope & Limits

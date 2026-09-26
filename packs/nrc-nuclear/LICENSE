@@ -42,10 +42,11 @@ S1  Regulatory Guide 1.168, "Verification, Validation, Reviews, and Audits for
     Revision 2   Issued: July 2013   ML accession: ML13073A210
     Licence: Public Domain (US Government work)
     Reconstructs: the guide's purpose and discussion background, and the staff
-    regulatory guidance on verification and validation, on the software life
-    cycle reviews (management, requirements, design, implementation, testing,
-    installation, operation, and maintenance reviews), and on audits of
-    digital computer software used in safety systems.
+    regulatory guidance on verification and validation of digital computer
+    software used in safety systems: software integrity, software reliability,
+    independence of software verification and validation, conformance of
+    materials, quality assurance, tools for software development, verification
+    and validation tasks, and reviews and audits.
     Used in: ch01, ch05
 
 S2  Regulatory Guide 1.169, "Configuration Management Plans for Digital Computer
