@@ -1,0 +1,12 @@
+{
+  "name": "Nuclear",
+  "description": "JG Systems Consulting catalogue of licence-vetted Nuclear knowledge-pack skills for coding agents.",
+  "owner": { "name": "JG Systems Consulting Ltd.", "url": "https://github.com/jgsystemsconsulting/jgs-nuclear-knowledge-packs" },
+  "plugins": [
+    {
+      "name": "nuclear",
+      "source": "./",
+      "description": "Installable Nuclear knowledge packs reconstructed from open sources."
+    }
+  ]
+}
