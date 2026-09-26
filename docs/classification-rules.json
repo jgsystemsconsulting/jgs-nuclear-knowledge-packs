@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_version": "0.1.0",
-  "generated_on": "2026-09-24",
+  "generated_on": "2026-09-26",
   "rules_of_construction": [
     "Every chapter in every pack under packs/<slug>/chapters/ is assigned to exactly one capability cluster (best fit).",
     "Cross-cutting chapters carry a remark noting the strong secondary fit.",
@@ -16,6 +16,71 @@
     "cheatsheet.md"
   ],
   "support_policy": "Support-file membership is encoded per assignment in `assignments` (`is_support` true rows); this field is descriptive and not a derivation rule.",
-  "cluster_names": [],
-  "assignments": []
+  "cluster_names": [
+    "Life Cycle & Requirements",
+    "Verification & Testing",
+    "Regulatory Framework & Staff Review"
+  ],
+  "assignments": [
+    {
+      "pack": "nrc-nuclear",
+      "chapter": "ch02-software-life-cycle-processes.md",
+      "cluster": "Life Cycle & Requirements",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-nuclear",
+      "chapter": "ch03-software-requirements-specifications.md",
+      "cluster": "Life Cycle & Requirements",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-nuclear",
+      "chapter": "ch04-software-configuration-management-plans.md",
+      "cluster": "Life Cycle & Requirements",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-nuclear",
+      "chapter": "ch05-verification-validation-reviews-audits.md",
+      "cluster": "Verification & Testing",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-nuclear",
+      "chapter": "ch06-test-documentation-and-unit-testing.md",
+      "cluster": "Verification & Testing",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-nuclear",
+      "chapter": "ch01-nrc-software-assurance-framework.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-nuclear",
+      "chapter": "ch07-btp-7-14-staff-software-review.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-nuclear",
+      "chapter": "ch08-endorsed-standards-and-adjacent-guidance.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-nuclear",
+      "chapter": "glossary.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-nuclear",
+      "chapter": "cheatsheet.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": true
+    }
+  ]
 }

@@ -1,6 +1,72 @@
 {
   "schema_version": 2,
   "map_version": "0.1.0",
-  "generated_on": "2026-09-24",
-  "clusters": []
+  "generated_on": "2026-09-26",
+  "clusters": [
+    {
+      "name": "Life Cycle & Requirements",
+      "chapters": [
+        {
+          "pack": "nrc-nuclear",
+          "chapter": "ch02-software-life-cycle-processes.md",
+          "note": "RG 1.173 Rev 1 software life cycle processes and BTP 7-14 plan-level review of life cycle plans"
+        },
+        {
+          "pack": "nrc-nuclear",
+          "chapter": "ch03-software-requirements-specifications.md",
+          "note": "RG 1.172 Rev 1 software requirements specifications for software and complex electronics"
+        },
+        {
+          "pack": "nrc-nuclear",
+          "chapter": "ch04-software-configuration-management-plans.md",
+          "note": "RG 1.169 Rev 1 software configuration management plans and the BTP 7-14 CM plan review"
+        }
+      ]
+    },
+    {
+      "name": "Verification & Testing",
+      "chapters": [
+        {
+          "pack": "nrc-nuclear",
+          "chapter": "ch05-verification-validation-reviews-audits.md",
+          "note": "RG 1.168 Rev 2 verification, validation, reviews, and audits with the BTP 7-14 V&V plan review"
+        },
+        {
+          "pack": "nrc-nuclear",
+          "chapter": "ch06-test-documentation-and-unit-testing.md",
+          "note": "RG 1.170 Rev 1 test documentation and RG 1.171 Rev 1 unit testing with the BTP 7-14 test plan review"
+        }
+      ]
+    },
+    {
+      "name": "Regulatory Framework & Staff Review",
+      "chapters": [
+        {
+          "pack": "nrc-nuclear",
+          "chapter": "ch01-nrc-software-assurance-framework.md",
+          "note": "How NRC Regulatory Guides, the SRP, and BTP 7-14 fit together for digital safety system software"
+        },
+        {
+          "pack": "nrc-nuclear",
+          "chapter": "ch07-btp-7-14-staff-software-review.md",
+          "note": "BTP 7-14 Rev 6 staff review of software implementation activities and design outputs"
+        },
+        {
+          "pack": "nrc-nuclear",
+          "chapter": "ch08-endorsed-standards-and-adjacent-guidance.md",
+          "note": "Endorsed IEEE and IEC standards, IAEA guides, and adjacent NRC documents by designation and edition only"
+        },
+        {
+          "pack": "nrc-nuclear",
+          "chapter": "glossary.md (support file)",
+          "note": "Software assurance terms used across the nrc-nuclear chapters"
+        },
+        {
+          "pack": "nrc-nuclear",
+          "chapter": "cheatsheet.md (support file)",
+          "note": "Decision rules routing software assurance questions to the right nrc-nuclear chapter"
+        }
+      ]
+    }
+  ]
 }

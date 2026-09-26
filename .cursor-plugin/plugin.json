@@ -1,0 +1,31 @@
+{
+  "name": "jgs-nuclear-knowledge-packs",
+  "displayName": "JGS Nuclear Knowledge Packs",
+  "description": "Licence-vetted nuclear knowledge-pack skills reconstructed from genuinely open, commercially-redistributable sources (NRC public-domain software assurance guidance). Ask a topic; the agent reads the right chapter and answers from reference notes, not a hazy recollection.",
+  "version": "0.1.0",
+  "author": {
+    "name": "JG Systems Consulting Ltd."
+  },
+  "homepage": "https://github.com/jgsystemsconsulting/jgs-nuclear-knowledge-packs",
+  "repository": "https://github.com/jgsystemsconsulting/jgs-nuclear-knowledge-packs",
+  "license": "MIT",
+  "keywords": [
+    "nuclear",
+    "knowledge-packs",
+    "agent-skills",
+    "nrc",
+    "software-assurance",
+    "digital-i-and-c",
+    "verification-and-validation"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "nuclear",
+    "reference",
+    "skills"
+  ],
+  "skills": [
+    "./packs/nuclear/SKILL.md",
+    "./packs/nrc-nuclear/SKILL.md"
+  ]
+}

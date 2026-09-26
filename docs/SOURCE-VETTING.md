@@ -77,6 +77,22 @@ This list exists so the repo never ships something that triggers a takedown.
 | **Def Stan documents (UK defence standards)** | Case-by-case: Crown copyright, downloads free of charge but registration-gated via the DSTAN portal. **Def Stan 00-051 is UNVERIFIED** pending a registered DSTAN user recording the cover licence statement; excluded until then. If OGL v3.0 applies inside the document → Tier 2; if bespoke MOD-consent/no-reproduction terms → stays Excluded. (programme research 2026-09-24, docs/superpowers ingest bundle.) |
 | **IMO conventions and class-society rules** (e.g. SOLAS, MARPOL, classification society rule sets) | Paywalled or unclear reuse terms; no redistribution/derivative grant identified. (programme research 2026-09-24, docs/superpowers ingest bundle.) |
 | **OMG formal specifications** (UML, SysML, BPMN, UAF, CORBA, MOF, XMI, OCL, DDS…) | OMG Specification License public grant is informational-use-only: the spec "will not be copied or posted on any network computer … or … transferred for commercial purposes" and "no modifications are made to this specification." A hosted, transformed pack breaches both. Cite + link to the OMG download; never package. Carried from the exemplar vetting. |
+| **X1 IEEE Std 1012-2004** (IEEE) | Paywalled. Endorsed by RG 1.168 Rev 2. Excluded; name-only in ch05. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X2 IEEE Std 1028-2008** (IEEE) | Paywalled. Endorsed by RG 1.168 Rev 2. Excluded; name-only in ch05. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X3 IEEE Std 828-2005** (IEEE) | Paywalled. Endorsed by RG 1.169 Rev 1. Excluded; name-only in ch04. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X4 IEEE Std 829-2008** (IEEE) | Paywalled. Endorsed by RG 1.170 Rev 1. Excluded; name-only in ch06. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X5 IEEE Std 1008-1987** (IEEE) | Paywalled. Endorsed by RG 1.171 Rev 1. Excluded; name-only in ch06. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X6 IEEE Std 830-1998** (IEEE) | Paywalled. Endorsed by RG 1.172 Rev 1. Excluded; name-only in ch03. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X7 IEEE Std 1074-2006** (IEEE) | Paywalled. Endorsed by RG 1.173 Rev 1. Excluded; name-only in ch02. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X8 IEEE Std 603-1991** (IEEE) | Paywalled (later editions exist; cite 1991). Safety system criteria cited by the 2013 family. Excluded; name-only in ch01/ch08. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X9 IEEE Std 7-4.3.2-2003** (IEEE) | Paywalled. Cited by the 2013 family (RG 1.152 Rev 4 endorses the 2016 edition; that is not this slice). Excluded; name-only in ch08. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X10 IEC 60880 ed. 2.0:2006** (IEC) | Paywalled. NPP software, Category A. Excluded; name-only in ch08. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X11 IEC 61513 ed. 2.0:2011** (IEC) | Paywalled. NPP I&C system-level requirements. Excluded; name-only in ch08. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X12 IEC 62138 ed. 2.0:2018** (IEC) | Paywalled. Software for Category B and C. Excluded; name-only in ch08. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X13 IAEA safety guides (e.g. SSG-39)** (IAEA) | Free to read, IAEA copyright. International I&C context. Excluded, citation-only until a written reuse grant is confirmed per document. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X14 Regulatory Guide 1.152 Rev 4, July 2023, ML23054A463** (NRC) | US Government work, public domain. Criteria/SDOE companion endorsing IEEE 7-4.3.2-2016. Citation-only in ch08; out of pack body by scope ruling. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X15 NUREG-0800 BTP 7-18 Rev 6 (ML16019A327), BTP 7-19 Rev 9 May 2024 (ML24005A077), App 7.1-D Rev 1 (ML16019A114)** (NRC) | US Government work, public domain. PLC platform, diversity/CCF, IEEE 7-4.3.2 evaluation. Out of pack body by scope ruling; BTP 7-19 named in ch08 as the current diversity/CCF position. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
+| **X16 NUREG/CR contractor reports** (worked example NUREG/CR-6463, SoHar Inc., June 1996, ML063470583) | Contractor for NRC; not auto-cleared. Contractor authorship on title page. Excluded pending a written per-document determination (title page and NRC reuse statement) filed here; CR-6463 is the software-languages report, not a V&V handbook. NUREG/CR contractor reports are excluded until that determination is filed. (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md.) |
 
 > If you are licensed to read one of these (e.g. an employer's standards seat), that
 > licence is **yours**, not the repo's. Building a pack from it for
@@ -110,6 +126,10 @@ For industry families in this table, the per-document capture rule (including th
 ## Cleared families (programme research 2026-09-24)
 
 tier-1 US federal publisher works cleared for sector use (FDA, NHTSA, NRC, FAA orders); tier-2 gov.uk OGL JSPs, per-document capture.
+
+| Source set | Basis |
+|---|---|
+| **NRC software assurance set S1-S7** (RG 1.168 Rev 2 (ML13073A210); RG 1.169 Rev 1 (ML12355A642); RG 1.170 Rev 1 (ML13003A216); RG 1.171 Rev 1 (ML13004A375); RG 1.172 Rev 1 (ML13007A173); RG 1.173 Rev 1 (ML13009A190); NUREG-0800 BTP 7-14 Rev 6 (ML16019A308)) | US Government works, 17 U.S.C. § 105. Cleared Tier 1 for the nrc-nuclear pack (nuclear sector build 2026-09-26; binding spec docs/superpowers/specs/2026-09-25-nuclear-sector-repo.md). SOURCE-VETTING carries no agency-host URLs; ML accession ids and document titles only. |
 
 Sector builds start from this explicit allowlist; anything not listed still goes through
 the tiers above.
