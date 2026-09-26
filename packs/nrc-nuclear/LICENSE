@@ -57,7 +57,7 @@ S2  Regulatory Guide 1.169, "Configuration Management Plans for Digital Computer
     Reconstructs: the guide's purpose and discussion background, and the staff
     regulatory guidance on the content of a software configuration management
     plan: configuration identification, configuration control, interface
-    control, and configuration accounting for safety-system software.
+    control, and configuration status accounting for safety-system software.
     Used in: ch01, ch04
 
 S3  Regulatory Guide 1.170, "Test Documentation for Digital Computer Software
