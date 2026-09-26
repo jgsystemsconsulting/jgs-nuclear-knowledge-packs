@@ -64,6 +64,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 - Bare `/nuclear` with no argument: print usage and three example questions drawn from the Topics rows.
 - Sub-agent failure: rerun that brief in the main thread.
 - Thin-pack step-down: if the selected pack's Scope & Limits flags the question thin, take the next pack on the row; the consult stays narrow.
+- IEEE, IEC, or IAEA lookup: answer from [nrc-nuclear ch08] with designation and edition only, and state that the standard text is outside the packs.
 
 ## Routing map
 
@@ -71,14 +72,29 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 ### Topics
 | Topic | Keywords | Packs (best first) |
 |---|---|---|
+| Software verification & validation | software V&V, verification and validation, independent V&V, IV&V, V&V plan, SVVP, V&V tasks, integrity level, V&V report | `nrc-nuclear` |
+| Software reviews & audits | software review, technical review, management review, inspection, walkthrough, software audit, audit | `nrc-nuclear` |
+| Software configuration management | configuration management, SCM, CM plan, SCMP, baseline, configuration item, change control, configuration status accounting, configuration audit | `nrc-nuclear` |
+| Software test documentation | test documentation, test plan, test design, test case, test procedure, test report, test log, anomaly report | `nrc-nuclear` |
+| Software unit testing | unit testing, software unit testing, unit test, unit test coverage | `nrc-nuclear` |
+| Software requirements specifications | software requirements specification, SRS, software requirements, requirements traceability, complex electronics | `nrc-nuclear` |
+| Software life cycle processes | software life cycle, life-cycle process, life cycle model, software development plan, software management plan, software quality assurance plan | `nrc-nuclear` |
+| BTP 7-14 software review | BTP 7-14, branch technical position 7-14, staff software review, acceptance criteria, implementation review, design outputs review, plan review | `nrc-nuclear` |
+| Digital I&C safety system software | digital I&C, digital instrumentation and control, safety system software, safety-related software, digital computer software, nuclear power plant software | `nrc-nuclear` |
+| Endorsed IEEE, IEC & IAEA standards | IEEE 603, IEEE 7-4.3.2, IEEE 828, IEEE 829, IEEE 830, IEEE 1008, IEEE 1012, IEEE 1028, IEEE 1074, IEC 60880, IEC 61513, IEC 62138, IAEA, SSG-39, RG 1.152, BTP 7-19 | `nrc-nuclear` |
 
 ### Agency contexts
 | Agency | Keywords | Packs |
 |---|---|---|
+| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear` |
 
 ### Deliverables
 | Deliverable | Keywords | Draft | Review | Verify |
 |---|---|---|---|---|
+| Software V&V plan outline | V&V plan outline, SVVP outline, verification and validation plan outline | `nrc-nuclear` | `nrc-nuclear` | `nrc-nuclear` |
+| Software CM plan review | CM plan review, SCMP review, configuration management plan review | `nrc-nuclear` | `nrc-nuclear` | `nrc-nuclear` |
+| SRS review checklist | SRS review checklist, requirements specification review, SRS checklist | `nrc-nuclear` | `nrc-nuclear` | `nrc-nuclear` |
+| BTP 7-14 review readiness matrix | review readiness matrix, BTP 7-14 readiness, software review readiness | `nrc-nuclear` | `nrc-nuclear` | `nrc-nuclear` |
 
 ### Licences
 | Pack | Licence |
