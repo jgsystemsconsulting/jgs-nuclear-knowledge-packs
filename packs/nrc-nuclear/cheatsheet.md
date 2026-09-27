@@ -47,11 +47,13 @@ Decision rules for NRC software assurance questions on digital computer software
 - B.3.3 design-output acceptance: SRS, SAD, SDS, CL, SBDs, ICTs, OMs, SMMs, and STMs scored on functional and process characteristics, as applicable per output. (ch07)
 - B.4 review procedures: plan commitment checks, sampled implementation audits, sampled design-output reviews, heavier planning emphasis for new software or unproven teams. (ch07)
 
-## Standards lookup? → ch08
+## Standards, criteria, or evaluation lookup?
 
-- Any IEEE, IEC, IAEA, RG 1.152, BTP 7-18, BTP 7-19, or NUREG/CR lookup: answer from ch08 with designation and edition only, and state that the standard text is outside the pack. (ch08)
-- Editions are as cited by the pinned sources: IEEE 603-1991, 7-4.3.2-2003, 828-2005, 829-2008, 830-1998, 1008-1987, 1012-2004, 1028-2008, 1074-2006; IEC 60880 ed. 2.0:2006, 61513 ed. 2.0:2011, 62138 ed. 2.0:2018. (ch08)
-- Framework orientation, the six-RG map, and which document answers which question: ch01. (ch01)
+- IEEE, IEC, or IAEA lookup: answer from ch08 with designation and edition only, and state that the standard text is outside the pack. (ch08)
+- RG 1.152 criteria or SDOE question: ch09. IEEE Std 7-4.3.2-2016 is named there, not quoted.
+- Appendix 7.1-D evaluation question (how staff evaluate an application of IEEE Std 7-4.3.2): ch10. Cite the edition the appendix prints.
+- BTP 7-18, BTP 7-19, or NUREG/CR lookup: ch08, designation only, body outside the pack.
+- Editions the 2013 family cites stay: IEEE 603-1991, 7-4.3.2-2003, 828-2005, 829-2008, 830-1998, 1008-1987, 1012-2004, 1028-2008, 1074-2006; IEC 60880 ed. 2.0:2006, 61513 ed. 2.0:2011, 62138 ed. 2.0:2018. (ch08)
 
 ## Quick anchors
 
@@ -79,11 +81,11 @@ Decision rules for NRC software assurance questions on digital computer software
 | Undocumented code submitted for safety use | CL review requires developer intent to be clear | ch07 |
 | Installed version differs from the tested build | SBDs and ICTs lock build and configuration identity | ch07 |
 | IEEE or IEC clause text in the notes | Name-only: designation and edition, text outside the pack | ch01, ch08 |
-| RG 1.152 Rev 4 or BTP 7-19 Rev 9 treated as in-pack | Adjacent NRC documents are named only | ch08 |
+| BTP 7-19 Rev 9 or BTP 7-18 treated as in-pack | Still name-only; RG 1.152 Rev 4 is ch09 and Appendix 7.1-D is ch10 | ch08 |
 
 ## What this pack is not
 
 - Not the standards: no IEEE, IEC, or IAEA text; endorsed standards are designation-and-edition citations carrying the NRC's own discussion. (ch01, ch08)
-- Not the whole of SRP Chapter 7: RG 1.152 Rev 4, BTP 7-18, BTP 7-19 Rev 9, SRP Appendix 7.1-D, and other SRP sections are named only. (ch08)
+- Not the whole of SRP Chapter 7: BTP 7-18, BTP 7-19 Rev 9, and other SRP sections are named only. RG 1.152 Rev 4 is ch09. Appendix 7.1-D Rev 1 is ch10.
 - Not a source reprint: synthesized reference notes from the pinned July 2013 RGs and BTP 7-14 Rev 6; check the current NRC listing before relying on any single requirement. (ch01, ch08)
 - Not licensing advice: the plant licensing basis, not this pack, decides which revision binds. (ch01)

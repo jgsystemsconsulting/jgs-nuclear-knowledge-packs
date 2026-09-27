@@ -1,8 +1,8 @@
 nrc-nuclear pack: content licence
 =================================
 
-This pack is derived from the seven US Nuclear Regulatory Commission (NRC)
-sources listed below (S1 to S7 of the source-vetting record). Their landing-page
+This pack is derived from the nine US Nuclear Regulatory Commission (NRC)
+sources listed below (S1 to S9 of the source-vetting record). Their landing-page
 URLs are held in the local source manifest dated 2026-09-26 and are not
 reproduced here; the repository link policy bans source-material hosts (see
 ../../docs/LICENSING.md).
@@ -10,7 +10,7 @@ reproduced here; the repository link policy bans source-material hosts (see
 Source licence: Public Domain (US Government work, 17 U.S.C. 105)  (tier 1; see
 ../../docs/SOURCE-VETTING.md). No source-material download link is published.
 
-All seven sources are works of the United States Government prepared by NRC
+All nine sources are works of the United States Government prepared by NRC
 staff, and are NOT subject to copyright protection in the United States
 (17 U.S.C. 105). They are in the public domain: anyone may reproduce, transform,
 and redistribute them for any purpose, including commercially, without
@@ -33,8 +33,8 @@ NOTE: This file governs the CONTENT of this pack. The repository tooling is
 licensed separately under MIT (see ../../LICENSE).
 
 
-THE SEVEN SOURCES
-=================
+THE NINE SOURCES
+================
 
 S1  Regulatory Guide 1.168, "Verification, Validation, Reviews, and Audits for
     Digital Computer Software Used in Safety Systems of Nuclear Power Plants"
@@ -124,12 +124,35 @@ S7  NUREG-0800 Standard Review Plan, Branch Technical Position 7-14, "Guidance
     and the review procedures.
     Used in: ch01, ch02, ch04, ch05, ch06, ch07
 
+S8  Regulatory Guide 1.152, "Criteria for Programmable Digital Devices in
+    Safety-Related Systems of Nuclear Power Plants"
+    Publisher: US Nuclear Regulatory Commission
+    Revision 4   Issued: July 2023   ML accession: ML23054A463
+    Licence: Public Domain (US Government work)
+    Reconstructs: the guide's criteria for programmable digital devices in
+    safety-related systems, the secure development and operational environment
+    controls the guide describes, and the exceptions and clarifications the
+    guide attaches to its endorsement of IEEE Std 7-4.3.2-2016. The IEEE text
+    is not reconstructed.
+    Used in: ch01 (pointer only), ch09
+
+S9  NUREG-0800 Standard Review Plan, Appendix 7.1-D, "Guidance for Evaluation
+    of the Application of IEEE Std 7-4.3.2"
+    Publisher: US Nuclear Regulatory Commission
+    Revision 1   Issued: August 2016   ML accession: ML16019A114
+    Licence: Public Domain (US Government work)
+    Reconstructs: the staff evaluation of how an applicant applied IEEE Std
+    7-4.3.2: what a reviewer examines, and the acceptance criteria and review
+    procedures the appendix states. The IEEE text is not reconstructed. The
+    edition cited is the edition the appendix prints.
+    Used in: ch10
+
 
 EXCLUDED MATERIAL (cited by designation and edition only; no text reproduced)
 =============================================================================
 
 The following standards and guides are endorsed, referenced, or adjacent to the
-seven sources. They are NOT licensed to this pack: the NRC documents name them,
+nine sources. They are NOT licensed to this pack: the NRC documents name them,
 and the pack restates only the NRC's own recognition and discussion text. It
 reproduces no standard text, table, requirement, or clause wording from any of
 them.
@@ -162,21 +185,20 @@ them.
         edition only.
 -   X13 IAEA safety guides on computer-based safety systems of nuclear power
         plants (for example SSG-39). Copyrighted; cited by designation only.
--   X14 Regulatory Guide 1.152, Revision 4, July 2023 (ML23054A463), guidance
-        on programmable logic controllers in non-safety applications. A US
-        Government work and therefore public domain, but outside this pack's
-        pinned source set; named as an adjacent document only.
+-   X14 IEEE Std 7-4.3.2-2016, the edition RG 1.152 Rev 4 endorses. Copyrighted;
+        cited by designation and edition only. The NRC guide itself is in pack
+        body (ch09, source S8). The IEEE text is not.
 -   X15 NUREG-0800 Branch Technical Position 7-18, Revision 6 (ML16019A327),
         and Branch Technical Position 7-19, Revision 9, May 2024
-        (ML24005A077), with Standard Review Plan Appendix 7.1-D, Revision 1
-        (ML16019A114), on guidance for evaluation of defense in depth and
-        diversity. US Government works outside the pinned source set; named as
-        adjacent documents only.
+        (ML24005A077). US Government works outside the pinned source set;
+        named as adjacent documents only. BTP 7-19 Rev 9 is the current
+        diversity and common-cause failure position. Appendix 7.1-D Rev 1
+        is in pack body (ch10, source S9) and is not in this excluded list.
 -   X16 NUREG/CR contractor reports supporting the endorsed standards (for
         example NUREG/CR-6463 on safety software). Named by designation only;
         no contractor-report text is reproduced.
 
 Buy copyrighted items from IEEE, IEC, or IAEA as applicable. The designation
 and edition citations above exist so a reader can locate the standards; the
-cleared status of S1 to S7 and the exclusion rationale are recorded in
+cleared status of S1 to S9 and the exclusion rationale are recorded in
 ../../docs/SOURCE-VETTING.md.

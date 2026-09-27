@@ -81,7 +81,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Software life cycle processes | software life cycle, life-cycle process, life cycle model, software development plan, software management plan, software quality assurance plan | `nrc-nuclear` |
 | BTP 7-14 software review | BTP 7-14, branch technical position 7-14, staff software review, acceptance criteria, implementation review, design outputs review, plan review | `nrc-nuclear` |
 | Digital I&C safety system software | digital I&C, digital instrumentation and control, safety system software, safety-related software, digital computer software, nuclear power plant software | `nrc-nuclear` |
-| Endorsed IEEE, IEC & IAEA standards | IEEE 603, IEEE 7-4.3.2, IEEE 828, IEEE 829, IEEE 830, IEEE 1008, IEEE 1012, IEEE 1028, IEEE 1074, IEC 60880, IEC 61513, IEC 62138, IAEA, SSG-39, RG 1.152, BTP 7-19 | `nrc-nuclear` |
+| Endorsed IEEE, IEC & IAEA standards | IEEE 603, IEEE 7-4.3.2, IEEE 828, IEEE 829, IEEE 830, IEEE 1008, IEEE 1012, IEEE 1028, IEEE 1074, IEC 60880, IEC 61513, IEC 62138, IAEA, SSG-39, RG 1.152, BTP 7-19, SDOE, Appendix 7.1-D, 7.1-D | `nrc-nuclear` |
 
 ### Agency contexts
 | Agency | Keywords | Packs |
