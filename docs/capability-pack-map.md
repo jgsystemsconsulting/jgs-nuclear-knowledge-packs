@@ -16,8 +16,8 @@ Rules of construction:
 |---|---|
 | 1. Life Cycle & Requirements | 3 |
 | 2. Verification & Testing | 2 |
-| 3. Regulatory Framework & Staff Review | 5 |
-| **Total** | **10** |
+| 3. Regulatory Framework & Staff Review | 7 |
+| **Total** | **12** |
 
 ## 1. Life Cycle & Requirements
 
@@ -41,5 +41,7 @@ Rules of construction:
 | nrc-nuclear | ch01-nrc-software-assurance-framework.md | How NRC Regulatory Guides, the SRP, and BTP 7-14 fit together for digital safety system software |
 | nrc-nuclear | ch07-btp-7-14-staff-software-review.md | BTP 7-14 Rev 6 staff review of software implementation activities and design outputs |
 | nrc-nuclear | ch08-endorsed-standards-and-adjacent-guidance.md | Endorsed IEEE and IEC standards, IAEA guides, and adjacent NRC documents by designation and edition only |
+| nrc-nuclear | ch09-rg-1-152-pdd-criteria-and-sdoe.md | RG 1.152 Rev 4 criteria for programmable digital devices and the secure development and operational environment |
+| nrc-nuclear | ch10-app-7-1-d-ieee-7-4-3-2-evaluation.md | NUREG-0800 Appendix 7.1-D Rev 1 staff evaluation of the application of IEEE Std 7-4.3.2 |
 | nrc-nuclear | glossary.md (support file) | Software assurance terms used across the nrc-nuclear chapters |
 | nrc-nuclear | cheatsheet.md (support file) | Decision rules routing software assurance questions to the right nrc-nuclear chapter |

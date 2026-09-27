@@ -7,7 +7,7 @@ SPDX-License-Identifier: MIT
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT%20(tooling)-blue" alt="License: MIT (tooling)">
-  <img src="https://img.shields.io/badge/version-0.2.0-green" alt="Version 0.2.0">
+  <img src="https://img.shields.io/badge/version-0.3.0-green" alt="Version 0.3.0">
 </p>
 
 <p align="center">
@@ -27,8 +27,8 @@ per engineering sector, each an installable catalogue of knowledge-pack skills f
 coding agents. The packs are reconstructed reference notes on U.S. Nuclear
 Regulatory Commission software assurance guidance for digital computer software in
 nuclear power plant safety systems: Regulatory Guide 1.168 Revision 2, Regulatory
-Guides 1.169 through 1.173 Revision 1, and NUREG-0800 Branch Technical Position
-7-14 Revision 6, plus signposts to the wider nuclear standards world (IEEE, IEC,
+Guides 1.169 through 1.173 Revision 1, NUREG-0800 Branch Technical Position
+7-14 Revision 6, Regulatory Guide 1.152 Revision 4, and NUREG-0800 Appendix 7.1-D Revision 1, plus signposts to the wider nuclear standards world (IEEE, IEC,
 and IAEA standards, cited by name only). It is engineering signposting and
 reference material, not legal or licensing advice.
 

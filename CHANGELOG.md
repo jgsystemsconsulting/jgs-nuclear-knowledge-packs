@@ -11,6 +11,12 @@ All notable changes to this project are documented here. Format follows
 
 ## [Unreleased]
 
+## [0.3.0]
+
+### Added
+
+- nrc-nuclear gains two sources and two chapters. Regulatory Guide 1.152 Rev 4 (July 2023, ML23054A463) is ch09 (criteria for programmable digital devices and the secure development and operational environment). NUREG-0800 Appendix 7.1-D Rev 1 (August 2016, ML16019A114) is ch10 (staff evaluation of the application of IEEE Std 7-4.3.2). Chapter 08 now points at ch09 and ch10. EXPECTED_NOTES_COUNT moves from 10 to 12. Regulatory Framework floor moves from 5 to 7. BTP 7-19 remains outside the pack.
+
 ## [0.2.0]
 
 ### Added

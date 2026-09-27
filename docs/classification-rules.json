@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_version": "0.1.0",
-  "generated_on": "2026-09-26",
+  "generated_on": "2026-09-27",
   "rules_of_construction": [
     "Every chapter in every pack under packs/<slug>/chapters/ is assigned to exactly one capability cluster (best fit).",
     "Cross-cutting chapters carry a remark noting the strong secondary fit.",
@@ -69,6 +69,18 @@
     {
       "pack": "nrc-nuclear",
       "chapter": "ch08-endorsed-standards-and-adjacent-guidance.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-nuclear",
+      "chapter": "ch09-rg-1-152-pdd-criteria-and-sdoe.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-nuclear",
+      "chapter": "ch10-app-7-1-d-ieee-7-4-3-2-evaluation.md",
       "cluster": "Regulatory Framework & Staff Review",
       "is_support": false
     },

@@ -3,18 +3,18 @@
   "repository": "jgs-nuclear-knowledge-packs",
   "sector_slug": "nuclear",
   "scope": "Nuclear",
-  "version": "0.2.0",
-  "updated": "2026-09-26",
+  "version": "0.3.0",
+  "updated": "2026-09-27",
   "packs": [
     {
       "slug": "nrc-nuclear",
-      "title": "NRC Software Assurance for Digital Safety Systems (Regulatory Guides 1.168 Rev 2 and 1.169-1.173 Rev 1, NUREG-0800 BTP 7-14 Rev 6)",
+      "title": "NRC Software Assurance for Digital Safety Systems (Regulatory Guides 1.168 Rev 2 and 1.169-1.173 Rev 1, NUREG-0800 BTP 7-14 Rev 6, RG 1.152 Rev 4, NUREG-0800 Appendix 7.1-D Rev 1)",
       "publisher": "U.S. Nuclear Regulatory Commission; reconstructed by JG Systems Consulting Ltd",
-      "source_version": "Source set pinned 2026-09-26: RG 1.168 Rev 2 July 2013 (ML13073A210); RG 1.169 Rev 1 July 2013 (ML12355A642); RG 1.170 Rev 1 July 2013 (ML13003A216); RG 1.171 Rev 1 July 2013 (ML13004A375); RG 1.172 Rev 1 July 2013 (ML13007A173); RG 1.173 Rev 1 July 2013 (ML13009A190); NUREG-0800 BTP 7-14 Rev 6 August 2016 (ML16019A308)",
+      "source_version": "Source set pinned 2026-09-27: RG 1.168 Rev 2 July 2013 (ML13073A210); RG 1.169 Rev 1 July 2013 (ML12355A642); RG 1.170 Rev 1 July 2013 (ML13003A216); RG 1.171 Rev 1 July 2013 (ML13004A375); RG 1.172 Rev 1 July 2013 (ML13007A173); RG 1.173 Rev 1 July 2013 (ML13009A190); NUREG-0800 BTP 7-14 Rev 6 August 2016 (ML16019A308); RG 1.152 Rev 4 July 2023 (ML23054A463); NUREG-0800 Appendix 7.1-D Rev 1 August 2016 (ML16019A114)",
       "license": "Public Domain (US Government work, 17 U.S.C. 105)",
       "license_tier": 1,
       "commercial_use": true,
-      "chapters": 8,
+      "chapters": 10,
       "status": "live"
     }
   ],

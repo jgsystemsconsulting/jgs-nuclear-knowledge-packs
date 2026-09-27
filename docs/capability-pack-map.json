@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "map_version": "0.1.0",
-  "generated_on": "2026-09-26",
+  "generated_on": "2026-09-27",
   "clusters": [
     {
       "name": "Life Cycle & Requirements",
@@ -55,6 +55,16 @@
           "pack": "nrc-nuclear",
           "chapter": "ch08-endorsed-standards-and-adjacent-guidance.md",
           "note": "Endorsed IEEE and IEC standards, IAEA guides, and adjacent NRC documents by designation and edition only"
+        },
+        {
+          "pack": "nrc-nuclear",
+          "chapter": "ch09-rg-1-152-pdd-criteria-and-sdoe.md",
+          "note": "RG 1.152 Rev 4 criteria for programmable digital devices and the secure development and operational environment"
+        },
+        {
+          "pack": "nrc-nuclear",
+          "chapter": "ch10-app-7-1-d-ieee-7-4-3-2-evaluation.md",
+          "note": "NUREG-0800 Appendix 7.1-D Rev 1 staff evaluation of the application of IEEE Std 7-4.3.2"
         },
         {
           "pack": "nrc-nuclear",
