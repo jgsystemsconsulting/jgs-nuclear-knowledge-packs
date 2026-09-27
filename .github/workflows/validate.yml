@@ -1108,11 +1108,11 @@ jobs:
           # the pin values honest inside this self-contained gate.
           # THRESHOLDS: dict[str, int] = {"Life Cycle & Requirements": 3, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 5}  # live catalogue: name-keyed chapter minimums
           # EXPECTED_NOTES_COUNT = 10
-          # expected_signposts: list[str] = []
+          # expected_signposts: list[str] = ["nuclear-signpost"]
           THRESHOLDS = {"Life Cycle & Requirements": 3, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 5}
           EXPECTED_NOTES_COUNT = 10
-          expected_signposts = []
-          if THRESHOLDS != {"Life Cycle & Requirements": 3, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 5} or EXPECTED_NOTES_COUNT != 10 or list(expected_signposts) != []:
+          expected_signposts = ["nuclear-signpost"]
+          if THRESHOLDS != {"Life Cycle & Requirements": 3, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 5} or EXPECTED_NOTES_COUNT != 10 or list(expected_signposts) != ["nuclear-signpost"]:
               print(f"::error::[map-data] empty-tree constant pin drift "
                     f"(THRESHOLDS={THRESHOLDS!r} EXPECTED_NOTES_COUNT={EXPECTED_NOTES_COUNT!r} "
                     f"expected_signposts={expected_signposts!r})")

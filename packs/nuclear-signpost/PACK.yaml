@@ -1,0 +1,19 @@
+slug: nuclear-signpost
+kind: signpost
+title: "Nuclear I&C Software and Safety Standards: Signpost (pointers only)"
+publisher: "JG Systems Consulting Ltd."
+license: "MIT"
+license_tier: 2
+commercial_use: true
+notes: >
+  Signpost, not a knowledge pack. Zero standards-body text. Rows carry
+  designation, title, edition, owner, status, and the owner's URL only.
+  IEEE Std 603-1991, 7-4.3.2-2003, 828-2005, 829-2008, 830-1998, 1008-1987,
+  1012-2004, 1028-2008, and 1074-2006, plus IEC 60880 ed. 2.0:2006,
+  IEC 61513 ed. 2.0:2011, and IEC 62138 ed. 2.0:2018, are Excluded under
+  docs/SOURCE-VETTING.md: paywalled with no redistribution grant. IAEA
+  safety guides such as SSG-39 are free to read but IAEA copyright,
+  citation-only pending per-document determination. Editions match
+  packs/nrc-nuclear/chapters/ch08-endorsed-standards-and-adjacent-guidance.md
+  exactly. Free paths point to pack: nrc-nuclear. Trademarks named for
+  identification only.

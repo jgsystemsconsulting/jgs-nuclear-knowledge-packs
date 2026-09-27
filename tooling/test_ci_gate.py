@@ -140,7 +140,11 @@ EMPTY_TREE_PAIR = [
         MAP_TWIN,
     ),
     ("EXPECTED_NOTES_COUNT ten", "EXPECTED_NOTES_COUNT = 10", GEN_TWIN),
-    ("expected_signposts empty", "expected_signposts: list[str] = []", RULES_TWIN),
+    (
+        "expected_signposts nuclear-signpost",
+        'expected_signposts: list[str] = ["nuclear-signpost"]',
+        RULES_TWIN,
+    ),
 ]
 
 # Literals pinned per local twin (map/classification envelope).

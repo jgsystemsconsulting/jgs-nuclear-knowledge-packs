@@ -10,7 +10,7 @@ products:
     name: Nuclear Knowledge Packs
     product_class: agent-skills
     status: live
-    version: "0.1.0"
+    version: "0.2.0"
     entry: 01-sector-catalogue.yaml
     tagline: >
       Licence-vetted Nuclear knowledge-pack skills for coding agents,

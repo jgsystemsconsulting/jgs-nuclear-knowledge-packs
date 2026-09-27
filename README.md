@@ -7,7 +7,7 @@ SPDX-License-Identifier: MIT
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT%20(tooling)-blue" alt="License: MIT (tooling)">
-  <img src="https://img.shields.io/badge/version-0.1.0-green" alt="Version 0.1.0">
+  <img src="https://img.shields.io/badge/version-0.2.0-green" alt="Version 0.2.0">
 </p>
 
 <p align="center">

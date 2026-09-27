@@ -11,6 +11,13 @@ All notable changes to this project are documented here. Format follows
 
 ## [Unreleased]
 
+## [0.2.0]
+
+### Added
+
+- nuclear-signpost pack (kind: signpost): IEEE Std 603-1991, 7-4.3.2-2003, 828-2005, 829-2008, 830-1998, 1008-1987, 1012-2004, 1028-2008, 1074-2006; IEC 60880 ed. 2.0:2006, IEC 61513 ed. 2.0:2011, IEC 62138 ed. 2.0:2018; IAEA SSG-39 designation-only. Pointers only; free path pack: nrc-nuclear.
+- Catalogue flip: 1 pack · 1 signpost; expected_signposts ["nuclear-signpost"].
+
 ## [0.1.0]: 2026-09-24
 
 ### Added
