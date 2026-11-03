@@ -16,6 +16,7 @@ import tempfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import pack_kind  # noqa: E402
 import validate_pack  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -44,6 +45,21 @@ name: {slug}
 kind: orchestrator
 disable-model-invocation: true
 description: "Demo orchestrator used by the validator probe. Explicit invocation only."
+---
+"""
+
+BODY_PLANTED_SKILL = """---
+name: {slug}
+description: "Demo pack with a kind line planted below the frontmatter fence."
+---
+body text below the fence
+kind: signpost
+"""
+
+WRONG_CASE_SKILL = """---
+name: {slug}
+Kind: Signpost
+description: "Demo pack with a wrong-case kind declaration."
 ---
 """
 
@@ -125,6 +141,27 @@ def main() -> int:
                              pack_yaml=False, license_=False, chapters=False)
         errs = validate_pack.check_pack(orch_np)
         assert errs == ["missing PACK.yaml"], errs
+
+        # (10) the shared classifier: one window, two kinds, content default
+        assert pack_kind.pack_kind(SIGNPOST_SKILL.format(slug="k1")) == "signpost"
+        assert pack_kind.pack_kind(ORCHESTRATOR_SKILL.format(slug="k2")) == "orchestrator"
+        assert pack_kind.pack_kind(CONTENT_SKILL.format(slug="k3")) == "content"
+
+        # (11) body-planted kind line never classifies (spec P5 AD-1, review I6)
+        planted = BODY_PLANTED_SKILL.format(slug="k4")
+        assert pack_kind.pack_kind(planted) == "content", planted
+
+        # (12) wrong-case kind never classifies; YAML keys are case-sensitive (AD-2)
+        wrong = WRONG_CASE_SKILL.format(slug="k5")
+        assert pack_kind.pack_kind(wrong) == "content", wrong
+
+        # (13) both kind lines present: signpost wins (inventory if/elif order, AD-1)
+        both = "---\nname: k6\nkind: orchestrator\nkind: signpost\n---\nbody\n"
+        assert pack_kind.pack_kind(both) == "signpost", both
+
+        # (14) closing fence as the last line without a trailing newline parses
+        tight = "---\nname: k7\nkind: signpost\n---"
+        assert pack_kind.pack_kind(tight) == "signpost", tight
 
     # (9) the live tree carries the orchestrator stub plus the flipped
     # content pack (read-only). Signpost dirs are excluded from this pin
