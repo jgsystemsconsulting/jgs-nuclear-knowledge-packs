@@ -15,8 +15,10 @@ extraction already fails this probe loudly, so the fallback is effectively
 unreachable and no mirror lives in this file.
 
 Regex parity pins (P4 pin-plus-parity, extended to the eight pinned steps):
-  - three version regexes, the SKILLS link regex, and the signpost regex must
-    appear verbatim in both tooling/check_release.py and validate.yml
+  - the three version regexes and the SKILLS link regex must appear verbatim
+    in both tooling/check_release.py and validate.yml (RELEASE_PAIR); the
+    frontmatter window and both kind regexes are pinned against
+    tooling/pack_kind.py and validate.yml (KIND_PAIR)
   - MAP_VERSION_RE / GENERATED_ON_RE must appear verbatim in validate.yml and
     both local twins (check_capability_map.py, check_classification_rules.py)
   - the html-assets host set, TAG_SLICE/ATTR/CSS_URL/CSS_IMPORT pattern text,
@@ -26,7 +28,7 @@ Regex parity pins (P4 pin-plus-parity, extended to the eight pinned steps):
     (P15) must appear verbatim in both check_release.py and validate.yml
   - catalog-live-set path/tag literals (P16) must appear verbatim in both
     check_release.py and validate.yml (CATALOG_LIVE_SET_PAIR)
-  - routing-map markers, headings, slug/orchestrator regexes, tag, and
+  - routing-map markers, headings, slug regex, tag, and
     Public Domain prefix (P17) must appear verbatim in both check_release.py
     and validate.yml (ROUTING_MAP_PAIR)
 """
@@ -45,6 +47,7 @@ RELEASE_TWIN = ROOT / "tooling" / "check_release.py"
 MAP_TWIN = ROOT / "tooling" / "check_capability_map.py"
 RULES_TWIN = ROOT / "tooling" / "check_classification_rules.py"
 GEN_TWIN = ROOT / "tooling" / "generate_capability_map.py"
+PACK_KIND_TWIN = ROOT / "tooling" / "pack_kind.py"
 
 # Extraction markers; byte-for-byte the `- name:` values in validate.yml.
 PINNED_STEPS = [
@@ -64,6 +67,14 @@ RELEASE_PAIR = [
     ("RELEASE-INFO version", r"Version:\s*([0-9]+\.[0-9]+\.[0-9]+)"),
     ("website YAML version", r'version:\s*"([0-9]+\.[0-9]+\.[0-9]+)"'),
     ("SKILLS link", r"\[`([^`]+)`\]\(packs/"),
+]
+
+# Literals that must appear verbatim in tooling/pack_kind.py AND validate.yml
+# (P5 frontmatter-only kind classification). Byte parity is the drift control;
+# the window pin stops a twin from silently widening the scan back to the
+# whole file.
+KIND_PAIR = [
+    ("frontmatter window", r"^---\s*\n(.*?)\n---\s*(?:\n|$)"),
     ("signpost kind", r"^kind:\s*signpost\s*$"),
     ("orchestrator kind", r"^kind:\s*orchestrator\s*$"),
 ]
@@ -126,7 +137,6 @@ ROUTING_MAP_PAIR = [
     ("deliverables heading", "### Deliverables"),
     ("licences heading", "### Licences"),
     ("slug token", r"^[a-z0-9-]+$"),
-    ("orchestrator kind", r"^kind:\s*orchestrator\s*$"),
     ("routing tag", "[routing-map]"),
     ("public domain prefix", "Public Domain"),
 ]
@@ -315,6 +325,16 @@ def main() -> int:
         )
         assert literal in workflow_text, (
             "regex drifted between check_release.py and validate.yml; sync them: "
+            f"{name} missing from validate.yml"
+        )
+    pack_kind_text = PACK_KIND_TWIN.read_text(encoding="utf-8")
+    for name, literal in KIND_PAIR:
+        assert literal in pack_kind_text, (
+            "regex drifted between tooling/pack_kind.py and validate.yml; sync them: "
+            f"{name} missing from tooling/pack_kind.py"
+        )
+        assert literal in workflow_text, (
+            "regex drifted between tooling/pack_kind.py and validate.yml; sync them: "
             f"{name} missing from validate.yml"
         )
     for name, literal in (

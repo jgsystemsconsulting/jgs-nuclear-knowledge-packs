@@ -14,7 +14,9 @@ standard requires for this repo and exits non-zero on any failure:
      is data, not a literal in this file.
   4. Version single-source agreement: plugin.json == CHANGELOG top ==
      RELEASE-INFO.txt == the two website product YAMLs under docs/products/website.
-  5. Every pack passes tooling/validate_pack.py (structure + licence tier).
+  5. Every pack dir under packs/ passes tooling/validate_pack.check_pack
+     (structure + licence tier); signpost and orchestrator packs skip the
+     LICENSE/chapters checks inside validate_pack (frontmatter-only kind).
   6. SKILLS.md entry count == number of shipped packs.
   7. JGSC + SPDX header present on authored files (NOT pack content).
   8. Multi-pack chapter-basename overlap via check_overlap.main() (local/trusted).
@@ -64,6 +66,9 @@ import subprocess
 import sys
 from pathlib import Path
 from urllib.parse import urlsplit
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import pack_kind  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -303,11 +308,12 @@ def inventory_pack_slugs(
     """Return (content_slugs, signpost_slugs, orchestrator_slugs, errors).
 
     Every immediate child directory must contain SKILL.md with parseable YAML
-    frontmatter between --- fences. A frontmatter line matching
-    ^kind:\\s*signpost\\s*$ (case-insensitive) marks a signpost;
-    ^kind:\\s*orchestrator\\s*$ marks an orchestrator; all others are content
-    packs. Live sets never come from a hardcoded constant. ``tag`` prefixes
-    fail messages so callers can attribute catalogue-count vs catalog-live-set.
+    frontmatter between --- fences. Kind classification delegates to
+    tooling/pack_kind.pack_kind (frontmatter-only, case-sensitive): a
+    frontmatter `kind: signpost` line marks a signpost, `kind: orchestrator`
+    marks an orchestrator, all others are content packs. Live sets never come
+    from a hardcoded constant. ``tag`` prefixes fail messages so callers can
+    attribute catalogue-count vs catalog-live-set.
     """
     errs: list[str] = []
     content: set[str] = set()
@@ -327,16 +333,16 @@ def inventory_pack_slugs(
         except OSError as e:
             errs.append(f"{tag} cannot read packs/{child.name}/SKILL.md: {e}")
             continue
-        m = re.match(r"^---\s*\n(.*?)\n---\s*(?:\n|$)", text, re.S)
+        m = pack_kind.FM_RE.match(text)
         if not m:
             errs.append(
                 f"{tag} unparseable frontmatter in packs/{child.name}/SKILL.md"
             )
             continue
-        fm = m.group(1)
-        if re.search(r"^kind:\s*signpost\s*$", fm, re.I | re.M):
+        kind = pack_kind.pack_kind(text)
+        if kind == "signpost":
             signposts.add(child.name)
-        elif re.search(r"^kind:\s*orchestrator\s*$", fm, re.I | re.M):
+        elif kind == "orchestrator":
             orchestrators.add(child.name)
         else:
             content.add(child.name)
@@ -923,8 +929,13 @@ def main() -> int:
     #    they are synthesized and should also be clean; include them to be strict)
     # ponytail: a "signpost" pack is pure citation — it MUST name where a spec lives, so it
     # is exempt from the link ban. Marked by `kind: signpost` in its SKILL.md frontmatter.
+    # pack_kind reads the frontmatter window only, so a body-planted kind line is not
+    # exempt (fail-closed: unparseable frontmatter means content).
     signpost_dirs = {p.parent for p in ROOT.glob("packs/*/SKILL.md")
-                     if re.search(r"^kind:\s*signpost\s*$", p.read_text(encoding="utf-8", errors="ignore"), re.M)}
+                     if pack_kind.pack_kind(p.read_text(encoding="utf-8", errors="ignore")) == "signpost"}
+    packs_root = ROOT / "packs"
+    all_pack_dirs = sorted(p for p in packs_root.iterdir() if p.is_dir()) \
+        if packs_root.is_dir() else []
     try:
         hosts = load_banned_hosts()
         source_hosts = re.compile(
@@ -970,22 +981,27 @@ def main() -> int:
     if len(distinct) > 1 or "" in versions.values():
         fail(errs, f"[version] disagreement / missing: {versions}")
 
-    # 5. validate every pack
+    # 5. validate every pack dir; kind-aware skips live inside validate_pack
+    #    (signpost and orchestrator skip LICENSE/chapters there). Check 5 now
+    #    covers signpost packs too: PACK.yaml mandatory fields, tier validity,
+    #    slug match, and frontmatter name/description all apply (AD-5).
     sys.path.insert(0, str(ROOT / "tooling"))
     try:
         import validate_pack  # type: ignore
-        packs = sorted(p for p in (ROOT / "packs").iterdir() if p.is_dir() and p not in signpost_dirs)
-        for pack in packs:
+        for pack in all_pack_dirs:
             perrs = validate_pack.check_pack(pack)
             for e in perrs:
                 fail(errs, f"[pack:{pack.name}] {e}")
     except Exception as e:
         fail(errs, f"[pack] validate_pack failed to run: {e}")
-        packs = []
 
-    # 5b. RR-S-13: every content pack's SKILL.md has a '## When to use' section and a
-    #     prerequisites marker (skip signposts, which carry minimal frontmatter-only bodies).
-    for pack in packs:
+    # 5b. RR-S-13: every content and orchestrator pack's SKILL.md has a '## When to
+    #     use' section and a prerequisites marker (signpost packs are skipped
+    #     explicitly via the frontmatter-only classifier; orchestrators stay
+    #     checked; packs/nuclear carries the section today).
+    for pack in all_pack_dirs:
+        if pack in signpost_dirs:
+            continue
         skill = pack / "SKILL.md"
         if not skill.is_file():
             continue
@@ -1087,13 +1103,16 @@ def main() -> int:
     # 15. routing map coverage ([routing-map], /se)
     errs.extend(check_routing_map(ROOT / "packs"))
 
-    # 6. SKILLS.md entry count == pack count
+    # 6. SKILLS.md entry count == shipped-pack count. Uses its own indexed list
+    #    (all pack dirs minus frontmatter-declared signposts) so the check-5
+    #    widening above never moves index semantics (AD-5).
     skills = (ROOT / "SKILLS.md").read_text(encoding="utf-8") if (ROOT / "SKILLS.md").is_file() else ""
+    indexed_packs = [d for d in all_pack_dirs if d not in signpost_dirs]
     signpost_names = {d.name for d in signpost_dirs}
     entry_slugs = re.findall(r"\[`([^`]+)`\]\(packs/", skills)
     entry_count = len([s for s in entry_slugs if s not in signpost_names])
-    if packs and entry_count != len(packs):
-        fail(errs, f"[index] SKILLS.md lists {entry_count} packs but {len(packs)} are shipped")
+    if indexed_packs and entry_count != len(indexed_packs):
+        fail(errs, f"[index] SKILLS.md lists {entry_count} packs but {len(indexed_packs)} are shipped")
 
     # 6b. Cursor marketplace manifest lists every commercially-redistributable pack
     #     (MA-01 backstop: plugin.json skills must not drift behind packs/*/SKILL.md).
