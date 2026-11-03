@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Copyright (c) 2026 JG Systems Consulting Ltd. — MIT License (see LICENSE).
 # SPDX-License-Identifier: MIT
-"""Assert-based probe for the eight inline CI gates in .github/workflows/validate.yml.
+"""Assert-based probe for the nine inline CI gates in .github/workflows/validate.yml.
 
 Run:  python tooling/test_ci_gate.py
 Exits 0 when regex literal parity, heredoc extraction, negative demos, and
@@ -14,7 +14,7 @@ the gates as local functions if extraction matched zero heredocs, but zero
 extraction already fails this probe loudly, so the fallback is effectively
 unreachable and no mirror lives in this file.
 
-Regex parity pins (P4 pin-plus-parity, extended to the eight pinned steps):
+Regex parity pins (P4 pin-plus-parity, extended to the nine pinned steps):
   - the three version regexes and the SKILLS link regex must appear verbatim
     in both tooling/check_release.py and validate.yml (RELEASE_PAIR); the
     frontmatter window and both kind regexes are pinned against
@@ -35,6 +35,7 @@ Regex parity pins (P4 pin-plus-parity, extended to the eight pinned steps):
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -51,6 +52,7 @@ PACK_KIND_TWIN = ROOT / "tooling" / "pack_kind.py"
 
 # Extraction markers; byte-for-byte the `- name:` values in validate.yml.
 PINNED_STEPS = [
+    "Link policy check (no source-material URLs)",
     "Version single-source",
     "SKILLS index count",
     "Chapter basename overlap",
@@ -210,6 +212,20 @@ def write_tree(root: Path, files: dict[str, str]) -> None:
         p.write_text(content, encoding="utf-8")
 
 
+def trusted_hosts_file(heredoc_body: str) -> str:
+    """Render the shipped TRUSTED_HOSTS set as link-policy-hosts.txt content.
+
+    Derived from the extracted link-policy heredoc so demo trees satisfy the
+    twin's inline-vs-data-file parity assert without duplicating the host list
+    here (a host added to the workflow flows into the fixtures automatically).
+    """
+    m = re.search(r"TRUSTED_HOSTS = frozenset\(\{(.*?)\}\)", heredoc_body, re.S)
+    assert m, "TRUSTED_HOSTS block not found in link-policy heredoc"
+    tokens = re.findall(r'"([^"]+)"', m.group(1))
+    assert tokens, "no quoted host tokens in TRUSTED_HOSTS"
+    return "\n".join(sorted(set(tokens))) + "\n"
+
+
 VERSION_BASE = {
     ".claude-plugin/plugin.json": '{"version": "1.2.3"}\n',
     "CHANGELOG.md": "# Changelog\n\n## [Unreleased]\n\n## [1.2.3]: 2026-01-01\n",
@@ -236,6 +252,13 @@ SKILLS_CONTENT_ONLY = (
 )
 SIGNPOST_MARKED = "---\nname: omg-signpost\nkind: signpost\n---\nbody\n"
 SIGNPOST_UNMARKED = "---\nname: omg-signpost\n---\nbody\n"
+SIGNPOST_BODY_PLANTED = "---\nname: omg-signpost\n---\nbody\nkind: signpost\n"
+# Banned-host demo URL for the link-policy fixtures, split so no contiguous
+# source-material host appears in this file's source: tooling/check_release.py
+# [links] scans .py text too, and a literal banned URL here would fail the
+# release check. The runtime value the demos write into fixture packs is the
+# real banned URL, which is what the CI twin must flag.
+DEMO_BANNED_URL = "Authentic copy: https://www.nrc" ".gov/reading-rm/doc-collections/\n"
 
 
 def index_tree(skills: str, signpost_skill: str) -> dict[str, str]:
@@ -416,7 +439,10 @@ def main() -> int:
             "text, so fix the step name or the heredoc markers"
         )
         bodies[step] = body
-    assert len(bodies) == len(PINNED_STEPS), "expected exactly eight pinned heredocs"
+    assert len(bodies) == len(PINNED_STEPS), "expected exactly nine pinned heredocs"
+    host_file = trusted_hosts_file(
+        bodies["Link policy check (no source-material URLs)"]
+    )
 
     with tempfile.TemporaryDirectory() as td:
         tmp = Path(td)
@@ -445,6 +471,37 @@ def main() -> int:
              "website YAML version '' != RELEASE-INFO '1.2.3'",
              "version-website-missing")
 
+        # link policy (P5): a body-planted `kind: signpost` line must NOT win
+        # the exemption; the banned-host URL in the same file fails the scan.
+        # Red until the twin reads the frontmatter window only.
+        demo({
+            "tooling/link-policy-hosts.txt": host_file,
+            "packs/omg-signpost/SKILL.md": SIGNPOST_BODY_PLANTED
+            + DEMO_BANNED_URL,
+        }, "Link policy check (no source-material URLs)",
+             "source-material URL", "linkpolicy-body-planted")
+        # link policy control: a frontmatter-declared signpost with a banned-host
+        # URL stays exempt; proves the fixture tree satisfies the parity assert
+        # and the failure above is the classification, not the host file.
+        demo_ok({
+            "tooling/link-policy-hosts.txt": host_file,
+            "packs/omg-signpost/SKILL.md": SIGNPOST_MARKED
+            + DEMO_BANNED_URL,
+        }, "Link policy check (no source-material URLs)",
+           "linkpolicy-signpost-exempt")
+        # link policy wrong-case guard (P5, AD-2): `Kind: Signpost` must not
+        # win the exemption either; kind matching is case-sensitive, so the
+        # banned URL still fails the scan. Passes before and after this
+        # package (the old twin is already case-sensitive); it pins the
+        # property against a future re.I regression the parity pins cannot
+        # see (they match literal text, not flags).
+        demo({
+            "tooling/link-policy-hosts.txt": host_file,
+            "packs/omg-signpost/SKILL.md": "---\nname: omg-signpost\nKind: Signpost\n---\nbody\n"
+            + DEMO_BANNED_URL,
+        }, "Link policy check (no source-material URLs)",
+             "source-material URL", "linkpolicy-wrong-case-signpost")
+
         # index: with the signpost marker, the signpost link is NOT counted,
         # so one content link vs two shipped packs fails
         demo(index_tree(SKILLS_ONE_LINK, SIGNPOST_MARKED), "SKILLS index count",
@@ -457,6 +514,13 @@ def main() -> int:
         demo(index_tree(SKILLS_CONTENT_ONLY, SIGNPOST_UNMARKED), "SKILLS index count",
              "[index] SKILLS.md lists 2 packs but 3 are shipped",
              "index-signpost-unmarked")
+        # index negative (P5): a body-planted signpost pack omitted from
+        # SKILLS.md is counted-but-unlisted after the conversion; the old
+        # whole-body scan exempted it and this tree passed.
+        demo(index_tree(SKILLS_CONTENT_ONLY, SIGNPOST_BODY_PLANTED),
+             "SKILLS index count",
+             "[index] SKILLS.md lists 2 packs but 3 are shipped",
+             "index-signpost-body-planted")
 
         # overlap: an un-whitelisted shared basename fails with both packs
         demo(overlap_tree(True), "Chapter basename overlap",
@@ -626,6 +690,22 @@ def main() -> int:
         assert "beta" in out_rm, (
             f"routing-map-topics-drop: expected dropped slug 'beta' in output\n{out_rm}"
         )
+        # routing-map (AD-2): kind matching is case-sensitive in CI too. A
+        # wrong-case `Kind: Orchestrator` frontmatter classifies content, so
+        # the exactly-one-orchestrator rule fails with 0 found; under the old
+        # re.I flag the pack classified orchestrator and the failure mode was
+        # the Topics-coverage error instead.
+        demo({
+            "packs/alpha/SKILL.md": "---\nname: alpha\ndescription: x\n---\n# alpha\n",
+            "packs/alpha/PACK.yaml": 'license: "Public Domain"\n',
+            "packs/beta/SKILL.md": "---\nname: beta\ndescription: x\n---\n# beta\n",
+            "packs/beta/PACK.yaml": 'license: "Public Domain"\n',
+            "packs/se/SKILL.md": routing_map_skill.replace(
+                "kind: orchestrator", "Kind: Orchestrator"),
+            "packs/se/PACK.yaml": 'slug: se\nkind: orchestrator\nlicense: "MIT"\n',
+        }, "Routing map coverage",
+             "[routing-map] exactly one orchestrator member required: 0 found",
+             "routing-map-wrong-case-orchestrator")
 
     # 3. positive runs against the real repo tree: what CI sees on a clean tree
     for step in PINNED_STEPS:

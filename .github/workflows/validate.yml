@@ -112,10 +112,12 @@ jobs:
           HOSTS = re.compile(r"https?://[^\s)\"']*("
                              + "|".join(re.escape(t) for t in sorted(TRUSTED_HOSTS)) + ")")
           root = pathlib.Path(".")
-          signpost_dirs = {
-              p.parent for p in root.glob("packs/*/SKILL.md")
-              if re.search(r"^kind:\s*signpost\s*$", p.read_text(encoding="utf-8", errors="ignore"), re.M)
-          }
+          signpost_dirs = set()
+          for p in root.glob("packs/*/SKILL.md"):
+              t = p.read_text(encoding="utf-8", errors="ignore")
+              m = re.match(r"^---\s*\n(.*?)\n---\s*(?:\n|$)", t, re.S)
+              if m and re.search(r"^kind:\s*signpost\s*$", m.group(1), re.M):
+                  signpost_dirs.add(p.parent)
           fails = 0
           for p in root.rglob("*"):
               # .planning: internal GSD workflow state, never ships, holds vetting evidence URLs.
@@ -332,9 +334,9 @@ jobs:
                       )
                       continue
                   fm = m.group(1)
-                  if re.search(r"^kind:\s*signpost\s*$", fm, re.I | re.M):
+                  if re.search(r"^kind:\s*signpost\s*$", fm, re.M):
                       signposts += 1
-                  elif re.search(r"^kind:\s*orchestrator\s*$", fm, re.I | re.M):
+                  elif re.search(r"^kind:\s*orchestrator\s*$", fm, re.M):
                       pass
                   else:
                       content += 1
@@ -547,9 +549,9 @@ jobs:
                       )
                       continue
                   fm = m.group(1)
-                  if re.search(r"^kind:\s*signpost\s*$", fm, re.I | re.M):
+                  if re.search(r"^kind:\s*signpost\s*$", fm, re.M):
                       signposts.add(child.name)
-                  elif re.search(r"^kind:\s*orchestrator\s*$", fm, re.I | re.M):
+                  elif re.search(r"^kind:\s*orchestrator\s*$", fm, re.M):
                       orchestrators.add(child.name)
                   else:
                       content.add(child.name)
@@ -713,9 +715,9 @@ jobs:
                       )
                       continue
                   fm = m.group(1)
-                  if re.search(r"^kind:\s*signpost\s*$", fm, re.I | re.M):
+                  if re.search(r"^kind:\s*signpost\s*$", fm, re.M):
                       signposts.add(child.name)
-                  elif re.search(r"^kind:\s*orchestrator\s*$", fm, re.I | re.M):
+                  elif re.search(r"^kind:\s*orchestrator\s*$", fm, re.M):
                       orchestrators.add(child.name)
                   else:
                       content.add(child.name)
@@ -1023,10 +1025,12 @@ jobs:
           # byte-identical to the local gate's; tooling/test_ci_gate.py asserts it.
           import re, sys, pathlib
           root = pathlib.Path(".")
-          signpost_dirs = {
-              p.parent for p in root.glob("packs/*/SKILL.md")
-              if re.search(r"^kind:\s*signpost\s*$", p.read_text(encoding="utf-8", errors="ignore"), re.M)
-          }
+          signpost_dirs = set()
+          for p in root.glob("packs/*/SKILL.md"):
+              t = p.read_text(encoding="utf-8", errors="ignore")
+              m = re.match(r"^---\s*\n(.*?)\n---\s*(?:\n|$)", t, re.S)
+              if m and re.search(r"^kind:\s*signpost\s*$", m.group(1), re.M):
+                  signpost_dirs.add(p.parent)
           packs = sorted(p for p in root.glob("packs/*") if p.is_dir() and p not in signpost_dirs)
           skills = (root / "SKILLS.md").read_text(encoding="utf-8") if (root / "SKILLS.md").is_file() else ""
           signpost_names = {d.name for d in signpost_dirs}
