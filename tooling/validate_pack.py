@@ -11,7 +11,8 @@ Usage:
 Checks (see docs/PACK-SPEC.md and docs/SOURCE-VETTING.md):
   - required files present: SKILL.md and PACK.yaml always; content packs also need
     LICENSE and chapters/ with >=1 chapter (non-content packs, marked `kind: signpost`
-    or `kind: orchestrator` in SKILL.md, carry neither and skip those two checks)
+    or `kind: orchestrator` in the SKILL.md frontmatter, carry neither and skip those
+    two checks; classification is frontmatter-only via tooling/pack_kind.py)
   - SKILL.md has YAML frontmatter with name + description; name matches folder slug
   - every chapters/chNN-*.md link in SKILL.md resolves to a real file
   - PACK.yaml has the mandatory fields filled
@@ -25,6 +26,9 @@ from __future__ import annotations
 import re
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import pack_kind  # noqa: E402
 
 REQUIRED_PACK_FIELDS = ("slug", "title", "publisher", "license", "license_tier", "commercial_use")
 VALID_TIERS = {"1", "2", "3"}
@@ -62,12 +66,16 @@ def check_pack(pack_dir: Path) -> list[str]:
     lic = pack_dir / "LICENSE"
     chapters = pack_dir / "chapters"
 
-    # Non-content kind detection (signpost, orchestrator): same regex style as
-    # check_release.py so both tools classify a pack identically. Read once
-    # here; reused by the frontmatter block below instead of a second read.
+    # Kind classification (signpost, orchestrator): frontmatter-only via the
+    # shared classifier (tooling/pack_kind.py), the same window and literals
+    # check_release.py and the CI twins use. Body text never classifies: a
+    # `kind: signpost` line below the fence must not win the LICENSE/chapters
+    # skip (spec P5 AD-1). Read once here; reused by the frontmatter block
+    # below instead of a second read.
     body = skill.read_text(encoding="utf-8", errors="ignore") if skill.is_file() else ""
-    is_signpost = bool(re.search(r"^kind:\s*signpost\s*$", body, re.M))
-    is_orchestrator = bool(re.search(r"^kind:\s*orchestrator\s*$", body, re.M))
+    kind = pack_kind.pack_kind(body)
+    is_signpost = kind == "signpost"
+    is_orchestrator = kind == "orchestrator"
 
     if not skill.is_file():
         errors.append("missing SKILL.md")
@@ -85,7 +93,7 @@ def check_pack(pack_dir: Path) -> list[str]:
 
     # --- SKILL.md frontmatter + chapter links ---
     if skill.is_file():
-        fm = re.match(r"^---\s*\n(.*?)\n---\s*\n", body, re.S)
+        fm = pack_kind.FM_RE.match(body)
         if not fm:
             errors.append("SKILL.md has no YAML frontmatter block")
         else:

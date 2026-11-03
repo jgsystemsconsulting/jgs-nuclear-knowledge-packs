@@ -10,7 +10,6 @@ built in a temp dir; the live tree is only read (case 9), never mutated.
 """
 from __future__ import annotations
 
-import re
 import sys
 import tempfile
 from pathlib import Path
@@ -163,6 +162,33 @@ def main() -> int:
         tight = "---\nname: k7\nkind: signpost\n---"
         assert pack_kind.pack_kind(tight) == "signpost", tight
 
+        # (15) body-planted kind regression: the pack classifies content, so
+        # LICENSE and chapters are required and their absence fails loudly
+        # (AD-6 item 1; red until validate_pack stops scanning the body)
+        planted_pack = build_pack(root, "planted-pack",
+                                  skill=BODY_PLANTED_SKILL,
+                                  license_=False, chapters=False)
+        errs = validate_pack.check_pack(planted_pack)
+        assert errs == ["missing LICENSE (must reproduce the source's terms)",
+                        "missing chapters/ directory"], errs
+
+        # (16) wrong-case guard: `Kind: Signpost` in frontmatter classifies
+        # content at the check_pack level too (AD-6 item 2)
+        wrong_pack = build_pack(root, "wrong-case-pack",
+                                skill=WRONG_CASE_SKILL,
+                                license_=False, chapters=False)
+        errs = validate_pack.check_pack(wrong_pack)
+        assert errs == ["missing LICENSE (must reproduce the source's terms)",
+                        "missing chapters/ directory"], errs
+
+        # (17) closing fence at EOF: the old `\n---\s*\n` window misparsed a
+        # SKILL.md whose fence is the last line; FM_RE handles it (AD-1)
+        tight_pack = build_pack(root, "tight-fence-pack",
+                                skill="---\nname: {slug}\nkind: signpost\ndescription: x\n---",
+                                license_=False, chapters=False)
+        assert validate_pack.check_pack(tight_pack) == [], \
+            validate_pack.check_pack(tight_pack)
+
     # (9) the live tree carries the orchestrator stub plus the flipped
     # content pack (read-only). Signpost dirs are excluded from this pin
     # (orchestrator + content packs only; see P2/P4 retarget precedent).
@@ -174,14 +200,23 @@ def main() -> int:
         skill = d / "SKILL.md"
         if not skill.is_file():
             return False
-        body = skill.read_text(encoding="utf-8", errors="ignore")
-        return bool(re.search(r"^kind:\s*signpost\s*$", body, re.M))
+        return pack_kind.pack_kind(
+            skill.read_text(encoding="utf-8", errors="ignore")
+        ) == "signpost"
 
     live_slugs = sorted(
         p.name for p in (REPO_ROOT / "packs").iterdir()
         if p.is_dir() and not _is_signpost(p)
     )
     assert live_slugs == ["nrc-nuclear", "nuclear"], live_slugs
+
+    # (18) live signpost pack passes the structure checks check 5 now runs on
+    # it (PACK.yaml mandatory fields, tier validity, slug match, frontmatter
+    # name/description); the PACK-SPEC:103 promise on the live tree (AD-6 item 3)
+    live_signpost = REPO_ROOT / "packs" / "nuclear-signpost"
+    assert live_signpost.is_dir(), f"live signpost pack missing: {live_signpost}"
+    assert validate_pack.check_pack(live_signpost) == [], \
+        validate_pack.check_pack(live_signpost)
 
     print("validate_pack tests: OK")
     return 0
