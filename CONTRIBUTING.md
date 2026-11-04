@@ -65,8 +65,14 @@ python tooling/validate_pack.py packs/<slug>
 
 - One pack per PR.
 - PR description: source, version, licence, tier, and a line confirming it is not Excluded.
-- CI runs `validate_pack.py` on every pack and blocks invalid licence tiers and broken
-  chapter links. Tier judgement (1/2/3) is reviewed by a maintainer.
+- CI (`.github/workflows/validate.yml`) runs self-contained inline twin gates. It does
+  **not** execute `tooling/validate_pack.py` or the `tooling/test_*.py` suites (RR-S-12:
+  CI never runs checked-out repository code). Before merge, run locally:
+  `python tooling/validate_pack.py --all` (layout, frontmatter, chapter links,
+  `license_tier`), the stdlib suites under `tooling/test_*.py` (including
+  `test_ci_gate.py`), and `python tooling/check_release.py` before tag. Tier judgement
+  (1/2/3) is reviewed by a maintainer. Residual: keep the test suites local-only;
+  wiring them into CI would break RR-S-12.
 
 ## Reporting a licensing concern
 

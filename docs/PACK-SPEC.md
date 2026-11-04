@@ -39,7 +39,8 @@ packs/<slug>/
     navigates)
   - `## Supporting Files`
   - `## Scope & Limits` (what the pack does *not* cover; which source version)
-- Every `chapters/` link in the index must resolve to a real file (CI checks this).
+- Every `chapters/` link in the index must resolve to a real file
+  (`tooling/validate_pack.py` checks this locally).
 
 ## Chapter file rules
 
@@ -112,5 +113,6 @@ Member kinds (`kind:` in SKILL.md frontmatter):
 | `orchestrator` | `packs/nuclear` | `SKILL.md` + `PACK.yaml`, all remaining checks | The `LICENSE` and `chapters/` checks (routes to packs, no source content). Its `SKILL.md` body carries the whole routing map and ships in every transform prompt, so it is reviewed against a 24,000-byte ceiling (a review criterion, not a gate). |
 
 Checks: required files present, frontmatter valid, every chapter link resolves,
-`PACK.yaml` mandatory fields filled, and `license_tier ∈ {1,2,3}`. CI runs this on
-every pack on every PR.
+`PACK.yaml` mandatory fields filled, and `license_tier ∈ {1,2,3}`. Run this script
+locally on every pack before merge. CI (`.github/workflows/validate.yml`) runs
+self-contained inline twin gates and does **not** execute `validate_pack.py`.

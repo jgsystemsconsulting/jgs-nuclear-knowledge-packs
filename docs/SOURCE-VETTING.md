@@ -167,7 +167,8 @@ and per-pack**: a pack folder always contains its own `LICENSE`.
 8. [ ] `PACK.yaml` `title`, `publisher`, `license`, `license_tier`, `commercial_use`
    filled: textual attribution, **no source-material URL published** (see LICENSING.md).
 
-CI enforces 4, 7, and 8 mechanically (`tooling/validate_pack.py`). Tiers 1–3 judgement
+Local `tooling/validate_pack.py` enforces 4, 7, and 8 mechanically. CI twin gates
+cover related integrity checks inline and do not run that script. Tiers 1–3 judgement
 is human and reviewed on the PR.
 
 > **Link policy.** Source-material URLs are recorded during vetting but are **not**
