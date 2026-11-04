@@ -96,7 +96,9 @@ def render(rows: list[dict], ver: str) -> str:
         desc = html.escape(r["desc"])
         desc = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", desc)
         desc = re.sub(r"`([^`]+)`", r"<code>\1</code>", desc)
-        href = f"{REPO}/blob/main/{r['path']}"
+        # href feeds a double-quoted attribute from a PR-editable SKILLS.md link
+        # target; escape it like every other attribute channel (P6 AD-1).
+        href = html.escape(f"{REPO}/blob/main/{r['path']}", quote=True)
         # data-text keeps source case so identity tokens survive mint substitution;
         # the filter JS lowercases both sides at query time.
         data = html.escape(f"{r['slug']} {r['licence']} {plain}", quote=True)
