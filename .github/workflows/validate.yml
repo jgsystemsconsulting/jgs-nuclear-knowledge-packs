@@ -32,6 +32,12 @@
 # PR-editable, so a PR can relax that gate in both places at once. That is the
 # same posture as the old in-code constant (also PR-editable); review is the
 # control, and the data file removes accidental divergence between the gates.
+#
+# Checkout pin: the checkout step pins actions/checkout by full 40 character
+# commit SHA; the trailing comment on that line names the release the SHA
+# belongs to. To update: resolve the target release tag in actions/checkout
+# to its commit SHA (peel annotated tags to the commit), replace SHA and
+# version comment together in one edit, then confirm validate passes.
 name: validate
 
 on:
@@ -45,7 +51,7 @@ jobs:
   content-integrity:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
 
       - name: Content integrity check (leak sentinels)
         run: |
