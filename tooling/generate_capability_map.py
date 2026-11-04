@@ -31,8 +31,20 @@ OVERRIDES_PATH = ROOT / "docs" / "capability-pack-map-note-overrides.json"
 MAP_PATH = ROOT / "docs" / "capability-pack-map.json"
 MD_PATH = ROOT / "docs" / "capability-pack-map.md"
 
-# Empty-tree template corpus size; bump with overrides notes on mint.
+# Live overrides notes count; bump on mint.
 EXPECTED_NOTES_COUNT = 12
+
+CANONICAL_LIVE_HEADER = """# Capability to Knowledge-Pack Map
+
+Live working map. Working artifact mapping sector technical capabilities to the pack chapters that provide reference depth for each capability. Entries include support files.
+
+Rules of construction:
+- Every chapter in every pack under `packs/<slug>/chapters/` is assigned to exactly one capability cluster (best fit).
+- Signpost packs contain no chapters and are not mapped.
+- Machine-readable version: `docs/capability-pack-map.json`.
+- Machine-readable classification rules: `docs/classification-rules.json`.
+- Changelog (v0.1.0): live working map over packs under packs/.
+"""
 
 SUPPORT_SUFFIX = " (support file)"
 MAP_VERSION_RE = re.compile(r"^\d+\.\d+\.\d+$")
@@ -258,6 +270,9 @@ def render_md(map_obj: dict, header_prefix: str) -> str:
     clusters = map_obj["clusters"]
     lines: list[str] = []
     prefix = header_prefix.rstrip("\n")
+    low = prefix.casefold()
+    if "empty-tree template seed" in low or "no content packs yet" in low:
+        prefix = CANONICAL_LIVE_HEADER.rstrip("\n")
     lines.append(prefix)
     lines.append("")
     lines.append("## Summary")
