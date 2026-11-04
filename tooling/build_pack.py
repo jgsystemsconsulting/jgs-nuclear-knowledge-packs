@@ -35,6 +35,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -94,6 +95,18 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--share-alike", default="false", choices=["true", "false"])
     ap.add_argument("--attribution-required", default="true", choices=["true", "false"])
     args = ap.parse_args(argv[1:])
+
+    # Slug guard (P9 AD-1): the pattern matches the CI SKILL name lint
+    # (.github/workflows/validate.yml:509). It runs before the exists check and
+    # any mkdir or write, and admits only [a-z0-9] segments joined by single
+    # hyphens, so no separator, dot, colon, or .. can reach the Path join.
+    if not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", args.slug):
+        print(
+            f"ERROR: invalid slug '{args.slug}': must be kebab-case "
+            "([a-z0-9] segments joined by single hyphens).",
+            file=sys.stderr,
+        )
+        return 1
 
     pack_dir = REPO_ROOT / "packs" / args.slug
     if pack_dir.exists():
