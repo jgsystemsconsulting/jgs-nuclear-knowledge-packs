@@ -78,16 +78,24 @@ Excluded tier. **No `source_url` / source-material link is stored or published.*
 source is identified textually (title + publisher + version), and `publisher` carries the
 attribution, per the no-source-link policy in [LICENSING.md](LICENSING.md).
 
-## Installing a pack (end user)
+## Installing packs (end user)
+
+Root `install.py` installs every pack under `packs/` into a coding agent. Default target
+is Claude Code (native folder copy under the vendor namespace).
 
 ```bash
-# Claude Code: clone the whole repo, symlink/copy the pack into your skills dir:
-git clone https://github.com/jgsystemsconsulting/jgs-nuclear-knowledge-packs.git
-cp -r jgs-nuclear-knowledge-packs/packs/<first-pack> ~/.claude/skills/<first-pack>
-# then in a session:  /<first-pack> <topic>
+python install.py --dry-run             # preview packs + target, write nothing
+python install.py                       # Claude Code (default)
+python install.py --agent openclaw      # one agent (see --list-agents)
+python install.py --agent all           # every user-global agent
+python install.py --flat                # native only: drop vendor namespace
+python install.py --list-agents         # agents, kind, scope, base path
 ```
 
-(A future `tooling/install.py <slug>` will automate per-pack install across hosts.)
+Native agents (`claude`, `openclaw`, `copilot`) receive a full pack folder. Transform
+agents (`codex`, `gemini`, `cursor`) receive one file per pack with the `SKILL.md` index
+inlined — see [other-agents.md](other-agents.md). After install, restart the agent and
+invoke a pack by slug (for example `/<slug> <topic>`).
 
 ## Validation
 

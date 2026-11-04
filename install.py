@@ -225,7 +225,10 @@ def install_for_agent(agent: str, packs: list[Path], override: str | None, flat:
 
 
 def main(argv: list[str]) -> int:
-    ap = argparse.ArgumentParser(description="Install jgs-nuclear-knowledge-packs into a coding agent.")
+    ap = argparse.ArgumentParser(
+        description="Install jgs-nuclear-knowledge-packs into a coding agent.",
+        epilog="Transform agents (codex/gemini/cursor): see docs/other-agents.md.",
+    )
     ap.add_argument("--agent", default="claude",
                     help="target agent: " + ", ".join(AGENTS) + ", or 'all' (user-global agents). Default: claude")
     ap.add_argument("--list-agents", action="store_true", help="list supported agents and their targets, then exit")

@@ -9,7 +9,8 @@ SPDX-License-Identifier: MIT
 
 - A host that reads [Agent Skills](https://github.com/agentskills/agentskills): Claude Code,
   GitHub Copilot CLI, or Amp.
-- Packs installed into your skills directory (see the repo README: `python install.py`).
+- Packs installed into your skills directory (repo root: `python install.py`; non-Claude /
+  transform targets: [other-agents.md](other-agents.md)).
 - No MCP server, API key, or licence tier is needed at runtime; packs are plain Markdown.
 
 ## Invoking a pack
