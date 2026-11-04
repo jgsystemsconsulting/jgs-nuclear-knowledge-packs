@@ -31,7 +31,8 @@ If a source is merely "free to download," that is not enough. Free ≠ redistrib
 ```bash
 # 1. Scaffold with provenance (forces a tier + licence on record):
 python tooling/build_pack.py --slug <slug> --title "..." --publisher "..." \
-    --version "..." --url "..." --license "..." --tier <1|2|3> --commercial-use <true|false>
+    --version "..." --license "..." --tier <1|2|3> --commercial-use <true|false> \
+    --share-alike <true|false> --attribution-required <true|false>
 
 # 2. Generate content per docs/PACK-SPEC.md:
 #    - extract text (jgs-reference-skill), map chapter offsets, generate reference-depth
