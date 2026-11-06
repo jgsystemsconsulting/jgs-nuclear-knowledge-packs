@@ -30,7 +30,44 @@ nuclear power plant safety systems: Regulatory Guide 1.168 Revision 2, Regulator
 Guides 1.169 through 1.173 Revision 1, NUREG-0800 Branch Technical Position
 7-14 Revision 6, Regulatory Guide 1.152 Revision 4, and NUREG-0800 Appendix 7.1-D Revision 1, plus signposts to the wider nuclear standards world (IEEE, IEC,
 and IAEA standards, cited by name only). It is engineering signposting and
-reference material, not legal or licensing advice.
+reference material, not legal or licensing advice. **Not in scope:** nuclear
+weapons, medical/clinical use (e.g. 10 CFR Part 35), classified material, or
+full paywalled standard text. Full exclusion list: [Out of scope](#out-of-scope)
+below and [docs/PACK-BACKLOG.md](docs/PACK-BACKLOG.md) hard walls.
+
+## Out of scope
+
+This catalogue is **civilian nuclear power plant digital I&C software
+assurance** under the pinned NRC sources above. It is not a general nuclear
+engineering library.
+
+**Never in scope (do not add, route, or reconstruct):**
+
+- Nuclear weapons, warheads, delivery systems, or weapons-design physics
+- Classified, export-controlled, or safeguards-sensitive material (including
+  NNSA / defence nuclear programmes beyond public civil guidance)
+- Medical, industrial, or research-isotope uses outside power-plant safety
+  systems (for example 10 CFR Part 35 medical use)
+- Pure reactor-physics or radiation-transport textbooks with no licensing
+  or plant-engineering deliverable
+- Full text of paywalled standards (IEEE, IEC, ASME, ANS, NFPA, and similar):
+  designation and edition only; buy or read at the owner
+- Legal, licensing, or compliance advice; substitute counsel or the plant
+  licensing basis
+
+**In this release, also outside the live pack** (may appear later as separate
+packs or stay excluded): BTP 7-18, BTP 7-19, other SRP Chapter 7 sections,
+NUREG/CR contractor reports, PRA, fire protection, human factors,
+cybersecurity beyond the RG 1.152 SDOE slice, fuel/criticality, emergency
+preparedness, decommissioning, SMR/advanced-reactor frameworks, and non-US
+regulator bodies except name-only IAEA signposts already listed.
+
+If a question falls in the never-in-scope list, say so and stop. Do not
+stretch the pack to cover it.
+
+**Future packs:** thematic candidate list, source pins, waves, and build
+checklist live in [docs/PACK-BACKLOG.md](docs/PACK-BACKLOG.md). That backlog is
+research-ready scope, not a promise that every row will ship.
 
 ## Install
 

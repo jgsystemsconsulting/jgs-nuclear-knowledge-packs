@@ -128,6 +128,18 @@ noted and skipped; if none remain, fall back to route-only.
 - At most six packs per Topics row. At most four packs read per answer.
 - Deliverable stage chains come only from Deliverables rows; empty cells skip that stage.
 - `/nuclear` never overwrites an existing file without a yes at a gate.
+- **Sector charter.** Catalogue covers civilian nuclear power plant digital I&C
+  software assurance under live packs (today: `nrc-nuclear`) plus name-only
+  standards signposts. It is not a general nuclear engineering library.
+- **Never route or invent content for:** nuclear weapons or weapons-design
+  physics; classified, export-controlled, or safeguards-sensitive material
+  (including NNSA / defence nuclear programmes beyond public civil guidance);
+  medical, industrial, or research-isotope programmes outside power-plant
+  safety systems (for example 10 CFR Part 35); pure physics textbooks with no
+  plant or licensing deliverable; full text of paywalled standards (IEEE, IEC,
+  ASME, ANS, NFPA, and similar); legal or licensing advice.
+- On a never-in-scope question: state the exclusion in one or two sentences,
+  cite this section, and stop. Do not stretch a pack or fabricate chapters.
 
 ---
 *Orchestrator content © JG Systems Consulting Ltd. (MIT). Pack names and source titles
