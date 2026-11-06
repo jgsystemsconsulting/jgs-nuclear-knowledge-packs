@@ -84,6 +84,9 @@ install, each pack is invocable as an Agent Skill.
 - **`/nuclear <question>`**: the orchestrator. Type a free-text nuclear question
   and it routes through a curated topic, agency, and deliverable map to the right
   pack(s), reads them, and answers with pack and chapter citations.
+- **Using packs directly**: see [docs/skill-usage.md](docs/skill-usage.md) for
+  install, invoking a pack by slug (`/<slug>`), how a pack answers, and the
+  `/nuclear` orchestrator modes.
 
 ## Gates
 
