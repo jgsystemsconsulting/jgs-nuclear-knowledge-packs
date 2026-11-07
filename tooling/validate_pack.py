@@ -17,6 +17,7 @@ Checks (see docs/PACK-SPEC.md and docs/SOURCE-VETTING.md):
   - every chapters/chNN-*.md link in SKILL.md resolves to a real file
   - PACK.yaml has the mandatory fields filled
   - license_tier is 1, 2, or 3  (never the Excluded tier)
+  - unfilled scaffold TODO markers rejected in PACK.yaml built_on, PACK.yaml notes, and LICENSE
 
 No third-party dependencies — uses a tiny YAML subset parser so CI needs only stdlib.
 Exit code 0 = all checked packs pass; 1 = at least one failure.
@@ -112,7 +113,8 @@ def check_pack(pack_dir: Path) -> list[str]:
 
     # --- PACK.yaml mandatory fields + tier ---
     if pack_yaml.is_file():
-        meta = parse_simple_yaml(pack_yaml.read_text(encoding="utf-8"))
+        pack_text = pack_yaml.read_text(encoding="utf-8")
+        meta = parse_simple_yaml(pack_text)
         for field in REQUIRED_PACK_FIELDS:
             if not meta.get(field):
                 errors.append(f"PACK.yaml missing required field: {field}")
@@ -124,6 +126,23 @@ def check_pack(pack_dir: Path) -> list[str]:
             )
         if meta.get("slug") and meta["slug"] != slug:
             errors.append(f"PACK.yaml slug '{meta['slug']}' != folder name '{slug}'")
+        if any(line.strip() == 'built_on: "TODO"' for line in pack_text.splitlines()):
+            errors.append(
+                'PACK.yaml build.built_on is still "TODO" (record the build date/provenance)'
+            )
+        if any(line.strip().startswith("TODO:") for line in pack_text.splitlines()):
+            errors.append(
+                "PACK.yaml notes still contain the TODO placeholder (record licence condition carry-forward)"
+            )
+
+    if lic.is_file():
+        if any(
+            line.strip().startswith("TODO:")
+            for line in lic.read_text(encoding="utf-8").splitlines()
+        ):
+            errors.append(
+                "LICENSE still contains the TODO placeholder (reproduce the source's licence terms)"
+            )
 
     return errors
 

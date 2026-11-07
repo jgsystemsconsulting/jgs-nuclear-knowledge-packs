@@ -134,7 +134,7 @@ def main(argv: list[str]) -> int:
     print("  2. Map structure to chapter offsets.")
     print("  3. Generate chapters/chNN-*.md (reference depth), glossary/patterns/cheatsheet.")
     print("  4. Write SKILL.md (index + core frameworks).")
-    print("  5. Fill the TODOs in PACK.yaml + LICENSE.")
+    print("  5. Fill the TODOs in PACK.yaml + LICENSE (validate_pack rejects unfilled TODOs).")
     print(f"  6. Validate:  python tooling/validate_pack.py packs/{args.slug}")
     return 0
 

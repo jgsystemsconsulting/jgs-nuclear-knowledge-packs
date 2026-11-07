@@ -37,7 +37,7 @@ python tooling/build_pack.py --slug <slug> --title "..." --publisher "..." \
 # 2. Generate content per docs/PACK-SPEC.md:
 #    - extract text (jgs-reference-skill), map chapter offsets, generate reference-depth
 #      chapters + glossary/patterns/cheatsheet, then the SKILL.md index.
-# 3. Fill the TODOs in packs/<slug>/PACK.yaml and packs/<slug>/LICENSE.
+# 3. Fill the TODOs in packs/<slug>/PACK.yaml and packs/<slug>/LICENSE (validate_pack rejects unfilled TODOs).
 # 4. Add a catalog row by hand-editing catalog.json (repo root); no rebuild
 # script writes it. tooling/check_release.py validates it.
 # 5. Add the slug to the /nuclear map (packs/nuclear/SKILL.md Topics row +

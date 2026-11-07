@@ -5,8 +5,9 @@
 
 Run:  python tooling/test_validate_pack.py
 Exits 0 when content-pack, signpost-pack, and orchestrator-pack shapes classify
-as PACK-SPEC expects. Any failed assert raises and exits nonzero. Fixtures are
-built in a temp dir; the live tree is only read (case 9), never mutated.
+as PACK-SPEC expects, including scaffold TODO rejection in cases 22, 23, and 24.
+Any failed assert raises and exits nonzero. Fixtures are built in a temp dir;
+the live tree is only read (case 9), never mutated.
 """
 from __future__ import annotations
 
@@ -70,6 +71,18 @@ license_tier: 2
 commercial_use: true
 """
 
+SCAFFOLD_BUILD_NOTES = """\
+build:
+  built_on: "TODO"
+notes: >
+  TODO: record licence condition carry-forward
+"""
+
+LICENSE_TODO = """\
+Demo pack content licence
+
+TODO: reproduce the source's licence terms here.
+"""
 
 def build_pack(root: Path, slug: str, *, skill: str | None, pack_yaml: bool = True,
                license_: bool = True, chapters: bool = True) -> Path:
@@ -214,6 +227,46 @@ def main() -> int:
         assert pack_kind.pack_kind(tabbed_o) == "orchestrator", tabbed_o
         multi = "---\nname: k12\nkind:  signpost\n---\nbody\n"
         assert pack_kind.pack_kind(multi) == "signpost", multi
+
+        # (22) scaffold markers fail closed, in built_on, notes, LICENSE order
+        scaffold = build_pack(root, "scaffold-todo", skill=CONTENT_SKILL)
+        (scaffold / "PACK.yaml").write_text(
+            PACK_YAML.format(slug="scaffold-todo") + SCAFFOLD_BUILD_NOTES,
+            encoding="utf-8",
+        )
+        (scaffold / "LICENSE").write_text(LICENSE_TODO, encoding="utf-8")
+        errs = validate_pack.check_pack(scaffold)
+        assert errs == [
+            'PACK.yaml build.built_on is still "TODO" (record the build date/provenance)',
+            "PACK.yaml notes still contain the TODO placeholder (record licence condition carry-forward)",
+            "LICENSE still contains the TODO placeholder (reproduce the source's licence terms)",
+        ], errs
+
+        # (23) filled date and mid-line TODO prose pass; line start is the trigger
+        filled = build_pack(root, "filled-pack", skill=CONTENT_SKILL)
+        (filled / "PACK.yaml").write_text(
+            PACK_YAML.format(slug="filled-pack") + (
+                'build:\n'
+                '  built_on: "2026-11-06"\n'
+                'notes: >\n'
+                '  Attribution carried forward. Mid-sentence TODO prose and the word TODOs stay legal.\n'
+                '  Quoted marker mid-line: see "TODO:" in the source notes, not as its own line.\n'
+            ),
+            encoding="utf-8",
+        )
+        (filled / "LICENSE").write_text(
+            'MIT terms. Mid-line quote of TODO: must not fail the pack.\n',
+            encoding="utf-8",
+        )
+        assert validate_pack.check_pack(filled) == [], validate_pack.check_pack(filled)
+
+        # (24) LICENSE-only TODO fails alone; helper PACK.yaml has no marker
+        lic_only = build_pack(root, "license-only-todo", skill=CONTENT_SKILL)
+        (lic_only / "LICENSE").write_text(LICENSE_TODO, encoding="utf-8")
+        errs = validate_pack.check_pack(lic_only)
+        assert errs == [
+            "LICENSE still contains the TODO placeholder (reproduce the source's licence terms)",
+        ], errs
 
     # (9) the live tree carries the orchestrator stub plus the flipped
     # content pack (read-only). Signpost dirs are excluded from this pin
