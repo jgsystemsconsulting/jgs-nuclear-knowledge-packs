@@ -90,12 +90,17 @@ install, each pack is invocable as an Agent Skill.
 
 ## Gates
 
-Run all three from the repo root:
+Run all of these from the repo root, in order. The suite loop stops at the
+first failing suite; in a tree carrying `sources/*` build inputs that stop
+is `test_ci_gate.py`: follow the local probe note below — move `sources/*`
+aside, re-run this whole block while they are aside so the suites the stop
+skipped get their pass, then restore them — before reading the stop as a
+Gates failure:
 
 ```bash
-python tooling/validate_pack.py --all   # every pack matches docs/PACK-SPEC.md
-python tooling/check_release.py         # release readiness: files, versions, leaks, links, index, headers
-python tooling/test_ci_gate.py          # proves CI (.github/workflows/validate.yml) checks the same things
+python tooling/validate_pack.py --all  # every pack matches docs/PACK-SPEC.md
+for t in tooling/test_*.py; do echo "== $t"; python "$t" || exit 1; done  # every stdlib suite, loud on first failure
+python tooling/check_release.py        # release readiness: files, versions, leaks, links, index, headers
 ```
 
 Local probe note: `tooling/test_ci_gate.py` positive runs fail link-policy in a tree carrying gitignored `sources/*` build inputs. Run it from a clean checkout or worktree, or move `sources/*` aside first, then restore `sources/*` after the run; `sources/*` are gitignored build inputs, never commit them.

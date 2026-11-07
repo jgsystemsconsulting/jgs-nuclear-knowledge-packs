@@ -71,7 +71,8 @@ python tooling/validate_pack.py packs/<slug>
   CI never runs checked-out repository code). Before merge, run locally:
   `python tooling/validate_pack.py --all` (layout, frontmatter, chapter links,
   `license_tier`), the stdlib suites under `tooling/test_*.py` (including
-  `test_ci_gate.py`), and `python tooling/check_release.py` before tag. Tier judgement
+  `test_ci_gate.py`; run them via the loop in README `## Gates`), and
+  `python tooling/check_release.py` before tag. Tier judgement
   (1/2/3) is reviewed by a maintainer. Residual: keep the test suites local-only;
   wiring them into CI would break RR-S-12.
 
