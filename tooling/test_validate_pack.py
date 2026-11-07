@@ -189,6 +189,32 @@ def main() -> int:
         assert validate_pack.check_pack(tight_pack) == [], \
             validate_pack.check_pack(tight_pack)
 
+        # (18) zero-space kind never classifies; YAML block mapping needs
+        # separation after the colon (P14: `\s*` tightened to `\s+`)
+        nospace_s = "---\nname: k8\nkind:signpost\n---\nbody\n"
+        assert pack_kind.pack_kind(nospace_s) == "content", nospace_s
+        nospace_o = "---\nname: k9\nkind:orchestrator\n---\nbody\n"
+        assert pack_kind.pack_kind(nospace_o) == "content", nospace_o
+
+        # (19) zero-space signpost guard at check_pack level: the pack
+        # classifies content, so LICENSE and chapters stay required
+        nospace_pack = build_pack(
+            root, "nospace-pack",
+            skill="---\nname: {slug}\nkind:signpost\ndescription: x\n---\nbody\n",
+            license_=False, chapters=False)
+        errs = validate_pack.check_pack(nospace_pack)
+        assert errs == ["missing LICENSE (must reproduce the source's terms)",
+                        "missing chapters/ directory"], errs
+
+        # (20) `\s+` still admits tab and multi-space separation; pinned on
+        # purpose so a spaces-only change breaks this case in the open
+        tabbed = "---\nname: k10\nkind:\tsignpost\n---\nbody\n"
+        assert pack_kind.pack_kind(tabbed) == "signpost", tabbed
+        tabbed_o = "---\nname: k11\nkind:\torchestrator\n---\nbody\n"
+        assert pack_kind.pack_kind(tabbed_o) == "orchestrator", tabbed_o
+        multi = "---\nname: k12\nkind:  signpost\n---\nbody\n"
+        assert pack_kind.pack_kind(multi) == "signpost", multi
+
     # (9) the live tree carries the orchestrator stub plus the flipped
     # content pack (read-only). Signpost dirs are excluded from this pin
     # (orchestrator + content packs only; see P2/P4 retarget precedent).
@@ -210,7 +236,7 @@ def main() -> int:
     )
     assert live_slugs == ["nrc-nuclear", "nuclear"], live_slugs
 
-    # (18) live signpost pack passes the structure checks check 5 now runs on
+    # (21) live signpost pack passes the structure checks check 5 now runs on
     # it (PACK.yaml mandatory fields, tier validity, slug match, frontmatter
     # name/description); the PACK-SPEC:103 promise on the live tree (AD-6 item 3)
     live_signpost = REPO_ROOT / "packs" / "nuclear-signpost"

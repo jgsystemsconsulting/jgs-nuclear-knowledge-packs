@@ -26,11 +26,13 @@ import re
 # line of the file with no trailing newline (`(?:\n|$)`).
 FM_RE = re.compile(r"^---\s*\n(.*?)\n---\s*(?:\n|$)", re.S)
 
-# Kind lines, matched inside the extracted frontmatter only. Case-sensitive
-# by design (AD-2); the `\s*` tolerance inside the value stays as is (spec
-# non-goal, residual risk accepted in the spec threat model).
-SIGNPOST_RE = re.compile(r"^kind:\s*signpost\s*$", re.M)
-ORCHESTRATOR_RE = re.compile(r"^kind:\s*orchestrator\s*$", re.M)
+# Kind lines, matched inside extracted frontmatter only. Case-sensitive
+# by design (AD-2). `\s+` after the colon requires at least one whitespace
+# character: `kind:signpost` has no YAML mapping separator and classifies
+# as content (fail-closed). Tabs and multiple spaces still match; this
+# module is a regex classifier, not a YAML parser. Residual: P14 spec.
+SIGNPOST_RE = re.compile(r"^kind:\s+signpost\s*$", re.M)
+ORCHESTRATOR_RE = re.compile(r"^kind:\s+orchestrator\s*$", re.M)
 
 
 def pack_kind(skill_text: str) -> str:

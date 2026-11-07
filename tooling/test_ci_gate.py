@@ -7,6 +7,14 @@ Run:  python tooling/test_ci_gate.py
 Exits 0 when regex literal parity, heredoc extraction, negative demos, and
 positive clean-tree runs all hold. Any failed assert raises and exits nonzero.
 
+Local scratch trip: the positive runs execute shipped workflow heredocs
+against this tree, so a checkout carrying gitignored build inputs under
+sources/* fails the link-policy positive run (violations
+all under sources\). For a clean run, use a checkout without build
+inputs (fresh clone or worktree), or move sources/* aside before the
+run. Restore sources/* afterwards. sources/* are gitignored build
+inputs; never commit them.
+
 The probe extracts each heredoc from the workflow by its pinned step name and
 executes the shipped workflow text (not a copy of it), so workflow breakage
 fails here too. Mirror-functions fallback: the P4 pattern would re-implement
@@ -77,8 +85,8 @@ RELEASE_PAIR = [
 # whole file.
 KIND_PAIR = [
     ("frontmatter window", r"^---\s*\n(.*?)\n---\s*(?:\n|$)"),
-    ("signpost kind", r"^kind:\s*signpost\s*$"),
-    ("orchestrator kind", r"^kind:\s*orchestrator\s*$"),
+    ("signpost kind", r"^kind:\s+signpost\s*$"),
+    ("orchestrator kind", r"^kind:\s+orchestrator\s*$"),
 ]
 
 # Literals that must appear verbatim in check_release.py AND validate.yml

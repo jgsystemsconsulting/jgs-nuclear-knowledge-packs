@@ -98,6 +98,8 @@ python tooling/check_release.py         # release readiness: files, versions, le
 python tooling/test_ci_gate.py          # proves CI (.github/workflows/validate.yml) checks the same things
 ```
 
+Local probe note: `tooling/test_ci_gate.py` positive runs fail link-policy in a tree carrying gitignored `sources/*` build inputs. Run it from a clean checkout or worktree, or move `sources/*` aside first, then restore `sources/*` after the run; `sources/*` are gitignored build inputs, never commit them.
+
 CI green is not release-ready: `check_release.py` is the pre-tag gate. Run it
 before tagging and confirm the sha on its `RELEASE CHECK: PASS` receipt matches
 the commit you tag.
