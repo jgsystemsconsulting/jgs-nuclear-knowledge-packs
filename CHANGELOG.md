@@ -11,6 +11,8 @@ All notable changes to this project are documented here. Format follows
 
 ## [Unreleased]
 
+- Add `nrc-btp-7-18-plc`: orientation notes for PLCs in digital safety I&C, pinned to NUREG-0800 BTP 7-18 Rev. 6, August 2016, ML16019A327. PDF body was not captured. EXPECTED_NOTES_COUNT moves from 12 to 22. Release version stays 0.3.0.
+
 ## [0.3.0]
 
 ### Added

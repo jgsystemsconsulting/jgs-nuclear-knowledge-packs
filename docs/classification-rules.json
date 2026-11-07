@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_version": "0.1.0",
-  "generated_on": "2026-09-27",
+  "generated_on": "2026-11-07",
   "rules_of_construction": [
     "Every chapter in every pack under packs/<slug>/chapters/ is assigned to exactly one capability cluster (best fit).",
     "Cross-cutting chapters carry a remark noting the strong secondary fit.",
@@ -92,6 +92,66 @@
     },
     {
       "pack": "nrc-nuclear",
+      "chapter": "cheatsheet.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch01-plc-role-in-safety-ic.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch02-software-vs-firmware-boundary.md",
+      "cluster": "Life Cycle & Requirements",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch03-life-cycle-vs-btp-7-14.md",
+      "cluster": "Life Cycle & Requirements",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch04-commercial-dedication-touchpoints.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch05-failure-modes-staff-eye.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch06-documentation-set.md",
+      "cluster": "Life Cycle & Requirements",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch07-anti-patterns.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch08-rg-1-152-and-app-7-1-d.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "glossary.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
       "chapter": "cheatsheet.md",
       "cluster": "Regulatory Framework & Staff Review",
       "is_support": true

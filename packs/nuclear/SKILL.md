@@ -82,11 +82,18 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | BTP 7-14 software review | BTP 7-14, branch technical position 7-14, staff software review, acceptance criteria, implementation review, design outputs review, plan review | `nrc-nuclear` |
 | Digital I&C safety system software | digital I&C, digital instrumentation and control, safety system software, safety-related software, digital computer software, nuclear power plant software | `nrc-nuclear` |
 | Endorsed IEEE, IEC & IAEA standards | IEEE 603, IEEE 7-4.3.2, IEEE 828, IEEE 829, IEEE 830, IEEE 1008, IEEE 1012, IEEE 1028, IEEE 1074, IEC 60880, IEC 61513, IEC 62138, IAEA, SSG-39, RG 1.152, BTP 7-19, SDOE, Appendix 7.1-D, 7.1-D | `nrc-nuclear` |
+| PLC in digital safety I&C | PLC, programmable logic controller, BTP 7-18, branch technical position 7-18 | `nrc-btp-7-18-plc` |
+| PLC software and firmware boundary | PLC firmware, PLC software, programmable logic firmware, embedded logic PLC | `nrc-btp-7-18-plc` |
+| PLC life cycle versus BTP 7-14 | PLC life cycle, PLC software life cycle, BTP 7-18 life cycle | `nrc-btp-7-18-plc`, `nrc-nuclear` |
+| Commercial dedication of PLCs | PLC commercial dedication, PLC commercial grade dedication, PLC dedication | `nrc-btp-7-18-plc` |
+| PLC failure modes | PLC failure mode, programmable logic failure, PLC common cause | `nrc-btp-7-18-plc` |
+| PLC documentation set | PLC documentation, PLC software documentation, BTP 7-18 documentation | `nrc-btp-7-18-plc` |
+| RG 1.152 and Appendix 7.1-D from a PLC question | PLC RG 1.152, PLC 7.1-D, PLC programmable digital device | `nrc-btp-7-18-plc`, `nrc-nuclear` |
 
 ### Agency contexts
 | Agency | Keywords | Packs |
 |---|---|---|
-| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear` |
+| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-btp-7-18-plc` |
 
 ### Deliverables
 | Deliverable | Keywords | Draft | Review | Verify |
@@ -95,6 +102,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Software CM plan review | CM plan review, SCMP review, configuration management plan review | `nrc-nuclear` | `nrc-nuclear` | `nrc-nuclear` |
 | SRS review checklist | SRS review checklist, requirements specification review, SRS checklist | `nrc-nuclear` | `nrc-nuclear` | `nrc-nuclear` |
 | BTP 7-14 review readiness matrix | review readiness matrix, BTP 7-14 readiness, software review readiness | `nrc-nuclear` | `nrc-nuclear` | `nrc-nuclear` |
+| PLC question list | PLC review questions, BTP 7-18 question list, PLC review outline | `nrc-btp-7-18-plc` | `nrc-btp-7-18-plc` | `nrc-btp-7-18-plc` |
 
 ### Licences
 | Pack | Licence |
@@ -129,7 +137,7 @@ noted and skipped; if none remain, fall back to route-only.
 - Deliverable stage chains come only from Deliverables rows; empty cells skip that stage.
 - `/nuclear` never overwrites an existing file without a yes at a gate.
 - **Sector charter.** Catalogue covers civilian nuclear power plant digital I&C
-  software assurance under live packs (today: `nrc-nuclear`) plus name-only
+  software assurance under live packs (today: `nrc-nuclear`, `nrc-btp-7-18-plc`) plus name-only
   standards signposts. It is not a general nuclear engineering library.
 - **Never route or invent content for:** nuclear weapons or weapons-design
   physics; classified, export-controlled, or safeguards-sensitive material

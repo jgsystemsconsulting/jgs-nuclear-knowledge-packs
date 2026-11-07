@@ -107,6 +107,7 @@ See also root `README.md` § Out of scope and `/nuclear` Scope & Limits.
 | live-01 | `nrc-nuclear` | content | RG 1.168 r2; 1.169-1.173 r1 (Jul 2013); BTP 7-14 r6 (Aug 2016); RG 1.152 r4 (Jul 2023); App 7.1-D r1 (Aug 2016) | live |
 | live-02 | `nuclear-signpost` | signpost | IEEE/IEC/IAEA name-only rows X1-X13 family | live |
 | live-03 | `nuclear` | orchestrator | routes to live packs | live |
+| live-04 | `nrc-btp-7-18-plc` | content | BTP 7-18 Rev. 6, August 2016 (ML16019A327); listing-page pin 2026-11-07 | live |
 
 ---
 
@@ -143,7 +144,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 
 | id | slug | wave | kind | tier | status | primary sources (pin at build) | depends | user job |
 |----|------|------|------|------|--------|--------------------------------|---------|----------|
-| A-01 | `nrc-btp-7-18-plc` | 1 | content | 1 | ready | NUREG-0800 **BTP 7-18 Rev 6** (Aug 2016). ML **VERIFY** (listing shows family MLs; pin cover sheet). | live-01 | Staff/applicant questions on PLCs in digital safety I&C |
+| A-01 | `nrc-btp-7-18-plc` | 1 | content | 1 | live | NUREG-0800 **BTP 7-18 Rev. 6**, August 2016, ML16019A327. Listing-page pin 2026-11-07. PDF body not captured. | live-01 | Staff/applicant questions on PLCs in digital safety I&C |
 | A-02 | `nrc-btp-7-19-d3` | 1 | content | 1 | ready | NUREG-0800 **BTP 7-19** current staff revision (listing + May 2024 Rev 9 path **VERIFY** ML24005A077 before pin). Defense-in-depth and diversity / digital CCF. | live-01, A-01 | D3, CCF, coping analysis for digital upgrades |
 | A-03 | `nrc-srp-ch7-ic-overview` | 2 | content | 1 | idea | NUREG-0800 **Chapter 7** intro + selected sections **excluding** 7-14/7-18/7-19/7.1-D already covered. Slice: 7.0, 7.1, App 7.0-A / 7.1-A only unless a later row takes more. | live-01 | What SRP Ch7 expects at system level |
 | A-04 | `nrc-digital-ic-routing` | 1 | orchestrator-extend | n/a | ready | No new sources. Add Topics/Deliverables rows for A-01..A-03 and thin-pack step-down from `nrc-nuclear`. | A-01..A-03 | `/nuclear` finds digital packs |
@@ -431,7 +432,7 @@ Offline domain knowledge filled chapter sketches and theme cuts. ML accessions f
 
 | bucket | count |
 |--------|-------|
-| Live packs/skills | 3 |
+| Live packs/skills | 4 |
 | Content candidates | ~45 |
 | Signpost candidates | ~6 |
 | Orchestrator-extend | ~4 |

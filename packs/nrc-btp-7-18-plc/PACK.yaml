@@ -1,0 +1,20 @@
+slug: nrc-btp-7-18-plc
+title: "NUREG-0800 Branch Technical Position 7-18 Rev. 6, Guidance on the Use of Programmable Logic Controllers in Digital Computer-Based Instrumentation and Control Systems (August 2016)"
+publisher: "U.S. Nuclear Regulatory Commission; reconstructed by JG Systems Consulting Ltd"
+source_version: "NUREG-0800 BTP 7-18 Rev. 6, August 2016 (ML16019A327); listing-page pin 2026-11-07"
+license: "Public Domain (US Government work, 17 U.S.C. 105)"
+license_tier: 1
+commercial_use: true
+share_alike: false
+attribution_required: false
+build:
+  method: "reconstructed reference notes from the listing-page pin and the A-01 chapter sketch; PDF body not captured"
+  chapters: 8
+  built_on: "2026-11-07"
+notes: >
+  US Government work, public domain under 17 U.S.C. 105. Commercial use is
+  allowed. No attribution obligation and no share-alike obligation. The NRC
+  does not endorse this pack. Notes are synthesized from the listing-page pin
+  and the A-01 chapter sketch. Zero quotations in this pack. IEEE and IEC
+  standards are name-only. Edition pin is Rev. 6, August 2016, ML16019A327.
+  PDF body was not captured.

@@ -13,10 +13,10 @@ Rules of construction:
 
 | Cluster | Entries |
 |---|---|
-| 1. Life Cycle & Requirements | 3 |
+| 1. Life Cycle & Requirements | 6 |
 | 2. Verification & Testing | 2 |
-| 3. Regulatory Framework & Staff Review | 7 |
-| **Total** | **12** |
+| 3. Regulatory Framework & Staff Review | 14 |
+| **Total** | **22** |
 
 ## 1. Life Cycle & Requirements
 
@@ -25,6 +25,9 @@ Rules of construction:
 | nrc-nuclear | ch02-software-life-cycle-processes.md | RG 1.173 Rev 1 software life cycle processes and BTP 7-14 plan-level review of life cycle plans |
 | nrc-nuclear | ch03-software-requirements-specifications.md | RG 1.172 Rev 1 software requirements specifications for software and complex electronics |
 | nrc-nuclear | ch04-software-configuration-management-plans.md | RG 1.169 Rev 1 software configuration management plans and the BTP 7-14 CM plan review |
+| nrc-btp-7-18-plc | ch02-software-vs-firmware-boundary.md | Where this pack draws the software versus firmware line, without unread BTP criteria |
+| nrc-btp-7-18-plc | ch03-life-cycle-vs-btp-7-14.md | How PLC life-cycle questions leave this pack for nrc-nuclear BTP 7-14 chapters |
+| nrc-btp-7-18-plc | ch06-documentation-set.md | Documentation-set questions as a life-cycle product list this pack does not invent |
 
 ## 2. Verification & Testing
 
@@ -44,3 +47,10 @@ Rules of construction:
 | nrc-nuclear | ch10-app-7-1-d-ieee-7-4-3-2-evaluation.md | NUREG-0800 Appendix 7.1-D Rev 1 staff evaluation of the application of IEEE Std 7-4.3.2 |
 | nrc-nuclear | glossary.md (support file) | Software assurance terms used across the nrc-nuclear chapters |
 | nrc-nuclear | cheatsheet.md (support file) | Decision rules routing software assurance questions to the right nrc-nuclear chapter |
+| nrc-btp-7-18-plc | ch01-plc-role-in-safety-ic.md | What BTP 7-18 Rev. 6 is for in digital safety I&C, as orientation from the listing-page pin |
+| nrc-btp-7-18-plc | ch04-commercial-dedication-touchpoints.md | Commercial-dedication questions this pack owns, with no invented dedication procedure |
+| nrc-btp-7-18-plc | ch05-failure-modes-staff-eye.md | Staff-eye failure-mode questions as a review lens, not a test procedure |
+| nrc-btp-7-18-plc | ch07-anti-patterns.md | Pack-use failures: quoting the BTP, citing unread sections, treating IEEE text as in-pack |
+| nrc-btp-7-18-plc | ch08-rg-1-152-and-app-7-1-d.md | Pointers to nrc-nuclear ch09 and ch10 for RG 1.152 and Appendix 7.1-D |
+| nrc-btp-7-18-plc | glossary.md (support file) | Terms this pack uses, IEEE and IEC designation only |
+| nrc-btp-7-18-plc | cheatsheet.md (support file) | Edition rule, name-only rule, and which chapter owns the question |

@@ -159,7 +159,7 @@ EMPTY_TREE_PAIR = [
         'THRESHOLDS: dict[str, int] = {"Life Cycle & Requirements": 3, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 7}',
         MAP_TWIN,
     ),
-    ("EXPECTED_NOTES_COUNT twelve", "EXPECTED_NOTES_COUNT = 12", GEN_TWIN),
+    ("EXPECTED_NOTES_COUNT twenty-two", "EXPECTED_NOTES_COUNT = 22", GEN_TWIN),
     (
         "expected_signposts nuclear-signpost",
         'expected_signposts: list[str] = ["nuclear-signpost"]',

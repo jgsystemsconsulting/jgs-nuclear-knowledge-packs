@@ -62,6 +62,56 @@
       "pack": "nrc-nuclear",
       "chapter": "cheatsheet.md",
       "note": "Decision rules routing software assurance questions to the right nrc-nuclear chapter"
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch01-plc-role-in-safety-ic.md",
+      "note": "What BTP 7-18 Rev. 6 is for in digital safety I&C, as orientation from the listing-page pin"
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch02-software-vs-firmware-boundary.md",
+      "note": "Where this pack draws the software versus firmware line, without unread BTP criteria"
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch03-life-cycle-vs-btp-7-14.md",
+      "note": "How PLC life-cycle questions leave this pack for nrc-nuclear BTP 7-14 chapters"
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch04-commercial-dedication-touchpoints.md",
+      "note": "Commercial-dedication questions this pack owns, with no invented dedication procedure"
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch05-failure-modes-staff-eye.md",
+      "note": "Staff-eye failure-mode questions as a review lens, not a test procedure"
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch06-documentation-set.md",
+      "note": "Documentation-set questions as a life-cycle product list this pack does not invent"
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch07-anti-patterns.md",
+      "note": "Pack-use failures: quoting the BTP, citing unread sections, treating IEEE text as in-pack"
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "ch08-rg-1-152-and-app-7-1-d.md",
+      "note": "Pointers to nrc-nuclear ch09 and ch10 for RG 1.152 and Appendix 7.1-D"
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "glossary.md",
+      "note": "Terms this pack uses, IEEE and IEC designation only"
+    },
+    {
+      "pack": "nrc-btp-7-18-plc",
+      "chapter": "cheatsheet.md",
+      "note": "Edition rule, name-only rule, and which chapter owns the question"
     }
   ]
 }

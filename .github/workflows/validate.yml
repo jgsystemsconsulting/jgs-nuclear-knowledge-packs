@@ -1117,12 +1117,12 @@ jobs:
           # way ROUTING_MAP_PAIR pins routing literals. Runtime asserts keep
           # the pin values honest inside this self-contained gate.
           # THRESHOLDS: dict[str, int] = {"Life Cycle & Requirements": 3, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 7}  # live catalogue: name-keyed chapter minimums
-          # EXPECTED_NOTES_COUNT = 12
+          # EXPECTED_NOTES_COUNT = 22
           # expected_signposts: list[str] = ["nuclear-signpost"]
           THRESHOLDS = {"Life Cycle & Requirements": 3, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 7}
-          EXPECTED_NOTES_COUNT = 12
+          EXPECTED_NOTES_COUNT = 22
           expected_signposts = ["nuclear-signpost"]
-          if THRESHOLDS != {"Life Cycle & Requirements": 3, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 7} or EXPECTED_NOTES_COUNT != 12 or list(expected_signposts) != ["nuclear-signpost"]:
+          if THRESHOLDS != {"Life Cycle & Requirements": 3, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 7} or EXPECTED_NOTES_COUNT != 22 or list(expected_signposts) != ["nuclear-signpost"]:
               print(f"::error::[map-data] empty-tree constant pin drift "
                     f"(THRESHOLDS={THRESHOLDS!r} EXPECTED_NOTES_COUNT={EXPECTED_NOTES_COUNT!r} "
                     f"expected_signposts={expected_signposts!r})")
