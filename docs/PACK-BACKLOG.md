@@ -161,7 +161,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
-| B-01 | `nrc-10cfr-part50-licensing-basis` | 1 | content | 1 | ready | **10 CFR Part 50** selected (domestic licensing of production and power reactor facilities). Slice: definitions, 50.34 contents of applications, 50.36 tech specs, 50.54 conditions, 50.59 changes, App A GDC overview, App B pointer only. eCFR pin date. | - | What is the Part 50 licensing basis shape |
+| B-01 | `nrc-10cfr-part50-licensing-basis` | 1 | content | 1 | ready | **10 CFR Part 50** selected (domestic licensing of production and power reactor facilities). Slice: definitions, 50.34 contents of applications, 50.36 tech specs, 50.54 conditions, 50.59 changes, App A GDC overview, App B pointer only. eCFR pin date: check at build (pin-check 2026-11-08). | - | What is the Part 50 licensing basis shape |
 | B-02 | `nrc-10cfr-part52-col` | 1 | content | 1 | ready | **10 CFR Part 52** (ESP, DC, COL, ML). Pair with **RG 1.206 Rev 1** (Oct 2018) Applications for Nuclear Power Plants. | B-01 | COL / design cert application structure |
 | B-03 | `nrc-part21-defect-reporting` | 2 | content | 1 | idea | **10 CFR Part 21** + **RG 1.234 Rev 1** (Mar 2024) Evaluating Deviations and Reporting Defects… | B-01 | Part 21 evaluation and reporting |
 | B-04 | `nrc-srp-intro-review-process` | 2 | content | 1 | idea | NUREG-0800 **Introduction** and review process material only (not whole SRP). | B-01 | How staff use the SRP |
@@ -178,7 +178,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
 | C-01 | `nrc-qa-rg-1-28` | 1 | content | 1 | ready | **RG 1.28 Rev 6** (Sep 2023) Quality Assurance Program Criteria (Design and Construction). NRC discussion of NQA-1 only; **NQA-1 text signpost-only**. | B-01 | QA program criteria staff accept |
-| C-02 | `nrc-app-b-criteria` | 1 | content | 1 | ready | **10 CFR 50 Appendix B** eighteen criteria (eCFR pin). Keep short; cross-link C-01. | C-01 | App B criterion lookup |
+| C-02 | `nrc-app-b-criteria` | 1 | content | 1 | ready | **10 CFR 50 Appendix B** eighteen criteria (eCFR pin). eCFR pin date: check at build (pin-check 2026-11-08). Keep short; cross-link C-01. | C-01 | App B criterion lookup |
 | C-03 | `nrc-qa-signpost-nqa1` | 1 | signpost | excluded | ready | ASME NQA-1 editions commonly endorsed by RG 1.28 path: designation + edition + owner only. | C-01 | Where to buy NQA-1 |
 
 ---
