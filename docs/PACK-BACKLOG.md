@@ -145,7 +145,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 | id | slug | wave | kind | tier | status | primary sources (pin at build) | depends | user job |
 |----|------|------|------|------|--------|--------------------------------|---------|----------|
 | A-01 | `nrc-btp-7-18-plc` | 1 | content | 1 | live | NUREG-0800 **BTP 7-18 Rev. 6**, August 2016, ML16019A327. Listing-page pin 2026-11-07. PDF body not captured. | live-01 | Staff/applicant questions on PLCs in digital safety I&C |
-| A-02 | `nrc-btp-7-19-d3` | 1 | content | 1 | ready | NUREG-0800 **BTP 7-19** current staff revision (listing + May 2024 Rev 9 path **VERIFY** ML24005A077 before pin). Defense-in-depth and diversity / digital CCF. | live-01, A-01 | D3, CCF, coping analysis for digital upgrades |
+| A-02 | `nrc-btp-7-19-d3` | 1 | content | 1 | ready | NUREG-0800 **BTP 7-19 Rev. 9**, May 2024, ML24005A077. Listing-page + FR pin 2026-11-08. Defense-in-depth and diversity / digital CCF. X15: out of pack body (P19 pointer) pending human fork. | live-01, A-01 | D3, CCF, coping analysis for digital upgrades |
 | A-03 | `nrc-srp-ch7-ic-overview` | 2 | content | 1 | idea | NUREG-0800 **Chapter 7** intro + selected sections **excluding** 7-14/7-18/7-19/7.1-D already covered. Slice: 7.0, 7.1, App 7.0-A / 7.1-A only unless a later row takes more. | live-01 | What SRP Ch7 expects at system level |
 | A-04 | `nrc-digital-ic-routing` | 1 | orchestrator-extend | n/a | ready | No new sources. Add Topics/Deliverables rows for A-01..A-03 and thin-pack step-down from `nrc-nuclear`. | A-01..A-03 | `/nuclear` finds digital packs |
 
@@ -187,8 +187,8 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
-| D-01 | `nrc-risk-informed-rg-1-174` | 1 | content | 1 | ready | **RG 1.174** current Rev (**VERIFY**; history shows DG-1285 Proposed Rev 3). Approach for using PRA in risk-informed decisions on plant-specific licensing-basis changes. | B-01 | ΔCDF / ΔLERF style risk-informed change |
-| D-02 | `nrc-pra-adequacy-rg-1-200` | 1 | content | 1 | ready | **RG 1.200** current Rev (**VERIFY** pin from Div1 1.181-1.200 listing). PRA technical adequacy. | D-01 | Is the PRA good enough for this application |
+| D-01 | `nrc-risk-informed-rg-1-174` | 1 | content | 1 | ready | **RG 1.174 Rev. 3**, 2018, ML17317A256. Listing-page pin 2026-11-08. Approach for using PRA in risk-informed decisions on plant-specific licensing-basis changes. | B-01 | ΔCDF / ΔLERF style risk-informed change |
+| D-02 | `nrc-pra-adequacy-rg-1-200` | 1 | content | 1 | ready | **RG 1.200 Rev. 3**, Dec 2020, ML20238B871. Listing-page pin 2026-11-08. PRA technical adequacy. | D-01 | Is the PRA good enough for this application |
 | D-03 | `nrc-pra-nureg-1855` | 2 | content | 1 | idea | **NUREG-1855** (guidance on treatment of uncertainty in risk-informed decisionmaking) - **VERIFY** current Rev/ML. | D-01 | Uncertainty treatment |
 | D-04 | `nrc-srp-ch19-pra` | 2 | content | 1 | idea | NUREG-0800 **Chapter 19** PRA and severe accident slices only. | D-01 | Staff review of PRA in applications |
 
@@ -220,7 +220,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
-| G-01 | `nrc-cyber-rg-5-71` | 1 | content | 1 | ready | **RG 5.71** Cyber security programs for nuclear facilities - pin current Rev/ML from Div 5 listing (**VERIFY**). Pair **10 CFR 73.54**. | live-01 (SDOE contrast) | Cyber program vs RG 1.152 SDOE |
+| G-01 | `nrc-cyber-rg-5-71` | 1 | content | 1 | ready | **RG 5.71 Rev. 1**, Feb 2023, ML22258A204. Listing-page pin 2026-11-08. Pair **10 CFR 73.54**. | live-01 (SDOE contrast) | Cyber program vs RG 1.152 SDOE |
 | G-02 | `nrc-part73-physical-security-overview` | 2 | content | 1 | idea | **10 CFR Part 73** selected civil power-reactor requirements (high-level map, not safeguards details that are sensitive). Stay on public eCFR text only. | G-01 | Physical security regulatory shape |
 | G-03 | `nrc-security-rg-family` | 3 | content | 1 | idea | Additional Div 5 RGs as needed (**VERIFY** set; exclude anything non-public). | G-02 | Specialist security RG lookup |
 
@@ -421,6 +421,7 @@ Before `packs/<slug>/` exists:
 | RG 1.234 | **Rev 1, Mar 2024**, Part 21 deviations/defects |
 | SRP Ch7 | BTP 7-14 r6 08/2016; BTP 7-18 r6 08/2016; BTP 7-19 present (pin latest Rev/ML at build); App 7.1-D r1 08/2016 |
 | NUREG-0700 | **Revision 4** listed on staff NUREG page |
+| Wave-1 pin gate (P9) | BTP 7-19 R9 ML24005A077; RG 1.174 R3 ML17317A256; RG 1.200 R3 ML20238B871; RG 5.71 R1 ML22258A204 — all VERIFY cleared 2026-11-08 |
 | Div 5 cyber RGs | Listing reachable; **5.71 Rev/ML VERIFY** on range page at build |
 | Part 53 | Do not package until final eCFR text exists |
 
