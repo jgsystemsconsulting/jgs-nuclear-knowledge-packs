@@ -131,6 +131,7 @@ tier-1 US federal publisher works cleared for sector use (FDA, NHTSA, NRC, FAA o
 |---|---|
 | **NRC software assurance set S1-S9** (RG 1.168 Rev 2 (ML13073A210); RG 1.169 Rev 1 (ML12355A642); RG 1.170 Rev 1 (ML13003A216); RG 1.171 Rev 1 (ML13004A375); RG 1.172 Rev 1 (ML13007A173); RG 1.173 Rev 1 (ML13009A190); NUREG-0800 BTP 7-14 Rev 6 (ML16019A308); RG 1.152 Rev 4 July 2023 (ML23054A463); NUREG-0800 Appendix 7.1-D Rev 1 August 2016 (ML16019A114)) | US Government works, 17 U.S.C. § 105. Cleared Tier 1 for the nrc-nuclear pack (nuclear sector build 2026-09-26; P18 slice; binding spec docs/superpowers/specs/2026-09-27-nuclear-rg152-app71d-slice.md). SOURCE-VETTING carries no agency-host URLs; ML accession ids and document titles only. |
 | **NUREG-0800 BTP 7-18 Rev. 6 (ML16019A327)** | US Government work, 17 U.S.C. 105. Cleared Tier 1 for pack `nrc-btp-7-18-plc`. Listing-page pin date 2026-11-07. PDF body was not captured. |
+| **10 CFR Part 50, Domestic Licensing of Production and Utilization Facilities, selected slices (eCFR; title 10 current as of 2026-11-05)** | US Government work, 17 U.S.C. 105. Cleared Tier 1 for pack `nrc-10cfr-part50-licensing-basis`. eCFR pin-check 2026-11-08. SOURCE-VETTING carries no agency-host URLs. |
 
 Sector builds start from this explicit allowlist; anything not listed still goes through
 the tiers above.

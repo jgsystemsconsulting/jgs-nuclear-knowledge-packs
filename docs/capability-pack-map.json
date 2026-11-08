@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "map_version": "0.1.0",
-  "generated_on": "2026-11-07",
+  "generated_on": "2026-11-08",
   "clusters": [
     {
       "name": "Life Cycle & Requirements",
@@ -35,6 +35,16 @@
           "pack": "nrc-btp-7-18-plc",
           "chapter": "ch06-documentation-set.md",
           "note": "Documentation-set questions as a life-cycle product list this pack does not invent"
+        },
+        {
+          "pack": "nrc-10cfr-part50-licensing-basis",
+          "chapter": "ch02-50-34-contents-of-applications.md",
+          "note": "50.34 application contents: the preliminary and final safety analysis report categories"
+        },
+        {
+          "pack": "nrc-10cfr-part50-licensing-basis",
+          "chapter": "ch03-50-36-technical-specifications.md",
+          "note": "50.36 technical specification categories and the four limiting-condition criteria"
         }
       ]
     },
@@ -125,6 +135,41 @@
           "pack": "nrc-btp-7-18-plc",
           "chapter": "cheatsheet.md (support file)",
           "note": "Edition rule, name-only rule, and which chapter owns the question"
+        },
+        {
+          "pack": "nrc-10cfr-part50-licensing-basis",
+          "chapter": "ch01-part50-overview-and-definitions.md",
+          "note": "Part 50 structure, license classes, and the 50.2 definitions a licensing question reaches for first"
+        },
+        {
+          "pack": "nrc-10cfr-part50-licensing-basis",
+          "chapter": "ch04-50-54-conditions-of-licenses.md",
+          "note": "50.54 standing license conditions: quality program, operators, emergency plans, security, insurance"
+        },
+        {
+          "pack": "nrc-10cfr-part50-licensing-basis",
+          "chapter": "ch05-50-59-changes-tests-experiments.md",
+          "note": "50.59 no-amendment change lane: definitions, two-condition gate, and eight screening criteria"
+        },
+        {
+          "pack": "nrc-10cfr-part50-licensing-basis",
+          "chapter": "ch06-appendix-a-gdc-overview.md",
+          "note": "Appendix A General Design Criteria as an index: six groups, criteria numbers and titles"
+        },
+        {
+          "pack": "nrc-10cfr-part50-licensing-basis",
+          "chapter": "ch07-appendix-b-pointer.md",
+          "note": "Appendix B pointer: scope sentence and the 50.34 and 50.54 hooks, criteria bodies left to the QA pack"
+        },
+        {
+          "pack": "nrc-10cfr-part50-licensing-basis",
+          "chapter": "glossary.md (support file)",
+          "note": "Licensing-basis terms this pack uses, keyed to the eCFR slices"
+        },
+        {
+          "pack": "nrc-10cfr-part50-licensing-basis",
+          "chapter": "cheatsheet.md (support file)",
+          "note": "Which chapter owns the question, the pin rule, and the licensing-basis limits"
         }
       ]
     }

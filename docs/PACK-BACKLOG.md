@@ -108,6 +108,7 @@ See also root `README.md` § Out of scope and `/nuclear` Scope & Limits.
 | live-02 | `nuclear-signpost` | signpost | IEEE/IEC/IAEA name-only rows X1-X13 family | live |
 | live-03 | `nuclear` | orchestrator | routes to live packs | live |
 | live-04 | `nrc-btp-7-18-plc` | content | BTP 7-18 Rev. 6, August 2016 (ML16019A327); listing-page pin 2026-11-07 | live |
+| live-05 | `nrc-10cfr-part50-licensing-basis` | content | 10 CFR Part 50 selected slices: 50.2 key definitions, 50.34, 50.36, 50.54, 50.59, App A index, App B pointer; eCFR pin-check 2026-11-08 | live |
 
 ---
 
@@ -161,7 +162,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
-| B-01 | `nrc-10cfr-part50-licensing-basis` | 1 | content | 1 | ready | **10 CFR Part 50** selected (domestic licensing of production and power reactor facilities). Slice: definitions, 50.34 contents of applications, 50.36 tech specs, 50.54 conditions, 50.59 changes, App A GDC overview, App B pointer only. eCFR pin date: check at build (pin-check 2026-11-08). | - | What is the Part 50 licensing basis shape |
+| B-01 | `nrc-10cfr-part50-licensing-basis` | 1 | content | 1 | live | **10 CFR Part 50** selected (domestic licensing of production and power reactor facilities). Slice: definitions, 50.34 contents of applications, 50.36 tech specs, 50.54 conditions, 50.59 changes, App A GDC overview, App B pointer only. eCFR pin date: check at build (pin-check 2026-11-08). | - | What is the Part 50 licensing basis shape |
 | B-02 | `nrc-10cfr-part52-col` | 1 | content | 1 | ready | **10 CFR Part 52** (ESP, DC, COL, ML). Pair with **RG 1.206 Rev 1** (Oct 2018) Applications for Nuclear Power Plants. | B-01 | COL / design cert application structure |
 | B-03 | `nrc-part21-defect-reporting` | 2 | content | 1 | idea | **10 CFR Part 21** + **RG 1.234 Rev 1** (Mar 2024) Evaluating Deviations and Reporting Defects… | B-01 | Part 21 evaluation and reporting |
 | B-04 | `nrc-srp-intro-review-process` | 2 | content | 1 | idea | NUREG-0800 **Introduction** and review process material only (not whole SRP). | B-01 | How staff use the SRP |
@@ -433,7 +434,7 @@ Offline domain knowledge filled chapter sketches and theme cuts. ML accessions f
 
 | bucket | count |
 |--------|-------|
-| Live packs/skills | 4 |
+| Live packs/skills | 5 |
 | Content candidates | ~45 |
 | Signpost candidates | ~6 |
 | Orchestrator-extend | ~4 |

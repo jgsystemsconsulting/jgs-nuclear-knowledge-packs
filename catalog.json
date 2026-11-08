@@ -4,7 +4,7 @@
   "sector_slug": "nuclear",
   "scope": "Nuclear",
   "version": "0.3.0",
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "packs": [
     {
       "slug": "nrc-nuclear",
@@ -26,6 +26,17 @@
       "license_tier": 1,
       "commercial_use": true,
       "chapters": 8,
+      "status": "live"
+    },
+    {
+      "slug": "nrc-10cfr-part50-licensing-basis",
+      "title": "10 CFR Part 50 Domestic Licensing of Production and Utilization Facilities (Selected Slices; eCFR)",
+      "publisher": "U.S. Government (eCFR); reconstructed by JG Systems Consulting Ltd",
+      "source_version": "10 CFR Part 50 selected slices; eCFR pin-check 2026-11-08",
+      "license": "Public Domain (US Government work, 17 U.S.C. 105)",
+      "license_tier": 1,
+      "commercial_use": true,
+      "chapters": 7,
       "status": "live"
     }
   ],

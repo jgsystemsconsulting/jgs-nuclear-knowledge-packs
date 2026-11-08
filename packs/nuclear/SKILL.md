@@ -89,11 +89,18 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | PLC failure modes | PLC failure mode, programmable logic failure, PLC common cause | `nrc-btp-7-18-plc` |
 | PLC documentation set | PLC documentation, PLC software documentation, BTP 7-18 documentation | `nrc-btp-7-18-plc` |
 | RG 1.152 and Appendix 7.1-D from a PLC question | PLC RG 1.152, PLC 7.1-D, PLC programmable digital device | `nrc-btp-7-18-plc`, `nrc-nuclear` |
+| Part 50 licensing basis | Part 50, domestic licensing, production and utilization facilities | `nrc-10cfr-part50-licensing-basis` |
+| Contents of applications | 50.34, contents of applications, FSAR, safety analysis report | `nrc-10cfr-part50-licensing-basis` |
+| Technical specifications | 50.36, technical specifications, tech specs, limiting conditions | `nrc-10cfr-part50-licensing-basis` |
+| Conditions of licenses | 50.54, conditions of licenses, license conditions | `nrc-10cfr-part50-licensing-basis` |
+| Changes, tests, experiments | 50.59, 50.59 screening, changes tests experiments | `nrc-10cfr-part50-licensing-basis` |
+| General Design Criteria | GDC, general design criteria, Appendix A | `nrc-10cfr-part50-licensing-basis`, `nrc-nuclear` |
+| Licensing basis overview | licensing basis, Part 50 overview, licensing root | `nrc-10cfr-part50-licensing-basis` |
 
 ### Agency contexts
 | Agency | Keywords | Packs |
 |---|---|---|
-| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-btp-7-18-plc` |
+| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc` |
 
 ### Deliverables
 | Deliverable | Keywords | Draft | Review | Verify |
@@ -103,6 +110,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | SRS review checklist | SRS review checklist, requirements specification review, SRS checklist | `nrc-nuclear` | `nrc-nuclear` | `nrc-nuclear` |
 | BTP 7-14 review readiness matrix | review readiness matrix, BTP 7-14 readiness, software review readiness | `nrc-nuclear` | `nrc-nuclear` | `nrc-nuclear` |
 | PLC question list | PLC review questions, BTP 7-18 question list, PLC review outline | `nrc-btp-7-18-plc` | `nrc-btp-7-18-plc` | `nrc-btp-7-18-plc` |
+| Part 50 licensing basis question list | Part 50 question list, licensing basis review questions, licensing basis outline | `nrc-10cfr-part50-licensing-basis` | `nrc-10cfr-part50-licensing-basis` | `nrc-10cfr-part50-licensing-basis` |
 
 ### Licences
 | Pack | Licence |
@@ -137,7 +145,8 @@ noted and skipped; if none remain, fall back to route-only.
 - Deliverable stage chains come only from Deliverables rows; empty cells skip that stage.
 - `/nuclear` never overwrites an existing file without a yes at a gate.
 - **Sector charter.** Catalogue covers civilian nuclear power plant digital I&C
-  software assurance under live packs (today: `nrc-nuclear`, `nrc-btp-7-18-plc`) plus name-only
+  software assurance and Part 50 licensing-basis orientation under live packs
+  (today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`) plus name-only
   standards signposts. It is not a general nuclear engineering library.
 - **Never route or invent content for:** nuclear weapons or weapons-design
   physics; classified, export-controlled, or safeguards-sensitive material

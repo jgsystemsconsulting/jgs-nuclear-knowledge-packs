@@ -287,7 +287,7 @@ def main() -> int:
         p.name for p in (REPO_ROOT / "packs").iterdir()
         if p.is_dir() and not _is_signpost(p)
     )
-    assert live_slugs == ["nrc-btp-7-18-plc", "nrc-nuclear", "nuclear"], live_slugs
+    assert live_slugs == ["nrc-10cfr-part50-licensing-basis", "nrc-btp-7-18-plc", "nrc-nuclear", "nuclear"], live_slugs
 
     # (21) live signpost pack passes the structure checks check 5 now runs on
     # it (PACK.yaml mandatory fields, tier validity, slug match, frontmatter

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_version": "0.1.0",
-  "generated_on": "2026-11-07",
+  "generated_on": "2026-11-08",
   "rules_of_construction": [
     "Every chapter in every pack under packs/<slug>/chapters/ is assigned to exactly one capability cluster (best fit).",
     "Cross-cutting chapters carry a remark noting the strong secondary fit.",
@@ -152,6 +152,60 @@
     },
     {
       "pack": "nrc-btp-7-18-plc",
+      "chapter": "cheatsheet.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-10cfr-part50-licensing-basis",
+      "chapter": "ch01-part50-overview-and-definitions.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part50-licensing-basis",
+      "chapter": "ch02-50-34-contents-of-applications.md",
+      "cluster": "Life Cycle & Requirements",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part50-licensing-basis",
+      "chapter": "ch03-50-36-technical-specifications.md",
+      "cluster": "Life Cycle & Requirements",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part50-licensing-basis",
+      "chapter": "ch04-50-54-conditions-of-licenses.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part50-licensing-basis",
+      "chapter": "ch05-50-59-changes-tests-experiments.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part50-licensing-basis",
+      "chapter": "ch06-appendix-a-gdc-overview.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part50-licensing-basis",
+      "chapter": "ch07-appendix-b-pointer.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part50-licensing-basis",
+      "chapter": "glossary.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-10cfr-part50-licensing-basis",
       "chapter": "cheatsheet.md",
       "cluster": "Regulatory Framework & Staff Review",
       "is_support": true

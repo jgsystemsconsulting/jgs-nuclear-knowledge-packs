@@ -13,10 +13,10 @@ Rules of construction:
 
 | Cluster | Entries |
 |---|---|
-| 1. Life Cycle & Requirements | 6 |
+| 1. Life Cycle & Requirements | 8 |
 | 2. Verification & Testing | 2 |
-| 3. Regulatory Framework & Staff Review | 14 |
-| **Total** | **22** |
+| 3. Regulatory Framework & Staff Review | 21 |
+| **Total** | **31** |
 
 ## 1. Life Cycle & Requirements
 
@@ -28,6 +28,8 @@ Rules of construction:
 | nrc-btp-7-18-plc | ch02-software-vs-firmware-boundary.md | Where this pack draws the software versus firmware line, without unread BTP criteria |
 | nrc-btp-7-18-plc | ch03-life-cycle-vs-btp-7-14.md | How PLC life-cycle questions leave this pack for nrc-nuclear BTP 7-14 chapters |
 | nrc-btp-7-18-plc | ch06-documentation-set.md | Documentation-set questions as a life-cycle product list this pack does not invent |
+| nrc-10cfr-part50-licensing-basis | ch02-50-34-contents-of-applications.md | 50.34 application contents: the preliminary and final safety analysis report categories |
+| nrc-10cfr-part50-licensing-basis | ch03-50-36-technical-specifications.md | 50.36 technical specification categories and the four limiting-condition criteria |
 
 ## 2. Verification & Testing
 
@@ -54,3 +56,10 @@ Rules of construction:
 | nrc-btp-7-18-plc | ch08-rg-1-152-and-app-7-1-d.md | Pointers to nrc-nuclear ch09 and ch10 for RG 1.152 and Appendix 7.1-D |
 | nrc-btp-7-18-plc | glossary.md (support file) | Terms this pack uses, IEEE and IEC designation only |
 | nrc-btp-7-18-plc | cheatsheet.md (support file) | Edition rule, name-only rule, and which chapter owns the question |
+| nrc-10cfr-part50-licensing-basis | ch01-part50-overview-and-definitions.md | Part 50 structure, license classes, and the 50.2 definitions a licensing question reaches for first |
+| nrc-10cfr-part50-licensing-basis | ch04-50-54-conditions-of-licenses.md | 50.54 standing license conditions: quality program, operators, emergency plans, security, insurance |
+| nrc-10cfr-part50-licensing-basis | ch05-50-59-changes-tests-experiments.md | 50.59 no-amendment change lane: definitions, two-condition gate, and eight screening criteria |
+| nrc-10cfr-part50-licensing-basis | ch06-appendix-a-gdc-overview.md | Appendix A General Design Criteria as an index: six groups, criteria numbers and titles |
+| nrc-10cfr-part50-licensing-basis | ch07-appendix-b-pointer.md | Appendix B pointer: scope sentence and the 50.34 and 50.54 hooks, criteria bodies left to the QA pack |
+| nrc-10cfr-part50-licensing-basis | glossary.md (support file) | Licensing-basis terms this pack uses, keyed to the eCFR slices |
+| nrc-10cfr-part50-licensing-basis | cheatsheet.md (support file) | Which chapter owns the question, the pin rule, and the licensing-basis limits |

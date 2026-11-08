@@ -1,0 +1,29 @@
+nrc-10cfr-part50-licensing-basis pack: content licence
+=======================================================
+
+This pack is derived from one source:
+
+    10 CFR Part 50, Domestic Licensing of Production and Utilization
+    Facilities (selected slices)
+    Publisher: U.S. Government; text from the Electronic Code of Federal
+    Regulations (eCFR), title 10 current as of 2026-11-05; pin-check 2026-11-08
+
+Source licence: Public Domain (US Government work, 17 U.S.C. 105) (tier 1;
+see ../../docs/SOURCE-VETTING.md). No source-material download link is published.
+
+The source is a work of the United States Government and is not subject to
+copyright protection in the United States (17 U.S.C. 105). It is in the public
+domain. Anyone may reproduce, transform, and redistribute it for any purpose,
+including commercially, without permission and without any attribution or
+share-alike obligation.
+
+Attribution to the NRC is courtesy (see the repository NOTICE), not a legal
+obligation. The NRC does not endorse this pack or its authors.
+
+Reconstruction: pack content is synthesized orientation notes from the eCFR
+public-domain text. Verbatim excerpts are capped at two sentences. This pack
+contains zero quotations from NRC staff positions: its slices are regulation
+text, not staff guidance.
+
+NOTE: this file governs the CONTENT of this pack. Repository tooling stays
+MIT and does not govern pack content (see ../../LICENSE).
