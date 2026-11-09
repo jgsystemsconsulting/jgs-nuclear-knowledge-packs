@@ -105,7 +105,7 @@ See also root `README.md` § Out of scope and `/nuclear` Scope & Limits.
 | id | slug | kind | sources (pinned) | status |
 |----|------|------|------------------|--------|
 | live-01 | `nrc-nuclear` | content | RG 1.168 r2; 1.169-1.173 r1 (Jul 2013); BTP 7-14 r6 (Aug 2016); RG 1.152 r4 (Jul 2023); App 7.1-D r1 (Aug 2016) | live |
-| live-02 | `nuclear-signpost` | signpost | IEEE/IEC/IAEA name-only rows X1-X13 family | live |
+| live-02 | `nuclear-signpost` | signpost | IEEE/IEC/IAEA/ASME/NFPA/ANS name-only rows | live |
 | live-03 | `nuclear` | orchestrator | routes to live packs | live |
 | live-04 | `nrc-btp-7-18-plc` | content | BTP 7-18 Rev. 6, August 2016 (ML16019A327); listing-page pin 2026-11-07 | live |
 | live-05 | `nrc-10cfr-part50-licensing-basis` | content | 10 CFR Part 50 selected slices: 50.2 key definitions, 50.34, 50.36, 50.54, 50.59, App A index, App B pointer; eCFR pin-check 2026-11-08 | live |
@@ -184,7 +184,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 |----|------|------|------|------|--------|-----------------|---------|----------|
 | C-01 | `nrc-qa-rg-1-28` | 1 | content | 1 | live | **RG 1.28 Rev 6** (Sep 2023) Quality Assurance Program Criteria (Design and Construction). NRC discussion of NQA-1 only; **NQA-1 text signpost-only**. | B-01 | QA program criteria staff accept |
 | C-02 | `nrc-app-b-criteria` | 1 | content | 1 | ready | **10 CFR 50 Appendix B** eighteen criteria (eCFR pin). eCFR pin date: check at build (pin-check 2026-11-08). Keep short; cross-link C-01. | C-01 | App B criterion lookup |
-| C-03 | `nrc-qa-signpost-nqa1` | 1 | signpost | excluded | ready | ASME NQA-1 editions commonly endorsed by RG 1.28 path: designation + edition + owner only. | C-01 | Where to buy NQA-1 |
+| C-03 | `nrc-qa-signpost-nqa1` | 1 | signpost | excluded | excluded (fold closed) | ASME NQA-1 editions commonly endorsed by RG 1.28 path: designation + edition + owner only. Folded into nuclear-signpost R-01 row expansion; no separate slug. | C-01 | Where to buy NQA-1 |
 
 ---
 
@@ -338,7 +338,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
-| R-01 | `nuclear-signpost` expand | 1 | signpost | excluded | ready | Add rows: IEEE 7-4.3.2-2016; ASME NQA-1 editions cited by RG 1.28 r6; NFPA 805; ANS common cites. Still name-only. | live-02 | Broader designation lookup |
+| R-01 | `nuclear-signpost` expand | 1 | signpost | excluded | live | Add rows: IEEE 7-4.3.2-2016; ASME NQA-1 editions cited by RG 1.28 r6; NFPA 805; ANS common cites. Still name-only. | live-02 | Broader designation lookup |
 | R-02 | `nuclear-signpost-owners-map` | 2 | signpost | excluded | idea | Owner → catalogue URL pattern only (no standard text). | R-01 | Where to purchase/read |
 
 ---
