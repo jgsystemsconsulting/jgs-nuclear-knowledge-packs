@@ -13,8 +13,8 @@ Engineering analysis is the guide's second stage: once a proposed change is defi
 
 ## Key Concepts
 
-- ΔCDF: change in core damage frequency, the core-damage-side change-in-risk metric the guide works with.
-- ΔLERF: change in large early release frequency, the release-side change-in-risk metric the guide works with.
+- ΔCDF: the core-damage-side change-in-risk metric the guide works with.
+- ΔLERF: the release-side change-in-risk metric the guide works with.
 - The guide's numeric guideline tables: they live in the guide. They are not reproduced here, never reconstructed from memory, and never restated as thresholds in this pack.
 - This pack states no numeric acceptance threshold, guideline value, or region boundary: any number a question seems to need is a number to look up in the guide itself.
 
@@ -29,7 +29,7 @@ Stating a guideline value or region boundary from memory of the guide is the cha
 ## Key Takeaways
 
 - Engineering analysis is the stage between defining the proposed change and integrated decisionmaking.
-- ΔCDF (change in core damage frequency) and ΔLERF (change in large early release frequency) are the change-in-risk metrics the guide works with.
+- ΔCDF and ΔLERF are the change-in-risk metrics the guide works with.
 - The guide's numeric guideline tables live in the guide and are not reproduced here; no numeric threshold, guideline value, or region boundary appears in this pack.
 
 ## Connects To
