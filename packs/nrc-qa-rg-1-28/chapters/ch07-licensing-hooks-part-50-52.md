@@ -9,7 +9,7 @@ The guide's criteria reach into licensing through 10 CFR Parts 50 and 52. Sectio
 ## Frameworks Introduced
 
 - Description in the application. The quality assurance program description is application content: 50.34 places it in both the preliminary and final safety analysis report stages, and Part 52 applications carry the equivalent descriptions.
-- Standing condition. Implementing the described program is not a one-time submission event: 50.54(a) makes it a standing license condition for the life of the license.
+- Standing condition. Implementing the described program is not a one-time submission event: 50.54(a) makes it a standing license condition.
 
 ## Key Concepts
 

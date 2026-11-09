@@ -15,8 +15,9 @@ Rules of construction:
 |---|---|
 | 1. Life Cycle & Requirements | 8 |
 | 2. Verification & Testing | 2 |
-| 3. Regulatory Framework & Staff Review | 21 |
-| **Total** | **31** |
+| 3. Regulatory Framework & Staff Review | 22 |
+| 4. Quality Assurance Criteria | 8 |
+| **Total** | **40** |
 
 ## 1. Life Cycle & Requirements
 
@@ -63,3 +64,17 @@ Rules of construction:
 | nrc-10cfr-part50-licensing-basis | ch07-appendix-b-pointer.md | Appendix B pointer: scope sentence and the 50.34 and 50.54 hooks, criteria bodies left to the QA pack |
 | nrc-10cfr-part50-licensing-basis | glossary.md (support file) | Licensing-basis terms this pack uses, keyed to the eCFR slices |
 | nrc-10cfr-part50-licensing-basis | cheatsheet.md (support file) | Which chapter owns the question, the pin rule, and the licensing-basis limits |
+| nrc-qa-rg-1-28 | ch07-licensing-hooks-part-50-52.md | QA program description in Part 50 and Part 52 license applications and the 50.54(a) license condition |
+
+## 4. Quality Assurance Criteria
+
+| Pack | Chapter | Why it fits / one-line value |
+|---|---|---|
+| nrc-qa-rg-1-28 | ch01-rg-1-28-role-and-app-b.md | RG 1.28 Rev 6 role: what the guide endorses for design and construction QA programs and how it relates to Appendix B |
+| nrc-qa-rg-1-28 | ch02-app-b-to-nqa-1-bridge.md | Appendix B eighteen criteria as a names-only orientation list and how NQA-1 Part I requirements map onto them |
+| nrc-qa-rg-1-28 | ch03-nqa-1-edition-pathway.md | The three NQA-1 editions Rev 6 endorses, named with owner ASME only and no standard text |
+| nrc-qa-rg-1-28 | ch04-part-i-vs-part-ii.md | Part I and Part II requirements shape as RG 1.28 Rev 6 endorses them, described from NRC discussion only |
+| nrc-qa-rg-1-28 | ch05-clarifications-and-positions.md | How RG 1.28 Rev 6 clarifications and regulatory positions condition the NQA-1 endorsement |
+| nrc-qa-rg-1-28 | ch06-commercial-grade-nei-14-05a.md | NEI 14-05A Rev 1 name hook: accreditation in lieu of commercial grade surveys for laboratory calibration and test services |
+| nrc-qa-rg-1-28 | glossary.md (support file) | QA program criteria terms this pack uses, keyed to the RG 1.28 Rev 6 orientation chapters |
+| nrc-qa-rg-1-28 | cheatsheet.md (support file) | Which chapter owns the QA criteria question, the pin rule, and the not-advice limits |
