@@ -1,0 +1,24 @@
+slug: nrc-risk-informed-rg-1-174
+title: "NRC RG 1.174 Rev 3 Risk-Informed Decisions on Plant-Specific Changes to the Licensing Basis"
+publisher: "U.S. Nuclear Regulatory Commission (RG 1.174); reconstructed by JG Systems Consulting Ltd"
+source_version: "RG 1.174 Rev 3, 2018, ML17317A256"
+license: "Public Domain (US Government work, 17 U.S.C. 105)"
+license_tier: 1
+commercial_use: true
+share_alike: false
+attribution_required: false
+build:
+  method: "reconstructed reference notes from NRC RG 1.174 Rev 3 orientation facts (P9 listing-page pin) and carried B-01 50.59 facts; RG 1.200 and NUREG-1855 named only"
+  chapters: 7
+  built_on: "2026-11-09"
+notes: >
+  US Government work, public domain under 17 U.S.C. 105 for the RG-derived
+  notes. Commercial use is allowed. No attribution obligation and no
+  share-alike obligation. The NRC does not endorse this pack. Notes are
+  synthesized orientation notes from RG 1.174 Rev. 3 pinned facts
+  (ML17317A256, Rev 3, 2018, recorded 2026-11-08) and carried B-01 50.59
+  facts, not copied wholesale. RG text is US Government work and verbatim
+  excerpts are capped at two sentences by licence policy; this pack quotes
+  nothing. Guide-internal numeric guideline tables live in the guide and
+  are not reproduced here. These notes are not legal advice, are not
+  plant-specific risk advice, and carry no PRA methodology instruction.

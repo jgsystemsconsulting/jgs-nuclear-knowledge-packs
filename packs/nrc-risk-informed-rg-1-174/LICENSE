@@ -1,0 +1,32 @@
+nrc-risk-informed-rg-1-174 pack: content licence
+=================================================
+
+This pack is derived from one source:
+
+    NRC Regulatory Guide 1.174, An Approach for Using Probabilistic Risk
+    Assessment in Risk-Informed Decisions on Plant-Specific Changes to
+    the Licensing Basis, Rev. 3, 2018
+    Publisher: U.S. Nuclear Regulatory Commission. Accession ML17317A256
+
+Source licence: Public Domain (US Government work, 17 U.S.C. 105) (tier 1;
+see ../../docs/SOURCE-VETTING.md). No source-material download link is published.
+
+The source is a work of the United States Government and is not subject to
+copyright protection in the United States (17 U.S.C. 105). Anyone may
+reproduce, transform, and redistribute the guide text for any purpose,
+including commercially, without permission and without any attribution or
+share-alike obligation.
+
+Attribution to the NRC is courtesy (see the repository NOTICE), not a legal
+obligation. The NRC does not endorse this pack or its authors.
+
+Reconstruction: pack content is synthesized orientation notes from RG 1.174
+Rev. 3 pinned facts (P9 listing-page pin, 2026-11-08) and carried B-01 50.59
+facts. RG verbatim excerpts are capped at two sentences by licence policy;
+this pack contains zero quotations. RG 1.200 Rev 3 and NUREG-1855 are named
+only, with revision and owner, and their text is never reproduced here. The
+guide's numeric guideline tables live in the guide and are not reproduced
+here.
+
+NOTE: this file governs the CONTENT of this pack. Repository tooling stays
+MIT and does not govern pack content (see ../../LICENSE).
