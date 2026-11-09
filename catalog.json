@@ -71,6 +71,17 @@
       "commercial_use": true,
       "chapters": 7,
       "status": "live"
+    },
+    {
+      "slug": "nrc-accident-monitoring-rg-1-97",
+      "title": "NRC RG 1.97 Rev 5 Criteria for Accident Monitoring Instrumentation for Nuclear Power Plants",
+      "publisher": "U.S. Nuclear Regulatory Commission (RG 1.97); reconstructed by JG Systems Consulting Ltd",
+      "source_version": "RG 1.97 Rev 5, May 2019, ML18136A762",
+      "license": "Public Domain (US Government work, 17 U.S.C. 105)",
+      "license_tier": 1,
+      "commercial_use": true,
+      "chapters": 7,
+      "status": "live"
     }
   ],
   "planned": []

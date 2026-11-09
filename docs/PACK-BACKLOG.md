@@ -112,6 +112,7 @@ See also root `README.md` § Out of scope and `/nuclear` Scope & Limits.
 | live-06 | `nrc-qa-rg-1-28` | content | RG 1.28 Rev 6, September 2023 (ML23177A002); FR notice 2023-19548 pin 2026-11-08; NQA-1 named only | live |
 | live-07 | `nrc-risk-informed-rg-1-174` | content | RG 1.174 Rev. 3, 2018 (ML17317A256); listing-page pin 2026-11-08; RG 1.200 and NUREG-1855 named only | live |
 | live-08 | `nrc-cyber-rg-5-71` | content | RG 5.71 Rev. 1, February 2023 (ML22258A204); listing-page pin 2026-11-08; 10 CFR 73.54 eCFR pin-check 2026-11-09; G-02 and G-03 named only | live |
+| live-09 | `nrc-accident-monitoring-rg-1-97` | content | RG 1.97 Rev. 5, May 2019 (ML18136A762); dual-source pin 2026-11-09; IEEE Std 497-2016 and NUREG-0700 named only | live |
 
 ---
 
@@ -216,7 +217,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
 | F-01 | `nrc-hsi-nureg-0700` | 1 | content | 1 | ready | **NUREG-0700 Revision 4** Human-System Interface Design Review Guidelines (NRC staff listing 2026-11-05). ML **VERIFY**. Large: chapter-map carefully; may ship as multi-chapter pack. | - | Control-room / HSI design review criteria |
-| F-02 | `nrc-accident-monitoring-rg-1-97` | 1 | content | 1 | ready | **RG 1.97** Criteria for Accident Monitoring Instrumentation (Rev 4 path; DG-1335 proposed Rev 5 - pin current). | F-01 | Post-accident monitoring instrumentation |
+| F-02 | `nrc-accident-monitoring-rg-1-97` | 1 | content | 1 | live | **RG 1.97** Criteria for Accident Monitoring Instrumentation, Rev. 5, May 2019, ML18136A762 (DG-1335 issued as final Rev. 5; provenance correction recorded 2026-11-09). | none | Post-accident monitoring instrumentation |
 
 ---
 
@@ -376,7 +377,7 @@ Execute top-down. Do not skip licensing/QA if digital extension is the only itch
 6. **B-01** Part 50 licensing-basis map 
 7. **B-02** Part 52 + RG 1.206 
 8. **D-01** + **D-02** risk-informed pair 
-9. **F-02** RG 1.97 (smaller than 0700) then **F-01** NUREG-0700 
+9. **F-02** RG 1.97 (built before F-01; F-01 NUREG-0700 not built) 
 10. **G-01** cyber RG 5.71 + 73.54 
 11. **P-01** + **P-02** non-LWR pair (if advanced-reactor demand is live)
 
@@ -415,7 +416,7 @@ Before `packs/<slug>/` exists:
 | RG 1.28 | **Rev 6, Sep 2023**, Quality Assurance Program Criteria (Design and Construction) |
 | RG 1.189 | **Rev 5, Oct 2023**, Fire Protection for Nuclear Power Plants |
 | RG 1.152 | **Rev 4, Jul 2023** (already live) |
-| RG 1.97 | Accident monitoring; Rev 4 path; DG-1335 proposed Rev 5 |
+| RG 1.97 | Accident monitoring; Rev. 5, May 2019, ML18136A762 (DG-1335 issued as final Rev. 5; provenance correction 2026-11-09) |
 | RG 1.174 | Risk-informed PRA decisions; pin current Rev/ML at build (DG-1285 history present) |
 | RG 1.203 | Rev 0 transient/accident analysis methods |
 | RG 1.206 | **Rev 1, Oct 2018**, Applications for Nuclear Power Plants |
@@ -437,7 +438,7 @@ Offline domain knowledge filled chapter sketches and theme cuts. ML accessions f
 
 | bucket | count |
 |--------|-------|
-| Live packs/skills | 8 |
+| Live packs/skills | 9 |
 | Content candidates | ~45 |
 | Signpost candidates | ~6 |
 | Orchestrator-extend | ~4 |

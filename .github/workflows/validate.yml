@@ -1116,13 +1116,13 @@ jobs:
           # tooling/test_ci_gate.py EMPTY_TREE_PAIR can catch drift the same
           # way ROUTING_MAP_PAIR pins routing literals. Runtime asserts keep
           # the pin values honest inside this self-contained gate.
-          # THRESHOLDS: dict[str, int] = {"Life Cycle & Requirements": 8, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 24, "Quality Assurance Criteria": 8, "Risk-Informed Decisionmaking": 8, "Cyber Security Programs": 8}  # live catalogue: name-keyed chapter minimums
-          # EXPECTED_NOTES_COUNT = 58
+          # THRESHOLDS: dict[str, int] = {"Life Cycle & Requirements": 8, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 25, "Quality Assurance Criteria": 8, "Risk-Informed Decisionmaking": 8, "Cyber Security Programs": 8, "Accident Monitoring": 8}  # live catalogue: name-keyed chapter minimums
+          # EXPECTED_NOTES_COUNT = 67
           # expected_signposts: list[str] = ["nuclear-signpost"]
-          THRESHOLDS = {"Life Cycle & Requirements": 8, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 24, "Quality Assurance Criteria": 8, "Risk-Informed Decisionmaking": 8, "Cyber Security Programs": 8}
-          EXPECTED_NOTES_COUNT = 58
+          THRESHOLDS = {"Life Cycle & Requirements": 8, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 25, "Quality Assurance Criteria": 8, "Risk-Informed Decisionmaking": 8, "Cyber Security Programs": 8, "Accident Monitoring": 8}
+          EXPECTED_NOTES_COUNT = 67
           expected_signposts = ["nuclear-signpost"]
-          if THRESHOLDS != {"Life Cycle & Requirements": 8, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 24, "Quality Assurance Criteria": 8, "Risk-Informed Decisionmaking": 8, "Cyber Security Programs": 8} or EXPECTED_NOTES_COUNT != 58 or list(expected_signposts) != ["nuclear-signpost"]:
+          if THRESHOLDS != {"Life Cycle & Requirements": 8, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 25, "Quality Assurance Criteria": 8, "Risk-Informed Decisionmaking": 8, "Cyber Security Programs": 8, "Accident Monitoring": 8} or EXPECTED_NOTES_COUNT != 67 or list(expected_signposts) != ["nuclear-signpost"]:
               print(f"::error::[map-data] empty-tree constant pin drift "
                     f"(THRESHOLDS={THRESHOLDS!r} EXPECTED_NOTES_COUNT={EXPECTED_NOTES_COUNT!r} "
                     f"expected_signposts={expected_signposts!r})")

@@ -24,7 +24,8 @@
     "Regulatory Framework & Staff Review",
     "Quality Assurance Criteria",
     "Risk-Informed Decisionmaking",
-    "Cyber Security Programs"
+    "Cyber Security Programs",
+    "Accident Monitoring"
   ],
   "assignments": [
     {
@@ -373,6 +374,60 @@
       "pack": "nrc-cyber-rg-5-71",
       "chapter": "cheatsheet.md",
       "cluster": "Cyber Security Programs",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-accident-monitoring-rg-1-97",
+      "chapter": "ch01-rg-1-97-role-and-scope.md",
+      "cluster": "Accident Monitoring",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-accident-monitoring-rg-1-97",
+      "chapter": "ch02-revision-history-and-the-rev-5-pin.md",
+      "cluster": "Accident Monitoring",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-accident-monitoring-rg-1-97",
+      "chapter": "ch03-variables-and-selection-criteria.md",
+      "cluster": "Accident Monitoring",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-accident-monitoring-rg-1-97",
+      "chapter": "ch04-categorization-and-design-criteria.md",
+      "cluster": "Accident Monitoring",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-accident-monitoring-rg-1-97",
+      "chapter": "ch05-ieee-497-2016-endorsement-hook.md",
+      "cluster": "Accident Monitoring",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-accident-monitoring-rg-1-97",
+      "chapter": "ch06-applicability-and-licensing-basis.md",
+      "cluster": "Accident Monitoring",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-accident-monitoring-rg-1-97",
+      "chapter": "ch07-regulatory-frame-and-staff-review.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-accident-monitoring-rg-1-97",
+      "chapter": "glossary.md",
+      "cluster": "Accident Monitoring",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-accident-monitoring-rg-1-97",
+      "chapter": "cheatsheet.md",
+      "cluster": "Accident Monitoring",
       "is_support": true
     }
   ]
