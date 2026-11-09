@@ -60,6 +60,17 @@
       "commercial_use": true,
       "chapters": 7,
       "status": "live"
+    },
+    {
+      "slug": "nrc-cyber-rg-5-71",
+      "title": "NRC RG 5.71 Rev 1 Cyber Security Programs for Nuclear Power Reactors",
+      "publisher": "U.S. Nuclear Regulatory Commission (RG 5.71); reconstructed by JG Systems Consulting Ltd",
+      "source_version": "RG 5.71 Rev 1, Feb 2023, ML22258A204",
+      "license": "Public Domain (US Government work, 17 U.S.C. 105)",
+      "license_tier": 1,
+      "commercial_use": true,
+      "chapters": 7,
+      "status": "live"
     }
   ],
   "planned": []

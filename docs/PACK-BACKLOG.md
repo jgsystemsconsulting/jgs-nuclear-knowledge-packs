@@ -111,6 +111,7 @@ See also root `README.md` § Out of scope and `/nuclear` Scope & Limits.
 | live-05 | `nrc-10cfr-part50-licensing-basis` | content | 10 CFR Part 50 selected slices: 50.2 key definitions, 50.34, 50.36, 50.54, 50.59, App A index, App B pointer; eCFR pin-check 2026-11-08 | live |
 | live-06 | `nrc-qa-rg-1-28` | content | RG 1.28 Rev 6, September 2023 (ML23177A002); FR notice 2023-19548 pin 2026-11-08; NQA-1 named only | live |
 | live-07 | `nrc-risk-informed-rg-1-174` | content | RG 1.174 Rev. 3, 2018 (ML17317A256); listing-page pin 2026-11-08; RG 1.200 and NUREG-1855 named only | live |
+| live-08 | `nrc-cyber-rg-5-71` | content | RG 5.71 Rev. 1, February 2023 (ML22258A204); listing-page pin 2026-11-08; 10 CFR 73.54 eCFR pin-check 2026-11-09; G-02 and G-03 named only | live |
 
 ---
 
@@ -223,7 +224,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
-| G-01 | `nrc-cyber-rg-5-71` | 1 | content | 1 | ready | **RG 5.71 Rev. 1**, Feb 2023, ML22258A204. Listing-page pin 2026-11-08. Pair **10 CFR 73.54**. | live-01 (SDOE contrast) | Cyber program vs RG 1.152 SDOE |
+| G-01 | `nrc-cyber-rg-5-71` | 1 | content | 1 | live | **RG 5.71 Rev. 1**, Feb 2023, ML22258A204. Listing-page pin 2026-11-08. Pair **10 CFR 73.54**. | live-01 (SDOE contrast) | Cyber program vs RG 1.152 SDOE |
 | G-02 | `nrc-part73-physical-security-overview` | 2 | content | 1 | idea | **10 CFR Part 73** selected civil power-reactor requirements (high-level map, not safeguards details that are sensitive). Stay on public eCFR text only. | G-01 | Physical security regulatory shape |
 | G-03 | `nrc-security-rg-family` | 3 | content | 1 | idea | Additional Div 5 RGs as needed (**VERIFY** set; exclude anything non-public). | G-02 | Specialist security RG lookup |
 
@@ -436,7 +437,7 @@ Offline domain knowledge filled chapter sketches and theme cuts. ML accessions f
 
 | bucket | count |
 |--------|-------|
-| Live packs/skills | 7 |
+| Live packs/skills | 8 |
 | Content candidates | ~45 |
 | Signpost candidates | ~6 |
 | Orchestrator-extend | ~4 |

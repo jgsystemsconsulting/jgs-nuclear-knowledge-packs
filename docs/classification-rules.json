@@ -23,7 +23,8 @@
     "Verification & Testing",
     "Regulatory Framework & Staff Review",
     "Quality Assurance Criteria",
-    "Risk-Informed Decisionmaking"
+    "Risk-Informed Decisionmaking",
+    "Cyber Security Programs"
   ],
   "assignments": [
     {
@@ -318,6 +319,60 @@
       "pack": "nrc-risk-informed-rg-1-174",
       "chapter": "cheatsheet.md",
       "cluster": "Risk-Informed Decisionmaking",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-cyber-rg-5-71",
+      "chapter": "ch01-rg-5-71-role-and-scope.md",
+      "cluster": "Cyber Security Programs",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-cyber-rg-5-71",
+      "chapter": "ch02-10-cfr-73-54-the-regulation.md",
+      "cluster": "Cyber Security Programs",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-cyber-rg-5-71",
+      "chapter": "ch03-cyber-security-program-shape.md",
+      "cluster": "Cyber Security Programs",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-cyber-rg-5-71",
+      "chapter": "ch04-defensive-architecture-and-defense-in-depth.md",
+      "cluster": "Cyber Security Programs",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-cyber-rg-5-71",
+      "chapter": "ch05-cyber-security-versus-sdoe-contrast.md",
+      "cluster": "Cyber Security Programs",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-cyber-rg-5-71",
+      "chapter": "ch06-program-lifecycle-and-periodic-review.md",
+      "cluster": "Cyber Security Programs",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-cyber-rg-5-71",
+      "chapter": "ch07-the-part-73-shape-and-staff-review.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-cyber-rg-5-71",
+      "chapter": "glossary.md",
+      "cluster": "Cyber Security Programs",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-cyber-rg-5-71",
+      "chapter": "cheatsheet.md",
+      "cluster": "Cyber Security Programs",
       "is_support": true
     }
   ]
