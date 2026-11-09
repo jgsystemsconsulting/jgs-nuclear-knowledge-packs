@@ -15,9 +15,10 @@ Rules of construction:
 |---|---|
 | 1. Life Cycle & Requirements | 8 |
 | 2. Verification & Testing | 2 |
-| 3. Regulatory Framework & Staff Review | 22 |
+| 3. Regulatory Framework & Staff Review | 23 |
 | 4. Quality Assurance Criteria | 8 |
-| **Total** | **40** |
+| 5. Risk-Informed Decisionmaking | 8 |
+| **Total** | **49** |
 
 ## 1. Life Cycle & Requirements
 
@@ -65,6 +66,7 @@ Rules of construction:
 | nrc-10cfr-part50-licensing-basis | glossary.md (support file) | Licensing-basis terms this pack uses, keyed to the eCFR slices |
 | nrc-10cfr-part50-licensing-basis | cheatsheet.md (support file) | Which chapter owns the question, the pin rule, and the licensing-basis limits |
 | nrc-qa-rg-1-28 | ch07-licensing-hooks-part-50-52.md | QA program description in Part 50 and Part 52 license applications and the 50.54(a) license condition |
+| nrc-risk-informed-rg-1-174 | ch07-implementation-monitoring-and-staff-review.md | Implementation and monitoring after decision and staff review framing at orientation level |
 
 ## 4. Quality Assurance Criteria
 
@@ -78,3 +80,16 @@ Rules of construction:
 | nrc-qa-rg-1-28 | ch06-commercial-grade-nei-14-05a.md | NEI 14-05A Rev 1 name hook: accreditation in lieu of commercial grade surveys for laboratory calibration and test services |
 | nrc-qa-rg-1-28 | glossary.md (support file) | QA program criteria terms this pack uses, keyed to the RG 1.28 Rev 6 orientation chapters |
 | nrc-qa-rg-1-28 | cheatsheet.md (support file) | Which chapter owns the QA criteria question, the pin rule, and the not-advice limits |
+
+## 5. Risk-Informed Decisionmaking
+
+| Pack | Chapter | Why it fits / one-line value |
+|---|---|---|
+| nrc-risk-informed-rg-1-174 | ch01-rg-1-174-role-and-scope.md | RG 1.174 Rev. 3 role and scope: using PRA in risk-informed decisions on plant-specific licensing basis changes, pinned ML17317A256 |
+| nrc-risk-informed-rg-1-174 | ch02-integrated-decisionmaking-framework.md | Integrated decisionmaking framework and the four stages, with PRA insights weighed beside defense-in-depth and safety margins |
+| nrc-risk-informed-rg-1-174 | ch03-engineering-analysis-and-risk-metrics.md | Engineering analysis orientation; ΔCDF and ΔLERF named as the guide's change-in-risk metrics only, numeric tables stay in the guide |
+| nrc-risk-informed-rg-1-174 | ch04-licensing-basis-and-50-59-connection.md | Licensing basis connection: the carried 50.59 two-limb gate, minimal-increase wording, and FSAR as updated baseline, orientation only |
+| nrc-risk-informed-rg-1-174 | ch05-defense-in-depth-and-safety-margins.md | Defense-in-depth, safety margins, and performance-based consideration as framework considerations through the change |
+| nrc-risk-informed-rg-1-174 | ch06-uncertainty-and-pra-adequacy-hooks.md | Uncertainty and PRA technical adequacy as named considerations; RG 1.200 Rev 3 and NUREG-1855 name hooks, no criteria or methods |
+| nrc-risk-informed-rg-1-174 | glossary.md (support file) | Risk-informed decisionmaking terms this pack uses, keyed to the RG 1.174 Rev. 3 orientation chapters |
+| nrc-risk-informed-rg-1-174 | cheatsheet.md (support file) | Which chapter owns the risk-informed change question, the pin rule, and the no-numeric-value limits |
