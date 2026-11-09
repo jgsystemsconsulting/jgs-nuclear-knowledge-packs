@@ -20,7 +20,7 @@ The cyber security program RG 5.71 describes is graded and uses a defense-in-dep
 
 ## Mental Models
 
-Read the program shape as three words in order: graded, layered, lifecycle. The program is graded in how it is applied, defense-in-depth in how it is built, and lifecycle in how it is run over time. Anything past those words, in any direction, belongs to the guide and the regulation.
+Read the program shape as three words in order: graded, layered, lifecycle. The program is graded; the grade scheme stays in the guide, and lifecycle in how it is run over time. Anything past those words, in any direction, belongs to the guide and the regulation.
 
 ## Anti-patterns
 

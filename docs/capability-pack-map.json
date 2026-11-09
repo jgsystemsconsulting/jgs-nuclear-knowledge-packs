@@ -180,6 +180,11 @@
           "pack": "nrc-risk-informed-rg-1-174",
           "chapter": "ch07-implementation-monitoring-and-staff-review.md",
           "note": "Implementation and monitoring after decision and staff review framing at orientation level"
+        },
+        {
+          "pack": "nrc-cyber-rg-5-71",
+          "chapter": "ch07-the-part-73-shape-and-staff-review.md",
+          "note": "Where 73.54 and RG 5.71 sit for civil power reactors; program documentation and staff review framing at framework level"
         }
       ]
     },
@@ -270,6 +275,51 @@
           "pack": "nrc-risk-informed-rg-1-174",
           "chapter": "cheatsheet.md (support file)",
           "note": "Which chapter owns the risk-informed change question, the pin rule, and the no-numeric-value limits"
+        }
+      ]
+    },
+    {
+      "name": "Cyber Security Programs",
+      "chapters": [
+        {
+          "pack": "nrc-cyber-rg-5-71",
+          "chapter": "ch01-rg-5-71-role-and-scope.md",
+          "note": "RG 5.71 Rev. 1 role and scope: cyber security programs for nuclear power reactors, pinned ML22258A204, guide character orientation"
+        },
+        {
+          "pack": "nrc-cyber-rg-5-71",
+          "chapter": "ch02-10-cfr-73-54-the-regulation.md",
+          "note": "10 CFR 73.54 at orientation level from public eCFR text; protection goal stated without control detail; named-site programs named out"
+        },
+        {
+          "pack": "nrc-cyber-rg-5-71",
+          "chapter": "ch03-cyber-security-program-shape.md",
+          "note": "Graded, defense-in-depth program shape; defensive controls named as categories only, no product or tuning guidance"
+        },
+        {
+          "pack": "nrc-cyber-rg-5-71",
+          "chapter": "ch04-defensive-architecture-and-defense-in-depth.md",
+          "note": "Defensive architecture as mutually reinforcing defensive layers and controls across the systems and networks the regulation covers"
+        },
+        {
+          "pack": "nrc-cyber-rg-5-71",
+          "chapter": "ch05-cyber-security-versus-sdoe-contrast.md",
+          "note": "Cyber program versus RG 1.152 SDOE contrast from carried nrc-nuclear fence facts; which side of the fence a question belongs to"
+        },
+        {
+          "pack": "nrc-cyber-rg-5-71",
+          "chapter": "ch06-program-lifecycle-and-periodic-review.md",
+          "note": "Program lifecycle elements: establish, implement, monitor, sustain, and reassess; change concerns named without tactic detail"
+        },
+        {
+          "pack": "nrc-cyber-rg-5-71",
+          "chapter": "glossary.md (support file)",
+          "note": "Cyber security program terms this pack uses, keyed to the RG 5.71 Rev. 1 and 73.54 orientation chapters"
+        },
+        {
+          "pack": "nrc-cyber-rg-5-71",
+          "chapter": "cheatsheet.md (support file)",
+          "note": "Which chapter owns the cyber program question, the pin rules, and the sensitive-content limits"
         }
       ]
     }

@@ -15,10 +15,11 @@ Rules of construction:
 |---|---|
 | 1. Life Cycle & Requirements | 8 |
 | 2. Verification & Testing | 2 |
-| 3. Regulatory Framework & Staff Review | 23 |
+| 3. Regulatory Framework & Staff Review | 24 |
 | 4. Quality Assurance Criteria | 8 |
 | 5. Risk-Informed Decisionmaking | 8 |
-| **Total** | **49** |
+| 6. Cyber Security Programs | 8 |
+| **Total** | **58** |
 
 ## 1. Life Cycle & Requirements
 
@@ -67,6 +68,7 @@ Rules of construction:
 | nrc-10cfr-part50-licensing-basis | cheatsheet.md (support file) | Which chapter owns the question, the pin rule, and the licensing-basis limits |
 | nrc-qa-rg-1-28 | ch07-licensing-hooks-part-50-52.md | QA program description in Part 50 and Part 52 license applications and the 50.54(a) license condition |
 | nrc-risk-informed-rg-1-174 | ch07-implementation-monitoring-and-staff-review.md | Implementation and monitoring after decision and staff review framing at orientation level |
+| nrc-cyber-rg-5-71 | ch07-the-part-73-shape-and-staff-review.md | Where 73.54 and RG 5.71 sit for civil power reactors; program documentation and staff review framing at framework level |
 
 ## 4. Quality Assurance Criteria
 
@@ -93,3 +95,16 @@ Rules of construction:
 | nrc-risk-informed-rg-1-174 | ch06-uncertainty-and-pra-adequacy-hooks.md | Uncertainty and PRA technical adequacy as named considerations; RG 1.200 Rev 3 and NUREG-1855 name hooks, no criteria or methods |
 | nrc-risk-informed-rg-1-174 | glossary.md (support file) | Risk-informed decisionmaking terms this pack uses, keyed to the RG 1.174 Rev. 3 orientation chapters |
 | nrc-risk-informed-rg-1-174 | cheatsheet.md (support file) | Which chapter owns the risk-informed change question, the pin rule, and the no-numeric-value limits |
+
+## 6. Cyber Security Programs
+
+| Pack | Chapter | Why it fits / one-line value |
+|---|---|---|
+| nrc-cyber-rg-5-71 | ch01-rg-5-71-role-and-scope.md | RG 5.71 Rev. 1 role and scope: cyber security programs for nuclear power reactors, pinned ML22258A204, guide character orientation |
+| nrc-cyber-rg-5-71 | ch02-10-cfr-73-54-the-regulation.md | 10 CFR 73.54 at orientation level from public eCFR text; protection goal stated without control detail; named-site programs named out |
+| nrc-cyber-rg-5-71 | ch03-cyber-security-program-shape.md | Graded, defense-in-depth program shape; defensive controls named as categories only, no product or tuning guidance |
+| nrc-cyber-rg-5-71 | ch04-defensive-architecture-and-defense-in-depth.md | Defensive architecture as mutually reinforcing defensive layers and controls across the systems and networks the regulation covers |
+| nrc-cyber-rg-5-71 | ch05-cyber-security-versus-sdoe-contrast.md | Cyber program versus RG 1.152 SDOE contrast from carried nrc-nuclear fence facts; which side of the fence a question belongs to |
+| nrc-cyber-rg-5-71 | ch06-program-lifecycle-and-periodic-review.md | Program lifecycle elements: establish, implement, monitor, sustain, and reassess; change concerns named without tactic detail |
+| nrc-cyber-rg-5-71 | glossary.md (support file) | Cyber security program terms this pack uses, keyed to the RG 5.71 Rev. 1 and 73.54 orientation chapters |
+| nrc-cyber-rg-5-71 | cheatsheet.md (support file) | Which chapter owns the cyber program question, the pin rules, and the sensitive-content limits |
