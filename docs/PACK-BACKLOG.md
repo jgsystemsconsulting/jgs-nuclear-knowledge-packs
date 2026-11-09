@@ -109,6 +109,7 @@ See also root `README.md` § Out of scope and `/nuclear` Scope & Limits.
 | live-03 | `nuclear` | orchestrator | routes to live packs | live |
 | live-04 | `nrc-btp-7-18-plc` | content | BTP 7-18 Rev. 6, August 2016 (ML16019A327); listing-page pin 2026-11-07 | live |
 | live-05 | `nrc-10cfr-part50-licensing-basis` | content | 10 CFR Part 50 selected slices: 50.2 key definitions, 50.34, 50.36, 50.54, 50.59, App A index, App B pointer; eCFR pin-check 2026-11-08 | live |
+| live-06 | `nrc-qa-rg-1-28` | content | RG 1.28 Rev 6, September 2023 (ML23177A002); FR notice 2023-19548 pin 2026-11-08; NQA-1 named only | live |
 
 ---
 
@@ -178,7 +179,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
-| C-01 | `nrc-qa-rg-1-28` | 1 | content | 1 | ready | **RG 1.28 Rev 6** (Sep 2023) Quality Assurance Program Criteria (Design and Construction). NRC discussion of NQA-1 only; **NQA-1 text signpost-only**. | B-01 | QA program criteria staff accept |
+| C-01 | `nrc-qa-rg-1-28` | 1 | content | 1 | live | **RG 1.28 Rev 6** (Sep 2023) Quality Assurance Program Criteria (Design and Construction). NRC discussion of NQA-1 only; **NQA-1 text signpost-only**. | B-01 | QA program criteria staff accept |
 | C-02 | `nrc-app-b-criteria` | 1 | content | 1 | ready | **10 CFR 50 Appendix B** eighteen criteria (eCFR pin). eCFR pin date: check at build (pin-check 2026-11-08). Keep short; cross-link C-01. | C-01 | App B criterion lookup |
 | C-03 | `nrc-qa-signpost-nqa1` | 1 | signpost | excluded | ready | ASME NQA-1 editions commonly endorsed by RG 1.28 path: designation + edition + owner only. | C-01 | Where to buy NQA-1 |
 
@@ -434,7 +435,7 @@ Offline domain knowledge filled chapter sketches and theme cuts. ML accessions f
 
 | bucket | count |
 |--------|-------|
-| Live packs/skills | 5 |
+| Live packs/skills | 6 |
 | Content candidates | ~45 |
 | Signpost candidates | ~6 |
 | Orchestrator-extend | ~4 |

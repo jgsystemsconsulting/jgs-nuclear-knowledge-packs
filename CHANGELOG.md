@@ -11,6 +11,7 @@ All notable changes to this project are documented here. Format follows
 
 ## [Unreleased]
 
+- Add `nrc-qa-rg-1-28`: orientation notes on quality assurance program criteria for design and construction, synthesized from NRC RG 1.28 Rev 6, September 2023, ML23177A002 (Federal Register notice 2023-19548). Rev 6 endorses ASME NQA-1-2017, NQA-1-2019, and NQA-1-2022 Part I and Part II requirements with clarifications and regulatory positions, plus NEI 14-05A Rev 1; NQA-1 text is named only, never reproduced. EXPECTED_NOTES_COUNT moves from 31 to 40. Release version stays 0.3.0.
 - Add `nrc-10cfr-part50-licensing-basis`: orientation notes on the 10 CFR Part 50 licensing basis, synthesized from eCFR public-domain text (title 10 current as of 2026-11-05; pin-check 2026-11-08). Selected slices: 50.2 definitions, 50.34, 50.36, 50.54, 50.59, Appendix A index, Appendix B pointer. EXPECTED_NOTES_COUNT moves from 22 to 31. Release version stays 0.3.0.
 - Add `nrc-btp-7-18-plc`: orientation notes for PLCs in digital safety I&C, pinned to NUREG-0800 BTP 7-18 Rev. 6, August 2016, ML16019A327. PDF body was not captured. EXPECTED_NOTES_COUNT moves from 12 to 22. Release version stays 0.3.0.
 

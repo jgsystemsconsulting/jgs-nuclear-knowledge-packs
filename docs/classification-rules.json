@@ -21,7 +21,8 @@
   "cluster_names": [
     "Life Cycle & Requirements",
     "Verification & Testing",
-    "Regulatory Framework & Staff Review"
+    "Regulatory Framework & Staff Review",
+    "Quality Assurance Criteria"
   ],
   "assignments": [
     {
@@ -208,6 +209,60 @@
       "pack": "nrc-10cfr-part50-licensing-basis",
       "chapter": "cheatsheet.md",
       "cluster": "Regulatory Framework & Staff Review",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch01-rg-1-28-role-and-app-b.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch02-app-b-to-nqa-1-bridge.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch03-nqa-1-edition-pathway.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch04-part-i-vs-part-ii.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch05-clarifications-and-positions.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch06-commercial-grade-nei-14-05a.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch07-licensing-hooks-part-50-52.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "glossary.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "cheatsheet.md",
+      "cluster": "Quality Assurance Criteria",
       "is_support": true
     }
   ]

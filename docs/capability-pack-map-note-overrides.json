@@ -157,6 +157,51 @@
       "pack": "nrc-10cfr-part50-licensing-basis",
       "chapter": "cheatsheet.md",
       "note": "Which chapter owns the question, the pin rule, and the licensing-basis limits"
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch01-rg-1-28-role-and-app-b.md",
+      "note": "RG 1.28 Rev 6 role: what the guide endorses for design and construction QA programs and how it relates to Appendix B"
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch02-app-b-to-nqa-1-bridge.md",
+      "note": "Appendix B eighteen criteria as a names-only orientation list and how NQA-1 Part I requirements map onto them"
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch03-nqa-1-edition-pathway.md",
+      "note": "The three NQA-1 editions Rev 6 endorses, named with owner ASME only and no standard text"
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch04-part-i-vs-part-ii.md",
+      "note": "Part I and Part II requirements shape as RG 1.28 Rev 6 endorses them, described from NRC discussion only"
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch05-clarifications-and-positions.md",
+      "note": "How RG 1.28 Rev 6 clarifications and regulatory positions condition the NQA-1 endorsement"
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch06-commercial-grade-nei-14-05a.md",
+      "note": "NEI 14-05A Rev 1 name hook: accreditation in lieu of commercial grade surveys for laboratory calibration and test services"
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "ch07-licensing-hooks-part-50-52.md",
+      "note": "QA program description in Part 50 and Part 52 license applications and the 50.54(a) license condition"
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "glossary.md",
+      "note": "QA program criteria terms this pack uses, keyed to the RG 1.28 Rev 6 orientation chapters"
+    },
+    {
+      "pack": "nrc-qa-rg-1-28",
+      "chapter": "cheatsheet.md",
+      "note": "Which chapter owns the QA criteria question, the pin rule, and the not-advice limits"
     }
   ]
 }
