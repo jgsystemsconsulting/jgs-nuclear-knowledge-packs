@@ -1,0 +1,33 @@
+nrc-accident-monitoring-rg-1-97 pack: content licence
+=====================================================
+
+This pack is derived from one source:
+
+    NRC Regulatory Guide 1.97, Criteria for Accident Monitoring
+    Instrumentation for Nuclear Power Plants, Rev. 5, May 2019
+    Publisher: U.S. Nuclear Regulatory Commission. Accession ML18136A762
+    (Federal Register notice 2019-08819, 84 FR 18591, May 1, 2019)
+
+Source licence: Public Domain (US Government work, 17 U.S.C. 105) (tier 1;
+see ../../docs/SOURCE-VETTING.md). No source-material download link is published.
+
+The source is a work of the United States Government and is not subject to
+copyright protection in the United States (17 U.S.C. 105). Anyone may
+reproduce, transform, and redistribute the guide text for any purpose,
+including commercially, without permission and without any attribution or
+share-alike obligation.
+
+Attribution to the NRC is courtesy (see the repository NOTICE), not a legal
+obligation. The NRC does not endorse this pack or its authors.
+
+Reconstruction: pack content is synthesized orientation notes from RG 1.97
+Rev. 5 pinned facts (dual-source verified pin, 2026-11-09) and the closed
+list of framework statements in the spec. RG verbatim excerpts are capped
+at two sentences by licence policy; this pack contains zero quotations.
+IEEE Std 497-2016 and NUREG-0700 are named only, with designation and
+edition, and their text is never reproduced here. No HSI design guidance,
+no instrumentation design how-to, and no variable list or design detail
+appear in this pack.
+
+NOTE: this file governs the CONTENT of this pack. Repository tooling stays
+MIT and does not govern pack content (see ../../LICENSE).

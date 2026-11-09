@@ -1,0 +1,27 @@
+slug: nrc-accident-monitoring-rg-1-97
+title: "NRC RG 1.97 Rev 5 Criteria for Accident Monitoring Instrumentation for Nuclear Power Plants"
+publisher: "U.S. Nuclear Regulatory Commission (RG 1.97); reconstructed by JG Systems Consulting Ltd"
+source_version: "RG 1.97 Rev 5, May 2019, ML18136A762"
+license: "Public Domain (US Government work, 17 U.S.C. 105)"
+license_tier: 1
+commercial_use: true
+share_alike: false
+attribution_required: false
+build:
+  method: "reconstructed reference notes from NRC RG 1.97 Rev 5 orientation facts (dual-source verified pin) and the closed list of framework statements in the spec; IEEE Std 497-2016 and NUREG-0700 named only"
+  chapters: 7
+  built_on: "2026-11-09"
+notes: >
+  US Government work, public domain under 17 U.S.C. 105 for the RG-derived
+  notes. Commercial use is allowed. No attribution obligation and no
+  share-alike obligation. The NRC does not endorse this pack. Notes are
+  synthesized orientation notes from RG 1.97 Rev. 5 pinned facts
+  (ML18136A762, Rev. 5, May 2019; Federal Register notice 2019-08819,
+  84 FR 18591; dual-source verified 2026-11-09), not copied wholesale.
+  RG verbatim is capped at two sentences by licence policy and this pack
+  quotes nothing. IEEE Std 497-2016 is named only (IEEE copyright; no
+  standard text, clauses, tables, or criteria reproduced). Variable lists,
+  category criteria, ranges, and design detail live in the guide and are
+  not reproduced here. These notes carry no HSI design guidance and no
+  instrumentation design how-to. These notes are not legal advice and are
+  not a plant-specific monitoring system design.
