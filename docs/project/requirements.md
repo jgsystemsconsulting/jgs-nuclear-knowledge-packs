@@ -65,3 +65,15 @@ status: accepted
 source: 2026-11-07-a01-btp-7-18-plc
 
 The slug nrc-btp-7-18-plc is registered as a live catalog.json content entry, an SKILLS.md index row, a Topics target and an NRC agency target, a classification-rules assignment with a matching note for every chapter and support file, and a cursor plugin skill path. Landing catalogue counts show 2 content packs and 1 signpost. validate_pack and check_release pass on the filled tree.
+
+## req-12
+status: accepted
+source: 2026-11-09-g01-cyber-rg571
+
+Pack at packs/nrc-cyber-rg-5-71/ with 7 chapters, glossary, cheatsheet; registered across the full surface per the registration table (live catalog entry, SKILLS row, Topics targets, NRC agency target, Deliverables row, classification-rules assignments with notes, plugin path, PACK-BACKLOG G-01 status flip with Counts 7 to 8 and live-08, CHANGELOG bullet, EXPECTED_NOTES_COUNT 49 to 58 and THRESHOLDS refreshed from regen among them). validate_pack and check_release pass.
+
+## req-13
+status: accepted
+source: 2026-11-09-g01-cyber-rg571
+
+Content is synthesized orientation from RG 5.71 Rev. 1 pinned facts, carried nrc-nuclear SDOE-fence facts, and the closed list of RG 5.71 and 73.54 framework statements only. No security-control implementation guidance; no threat-actor or tactic detail; no DBT references; no force-on-force tactics beyond public RG/regulation text; no weapons content; no export-controlled or safeguards-sensitive content beyond public civil NRC text. G-02 and G-03 named-only (idea stage, no slugs). No legal advice. Not a plant-specific cyber security program. Zero quotations.
