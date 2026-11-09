@@ -101,11 +101,16 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Appendix B criteria overview | Appendix B criteria, eighteen criteria, QA criteria overview | `nrc-qa-rg-1-28` |
 | Commercial-grade services | NEI 14-05A, laboratory calibration accreditation, accreditation in lieu of commercial grade surveys | `nrc-qa-rg-1-28` |
 | QA in licensing | QA program description, 50.34 QA, design and construction QA | `nrc-qa-rg-1-28`, `nrc-10cfr-part50-licensing-basis` |
+| Risk-informed change | RG 1.174, risk-informed change, risk-informed licensing basis change | `nrc-risk-informed-rg-1-174` |
+| ΔCDF and ΔLERF | ΔCDF, ΔLERF, delta CDF, delta LERF, change in core damage frequency, change in large early release frequency | `nrc-risk-informed-rg-1-174` |
+| Licensing basis change | plant-specific changes to the licensing basis, licensing basis change risk-informed | `nrc-risk-informed-rg-1-174`, `nrc-10cfr-part50-licensing-basis` |
+| PRA in licensing | PRA in licensing, probabilistic risk assessment in licensing, risk-informed decisions | `nrc-risk-informed-rg-1-174`, `nrc-10cfr-part50-licensing-basis` |
+| PRA quality | RG 1.200, PRA technical adequacy, PRA quality | `nrc-risk-informed-rg-1-174` |
 
 ### Agency contexts
 | Agency | Keywords | Packs |
 |---|---|---|
-| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28` |
+| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174` |
 
 ### Deliverables
 | Deliverable | Keywords | Draft | Review | Verify |
@@ -117,6 +122,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | PLC question list | PLC review questions, BTP 7-18 question list, PLC review outline | `nrc-btp-7-18-plc` | `nrc-btp-7-18-plc` | `nrc-btp-7-18-plc` |
 | Part 50 licensing basis question list | Part 50 question list, licensing basis review questions, licensing basis outline | `nrc-10cfr-part50-licensing-basis` | `nrc-10cfr-part50-licensing-basis` | `nrc-10cfr-part50-licensing-basis` |
 | QA criteria question list | QA criteria questions, RG 1.28 question list, QA program outline | `nrc-qa-rg-1-28` | `nrc-qa-rg-1-28` | `nrc-qa-rg-1-28` |
+| Risk-informed change question list | risk-informed change questions, RG 1.174 question list, ΔCDF ΔLERF outline | `nrc-risk-informed-rg-1-174` | `nrc-risk-informed-rg-1-174` | `nrc-risk-informed-rg-1-174` |
 
 ### Licences
 | Pack | Licence |
@@ -152,7 +158,7 @@ noted and skipped; if none remain, fall back to route-only.
 - `/nuclear` never overwrites an existing file without a yes at a gate.
 - **Sector charter.** Catalogue covers civilian nuclear power plant digital I&C
   software assurance and Part 50 licensing-basis orientation under live packs
-  (today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`) plus name-only
+  (today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`) plus name-only
   standards signposts. It is not a general nuclear engineering library.
 - **Never route or invent content for:** nuclear weapons or weapons-design
   physics; classified, export-controlled, or safeguards-sensitive material

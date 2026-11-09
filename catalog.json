@@ -4,7 +4,7 @@
   "sector_slug": "nuclear",
   "scope": "Nuclear",
   "version": "0.3.0",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "packs": [
     {
       "slug": "nrc-nuclear",
@@ -44,6 +44,17 @@
       "title": "NRC RG 1.28 Rev 6 Quality Assurance Program Criteria (Design and Construction)",
       "publisher": "U.S. Nuclear Regulatory Commission (RG 1.28); reconstructed by JG Systems Consulting Ltd",
       "source_version": "RG 1.28 Rev 6, Sep 2023, ML23177A002",
+      "license": "Public Domain (US Government work, 17 U.S.C. 105)",
+      "license_tier": 1,
+      "commercial_use": true,
+      "chapters": 7,
+      "status": "live"
+    },
+    {
+      "slug": "nrc-risk-informed-rg-1-174",
+      "title": "NRC RG 1.174 Rev 3 Risk-Informed Decisions on Plant-Specific Changes to the Licensing Basis",
+      "publisher": "U.S. Nuclear Regulatory Commission (RG 1.174); reconstructed by JG Systems Consulting Ltd",
+      "source_version": "RG 1.174 Rev 3, 2018, ML17317A256",
       "license": "Public Domain (US Government work, 17 U.S.C. 105)",
       "license_tier": 1,
       "commercial_use": true,

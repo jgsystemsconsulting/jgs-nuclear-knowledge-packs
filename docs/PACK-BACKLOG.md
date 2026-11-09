@@ -110,6 +110,7 @@ See also root `README.md` § Out of scope and `/nuclear` Scope & Limits.
 | live-04 | `nrc-btp-7-18-plc` | content | BTP 7-18 Rev. 6, August 2016 (ML16019A327); listing-page pin 2026-11-07 | live |
 | live-05 | `nrc-10cfr-part50-licensing-basis` | content | 10 CFR Part 50 selected slices: 50.2 key definitions, 50.34, 50.36, 50.54, 50.59, App A index, App B pointer; eCFR pin-check 2026-11-08 | live |
 | live-06 | `nrc-qa-rg-1-28` | content | RG 1.28 Rev 6, September 2023 (ML23177A002); FR notice 2023-19548 pin 2026-11-08; NQA-1 named only | live |
+| live-07 | `nrc-risk-informed-rg-1-174` | content | RG 1.174 Rev. 3, 2018 (ML17317A256); listing-page pin 2026-11-08; RG 1.200 and NUREG-1855 named only | live |
 
 ---
 
@@ -189,7 +190,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
-| D-01 | `nrc-risk-informed-rg-1-174` | 1 | content | 1 | ready | **RG 1.174 Rev. 3**, 2018, ML17317A256. Listing-page pin 2026-11-08. Approach for using PRA in risk-informed decisions on plant-specific licensing-basis changes. | B-01 | ΔCDF / ΔLERF style risk-informed change |
+| D-01 | `nrc-risk-informed-rg-1-174` | 1 | content | 1 | live | **RG 1.174 Rev. 3**, 2018, ML17317A256. Listing-page pin 2026-11-08. Approach for using PRA in risk-informed decisions on plant-specific licensing-basis changes. | B-01 | ΔCDF / ΔLERF style risk-informed change |
 | D-02 | `nrc-pra-adequacy-rg-1-200` | 1 | content | 1 | ready | **RG 1.200 Rev. 3**, Dec 2020, ML20238B871. Listing-page pin 2026-11-08. PRA technical adequacy. | D-01 | Is the PRA good enough for this application |
 | D-03 | `nrc-pra-nureg-1855` | 2 | content | 1 | idea | **NUREG-1855** (guidance on treatment of uncertainty in risk-informed decisionmaking) - **VERIFY** current Rev/ML. | D-01 | Uncertainty treatment |
 | D-04 | `nrc-srp-ch19-pra` | 2 | content | 1 | idea | NUREG-0800 **Chapter 19** PRA and severe accident slices only. | D-01 | Staff review of PRA in applications |
@@ -435,7 +436,7 @@ Offline domain knowledge filled chapter sketches and theme cuts. ML accessions f
 
 | bucket | count |
 |--------|-------|
-| Live packs/skills | 6 |
+| Live packs/skills | 7 |
 | Content candidates | ~45 |
 | Signpost candidates | ~6 |
 | Orchestrator-extend | ~4 |

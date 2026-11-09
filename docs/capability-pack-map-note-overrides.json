@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_version": "0.1.0",
-  "generated_on": "2026-11-08",
+  "generated_on": "2026-11-09",
   "notes": [
     {
       "pack": "nrc-nuclear",
@@ -202,6 +202,51 @@
       "pack": "nrc-qa-rg-1-28",
       "chapter": "cheatsheet.md",
       "note": "Which chapter owns the QA criteria question, the pin rule, and the not-advice limits"
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch01-rg-1-174-role-and-scope.md",
+      "note": "RG 1.174 Rev. 3 role and scope: using PRA in risk-informed decisions on plant-specific licensing basis changes, pinned ML17317A256"
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch02-integrated-decisionmaking-framework.md",
+      "note": "Integrated decisionmaking framework and the four stages, with PRA insights weighed beside defense-in-depth and safety margins"
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch03-engineering-analysis-and-risk-metrics.md",
+      "note": "Engineering analysis orientation; ΔCDF and ΔLERF named as the guide's change-in-risk metrics only, numeric tables stay in the guide"
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch04-licensing-basis-and-50-59-connection.md",
+      "note": "Licensing basis connection: the carried 50.59 two-limb gate, minimal-increase wording, and FSAR as updated baseline, orientation only"
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch05-defense-in-depth-and-safety-margins.md",
+      "note": "Defense-in-depth, safety margins, and performance-based consideration as framework considerations through the change"
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch06-uncertainty-and-pra-adequacy-hooks.md",
+      "note": "Uncertainty and PRA technical adequacy as named considerations; RG 1.200 Rev 3 and NUREG-1855 name hooks, no criteria or methods"
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch07-implementation-monitoring-and-staff-review.md",
+      "note": "Implementation and monitoring after decision and staff review framing at orientation level"
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "glossary.md",
+      "note": "Risk-informed decisionmaking terms this pack uses, keyed to the RG 1.174 Rev. 3 orientation chapters"
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "cheatsheet.md",
+      "note": "Which chapter owns the risk-informed change question, the pin rule, and the no-numeric-value limits"
     }
   ]
 }

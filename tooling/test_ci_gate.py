@@ -156,10 +156,10 @@ ROUTING_MAP_PAIR = [
 EMPTY_TREE_PAIR = [
     (
         "THRESHOLDS live",
-        'THRESHOLDS: dict[str, int] = {"Life Cycle & Requirements": 8, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 22, "Quality Assurance Criteria": 8}',
+        'THRESHOLDS: dict[str, int] = {"Life Cycle & Requirements": 8, "Verification & Testing": 2, "Regulatory Framework & Staff Review": 23, "Quality Assurance Criteria": 8, "Risk-Informed Decisionmaking": 8}',
         MAP_TWIN,
     ),
-    ("EXPECTED_NOTES_COUNT forty", "EXPECTED_NOTES_COUNT = 40", GEN_TWIN),
+    ("EXPECTED_NOTES_COUNT forty-nine", "EXPECTED_NOTES_COUNT = 49", GEN_TWIN),
     (
         "expected_signposts nuclear-signpost",
         'expected_signposts: list[str] = ["nuclear-signpost"]',

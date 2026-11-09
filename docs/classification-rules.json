@@ -22,7 +22,8 @@
     "Life Cycle & Requirements",
     "Verification & Testing",
     "Regulatory Framework & Staff Review",
-    "Quality Assurance Criteria"
+    "Quality Assurance Criteria",
+    "Risk-Informed Decisionmaking"
   ],
   "assignments": [
     {
@@ -263,6 +264,60 @@
       "pack": "nrc-qa-rg-1-28",
       "chapter": "cheatsheet.md",
       "cluster": "Quality Assurance Criteria",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch01-rg-1-174-role-and-scope.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch02-integrated-decisionmaking-framework.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch03-engineering-analysis-and-risk-metrics.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch04-licensing-basis-and-50-59-connection.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch05-defense-in-depth-and-safety-margins.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch06-uncertainty-and-pra-adequacy-hooks.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "ch07-implementation-monitoring-and-staff-review.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "glossary.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-risk-informed-rg-1-174",
+      "chapter": "cheatsheet.md",
+      "cluster": "Risk-Informed Decisionmaking",
       "is_support": true
     }
   ]
