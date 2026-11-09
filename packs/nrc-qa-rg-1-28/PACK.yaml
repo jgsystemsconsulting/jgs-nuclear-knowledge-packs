@@ -1,0 +1,24 @@
+slug: nrc-qa-rg-1-28
+title: "NRC RG 1.28 Rev 6 Quality Assurance Program Criteria (Design and Construction)"
+publisher: "U.S. Nuclear Regulatory Commission (RG 1.28); reconstructed by JG Systems Consulting Ltd"
+source_version: "RG 1.28 Rev 6, Sep 2023, ML23177A002"
+license: "Public Domain (US Government work, 17 U.S.C. 105)"
+license_tier: 1
+commercial_use: true
+share_alike: false
+attribution_required: false
+build:
+  method: "reconstructed reference notes from NRC RG 1.28 Rev 6 orientation facts (FR-notice-pinned); NQA-1 named only"
+  chapters: 7
+  built_on: "2026-11-08"
+notes: >
+  US Government work, public domain under 17 U.S.C. 105 for the RG-derived
+  notes. Commercial use is allowed. No attribution obligation and no
+  share-alike obligation. The NRC does not endorse this pack. Notes are
+  synthesized from RG 1.28 Rev 6 orientation facts pinned to Federal
+  Register notice 2023-19548 (ML23177A002), not copied wholesale. Verbatim
+  policy per source: RG 1.28 text is US Government work and verbatim
+  excerpts are capped at two sentences; ASME NQA-1 is ASME copyright, is
+  quoted zero times, and is named with edition and owner only. These notes
+  are not legal advice and are not a plant-specific quality assurance
+  program.

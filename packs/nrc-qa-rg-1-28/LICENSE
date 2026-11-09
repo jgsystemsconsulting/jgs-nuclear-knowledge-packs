@@ -1,0 +1,31 @@
+nrc-qa-rg-1-28 pack: content licence
+====================================
+
+This pack is derived from one source:
+
+    NRC Regulatory Guide 1.28, Quality Assurance Program Criteria
+    (Design and Construction), Rev 6, September 2023
+    Publisher: U.S. Nuclear Regulatory Commission. Accession ML23177A002;
+    issuance notice Federal Register 2023-19548 (88 FR 62292)
+
+Source licence: Public Domain (US Government work, 17 U.S.C. 105) (tier 1;
+see ../../docs/SOURCE-VETTING.md). No source-material download link is published.
+
+The source is a work of the United States Government and is not subject to
+copyright protection in the United States (17 U.S.C. 105). The Federal Register
+issuance notice states that regulatory guides are not copyrighted and that NRC
+approval is not required to reproduce them. Anyone may reproduce, transform,
+and redistribute the guide text for any purpose, including commercially,
+without permission and without any attribution or share-alike obligation.
+
+Attribution to the NRC is courtesy (see the repository NOTICE), not a legal
+obligation. The NRC does not endorse this pack or its authors.
+
+Reconstruction: pack content is synthesized orientation notes from RG 1.28
+Rev 6 facts pinned to the Federal Register issuance notice. Verbatim excerpts
+of RG 1.28 text are capped at two sentences. This pack contains zero
+quotations from ASME NQA-1: that standard is ASME copyright, is named with
+edition and owner only, and its text is never reproduced here.
+
+NOTE: this file governs the CONTENT of this pack. Repository tooling stays
+MIT and does not govern pack content (see ../../LICENSE).
