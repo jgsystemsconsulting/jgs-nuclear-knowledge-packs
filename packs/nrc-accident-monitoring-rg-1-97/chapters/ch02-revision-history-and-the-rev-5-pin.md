@@ -31,7 +31,7 @@ Presenting Rev. 5 as proposed or pending is the chapter's named anti-pattern: th
 
 - Rev. 5 (May 2019, ML18136A762) is the current revision; Rev. 4 (June 2006) is the predecessor.
 - DG-1335 (ML17083A134) was the proposal and issued as final Rev. 5.
-- Many operating plants reference an older RG 1.97 revision in the current licensing basis; read the governing revision from the plant record.
+- Many operating plants still reference an older revision; the governing revision comes from the plant record.
 
 ## Connects To
 

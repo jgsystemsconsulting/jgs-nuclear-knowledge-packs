@@ -15,11 +15,12 @@ Rules of construction:
 |---|---|
 | 1. Life Cycle & Requirements | 8 |
 | 2. Verification & Testing | 2 |
-| 3. Regulatory Framework & Staff Review | 24 |
+| 3. Regulatory Framework & Staff Review | 25 |
 | 4. Quality Assurance Criteria | 8 |
 | 5. Risk-Informed Decisionmaking | 8 |
 | 6. Cyber Security Programs | 8 |
-| **Total** | **58** |
+| 7. Accident Monitoring | 8 |
+| **Total** | **67** |
 
 ## 1. Life Cycle & Requirements
 
@@ -69,6 +70,7 @@ Rules of construction:
 | nrc-qa-rg-1-28 | ch07-licensing-hooks-part-50-52.md | QA program description in Part 50 and Part 52 license applications and the 50.54(a) license condition |
 | nrc-risk-informed-rg-1-174 | ch07-implementation-monitoring-and-staff-review.md | Implementation and monitoring after decision and staff review framing at orientation level |
 | nrc-cyber-rg-5-71 | ch07-the-part-73-shape-and-staff-review.md | Where 73.54 and RG 5.71 sit for civil power reactors; program documentation and staff review framing at framework level |
+| nrc-accident-monitoring-rg-1-97 | ch07-regulatory-frame-and-staff-review.md | Regulatory frame and staff review orientation; specific variables and design detail directed to the guide; NUREG-0700 and IEEE 497 named only |
 
 ## 4. Quality Assurance Criteria
 
@@ -108,3 +110,16 @@ Rules of construction:
 | nrc-cyber-rg-5-71 | ch06-program-lifecycle-and-periodic-review.md | Program lifecycle elements: establish, implement, monitor, sustain, and reassess; change concerns named without tactic detail |
 | nrc-cyber-rg-5-71 | glossary.md (support file) | Cyber security program terms this pack uses, keyed to the RG 5.71 Rev. 1 and 73.54 orientation chapters |
 | nrc-cyber-rg-5-71 | cheatsheet.md (support file) | Which chapter owns the cyber program question, the pin rules, and the sensitive-content limits |
+
+## 7. Accident Monitoring
+
+| Pack | Chapter | Why it fits / one-line value |
+|---|---|---|
+| nrc-accident-monitoring-rg-1-97 | ch01-rg-1-97-role-and-scope.md | RG 1.97 Rev. 5 role and scope: accident monitoring instrumentation criteria, oriented as control-room operator information during and after accidents |
+| nrc-accident-monitoring-rg-1-97 | ch02-revision-history-and-the-rev-5-pin.md | Revision history at pin level: Rev. 5 current (ML18136A762), DG-1335 issued as final Rev. 5, Rev. 4 predecessor, older Type and Category schemes |
+| nrc-accident-monitoring-rg-1-97 | ch03-variables-and-selection-criteria.md | The guide frames which variables are monitored and selection criteria; severe-accident-management-guideline variables named as a Rev. 5 addition; variable lists named out |
+| nrc-accident-monitoring-rg-1-97 | ch04-categorization-and-design-criteria.md | Design criteria and categorization of monitored variables at framework level; category labels and design detail live in the guide; no how-to |
+| nrc-accident-monitoring-rg-1-97 | ch05-ieee-497-2016-endorsement-hook.md | Rev. 5 endorsement of IEEE Std 497-2016 with exceptions and clarifications; the standard is named only and its text is not packaged |
+| nrc-accident-monitoring-rg-1-97 | ch06-applicability-and-licensing-basis.md | Applicability orientation: technology-neutral, Part 52 language, and the governing revision read from the plant licensing record |
+| nrc-accident-monitoring-rg-1-97 | glossary.md (support file) | Accident monitoring terms this pack uses, keyed to the RG 1.97 Rev. 5 orientation chapters |
+| nrc-accident-monitoring-rg-1-97 | cheatsheet.md (support file) | Which chapter owns the accident monitoring question, the pin rule, and the named-only limits |
