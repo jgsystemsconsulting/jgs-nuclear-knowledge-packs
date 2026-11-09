@@ -1,0 +1,36 @@
+nrc-cyber-rg-5-71 pack: content licence
+=======================================
+
+This pack is derived from two sources:
+
+    NRC Regulatory Guide 5.71, Cyber Security Programs for Nuclear Power
+    Reactors, Rev. 1, February 2023
+    Publisher: U.S. Nuclear Regulatory Commission. Accession ML22258A204
+
+    10 CFR Part 73, section 73.54, Protection of digital computer and
+    communication systems and networks (eCFR public text; eCFR pin-check
+    2026-11-09; section unchanged since 2017-01-01)
+
+Source licence: Public Domain (US Government work, 17 U.S.C. 105) (tier 1;
+see ../../docs/SOURCE-VETTING.md). No source-material download link is published.
+
+The sources are works of the United States Government and are not subject to
+copyright protection in the United States (17 U.S.C. 105). Anyone may
+reproduce, transform, and redistribute the guide and regulation text for any
+purpose, including commercially, without permission and without any
+attribution or share-alike obligation.
+
+Attribution to the NRC is courtesy (see the repository NOTICE), not a legal
+obligation. The NRC does not endorse this pack or its authors.
+
+Reconstruction: pack content is synthesized orientation notes from RG 5.71
+Rev. 1 pinned facts (P9 listing-page pin, 2026-11-08), 10 CFR 73.54 public
+eCFR slices, and carried nrc-nuclear SDOE-fence facts. Verbatim from eCFR
+text is capped at two sentences by licence policy and RG 5.71-derived notes
+are synthesized; this pack contains zero quotations. G-02 and G-03 are named
+only as idea-stage neighbours, and their text is never reproduced here. No
+security-control implementation guidance and no threat-actor or tactic
+detail appear in this pack.
+
+NOTE: this file governs the CONTENT of this pack. Repository tooling stays
+MIT and does not govern pack content (see ../../LICENSE).
