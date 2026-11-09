@@ -426,7 +426,7 @@ Before `packs/<slug>/` exists:
 | RG 1.234 | **Rev 1, Mar 2024**, Part 21 deviations/defects |
 | SRP Ch7 | BTP 7-14 r6 08/2016; BTP 7-18 r6 08/2016; BTP 7-19 present (pin latest Rev/ML at build); App 7.1-D r1 08/2016 |
 | NUREG-0700 | **Revision 4** listed on staff NUREG page |
-| Wave-1 pin gate (P9) | BTP 7-19 R9 ML24005A077; RG 1.174 R3 ML17317A256; RG 1.200 R3 ML20238B871; RG 5.71 R1 ML22258A204 — all VERIFY cleared 2026-11-08 |
+| Wave-1 pin gate (P9) | BTP 7-19 R9 ML24005A077; RG 1.174 R3 ML17317A256; RG 1.200 R3 ML20238B871; RG 5.71 R1 ML22258A204; all VERIFY cleared 2026-11-08 |
 | Div 5 cyber RGs | Listing reachable; **5.71 Rev/ML VERIFY** on range page at build |
 | Part 53 | Do not package until final eCFR text exists |
 
