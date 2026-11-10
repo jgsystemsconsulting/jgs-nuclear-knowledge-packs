@@ -167,7 +167,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
 | B-01 | `nrc-10cfr-part50-licensing-basis` | 1 | content | 1 | live | **10 CFR Part 50** selected (domestic licensing of production and power reactor facilities). Slice: definitions, 50.34 contents of applications, 50.36 tech specs, 50.54 conditions, 50.59 changes, App A GDC overview, App B pointer only. eCFR pin date: check at build (pin-check 2026-11-08). | - | What is the Part 50 licensing basis shape |
-| B-02 | `nrc-10cfr-part52-col` | 1 | content | 1 | ready | **10 CFR Part 52** (ESP, DC, COL, ML). Pair with **RG 1.206 Rev 1** (Oct 2018) Applications for Nuclear Power Plants. | B-01 | COL / design cert application structure |
+| B-02 | `nrc-10cfr-part52-col` | 1 | content | 1 | ready | **10 CFR Part 52** (ESP, DC, COL, ML). Pair with **RG 1.206 Rev 1** (Oct 2018) Applications for Nuclear Power Plants. eCFR pin date: check at build (pin-check 2026-11-08). | B-01 | COL / design cert application structure |
 | B-03 | `nrc-part21-defect-reporting` | 2 | content | 1 | idea | **10 CFR Part 21** + **RG 1.234 Rev 1** (Mar 2024) Evaluating Deviations and Reporting Defects… | B-01 | Part 21 evaluation and reporting |
 | B-04 | `nrc-srp-intro-review-process` | 2 | content | 1 | idea | NUREG-0800 **Introduction** and review process material only (not whole SRP). | B-01 | How staff use the SRP |
 | B-05 | `nrc-operator-licensing-part55` | 3 | content | 1 | idea | **10 CFR Part 55** + related operator licensing NUREGs/RGs (**VERIFY** set). | B-01 | Operator licence requirements (civil plant) |
