@@ -152,7 +152,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 | A-01 | `nrc-btp-7-18-plc` | 1 | content | 1 | live | NUREG-0800 **BTP 7-18 Rev. 6**, August 2016, ML16019A327. Listing-page pin 2026-11-07. PDF body not captured. | live-01 | Staff/applicant questions on PLCs in digital safety I&C |
 | A-02 | `nrc-btp-7-19-d3` | 1 | content | 1 | ready | NUREG-0800 **BTP 7-19 Rev. 9**, May 2024, ML24005A077. Listing-page + FR pin 2026-11-08. Defense-in-depth and diversity / digital CCF. X15: out of pack body (P19 pointer) pending human fork. | live-01, A-01 | D3, CCF, coping analysis for digital upgrades |
 | A-03 | `nrc-srp-ch7-ic-overview` | 2 | content | 1 | idea | NUREG-0800 **Chapter 7** intro + selected sections **excluding** 7-14/7-18/7-19/7.1-D already covered. Slice: 7.0, 7.1, App 7.0-A / 7.1-A only unless a later row takes more. | live-01 | What SRP Ch7 expects at system level |
-| A-04 | `nrc-digital-ic-routing` | 1 | orchestrator-extend | n/a | ready | No new sources. Add Topics/Deliverables rows for A-01..A-03 and thin-pack step-down from `nrc-nuclear`. | A-01..A-03 | `/nuclear` finds digital packs |
+| A-04 | `nrc-digital-ic-routing` | 1 | orchestrator-extend | n/a | deferred | No new sources. A-01 scope done: `nrc-btp-7-18-plc` is live and its Topics, NRC Agency, and Deliverables rows are in `packs/nuclear/SKILL.md`. Residual only: after the relevant A-02 or A-03 pack exists in `packs/` and is live, check its Topics and Deliverables routing and thin-pack step-down from `nrc-nuclear` (take the next pack on the row when the selected pack flags the question thin; at most six packs per Topics row). Add no row for a missing pack slug. T-01 continuous duty noted: after every live pack, update Topics, Agency, and Deliverables rows, thin-pack step-down, and anti-scope refuse paths; A-04 tracks only this Theme A residual. | A-02, A-03 | `/nuclear` finds digital packs |
 
 **Chapter sketch A-01:** PLC role in safety I&C; software vs firmware boundary; life-cycle expectations vs BTP 7-14; commercial dedication touchpoints; failure modes staff eye; documentation set; anti-patterns; connects to RG 1.152 / 7.1-D.
 
@@ -371,7 +371,7 @@ Execute top-down. Do not skip licensing/QA if digital extension is the only itch
 
 1. **A-01** BTP 7-18 PLC 
 2. **A-02** BTP 7-19 D3/CCF 
-3. **A-04** + **T-01** orchestrator rows for digital 
+3. **A-04** (deferred, residual only) + **T-01** (continuous) orchestrator rows for digital, gated on the relevant A-02/A-03 pack existing
 4. **R-01** signpost row expansion (cheap) 
 5. **C-01** + **C-02** + **C-03** QA spine 
 6. **B-01** Part 50 licensing-basis map 
