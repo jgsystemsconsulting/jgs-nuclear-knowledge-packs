@@ -77,3 +77,15 @@ status: accepted
 source: 2026-11-09-g01-cyber-rg571
 
 Content is synthesized orientation from RG 5.71 Rev. 1 pinned facts, carried nrc-nuclear SDOE-fence facts, and the closed list of RG 5.71 and 73.54 framework statements only. No security-control implementation guidance; no threat-actor or tactic detail; no DBT references; no force-on-force tactics beyond public RG/regulation text; no weapons content; no export-controlled or safeguards-sensitive content beyond public civil NRC text. G-02 and G-03 named-only (idea stage, no slugs). No legal advice. Not a plant-specific cyber security program. Zero quotations.
+
+## req-14
+status: acceptedproposed
+source: 2026-11-10-a02-fork-guard
+
+The A-02 row at docs/PACK-BACKLOG.md:153 shows status deferred, not ready. The row states a DO-NOT-START guard naming fork X1 and the carried fork record. The guard marks the block only; it does not resolve fork X1, does not amend SOURCE-VETTING X15, and does not authorize any A-02 pack body.
+
+## req-15
+status: acceptedproposed
+source: 2026-11-10-a02-fork-guard
+
+Only the A-02 row at docs/PACK-BACKLOG.md:153 changes. No other backlog row, chapter sketch, Risk A line, wave sequence item, Counts value, pack file, catalogue entry, SOURCE-VETTING line, orchestrator row, or tooling file changes in this package.

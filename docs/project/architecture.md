@@ -41,3 +41,9 @@ status: accepted
 source: 2026-11-07-a01-btp-7-18-plc
 
 Orchestrator edits add routing rows for nrc-btp-7-18-plc only. Rows for A-02, A-03, and the A-04 package are not added. Files under packs/nrc-nuclear are not edited.
+
+## AD-8
+status: acceptedproposed
+source: 2026-11-10-a02-fork-guard
+
+Guard mechanism is dual signal on the A-02 row only: status value deferred from the existing legend plus explicit DO-NOT-START guard text naming fork X1. No new status value and no legend edit. The row guard text carries the why, so the legend stretch from dependency or size to fork-blocked stays self-documenting on the row. Wave sequence item 2 at docs/PACK-BACKLOG.md:373 is not annotated in this package; the A-02 row is the status source of truth and the stale sequence listing is a documented residual owned by later routing or status-hygiene work.
