@@ -79,13 +79,25 @@ source: 2026-11-09-g01-cyber-rg571
 Content is synthesized orientation from RG 5.71 Rev. 1 pinned facts, carried nrc-nuclear SDOE-fence facts, and the closed list of RG 5.71 and 73.54 framework statements only. No security-control implementation guidance; no threat-actor or tactic detail; no DBT references; no force-on-force tactics beyond public RG/regulation text; no weapons content; no export-controlled or safeguards-sensitive content beyond public civil NRC text. G-02 and G-03 named-only (idea stage, no slugs). No legal advice. Not a plant-specific cyber security program. Zero quotations.
 
 ## req-14
-status: verifiedacceptedproposed
+status: verified
 source: 2026-11-10-a02-fork-guard
 
 The A-02 row at docs/PACK-BACKLOG.md:153 shows status deferred, not ready. The row states a DO-NOT-START guard naming fork X1 and the carried fork record. The guard marks the block only; it does not resolve fork X1, does not amend SOURCE-VETTING X15, and does not authorize any A-02 pack body.
 
 ## req-15
-status: verifiedacceptedproposed
+status: verified
 source: 2026-11-10-a02-fork-guard
 
 Only the A-02 row at docs/PACK-BACKLOG.md:153 changes. No other backlog row, chapter sketch, Risk A line, wave sequence item, Counts value, pack file, catalogue entry, SOURCE-VETTING line, orchestrator row, or tooling file changes in this package.
+
+## req-16
+status: accepted
+source: 2026-11-10-b06-part52-col
+
+Pack at packs/nrc-10cfr-part52-col/ with 7 chapters, glossary, cheatsheet; registered across the full surface per the registration table (live catalog entry, SKILLS row, Topics targets, NRC agency target, Deliverables row, classification-rules assignments with notes, plugin path, PACK-BACKLOG B-02 status flip with Counts 9 to 10 and live-10, CHANGELOG bullet, EXPECTED_NOTES_COUNT 67 to 76 and Regulatory Framework THRESHOLDS 25 to 34 refreshed from regen among them). validate_pack and check_release pass.
+
+## req-17
+status: accepted
+source: 2026-11-10-b06-part52-col
+
+Content is synthesized orientation from public 10 CFR Part 52 eCFR slices verified against the build-time eCFR As-of pin and RG 1.206 Rev. 1 (October 2018, ML18131A181) pin facts only. No wholesale verbatim; verbatim excerpts capped at two sentences; no unread RG section numbers stated as requirements; no source-material URLs in shippable files. Selected slices only, not all of Part 52. Not legal or licensing advice; not a plant-specific licensing basis. Part 53 and non-LWR principal design criteria out of scope, named only without slugs. Advice requests refused.
