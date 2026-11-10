@@ -373,9 +373,9 @@ Execute top-down. Do not skip licensing/QA if digital extension is the only itch
 2. **A-02** BTP 7-19 D3/CCF 
 3. **A-04** (deferred, residual only) + **T-01** (continuous) orchestrator rows for digital, gated on the relevant A-02/A-03 pack existing
 4. **R-01** signpost row expansion (cheap) 
-5. **C-01** + **C-02** + **C-03** QA spine 
-6. **B-01** Part 50 licensing-basis map 
-7. **B-02** Part 52 + RG 1.206 
+5. **B-01** Part 50 licensing-basis map (licensing root; C-01 and D-01 depend on B-01, so the licensing pair precedes the QA spine and the risk-informed pair)
+6. **B-02** Part 52 + RG 1.206 
+7. **C-01** + **C-02** + **C-03** QA spine 
 8. **D-01** + **D-02** risk-informed pair 
 9. **F-02** RG 1.97 (built before F-01; F-01 NUREG-0700 not built) 
 10. **G-01** cyber RG 5.71 + 73.54 
