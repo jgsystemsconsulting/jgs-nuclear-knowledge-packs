@@ -113,11 +113,17 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Accident monitoring | accident monitoring, accident monitoring instrumentation, post-accident monitoring | `nrc-accident-monitoring-rg-1-97` |
 | RG 1.97 | RG 1.97, Regulatory Guide 1.97, criteria for accident monitoring instrumentation | `nrc-accident-monitoring-rg-1-97` |
 | Post-accident monitoring variables | post-accident monitoring variables, accident monitoring variables, monitoring variable selection | `nrc-accident-monitoring-rg-1-97` |
+| Part 52 licensing actions | Part 52, 10 CFR Part 52, licenses certifications and approvals for nuclear power plants | `nrc-10cfr-part52-col` |
+| Early site permits | ESP, early site permit, Subpart A early site permits | `nrc-10cfr-part52-col` |
+| Design certifications | design certification, standard design certification, Subpart B | `nrc-10cfr-part52-col` |
+| Combined licenses and ITAAC | COL, combined license, ITAAC, inspections tests analyses and acceptance criteria | `nrc-10cfr-part52-col` |
+| Manufacturing licenses | manufacturing license, Subpart F | `nrc-10cfr-part52-col` |
+| RG 1.206 application structure | RG 1.206, applications for nuclear power plants, COL application contents | `nrc-10cfr-part52-col` |
 
 ### Agency contexts
 | Agency | Keywords | Packs |
 |---|---|---|
-| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97` |
+| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col` |
 
 ### Deliverables
 | Deliverable | Keywords | Draft | Review | Verify |
@@ -132,6 +138,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Risk-informed change question list | risk-informed change questions, RG 1.174 question list, ΔCDF ΔLERF outline | `nrc-risk-informed-rg-1-174` | `nrc-risk-informed-rg-1-174` | `nrc-risk-informed-rg-1-174` |
 | Cyber security program question list | cyber security program questions, RG 5.71 question list, 73.54 outline | `nrc-cyber-rg-5-71` | `nrc-cyber-rg-5-71` | `nrc-cyber-rg-5-71` |
 | Accident monitoring question list | accident monitoring questions, RG 1.97 question list, post-accident monitoring outline | `nrc-accident-monitoring-rg-1-97` | `nrc-accident-monitoring-rg-1-97` | `nrc-accident-monitoring-rg-1-97` |
+| Part 52 application-structure question list | Part 52 application questions, RG 1.206 question list, COL application outline | `nrc-10cfr-part52-col` | `nrc-10cfr-part52-col` | `nrc-10cfr-part52-col` |
 
 ### Licences
 | Pack | Licence |
@@ -166,8 +173,8 @@ noted and skipped; if none remain, fall back to route-only.
 - Deliverable stage chains come only from Deliverables rows; empty cells skip that stage.
 - `/nuclear` never overwrites an existing file without a yes at a gate.
 - **Sector charter.** Catalogue covers civilian nuclear power plant digital I&C
-  software assurance and Part 50 licensing-basis orientation under live packs
-  (today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`) plus name-only
+  software assurance and Part 50 and Part 52 licensing orientation under live packs
+  (today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`) plus name-only
   standards signposts. It is not a general nuclear engineering library.
 - **Never route or invent content for:** nuclear weapons or weapons-design
   physics; classified, export-controlled, or safeguards-sensitive material
