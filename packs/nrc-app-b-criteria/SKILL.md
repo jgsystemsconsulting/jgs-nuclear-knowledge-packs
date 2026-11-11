@@ -44,7 +44,7 @@ Notes are synthesized lookups. They are not the regulation, not a QA program, an
 
 | Ch | File | Coverage | Cluster |
 |----|------|----------|---------|
-| 01 | [ch01-appendix-b-frame-and-18-criteria-map](chapters/ch01-appendix-b-frame-and-18-criteria-map.md) | Appendix B frame: introduction, QA definition, activities-affecting-quality scope, 50.34 and 50.54 hooks at frame level, eighteen-criteria map | Quality Assurance Criteria |
+| 01 | [ch01-appendix-b-frame-and-18-criteria-map](chapters/ch01-appendix-b-frame-and-18-criteria-map.md) | Appendix B frame: introduction, QA definition, activities-affecting-quality scope, 50.34 hook and Part 52/53 application citations at frame level, eighteen-criteria map | Quality Assurance Criteria |
 | 02 | [ch02-criteria-i-ii-organization-and-program](chapters/ch02-criteria-i-ii-organization-and-program.md) | Criterion I Organization and Criterion II Quality Assurance Program | Quality Assurance Criteria |
 | 03 | [ch03-criteria-iii-vii-design-procurement-document-control](chapters/ch03-criteria-iii-vii-design-procurement-document-control.md) | Criteria III to VII: design control, procurement document control, instructions procedures and drawings, document control, control of purchased material equipment and services | Quality Assurance Criteria |
 | 04 | [ch04-criteria-viii-xii-material-process-inspection-test](chapters/ch04-criteria-viii-xii-material-process-inspection-test.md) | Criteria VIII to XII: material identification, special processes, inspection, test control, measuring and test equipment | Quality Assurance Criteria |
