@@ -1,6 +1,6 @@
 # Chapter 3: Endorsed PRA standard hook
 
-Sources: NRC RG 1.200 Rev. 3, Acceptability Probabilistic Risk Assessment Results Risk-Informed Activities, December 2020, ML20238B871; listing-page pin 2026-11-08, re-checked 2026-11-11. Rev. 3 endorses ASME/ANS RA-Sa-2009 (Addendum A) per pin gate record; standard named designation only.
+Sources: NRC RG 1.200 Rev. 3, Acceptability of Probabilistic Risk Assessment Results for Risk-Informed Activities, December 2020, ML20238B871; listing-page pin 2026-11-08, re-checked 2026-11-11. Rev. 3 endorses ASME/ANS RA-Sa-2009 (Addendum A) per the pin gate record; standard named by designation only.
 
 ## Core Idea
 
