@@ -119,11 +119,16 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Combined licenses and ITAAC | COL, combined license, ITAAC, inspections tests analyses and acceptance criteria | `nrc-10cfr-part52-col` |
 | Manufacturing licenses | manufacturing license, Subpart F | `nrc-10cfr-part52-col` |
 | RG 1.206 application structure | RG 1.206, applications for nuclear power plants, COL application contents | `nrc-10cfr-part52-col` |
+| Appendix B criterion lookup | Appendix B criterion, 10 CFR 50 Appendix B, QA criteria, eighteen criteria | `nrc-app-b-criteria` |
+| Organization and QA program criteria | Criterion I, Criterion II, organization criterion, QA program criterion | `nrc-app-b-criteria` |
+| Design, procurement, and document criteria | Criterion III, design control criterion, procurement document control, document control criterion, Criterion VII | `nrc-app-b-criteria` |
+| Material, process, inspection, and test criteria | Criterion VIII, special processes criterion, test control criterion, measuring and test equipment criterion | `nrc-app-b-criteria` |
+| Status, corrective action, records, and audit criteria | Criterion XV, nonconforming material criterion, corrective action criterion, QA records criterion, Criterion XVIII audits | `nrc-app-b-criteria` |
 
 ### Agency contexts
 | Agency | Keywords | Packs |
 |---|---|---|
-| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col` |
+| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria` |
 
 ### Deliverables
 | Deliverable | Keywords | Draft | Review | Verify |
@@ -139,6 +144,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Cyber security program question list | cyber security program questions, RG 5.71 question list, 73.54 outline | `nrc-cyber-rg-5-71` | `nrc-cyber-rg-5-71` | `nrc-cyber-rg-5-71` |
 | Accident monitoring question list | accident monitoring questions, RG 1.97 question list, post-accident monitoring outline | `nrc-accident-monitoring-rg-1-97` | `nrc-accident-monitoring-rg-1-97` | `nrc-accident-monitoring-rg-1-97` |
 | Part 52 application-structure question list | Part 52 application questions, RG 1.206 question list, COL application outline | `nrc-10cfr-part52-col` | `nrc-10cfr-part52-col` | `nrc-10cfr-part52-col` |
+| Appendix B criterion question list | Appendix B questions, criterion lookup questions, QA criteria checklist questions | `nrc-app-b-criteria` | `nrc-app-b-criteria` | `nrc-app-b-criteria` |
 
 ### Licences
 | Pack | Licence |
@@ -174,7 +180,7 @@ noted and skipped; if none remain, fall back to route-only.
 - `/nuclear` never overwrites an existing file without a yes at a gate.
 - **Sector charter.** Catalogue covers civilian nuclear power plant digital I&C
   software assurance and Part 50 and Part 52 licensing orientation under live packs
-  (today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`) plus name-only
+  (today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`) plus name-only
   standards signposts. It is not a general nuclear engineering library.
 - **Never route or invent content for:** nuclear weapons or weapons-design
   physics; classified, export-controlled, or safeguards-sensitive material
