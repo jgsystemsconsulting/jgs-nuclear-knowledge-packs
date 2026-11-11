@@ -34,6 +34,7 @@
     "./packs/nrc-risk-informed-rg-1-174/SKILL.md",
     "./packs/nrc-cyber-rg-5-71/SKILL.md",
     "./packs/nrc-accident-monitoring-rg-1-97/SKILL.md",
+    "./packs/nrc-app-b-criteria/SKILL.md",
     "./packs/nuclear-signpost/SKILL.md"
   ]
 }

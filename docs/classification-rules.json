@@ -483,6 +483,54 @@
       "chapter": "cheatsheet.md",
       "cluster": "Regulatory Framework & Staff Review",
       "is_support": true
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "ch01-appendix-b-frame-and-18-criteria-map.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "ch02-criteria-i-ii-organization-and-program.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "ch03-criteria-iii-vii-design-procurement-document-control.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "ch04-criteria-viii-xii-material-process-inspection-test.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "ch05-criteria-xiii-xviii-handling-status-corrective-action-records-audits.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "ch06-appendix-b-neighbours-and-limits.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "glossary.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "cheatsheet.md",
+      "cluster": "Quality Assurance Criteria",
+      "is_support": true
     }
   ]
 }

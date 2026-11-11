@@ -382,6 +382,46 @@
       "pack": "nrc-10cfr-part52-col",
       "chapter": "cheatsheet.md",
       "note": "Which chapter owns a Part 52 question, the pin rules, thin classes, and not-advice limits"
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "ch01-appendix-b-frame-and-18-criteria-map.md",
+      "note": "Appendix B purpose and frame, the eighteen-criteria map, and which QA activities affect quality"
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "ch02-criteria-i-ii-organization-and-program.md",
+      "note": "Criteria I and II: quality assurance program and organization orientation with reference-note depth"
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "ch03-criteria-iii-vii-design-procurement-document-control.md",
+      "note": "Criteria III through VII: design control, procurement, instructions, document control"
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "ch04-criteria-viii-xii-material-process-inspection-test.md",
+      "note": "Criteria VIII through XII: identification, control, special processes, inspection, test"
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "ch05-criteria-xiii-xviii-handling-status-corrective-action-records-audits.md",
+      "note": "Criteria XIII through XVIII: handling, status, nonconformance, corrective action, records, audits"
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "ch06-appendix-b-neighbours-and-limits.md",
+      "note": "Appendix B neighbours and limits: RG 1.28 and NQA-1 named only, not packaged; safety classes"
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "glossary.md",
+      "note": "Terms Appendix B pack uses, synthesized from covered criteria"
+    },
+    {
+      "pack": "nrc-app-b-criteria",
+      "chapter": "cheatsheet.md",
+      "note": "Which chapter owns criterion question, pin rule, thin classes, and not-advice limits"
     }
   ]
 }

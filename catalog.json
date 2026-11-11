@@ -93,6 +93,17 @@
       "commercial_use": true,
       "chapters": 7,
       "status": "live"
+    },
+    {
+      "slug": "nrc-app-b-criteria",
+      "title": "10 CFR Part 50 Appendix B Quality Assurance Criteria (eighteen criteria lookup; eCFR)",
+      "publisher": "U.S. Government (eCFR); reconstructed JG Systems Consulting Ltd",
+      "source_version": "10 CFR Part 50 Appendix B; eCFR title 10 current as of 2026-11-09",
+      "license": "Public Domain (US Government work, 17 U.S.C. 105)",
+      "license_tier": 1,
+      "commercial_use": true,
+      "chapters": 6,
+      "status": "live"
     }
   ],
   "planned": []

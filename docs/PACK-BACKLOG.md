@@ -114,6 +114,7 @@ See also root `README.md` § Out of scope and `/nuclear` Scope & Limits.
 | live-08 | `nrc-cyber-rg-5-71` | content | RG 5.71 Rev. 1, February 2023 (ML22258A204); listing-page pin 2026-11-08; 10 CFR 73.54 eCFR pin-check 2026-11-09; G-02 and G-03 named only | live |
 | live-09 | `nrc-accident-monitoring-rg-1-97` | content | RG 1.97 Rev. 5, May 2019 (ML18136A762); dual-source pin 2026-11-09; IEEE Std 497-2016 and NUREG-0700 named only | live |
 | live-10 | `nrc-10cfr-part52-col` | content | 10 CFR Part 52 selected slices (eCFR pin-check 2026-11-11); RG 1.206 Rev 1 (ML18131A181) pin 2026-11-10 | live |
+| live-11 | `nrc-app-b-criteria` | content | 10 CFR Part 50 Appendix B eighteen criteria lookup (eCFR pin-check 2026-11-11); RG 1.28 and NQA-1 named only | live |
 
 ---
 
@@ -184,7 +185,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
 | C-01 | `nrc-qa-rg-1-28` | 1 | content | 1 | live | **RG 1.28 Rev 6** (Sep 2023) Quality Assurance Program Criteria (Design and Construction). NRC discussion of NQA-1 only; **NQA-1 text signpost-only**. | B-01 | QA program criteria staff accept |
-| C-02 | `nrc-app-b-criteria` | 1 | content | 1 | ready | **10 CFR 50 Appendix B** eighteen criteria (eCFR pin). eCFR pin date: check at build (pin-check 2026-11-08). Keep short; cross-link C-01. | C-01 | App B criterion lookup |
+| C-02 | `nrc-app-b-criteria` | 1 | content | 1 | live | **10 CFR 50 Appendix B** eighteen criteria (eCFR pin). eCFR pin date: check at build (pin-check 2026-11-08). Keep short; cross-link C-01. | C-01 | App B criterion lookup |
 | C-03 | `nrc-qa-signpost-nqa1` | 1 | signpost | excluded | excluded (fold closed) | ASME NQA-1 editions commonly endorsed by RG 1.28 path: designation + edition + owner only. Folded into nuclear-signpost R-01 row expansion; no separate slug. | C-01 | Where to buy NQA-1 |
 
 ---
@@ -439,7 +440,7 @@ Offline domain knowledge filled chapter sketches and theme cuts. ML accessions f
 
 | bucket | count |
 |--------|-------|
-| Live packs/skills | 10 |
+| Live packs/skills | 11 |
 | Content candidates | ~45 |
 | Signpost candidates | ~6 |
 | Orchestrator-extend | ~4 |
