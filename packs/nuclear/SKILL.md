@@ -105,7 +105,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | ΔCDF and ΔLERF | ΔCDF, ΔLERF, delta CDF, delta LERF, change in core damage frequency, change in large early release frequency | `nrc-risk-informed-rg-1-174` |
 | Licensing basis change | plant-specific changes to the licensing basis, licensing basis change risk-informed | `nrc-risk-informed-rg-1-174`, `nrc-10cfr-part50-licensing-basis` |
 | PRA in licensing | PRA in licensing, probabilistic risk assessment in licensing, risk-informed decisions | `nrc-risk-informed-rg-1-174`, `nrc-10cfr-part50-licensing-basis` |
-| PRA quality | RG 1.200, PRA technical adequacy, PRA quality | `nrc-risk-informed-rg-1-174` |
+| PRA quality | RG 1.200, PRA technical adequacy, PRA quality | `nrc-pra-adequacy-rg-1-200` |
 | Cyber security programs | RG 5.71, cyber security program, cyber security programs for nuclear power reactors | `nrc-cyber-rg-5-71` |
 | 10 CFR 73.54 | 73.54, 10 CFR 73.54, protection of digital computer and communication systems | `nrc-cyber-rg-5-71` |
 | Cyber security vs SDOE | cyber security vs SDOE, RG 1.152 vs RG 5.71, SDOE vs cyber program | `nrc-cyber-rg-5-71`, `nrc-nuclear` |
@@ -128,7 +128,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 ### Agency contexts
 | Agency | Keywords | Packs |
 |---|---|---|
-| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria` |
+| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200` |
 
 ### Deliverables
 | Deliverable | Keywords | Draft | Review | Verify |
@@ -145,6 +145,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Accident monitoring question list | accident monitoring questions, RG 1.97 question list, post-accident monitoring outline | `nrc-accident-monitoring-rg-1-97` | `nrc-accident-monitoring-rg-1-97` | `nrc-accident-monitoring-rg-1-97` |
 | Part 52 application-structure question list | Part 52 application questions, RG 1.206 question list, COL application outline | `nrc-10cfr-part52-col` | `nrc-10cfr-part52-col` | `nrc-10cfr-part52-col` |
 | Appendix B criterion question list | Appendix B questions, criterion lookup questions, QA criteria checklist questions | `nrc-app-b-criteria` | `nrc-app-b-criteria` | `nrc-app-b-criteria` |
+| PRA technical adequacy question list | PRA adequacy questions, RG 1.200 question list, PRA quality checklist questions | `nrc-pra-adequacy-rg-1-200` | `nrc-pra-adequacy-rg-1-200` | `nrc-pra-adequacy-rg-1-200` |
 
 ### Licences
 | Pack | Licence |
@@ -180,7 +181,7 @@ noted and skipped; if none remain, fall back to route-only.
 - `/nuclear` never overwrites an existing file without a yes at a gate.
 - **Sector charter.** Catalogue covers civilian nuclear power plant digital I&C
   software assurance and Part 50 and Part 52 licensing orientation under live packs
-  (today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`) plus name-only
+  (today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`) plus name-only
   standards signposts. It is not a general nuclear engineering library.
 - **Never route or invent content for:** nuclear weapons or weapons-design
   physics; classified, export-controlled, or safeguards-sensitive material
