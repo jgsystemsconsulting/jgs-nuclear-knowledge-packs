@@ -1,12 +1,13 @@
 # Glossary: nrc-app-b-criteria
 
-Terms pack uses. Definitions synthesized lookup notes keyed pack criteria, not substitute regulation text. Alphabetical.
+Terms this pack uses. Definitions are synthesized lookup notes keyed to the pack criteria, not substitute regulation text. Alphabetical.
 
-- **activities affecting quality**: scope phrase appendix introduction; criteria apply all activities affecting safety-related functions structures, systems, and components, including designing, purchasing, fabricating, handling, shipping, storing, cleaning, erecting, installing, inspecting, testing, operating, maintaining, repairing, refueling, and modifying. (ch01)
-- **Appendix B**: Appendix B to 10 CFR Part 50, Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants; introduction plus eighteen criteria, I to XVIII. (all chapters)
-- **corrective action**: Criterion XVI measures identifying conditions adverse to quality promptly and correcting them; significant conditions get cause determination, repetition-preventing action, and documented reporting to management. (ch05)
-- **criterion**: one numbered requirement statement Appendix B, addressed roman numeral and printed title. (all chapters)
-- **eCFR pin-check**: build-time check electronic Code Federal Regulations. This pack pins title 10 current 2026-11-09, checked 2026-11-11. (all chapters, cheatsheet)
-- **nonconforming material**: material, parts, or components which do not conform to requirements, controlled against inadvertent use or installation and dispositioned under Criterion XV. (ch05)
-- **quality assurance**: as defined appendix introduction, comprises all planned and systematic actions necessary provide adequate confidence structure, system, or component perform satisfactorily in service; includes quality control, actions tied to physical characteristics against predetermined requirements. (ch01)
-- **special process**: process such welding, heat treating, or nondestructive testing, accomplished by qualified personnel using qualified procedures under Criterion IX. (ch04)
+- **activities affecting quality**: the scope phrase of the appendix introduction; the criteria apply to activities affecting the quality of items and services within the appendix scope. (ch01)
+- **Appendix B**: Appendix B to 10 CFR Part 50, Quality Assurance Criteria for Nuclear Power Plants and Fuel Reprocessing Plants. (ch01)
+- **audit**: the Criterion XVIII planned verification that the quality assurance program is complied with and effective. (ch05)
+- **corrective action**: the Criterion XVI measures for identifying conditions adverse to quality, determining cause, and precluding repetition. (ch05)
+- **criterion**: one numbered requirement statement of Appendix B, addressed by roman numeral and its printed title. (all chapters)
+- **eCFR pin-check**: the build-time check of the electronic Code of Federal Regulations. This pack pins title 10 current as of 2026-11-09, checked 2026-11-11. (all chapters, cheatsheet)
+- **nonconforming material**: material, parts, or components that do not conform to requirements, controlled and dispositioned under Criterion XV. (ch05)
+- **quality assurance**: defined in the appendix introduction as comprising all those planned and systematic actions necessary to provide adequate confidence that a structure, system, or component will perform satisfactorily in service. Quality assurance includes quality control. (ch01)
+- **special process**: a process whose quality depends on process control and qualified personnel, controlled under Criterion IX. (ch04)
