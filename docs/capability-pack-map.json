@@ -365,6 +365,46 @@
           "pack": "nrc-risk-informed-rg-1-174",
           "chapter": "cheatsheet.md (support file)",
           "note": "Which chapter owns the risk-informed change question, the pin rule, and the no-numeric-value limits"
+        },
+        {
+          "pack": "nrc-pra-adequacy-rg-1-200",
+          "chapter": "ch01-rg-1-200-frame-and-adequacy-question.md",
+          "note": "RG 1.200 frame and the adequacy question: acceptability of PRA results for risk-informed activities, pin facts and pack map"
+        },
+        {
+          "pack": "nrc-pra-adequacy-rg-1-200",
+          "chapter": "ch02-adequacy-relative-to-the-application.md",
+          "note": "Adequacy relative to the application: a judgement scoped to the named use, never a blanket verdict"
+        },
+        {
+          "pack": "nrc-pra-adequacy-rg-1-200",
+          "chapter": "ch03-endorsed-pra-standard-hook.md",
+          "note": "Endorsed PRA standard hook: ASME/ANS RA-Sa-2009 designation and Rev. 3 endorsement fact only, no standard text"
+        },
+        {
+          "pack": "nrc-pra-adequacy-rg-1-200",
+          "chapter": "ch04-adequacy-questions-for-an-application.md",
+          "note": "Adequacy questions for an application: what the PRA covers, what it leaves out, and whether scope matches the use"
+        },
+        {
+          "pack": "nrc-pra-adequacy-rg-1-200",
+          "chapter": "ch05-pra-results-in-risk-informed-decisions.md",
+          "note": "PRA results in risk-informed decisions: one input weighed with defense-in-depth and safety margins"
+        },
+        {
+          "pack": "nrc-pra-adequacy-rg-1-200",
+          "chapter": "ch06-rg-1-200-neighbours-and-limits.md",
+          "note": "Neighbours and limits: RG 1.174 named in prose, NUREG-1855 and SRP Chapter 19 named only, anti-scope closer"
+        },
+        {
+          "pack": "nrc-pra-adequacy-rg-1-200",
+          "chapter": "glossary.md (support file)",
+          "note": "Terms the RG 1.200 pack uses, synthesized from the covered adequacy statements"
+        },
+        {
+          "pack": "nrc-pra-adequacy-rg-1-200",
+          "chapter": "cheatsheet.md (support file)",
+          "note": "Which chapter owns an adequacy question, the pin rule, thin classes, and not-advice limits"
         }
       ]
     },

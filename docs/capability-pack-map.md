@@ -17,10 +17,10 @@ Rules of construction:
 | 2. Verification & Testing | 2 |
 | 3. Regulatory Framework & Staff Review | 34 |
 | 4. Quality Assurance Criteria | 16 |
-| 5. Risk-Informed Decisionmaking | 8 |
+| 5. Risk-Informed Decisionmaking | 16 |
 | 6. Cyber Security Programs | 8 |
 | 7. Accident Monitoring | 8 |
-| **Total** | **84** |
+| **Total** | **92** |
 
 ## 1. Life Cycle & Requirements
 
@@ -114,6 +114,14 @@ Rules of construction:
 | nrc-risk-informed-rg-1-174 | ch06-uncertainty-and-pra-adequacy-hooks.md | Uncertainty and PRA technical adequacy as named considerations; RG 1.200 Rev 3 and NUREG-1855 name hooks, no criteria or methods |
 | nrc-risk-informed-rg-1-174 | glossary.md (support file) | Risk-informed decisionmaking terms this pack uses, keyed to the RG 1.174 Rev. 3 orientation chapters |
 | nrc-risk-informed-rg-1-174 | cheatsheet.md (support file) | Which chapter owns the risk-informed change question, the pin rule, and the no-numeric-value limits |
+| nrc-pra-adequacy-rg-1-200 | ch01-rg-1-200-frame-and-adequacy-question.md | RG 1.200 frame and the adequacy question: acceptability of PRA results for risk-informed activities, pin facts and pack map |
+| nrc-pra-adequacy-rg-1-200 | ch02-adequacy-relative-to-the-application.md | Adequacy relative to the application: a judgement scoped to the named use, never a blanket verdict |
+| nrc-pra-adequacy-rg-1-200 | ch03-endorsed-pra-standard-hook.md | Endorsed PRA standard hook: ASME/ANS RA-Sa-2009 designation and Rev. 3 endorsement fact only, no standard text |
+| nrc-pra-adequacy-rg-1-200 | ch04-adequacy-questions-for-an-application.md | Adequacy questions for an application: what the PRA covers, what it leaves out, and whether scope matches the use |
+| nrc-pra-adequacy-rg-1-200 | ch05-pra-results-in-risk-informed-decisions.md | PRA results in risk-informed decisions: one input weighed with defense-in-depth and safety margins |
+| nrc-pra-adequacy-rg-1-200 | ch06-rg-1-200-neighbours-and-limits.md | Neighbours and limits: RG 1.174 named in prose, NUREG-1855 and SRP Chapter 19 named only, anti-scope closer |
+| nrc-pra-adequacy-rg-1-200 | glossary.md (support file) | Terms the RG 1.200 pack uses, synthesized from the covered adequacy statements |
+| nrc-pra-adequacy-rg-1-200 | cheatsheet.md (support file) | Which chapter owns an adequacy question, the pin rule, thin classes, and not-advice limits |
 
 ## 6. Cyber Security Programs
 
