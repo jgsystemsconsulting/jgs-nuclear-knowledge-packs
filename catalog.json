@@ -104,6 +104,17 @@
       "commercial_use": true,
       "chapters": 6,
       "status": "live"
+    },
+    {
+      "slug": "nrc-pra-adequacy-rg-1-200",
+      "title": "NRC RG 1.200 Rev 3 Acceptability of Probabilistic Risk Assessment Results for Risk-Informed Activities (PRA technical adequacy orientation)",
+      "publisher": "U.S. Nuclear Regulatory Commission (RG 1.200); reconstructed by JG Systems Consulting Ltd",
+      "source_version": "RG 1.200 Rev 3, December 2020, ML20238B871",
+      "license": "Public Domain (US Government work, 17 U.S.C. 105)",
+      "license_tier": 1,
+      "commercial_use": true,
+      "chapters": 6,
+      "status": "live"
     }
   ],
   "planned": []

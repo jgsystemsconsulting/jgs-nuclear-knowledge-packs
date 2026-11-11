@@ -531,6 +531,54 @@
       "chapter": "cheatsheet.md",
       "cluster": "Quality Assurance Criteria",
       "is_support": true
+    },
+    {
+      "pack": "nrc-pra-adequacy-rg-1-200",
+      "chapter": "ch01-rg-1-200-frame-and-adequacy-question.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-pra-adequacy-rg-1-200",
+      "chapter": "ch02-adequacy-relative-to-the-application.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-pra-adequacy-rg-1-200",
+      "chapter": "ch03-endorsed-pra-standard-hook.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-pra-adequacy-rg-1-200",
+      "chapter": "ch04-adequacy-questions-for-an-application.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-pra-adequacy-rg-1-200",
+      "chapter": "ch05-pra-results-in-risk-informed-decisions.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-pra-adequacy-rg-1-200",
+      "chapter": "ch06-rg-1-200-neighbours-and-limits.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-pra-adequacy-rg-1-200",
+      "chapter": "glossary.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-pra-adequacy-rg-1-200",
+      "chapter": "cheatsheet.md",
+      "cluster": "Risk-Informed Decisionmaking",
+      "is_support": true
     }
   ]
 }

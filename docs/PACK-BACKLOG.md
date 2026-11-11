@@ -115,6 +115,7 @@ See also root `README.md` § Out of scope and `/nuclear` Scope & Limits.
 | live-09 | `nrc-accident-monitoring-rg-1-97` | content | RG 1.97 Rev. 5, May 2019 (ML18136A762); dual-source pin 2026-11-09; IEEE Std 497-2016 and NUREG-0700 named only | live |
 | live-10 | `nrc-10cfr-part52-col` | content | 10 CFR Part 52 selected slices (eCFR pin-check 2026-11-11); RG 1.206 Rev 1 (ML18131A181) pin 2026-11-10 | live |
 | live-11 | `nrc-app-b-criteria` | content | 10 CFR Part 50 Appendix B eighteen criteria lookup (eCFR pin-check 2026-11-11); RG 1.28 and NQA-1 named only | live |
+| live-12 | `nrc-pra-adequacy-rg-1-200` | content | RG 1.200 Rev. 3 PRA technical adequacy orientation (ML20238B871; listing re-check 2026-11-11); ASME/ANS RA-Sa-2009 designation only, NUREG-1855 and SRP Chapter 19 named only | live |
 
 ---
 
@@ -195,7 +196,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
 | D-01 | `nrc-risk-informed-rg-1-174` | 1 | content | 1 | live | **RG 1.174 Rev. 3**, 2018, ML17317A256. Listing-page pin 2026-11-08. Approach for using PRA in risk-informed decisions on plant-specific licensing-basis changes. | B-01 | ΔCDF / ΔLERF style risk-informed change |
-| D-02 | `nrc-pra-adequacy-rg-1-200` | 1 | content | 1 | ready | **RG 1.200 Rev. 3**, Dec 2020, ML20238B871. Listing-page pin 2026-11-08. PRA technical adequacy. | D-01 | Is the PRA good enough for this application |
+| D-02 | `nrc-pra-adequacy-rg-1-200` | 1 | content | 1 | live | **RG 1.200 Rev. 3**, Dec 2020, ML20238B871. Listing-page pin 2026-11-08. PRA technical adequacy. | D-01 | Is the PRA good enough for this application |
 | D-03 | `nrc-pra-nureg-1855` | 2 | content | 1 | idea | **NUREG-1855** (guidance on treatment of uncertainty in risk-informed decisionmaking) - **VERIFY** current Rev/ML. | D-01 | Uncertainty treatment |
 | D-04 | `nrc-srp-ch19-pra` | 2 | content | 1 | idea | NUREG-0800 **Chapter 19** PRA and severe accident slices only. | D-01 | Staff review of PRA in applications |
 
@@ -440,7 +441,7 @@ Offline domain knowledge filled chapter sketches and theme cuts. ML accessions f
 
 | bucket | count |
 |--------|-------|
-| Live packs/skills | 11 |
+| Live packs/skills | 12 |
 | Content candidates | ~45 |
 | Signpost candidates | ~6 |
 | Orchestrator-extend | ~4 |
