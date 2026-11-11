@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "map_version": "0.1.0",
-  "generated_on": "2026-11-09",
+  "generated_on": "2026-11-11",
   "clusters": [
     {
       "name": "Life Cycle & Requirements",
@@ -190,6 +190,51 @@
           "pack": "nrc-accident-monitoring-rg-1-97",
           "chapter": "ch07-regulatory-frame-and-staff-review.md",
           "note": "Regulatory frame and staff review orientation; specific variables and design detail directed to the guide; NUREG-0700 and IEEE 497 named only"
+        },
+        {
+          "pack": "nrc-10cfr-part52-col",
+          "chapter": "ch01-part52-frame-and-licensing-actions.md",
+          "note": "Part 52 purpose and subpart map, general-provisions slice, and the Part 50 two-step contrast"
+        },
+        {
+          "pack": "nrc-10cfr-part52-col",
+          "chapter": "ch02-early-site-permits-subpart-a.md",
+          "note": "Early site permit contents and 52.39 finality; site redress and LWA hooks named only"
+        },
+        {
+          "pack": "nrc-10cfr-part52-col",
+          "chapter": "ch03-design-certifications-subpart-b.md",
+          "note": "Standard design certification shape and 52.63 finality; design-specific appendices named only"
+        },
+        {
+          "pack": "nrc-10cfr-part52-col",
+          "chapter": "ch04-combined-licenses-subpart-c-and-itaac.md",
+          "note": "Combined license contents (52.79), 52.97 finality, ITAAC during construction (52.99) and closure (52.103)"
+        },
+        {
+          "pack": "nrc-10cfr-part52-col",
+          "chapter": "ch05-standing-mechanics-amendments-variances-52-98.md",
+          "note": "52.98 and the exemption and variance hooks at orientation level; 50.59 named as Part 50 pack territory"
+        },
+        {
+          "pack": "nrc-10cfr-part52-col",
+          "chapter": "ch06-rg-1-206-rev-1-applications-guide.md",
+          "note": "RG 1.206 Rev 1 pin orientation only (ML18131A181, FR 2018-22262); guide PDF body not captured"
+        },
+        {
+          "pack": "nrc-10cfr-part52-col",
+          "chapter": "ch07-manufacturing-licenses-subpart-f-and-finality.md",
+          "note": "Manufacturing licenses and the finality pattern collected across subparts; staff-review shape at framework level"
+        },
+        {
+          "pack": "nrc-10cfr-part52-col",
+          "chapter": "glossary.md (support file)",
+          "note": "Terms the Part 52 pack uses, synthesized from the covered slices"
+        },
+        {
+          "pack": "nrc-10cfr-part52-col",
+          "chapter": "cheatsheet.md (support file)",
+          "note": "Which chapter owns a Part 52 question, the pin rules, thin classes, and not-advice limits"
         }
       ]
     },

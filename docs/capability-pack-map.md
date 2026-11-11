@@ -15,12 +15,12 @@ Rules of construction:
 |---|---|
 | 1. Life Cycle & Requirements | 8 |
 | 2. Verification & Testing | 2 |
-| 3. Regulatory Framework & Staff Review | 25 |
+| 3. Regulatory Framework & Staff Review | 34 |
 | 4. Quality Assurance Criteria | 8 |
 | 5. Risk-Informed Decisionmaking | 8 |
 | 6. Cyber Security Programs | 8 |
 | 7. Accident Monitoring | 8 |
-| **Total** | **67** |
+| **Total** | **76** |
 
 ## 1. Life Cycle & Requirements
 
@@ -71,6 +71,15 @@ Rules of construction:
 | nrc-risk-informed-rg-1-174 | ch07-implementation-monitoring-and-staff-review.md | Implementation and monitoring after decision and staff review framing at orientation level |
 | nrc-cyber-rg-5-71 | ch07-the-part-73-shape-and-staff-review.md | Where 73.54 and RG 5.71 sit for civil power reactors; program documentation and staff review framing at framework level |
 | nrc-accident-monitoring-rg-1-97 | ch07-regulatory-frame-and-staff-review.md | Regulatory frame and staff review orientation; specific variables and design detail directed to the guide; NUREG-0700 and IEEE 497 named only |
+| nrc-10cfr-part52-col | ch01-part52-frame-and-licensing-actions.md | Part 52 purpose and subpart map, general-provisions slice, and the Part 50 two-step contrast |
+| nrc-10cfr-part52-col | ch02-early-site-permits-subpart-a.md | Early site permit contents and 52.39 finality; site redress and LWA hooks named only |
+| nrc-10cfr-part52-col | ch03-design-certifications-subpart-b.md | Standard design certification shape and 52.63 finality; design-specific appendices named only |
+| nrc-10cfr-part52-col | ch04-combined-licenses-subpart-c-and-itaac.md | Combined license contents (52.79), 52.97 finality, ITAAC during construction (52.99) and closure (52.103) |
+| nrc-10cfr-part52-col | ch05-standing-mechanics-amendments-variances-52-98.md | 52.98 and the exemption and variance hooks at orientation level; 50.59 named as Part 50 pack territory |
+| nrc-10cfr-part52-col | ch06-rg-1-206-rev-1-applications-guide.md | RG 1.206 Rev 1 pin orientation only (ML18131A181, FR 2018-22262); guide PDF body not captured |
+| nrc-10cfr-part52-col | ch07-manufacturing-licenses-subpart-f-and-finality.md | Manufacturing licenses and the finality pattern collected across subparts; staff-review shape at framework level |
+| nrc-10cfr-part52-col | glossary.md (support file) | Terms the Part 52 pack uses, synthesized from the covered slices |
+| nrc-10cfr-part52-col | cheatsheet.md (support file) | Which chapter owns a Part 52 question, the pin rules, thin classes, and not-advice limits |
 
 ## 4. Quality Assurance Criteria
 
