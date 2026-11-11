@@ -103,13 +103,13 @@ source: 2026-11-10-b06-part52-col
 Content is synthesized orientation from public 10 CFR Part 52 eCFR slices verified against the build-time eCFR As-of pin and RG 1.206 Rev. 1 (October 2018, ML18131A181) pin facts only. No wholesale verbatim; verbatim excerpts capped at two sentences; no unread RG section numbers stated as requirements; no source-material URLs in shippable files. Selected slices only, not all of Part 52. Not legal or licensing advice; not a plant-specific licensing basis. Part 53 and non-LWR principal design criteria out of scope, named only without slugs. Advice requests refused.
 
 ## req-18
-status: accepted
+status: verified
 source: 2026-11-11-b07-app-b-criteria
 
 Pack at packs/nrc-app-b-criteria/ with 6 chapters, glossary, cheatsheet; registered across the full surface per the registration table (live catalog entry, SKILLS row, Topics targets, NRC agency target, Deliverables row, classification-rules assignments with notes, plugin path, PACK-BACKLOG C-02 status flip with Counts 10 to 11 and live-11, CHANGELOG bullet, EXPECTED_NOTES_COUNT 76 to 84 and Quality Assurance Criteria THRESHOLDS 8 to 16 refreshed from regen among them). validate_pack and check_release pass.
 
 ## req-19
-status: accepted
+status: verified
 source: 2026-11-11-b07-app-b-criteria
 
 Content is a synthesized criterion lookup for the eighteen criteria I to XVIII of 10 CFR Part 50 Appendix B, built from the live eCFR Appendix B text at the build-time As-of pin only. Each criterion carries its roman numeral, its title, and its requirement substance in reference-note form. No wholesale verbatim; verbatim excerpts capped at two sentences; no source-material URLs in shippable files. RG 1.28 and NQA-1 named only, never slug-linked and never summarized. Not legal or licensing advice; not a plant-specific QA program. Advice requests refused.
