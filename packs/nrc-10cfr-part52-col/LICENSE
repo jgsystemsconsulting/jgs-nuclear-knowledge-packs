@@ -1,0 +1,38 @@
+nrc-10cfr-part52-col pack: content licence
+=======================================================
+
+This pack is derived from two sources:
+
+1. 10 CFR Part 52, Licenses, Certifications, and Approvals for Nuclear
+   Power Plants (selected slices)
+   Publisher: U.S. Government; text via the Electronic Code of Federal
+   Regulations (eCFR), title 10 current as of 2026-11-09; pin-check
+   2026-11-11
+
+2. NRC Regulatory Guide 1.206, Applications for Nuclear Power Plants,
+   Rev 1, October 2018, accession ML18131A181; issuance notice Federal
+   Register 2018-22262 (83 FR 51712)
+   Publisher: U.S. Nuclear Regulatory Commission
+
+Source licence: Public Domain (US Government work, 17 U.S.C. 105) (tier 1;
+see ../../docs/SOURCE-VETTING.md). No source-material download link is
+published.
+
+Both source works are United States Government works and are not subject
+to copyright protection in the United States (17 U.S.C. 105). They are in
+the public domain. Regulatory guides are not copyrighted and NRC approval
+is not required to reproduce them. Anyone may reproduce, transform, and
+redistribute for any purpose, including commercially, without permission
+and without any attribution or share-alike obligation.
+
+Attribution to NRC is a courtesy (see the repository NOTICE), not a legal
+obligation. NRC does not endorse this pack or its authors.
+
+Reconstruction: pack content is synthesized orientation notes from the
+eCFR public-domain text and RG 1.206 pin facts. The RG PDF body was not
+captured; RG claims rest on the issuance-notice pin only. Verbatim
+excerpts capped at two sentences. The pack carries no staff positions
+stated as requirements.
+
+NOTE: this file governs the CONTENT of the pack. Repository tooling stays
+MIT and does not govern pack content (see ../../LICENSE).
