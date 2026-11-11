@@ -113,3 +113,15 @@ status: verified
 source: 2026-11-11-b07-app-b-criteria
 
 Content is a synthesized criterion lookup for the eighteen criteria I to XVIII of 10 CFR Part 50 Appendix B, built from the live eCFR Appendix B text at the build-time As-of pin only. Each criterion carries its roman numeral, its title, and its requirement substance in reference-note form. No wholesale verbatim; verbatim excerpts capped at two sentences; no source-material URLs in shippable files. RG 1.28 and NQA-1 named only, never slug-linked and never summarized. Not legal or licensing advice; not a plant-specific QA program. Advice requests refused.
+
+## req-20
+status: accepted
+source: 2026-11-11-b08-rg1200
+
+Pack at packs/nrc-pra-adequacy-rg-1-200/ with 6 chapters, glossary, cheatsheet; registered across the full surface per the registration table (live catalog entry, SKILLS row, re-pointed PRA quality Topics target, NRC agency target, Deliverables row, classification-rules assignments with notes, plugin path, PACK-BACKLOG D-02 status flip with Counts 11 to 12 and live-12, CHANGELOG bullet, EXPECTED_NOTES_COUNT 84 to 92 and Risk-Informed Decisionmaking THRESHOLDS 8 to 16 refreshed from regen among them). validate_pack and check_release pass.
+
+## req-21
+status: accepted
+source: 2026-11-11-b08-rg1200
+
+Content is synthesized orientation on PRA technical adequacy from the RG 1.200 Rev. 3 listing-page pin (December 2020, ML20238B871; pin 2026-11-08, listing re-checked at build) and the closed framework statements only. Zero quotations; verbatim excerpts capped at two sentences by licence policy; no source-material URLs in shippable files. ASME/ANS RA-Sa-2009 designation and endorsement fact only, no standard text. RG 1.174 named in prose as the decision-framework neighbour and never slug-linked; NUREG-1855 and SRP Chapter 19 named only, never summarized. No plant-specific adequacy verdict, no PRA quantification how-to, no legal or licensing advice. Advice requests refused.
