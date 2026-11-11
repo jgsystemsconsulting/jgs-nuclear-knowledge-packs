@@ -16,11 +16,11 @@ Rules of construction:
 | 1. Life Cycle & Requirements | 8 |
 | 2. Verification & Testing | 2 |
 | 3. Regulatory Framework & Staff Review | 34 |
-| 4. Quality Assurance Criteria | 8 |
+| 4. Quality Assurance Criteria | 16 |
 | 5. Risk-Informed Decisionmaking | 8 |
 | 6. Cyber Security Programs | 8 |
 | 7. Accident Monitoring | 8 |
-| **Total** | **76** |
+| **Total** | **84** |
 
 ## 1. Life Cycle & Requirements
 
@@ -93,6 +93,14 @@ Rules of construction:
 | nrc-qa-rg-1-28 | ch06-commercial-grade-nei-14-05a.md | NEI 14-05A Rev 1 name hook: accreditation in lieu of commercial grade surveys for laboratory calibration and test services |
 | nrc-qa-rg-1-28 | glossary.md (support file) | QA program criteria terms this pack uses, keyed to the RG 1.28 Rev 6 orientation chapters |
 | nrc-qa-rg-1-28 | cheatsheet.md (support file) | Which chapter owns the QA criteria question, the pin rule, and the not-advice limits |
+| nrc-app-b-criteria | ch01-appendix-b-frame-and-18-criteria-map.md | Appendix B frame, introduction and QA definition, activities-affecting-quality scope, and the eighteen-criteria map |
+| nrc-app-b-criteria | ch02-criteria-i-ii-organization-and-program.md | Criteria I to II: Organization and Quality Assurance Program as reference-note lookups |
+| nrc-app-b-criteria | ch03-criteria-iii-vii-design-procurement-document-control.md | Criteria III to VII: design control, procurement documents, instructions, document control, purchased items control |
+| nrc-app-b-criteria | ch04-criteria-viii-xii-material-process-inspection-test.md | Criteria VIII to XII: material identification, special processes, inspection, test control, measuring equipment |
+| nrc-app-b-criteria | ch05-criteria-xiii-xviii-handling-status-corrective-action-records-audits.md | Criteria XIII to XVIII: handling and storage, status, nonconforming material, corrective action, records, audits |
+| nrc-app-b-criteria | ch06-appendix-b-neighbours-and-limits.md | Neighbours and limits: RG 1.28 and NQA-1 named only, lookup boundary and thin classes |
+| nrc-app-b-criteria | glossary.md (support file) | Terms the Appendix B pack uses, synthesized from the covered criteria |
+| nrc-app-b-criteria | cheatsheet.md (support file) | Which chapter owns a criterion question, the pin rule, thin classes, and not-advice limits |
 
 ## 5. Risk-Informed Decisionmaking
 
