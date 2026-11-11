@@ -11,3 +11,9 @@ status: verified
 source: 2026-11-10-b06-part52-col
 
 A user invokes /nrc-10cfr-part52-col, or /nuclear with an ESP, design certification, combined license, ITAAC, manufacturing license, or RG 1.206 application-structure question. The answer cites this pack, states the eCFR As-of pin and the RG 1.206 Rev. 1 ML18131A181 pin, and refuses legal advice, plant-specific licensing-basis answers, and all-of-Part-52 coverage.
+
+## UC-3
+status: accepted
+source: 2026-11-11-b07-app-b-criteria
+
+A user invokes /nrc-app-b-criteria, or /nuclear with an Appendix B criterion, 10 CFR 50 Appendix B, or QA criteria question. The answer cites this pack, states the eCFR As-of pin, answers at criterion-lookup depth only, and refuses legal or licensing advice, plant-specific QA program design, RG 1.28 body answers, and NQA-1 text.
