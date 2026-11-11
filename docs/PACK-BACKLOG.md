@@ -113,6 +113,7 @@ See also root `README.md` § Out of scope and `/nuclear` Scope & Limits.
 | live-07 | `nrc-risk-informed-rg-1-174` | content | RG 1.174 Rev. 3, 2018 (ML17317A256); listing-page pin 2026-11-08; RG 1.200 and NUREG-1855 named only | live |
 | live-08 | `nrc-cyber-rg-5-71` | content | RG 5.71 Rev. 1, February 2023 (ML22258A204); listing-page pin 2026-11-08; 10 CFR 73.54 eCFR pin-check 2026-11-09; G-02 and G-03 named only | live |
 | live-09 | `nrc-accident-monitoring-rg-1-97` | content | RG 1.97 Rev. 5, May 2019 (ML18136A762); dual-source pin 2026-11-09; IEEE Std 497-2016 and NUREG-0700 named only | live |
+| live-10 | `nrc-10cfr-part52-col` | content | 10 CFR Part 52 selected slices (eCFR pin-check 2026-11-11); RG 1.206 Rev 1 (ML18131A181) pin 2026-11-10 | live |
 
 ---
 
@@ -167,7 +168,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
 | B-01 | `nrc-10cfr-part50-licensing-basis` | 1 | content | 1 | live | **10 CFR Part 50** selected (domestic licensing of production and power reactor facilities). Slice: definitions, 50.34 contents of applications, 50.36 tech specs, 50.54 conditions, 50.59 changes, App A GDC overview, App B pointer only. eCFR pin date: check at build (pin-check 2026-11-08). | - | What is the Part 50 licensing basis shape |
-| B-02 | `nrc-10cfr-part52-col` | 1 | content | 1 | ready | **10 CFR Part 52** (ESP, DC, COL, ML). Pair with **RG 1.206 Rev 1** (Oct 2018) Applications for Nuclear Power Plants. eCFR pin date: check at build (pin-check 2026-11-08). | B-01 | COL / design cert application structure |
+| B-02 | `nrc-10cfr-part52-col` | 1 | content | 1 | live | **10 CFR Part 52** (ESP, DC, COL, ML). Pair with **RG 1.206 Rev 1** (Oct 2018) Applications for Nuclear Power Plants. eCFR pin date: check at build (pin-check 2026-11-08). | B-01 | COL / design cert application structure |
 | B-03 | `nrc-part21-defect-reporting` | 2 | content | 1 | idea | **10 CFR Part 21** + **RG 1.234 Rev 1** (Mar 2024) Evaluating Deviations and Reporting Defects… | B-01 | Part 21 evaluation and reporting |
 | B-04 | `nrc-srp-intro-review-process` | 2 | content | 1 | idea | NUREG-0800 **Introduction** and review process material only (not whole SRP). | B-01 | How staff use the SRP |
 | B-05 | `nrc-operator-licensing-part55` | 3 | content | 1 | idea | **10 CFR Part 55** + related operator licensing NUREGs/RGs (**VERIFY** set). | B-01 | Operator licence requirements (civil plant) |
@@ -438,7 +439,7 @@ Offline domain knowledge filled chapter sketches and theme cuts. ML accessions f
 
 | bucket | count |
 |--------|-------|
-| Live packs/skills | 9 |
+| Live packs/skills | 10 |
 | Content candidates | ~45 |
 | Signpost candidates | ~6 |
 | Orchestrator-extend | ~4 |

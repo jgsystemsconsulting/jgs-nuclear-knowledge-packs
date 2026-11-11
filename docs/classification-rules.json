@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_version": "0.1.0",
-  "generated_on": "2026-11-09",
+  "generated_on": "2026-11-11",
   "rules_of_construction": [
     "Every chapter in every pack under packs/<slug>/chapters/ is assigned to exactly one capability cluster (best fit).",
     "Cross-cutting chapters carry a remark noting the strong secondary fit.",
@@ -428,6 +428,60 @@
       "pack": "nrc-accident-monitoring-rg-1-97",
       "chapter": "cheatsheet.md",
       "cluster": "Accident Monitoring",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-10cfr-part52-col",
+      "chapter": "ch01-part52-frame-and-licensing-actions.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part52-col",
+      "chapter": "ch02-early-site-permits-subpart-a.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part52-col",
+      "chapter": "ch03-design-certifications-subpart-b.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part52-col",
+      "chapter": "ch04-combined-licenses-subpart-c-and-itaac.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part52-col",
+      "chapter": "ch05-standing-mechanics-amendments-variances-52-98.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part52-col",
+      "chapter": "ch06-rg-1-206-rev-1-applications-guide.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part52-col",
+      "chapter": "ch07-manufacturing-licenses-subpart-f-and-finality.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-10cfr-part52-col",
+      "chapter": "glossary.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-10cfr-part52-col",
+      "chapter": "cheatsheet.md",
+      "cluster": "Regulatory Framework & Staff Review",
       "is_support": true
     }
   ]
