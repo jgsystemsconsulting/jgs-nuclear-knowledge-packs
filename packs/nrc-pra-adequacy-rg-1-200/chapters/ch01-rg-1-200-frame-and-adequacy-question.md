@@ -1,6 +1,6 @@
 # Chapter 1: RG 1.200 frame and adequacy question
 
-Sources: NRC RG 1.200 Rev. 3, December 2020, ML20238B871 (listing-page pin 2026-11-08; re-check 2026-11-11).
+Sources: NRC RG 1.200 Rev. 3, Acceptability Probabilistic Risk Assessment Results Risk-Informed Activities, December 2020, ML20238B871; listing-page pin 2026-11-08, re-checked 2026-11-11.
 
 ## Core Idea
 
@@ -13,7 +13,7 @@ RG 1.200 addresses the acceptability of PRA results used to support risk-informe
 
 ## Key Concepts
 
-- Pin facts: NRC RG 1.200 Rev. 3, December 2020, accession ML20238B871; Federal Register notice 2020-28632, published 2020-12-29, cited at 85 FR 85682; listing-page pin 2026-11-08, re-checked 2026-11-11.
+- Pin facts: NRC RG 1.200 Rev. 3, December 2020, accession ML20238B871; Federal Register notice 2020-28632, published 2020-12-29; listing-page pin 2026-11-08, re-checked 2026-11-11.
 - Later revisions of the guide are out of scope for this pack. Verify any point against the current guide listing before relying on it.
 - Guidance, not regulation: the guide describes an acceptable method; it does not bind a licensee, and this pack adds no binding force.
 - The subject line: acceptability of PRA results for risk-informed activities; the operative question is whether the PRA behind a use is technically adequate for the application.

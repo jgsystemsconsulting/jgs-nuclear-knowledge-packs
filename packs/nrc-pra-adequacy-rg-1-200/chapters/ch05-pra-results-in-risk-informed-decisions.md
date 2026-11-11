@@ -1,6 +1,6 @@
 # Chapter 5: PRA results in risk-informed decisions
 
-Sources: NRC RG 1.200 Rev. 3, December 2020, ML20238B871 (listing-page pin 2026-11-08; re-check 2026-11-11).
+Sources: NRC RG 1.200 Rev. 3, Acceptability Probabilistic Risk Assessment Results Risk-Informed Activities, December 2020, ML20238B871; listing-page pin 2026-11-08, re-checked 2026-11-11.
 
 ## Core Idea
 
