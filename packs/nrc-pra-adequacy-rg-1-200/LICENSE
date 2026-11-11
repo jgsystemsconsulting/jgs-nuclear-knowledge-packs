@@ -1,0 +1,31 @@
+nrc-pra-adequacy-rg-1-200 pack: content licence
+=======================================================
+
+This pack is derived from one source:
+
+    NRC Regulatory Guide 1.200, Acceptability of Probabilistic Risk
+    Assessment Results for Risk-Informed Activities
+    Rev. 3, December 2020, accession ML20238B871
+    Publisher: U.S. Nuclear Regulatory Commission
+
+Source licence: Public Domain (US Government work, 17 U.S.C. 105) (tier 1;
+see ../../docs/SOURCE-VETTING.md). No source-material download link is published.
+
+The source is a work of the United States Government and is not subject to
+copyright protection in the United States (17 U.S.C. 105). It is in the public
+domain. Anyone may reproduce, transform, and redistribute it for any purpose,
+including commercially, without permission and without any attribution or
+share-alike obligation.
+
+Attribution to the NRC is courtesy (see the repository NOTICE), not a legal
+obligation. The NRC does not endorse this pack or its authors.
+
+Reconstruction: pack content is synthesized orientation notes from RG 1.200
+Rev. 3 pin facts. This pack contains zero quotations; RG verbatim excerpts
+are capped at two sentences by licence policy. ASME/ANS RA-Sa-2009 is named
+by designation and endorsement fact only; its text is never reproduced.
+NUREG-1855 and SRP Chapter 19 are named only. RG 1.174 is named in prose as
+the decision-framework neighbour and is never reproduced.
+
+NOTE: this file governs the CONTENT of this pack. Repository tooling stays
+MIT and does not govern pack content (see ../../LICENSE).

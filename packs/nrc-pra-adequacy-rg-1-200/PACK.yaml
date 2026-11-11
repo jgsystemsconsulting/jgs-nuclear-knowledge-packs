@@ -1,0 +1,26 @@
+slug: nrc-pra-adequacy-rg-1-200
+title: "NRC RG 1.200 Rev 3 Acceptability of Probabilistic Risk Assessment Results for Risk-Informed Activities (PRA technical adequacy orientation)"
+publisher: "U.S. Nuclear Regulatory Commission (RG 1.200); reconstructed by JG Systems Consulting Ltd"
+source_version: "RG 1.200 Rev 3, December 2020, ML20238B871"
+license: "Public Domain (US Government work, 17 U.S.C. 105)"
+license_tier: 1
+commercial_use: true
+share_alike: false
+attribution_required: false
+build:
+  method: "reconstructed reference notes from NRC RG 1.200 Rev 3 pin facts (listing-page pin 2026-11-08, re-checked at build) and closed framework statements; ASME/ANS RA-Sa-2009 designation and endorsement fact only; NUREG-1855 and SRP Chapter 19 named only"
+  chapters: 6
+  built_on: "2026-11-11"
+notes: >
+  US Government work, public domain under 17 U.S.C. 105 for the RG-derived
+  notes. Commercial use is allowed. No attribution obligation and no
+  share-alike obligation. The NRC does not endorse this pack. Notes are
+  synthesized orientation notes from RG 1.200 Rev. 3 pinned facts
+  (ML20238B871, December 2020, listing-page pin 2026-11-08, listing
+  rechecked 2026-11-11), not copied wholesale. RG text is US Government
+  work and verbatim excerpts are capped at two sentences by licence
+  policy; this pack quotes nothing. ASME/ANS RA-Sa-2009 is named
+  designation and endorsement fact only and its text is not reproduced.
+  NUREG-1855 and SRP Chapter 19 are named only. These notes are not legal
+  or licensing advice, are not a plant-specific adequacy verdict, and
+  carry no PRA quantification instruction.
