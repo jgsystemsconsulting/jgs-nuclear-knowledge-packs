@@ -127,6 +127,8 @@ For industry families in this table, the per-document capture rule (including th
 
 tier-1 US federal publisher works cleared for sector use (FDA, NHTSA, NRC, FAA orders); tier-2 gov.uk OGL JSPs, per-document capture.
 
+Rows in this table cite a listing-page pin, a Federal Register notice, or an ADAMS lookup according to which route was live at pin time. NRC listing-page URL families are volatile after the NRC site restructure and may return 404, which counts as a dead listing and not as a bot-wall. When a listing re-check fails, confirm title, revision, date, and ML accession number from the Federal Register publication notice first, then from an ADAMS accession lookup. The pin note records the fallback used, with the Federal Register notice number and citation or the ADAMS lookup date. A live listing that conflicts with a recorded pin stops for maintainer re-vet, and the fallback does not overrule it. Listing-page pins already recorded stay valid without re-pin. When neither fallback confirms all four fields, VERIFY stays uncleared and packaging does not proceed.
+
 | Source set | Basis |
 |---|---|
 | **NRC software assurance set S1-S9** (RG 1.168 Rev 2 (ML13073A210); RG 1.169 Rev 1 (ML12355A642); RG 1.170 Rev 1 (ML13003A216); RG 1.171 Rev 1 (ML13004A375); RG 1.172 Rev 1 (ML13007A173); RG 1.173 Rev 1 (ML13009A190); NUREG-0800 BTP 7-14 Rev 6 (ML16019A308); RG 1.152 Rev 4 July 2023 (ML23054A463); NUREG-0800 Appendix 7.1-D Rev 1 August 2016 (ML16019A114)) | US Government works, 17 U.S.C. § 105. Cleared Tier 1 for the nrc-nuclear pack (nuclear sector build 2026-09-26; P18 slice; binding spec docs/superpowers/specs/2026-09-27-nuclear-rg152-app71d-slice.md). SOURCE-VETTING carries no agency-host URLs; ML accession ids and document titles only. |

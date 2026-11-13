@@ -16,6 +16,8 @@ listings that day. Accession (ML) numbers marked **VERIFY** must be pinned from
 the PDF cover sheet before packaging. Nothing here is committed work until a
 row moves to `in-progress` and a pack directory exists.
 
+NRC listing-page URL families are volatile after the NRC site restructure and may return 404. Treat a 404 from a listing family as a dead listing, not as a bot-wall or a 403 access denial, and do not retry through mirrors or caches. When a listing re-check fails, verify title, revision, date, and ML accession number for the RG or NUREG from the Federal Register publication notice first, then from an ADAMS accession lookup. If the Federal Register notice lacks one field, fill that field from the ADAMS lookup and name both sources. If no Federal Register notice exists, the ADAMS lookup is the primary evidence and the pin note states that no FR notice was found. When the Federal Register and ADAMS dates differ in form, record the document date from the ADAMS record and cite the FR notice for the publication fact. The pin note records which fallback route cleared VERIFY, plus the Federal Register notice number and citation when that route was used, or the ADAMS lookup date when that route was used. The rule triggers only when a listing re-check fails, so a recovered listing takes precedence again without doc edits. If a live listing conflicts with a recorded pin on revision or date, record the discrepancy and stop for maintainer re-vet; the fallback does not overrule a live listing. Listing-page pins already recorded stay valid without re-pin. When neither fallback confirms all four fields, VERIFY stays uncleared, no partial pin is recorded, and packaging does not proceed. eCFR slices keep the eCFR generation date route; this fallback does not apply to them.
+
 ---
 
 ## How to use this file
@@ -400,7 +402,7 @@ Before `packs/<slug>/` exists:
 
 1. [ ] Topic is **not** on Never list and not medical/weapons/classified. 
 2. [ ] Every source is Tier 1 or Tier 2 per `docs/SOURCE-VETTING.md`; Excluded material is signpost-only. 
-3. [ ] Each PDF/NUREG has **title, Rev, date, ML** (or eCFR generation date) recorded; VERIFY cleared. 
+3. [ ] Each PDF/NUREG has **title, Rev, date, ML** (or eCFR generation date) recorded; VERIFY cleared. Listing re-check first; on a 404 dead listing, confirm title, revision, date, and ML accession number from the Federal Register publication notice, then from an ADAMS accession lookup, and record the fallback used plus the FR notice number and citation or the ADAMS lookup date. A live listing that conflicts with a recorded pin stops for maintainer re-vet. When neither fallback confirms all four fields, VERIFY stays uncleared and packaging does not proceed.
 4. [ ] Slice is small enough (prefer &lt; ~400 pages source or a clean chapter cut). 
 5. [ ] Chapter list (5-12) drafted; no invented frameworks beyond source. 
 6. [ ] `PACK.yaml` licence fields match source; pack `LICENSE` is source terms. 
