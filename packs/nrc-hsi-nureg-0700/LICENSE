@@ -1,0 +1,33 @@
+nrc-hsi-nureg-0700 pack content licence
+===========================================
+
+This pack is derived from one source:
+
+NRC NUREG-0700, Human-System Interface Design Review Guidelines,
+Revision 4, January 2026. Accession ML26022A094.
+Publisher: U.S. Nuclear Regulatory Commission.
+
+Source licence: Public Domain (US Government work, 17 U.S.C. 105)
+(tier 1; see ../../docs/SOURCE-VETTING.md). No source-material
+download link published.
+
+Source is a work of the United States Government and is not subject
+to copyright protection in the United States (17 U.S.C. 105). Anyone
+may use, reproduce, distribute, and create derivative works for any
+purpose, including commercially, without permission and without any
+attribution or share-alike obligation.
+
+Attribution to NRC is a courtesy (see repository NOTICE), not a
+legal obligation. NRC does not endorse this pack or its authors.
+
+Reconstruction: pack content is synthesized orientation notes keyed
+to the recorded pin (Revision 4, January 2026, ML26022A094), verified
+via the official NRC publication page and ADAMS accession on
+2026-11-13. Full guideline body is not captured. No individual
+guideline item and no numeric design table is reproduced here.
+Verbatim excerpts are capped at two sentences by licence policy;
+this pack contains zero quotations. NUREG-0800 and NUREG-0711 are
+named only as related review guidance, not sources.
+
+NOTE: this file governs CONTENT of the pack. Repository tooling
+stays MIT and does not govern pack content (see ../../LICENSE).

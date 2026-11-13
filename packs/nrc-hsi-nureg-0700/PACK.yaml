@@ -1,0 +1,27 @@
+slug: nrc-hsi-nureg-0700
+title: "NRC NUREG-0700 Revision 4 Human-System Interface Design Review Guidelines (HSI design review orientation)"
+publisher: "U.S. Nuclear Regulatory Commission (NUREG-0700); reconstructed by JG Systems Consulting Ltd"
+source_version: "NUREG-0700 Revision 4, January 2026, ML26022A094"
+license: "Public Domain (US Government work, 17 U.S.C. 105)"
+license_tier: 1
+commercial_use: true
+share_alike: false
+attribution_required: false
+build:
+  method: "Reconstructed reference notes NUREG-0700 Revision 4 pin facts verified via official NRC publication page and ADAMS accession ML26022A094; full guideline body not captured; synthesized orientation, architectural categorization, and review principles only, zero quotations, no individual guideline items or numeric design values reproduced"
+  chapters: 7
+  built_on: "2026-11-13"
+notes: >
+  US Government work, public domain under 17 U.S.C. 105 NUREG-derived
+  notes. Commercial use allowed. No attribution obligation and no
+  share-alike obligation. NRC does not endorse pack. Notes are
+  synthesized orientation notes on NUREG-0700 Revision 4 pinned facts
+  (ML26022A094, January 2026; verified via official NRC publication
+  page on 2026-11-13), not copied wholesale. Verbatim excerpts capped
+  at two sentences by licence policy; pack uses none. Full guideline
+  body was not captured, no individual guideline item or numeric
+  design value is reproduced, NUREG-0800 SRP Chapter 18 and NUREG-0711
+  Revision 3 are named relationship depth only and are not sources.
+  These notes are not HFE review, not plant-specific HSI design, not
+  legal or licensing advice, and carry no design verdict for any real
+  plant.
