@@ -193,7 +193,7 @@ noted and skipped; if none remain, fall back to route-only.
 - `/nuclear` never overwrites an existing file without a yes at a gate.
 - **Sector charter.** Catalogue covers civilian nuclear power plant digital I&C
 software assurance, Part 50 and Part 52 licensing orientation, non-LWR PDC development orientation, and non-LWR licensing basis methodology orientation under live packs
-(today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232`) plus name-only
+(today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232`, `nrc-non-lwr-ticap-rg-1-233`) plus name-only
   standards signposts. It is not a general nuclear engineering library.
 - **Never route or invent content for:** nuclear weapons or weapons-design
   physics; classified, export-controlled, or safeguards-sensitive material
