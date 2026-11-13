@@ -9,8 +9,8 @@ positive clean-tree runs all hold. Any failed assert raises and exits nonzero.
 
 Local scratch trip: the positive runs execute shipped workflow heredocs
 against this tree, so a checkout carrying gitignored build inputs under
-sources/* fails the link-policy positive run (violations
-all under sources\). For a clean run, use a checkout without build
+sources/* fails the link-policy positive run, violations all under
+sources/. For a clean run, use a checkout without build
 inputs (fresh clone or worktree), or move sources/* aside before the
 run. Restore sources/* afterwards. sources/* are gitignored build
 inputs; never commit them.
@@ -43,6 +43,7 @@ Regex parity pins (P4 pin-plus-parity, extended to the nine pinned steps):
 from __future__ import annotations
 
 import json
+import os
 import re
 import subprocess
 import sys
@@ -204,11 +205,16 @@ def extract_heredoc(workflow_text: str, step_name: str) -> str | None:
 
 def run_gate(body: str, cwd: Path) -> tuple[int, str]:
     """Run an extracted heredoc body with cwd set; return (returncode, output)."""
+    env = dict(os.environ)
+    env["PYTHONIOENCODING"] = "utf-8"
     proc = subprocess.run(
         [sys.executable, "-c", body],
         cwd=str(cwd),
         capture_output=True,
         text=True,
+        encoding="utf-8",
+        errors="replace",
+        env=env,
     )
     return proc.returncode, proc.stdout + proc.stderr
 

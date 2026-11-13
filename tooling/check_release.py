@@ -1259,7 +1259,8 @@ def main() -> int:
     try:
         short_sha = subprocess.run(
             ["git", "rev-parse", "--short", "HEAD"],
-            capture_output=True, text=True, cwd=ROOT, check=True,
+            capture_output=True, text=True, encoding="utf-8",
+            errors="replace", cwd=ROOT, check=True,
         ).stdout.strip()
         receipt = f"v{version} @ {short_sha}"
     except Exception:
