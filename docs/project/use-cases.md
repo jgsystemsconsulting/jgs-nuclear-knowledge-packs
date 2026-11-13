@@ -19,7 +19,7 @@ source: 2026-11-11-b07-app-b-criteria
 A user invokes /nrc-app-b-criteria, or /nuclear with an Appendix B criterion, 10 CFR 50 Appendix B, or QA criteria question. The answer cites this pack, states the eCFR As-of pin, answers at criterion-lookup depth only, and refuses legal or licensing advice, plant-specific QA program design, RG 1.28 body answers, and NQA-1 text.
 
 ## UC-4
-status: accepted
+status: verified
 source: 2026-11-11-b08-rg1200
 
 A user invokes /nrc-pra-adequacy-rg-1-200, or /nuclear with an RG 1.200, PRA technical adequacy, or PRA quality question. The answer cites this pack, states the RG 1.200 Rev. 3 ML20238B871 pin and the build re-check date, answers at adequacy-orientation depth only, and refuses plant-specific adequacy verdicts, PRA quantification how-to, endorsed-standard requirement text, and legal or licensing advice.
