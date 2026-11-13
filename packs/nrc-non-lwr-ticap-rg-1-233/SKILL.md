@@ -58,7 +58,7 @@ Notes are synthesized orientation notes keyed to the recorded pin and closed sta
 | 04 | [ch04-safety-classification-of-sscs](chapters/ch04-safety-classification-of-sscs.md) | Safety classification of SSCs; classification families named definition depth | Regulatory Framework & Staff Review |
 | 05 | [ch05-defense-in-depth-adequacy-evaluation](chapters/ch05-defense-in-depth-adequacy-evaluation.md) | Defense-in-depth adequacy evaluation; plant capability and programmatic faces | Regulatory Framework & Staff Review |
 | 06 | [ch06-content-of-application-and-pdc-integration](chapters/ch06-content-of-application-and-pdc-integration.md) | Content of application and principal design criteria integration; TICAP orientation | Regulatory Framework & Staff Review |
-| 07 | [ch07-cross-pack-neighbours-and-limits](chapters/ch07-cross-pack-neighbours-and-limits.md) | Cross-pack neighbours and limits; honest fallback and stop lines | Regulatory Framework & Staff Review |
+| 07 | [ch07-cross-pack-neighbours-and-limits-ticap](chapters/ch07-cross-pack-neighbours-and-limits-ticap.md) | Cross-pack neighbours and limits; honest fallback and stop lines | Regulatory Framework & Staff Review |
 
 ## Topic Index
 
