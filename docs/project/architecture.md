@@ -47,3 +47,9 @@ status: verified
 source: 2026-11-10-a02-fork-guard
 
 Guard mechanism is dual signal on the A-02 row only: status value deferred from the existing legend plus explicit DO-NOT-START guard text naming fork X1. No new status value and no legend edit. The row guard text carries the why, so the legend stretch from dependency or size to fork-blocked stays self-documenting on the row. Wave sequence item 2 at docs/PACK-BACKLOG.md:373 is not annotated in this package; the A-02 row is the status source of truth and the stale sequence listing is a documented residual owned by later routing or status-hygiene work.
+
+## AD-9
+status: accepted
+source: 2026-11-13-b09-routing-write
+
+A terminal routing write is the routing or touch run earlier pack specs defer cross-pack staleness to. It may fix a stale deferral-tense line in a live pack body if the change is one line, names the now-live replacement in prose only with no slug link and no source-material URL, adds no substance or structure, and preserves named-only and pointer discipline. Everything beyond that narrow class stays owned by a future pack-touch run.
