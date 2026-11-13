@@ -11,7 +11,7 @@
   <text x="64" y="140" font-family="ui-monospace, Consolas, monospace" font-size="48" font-weight="700" fill="#e8ebf0">§06 · The catalogue</text>
   <text x="64" y="188" font-family="ui-monospace, Consolas, monospace" font-size="24" fill="#c7ccd3">11 packs  ·  1 signposts  ·  open sources only</text>
   <text x="80" y="250" font-family="ui-monospace, Consolas, monospace" font-size="26" font-weight="700" fill="#e8ebf0">Content</text>
-  <text x="400" y="250" font-family="ui-monospace, Consolas, monospace" font-size="26" fill="#f4f2ec">10</text>
+  <text x="400" y="250" font-family="ui-monospace, Consolas, monospace" font-size="26" fill="#f4f2ec">11</text>
   <text x="80" y="310" font-family="ui-monospace, Consolas, monospace" font-size="26" font-weight="700" fill="#e8ebf0">Signposts</text>
   <text x="400" y="310" font-family="ui-monospace, Consolas, monospace" font-size="26" fill="#f4f2ec">01</text>
   <line x1="48" y1="605" x2="1152" y2="605" stroke="#2a2d33"/>
