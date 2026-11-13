@@ -7,13 +7,15 @@ Run:  python tooling/test_ci_gate.py
 Exits 0 when regex literal parity, heredoc extraction, negative demos, and
 positive clean-tree runs all hold. Any failed assert raises and exits nonzero.
 
-Local scratch trip: the positive runs execute shipped workflow heredocs
-against this tree, so a checkout carrying gitignored build inputs under
-sources/* fails the link-policy positive run, violations all under
-sources/. For a clean run, use a checkout without build
-inputs (fresh clone or worktree), or move sources/* aside before the
-run. Restore sources/* afterwards. sources/* are gitignored build
-inputs; never commit them.
+Local scratch: the positive runs execute shipped workflow heredocs
+against a probe-private snapshot of the tracked tree (git ls-files -z,
+copied under a TemporaryDirectory owned by this run). Gitignored build
+inputs under sources/* never enter the snapshot, so no move-aside is
+needed and the live checkout is never renamed or restored. The probe
+needs a git work tree; a listing failure aborts the run instead of
+falling back to the live tree. Untracked files are outside the
+snapshot, matching CI: git add a new file before the probe covers it.
+sources/* are gitignored build inputs; never commit them.
 
 The probe extracts each heredoc from the workflow by its pinned step name and
 executes the shipped workflow text (not a copy of it), so workflow breakage
@@ -45,6 +47,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -224,6 +227,58 @@ def write_tree(root: Path, files: dict[str, str]) -> None:
         p = root / rel
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(content, encoding="utf-8")
+
+
+def snapshot_tracked(root: Path, dest: Path) -> int:
+    """Copy every tracked file under root into dest; return the copied count.
+
+    The input set is `git ls-files -z` at root, so .git, untracked files,
+    and gitignored build inputs (sources/*) never enter the snapshot. An
+    untracked new file is not covered until `git add` names it, matching
+    what CI sees from a fresh clone. Tracked paths missing on disk (staged
+    deletion) are skipped. Any listing failure, empty listing, case-only
+    path collision, or tracked symlink or non-regular entry aborts the
+    probe; there is no fallback to running against the live checkout.
+    Copy OSError propagates so the caller can retry once into a shallower
+    temp root.
+    """
+    try:
+        proc = subprocess.run(
+            ["git", "ls-files", "-z"], cwd=str(root), capture_output=True
+        )
+    except FileNotFoundError as exc:
+        raise SystemExit(f"snapshot: git binary not found: {exc}") from exc
+    if proc.returncode != 0:
+        detail = proc.stderr.decode("utf-8", errors="replace").strip()
+        raise SystemExit(
+            f"snapshot: git ls-files failed at {root} (probe needs a git "
+            f"work tree): {detail}"
+        )
+    raw = [chunk for chunk in proc.stdout.split(b"\x00") if chunk]
+    if not raw:
+        raise SystemExit(f"snapshot: git ls-files at {root} returned no paths")
+    seen: dict[str, str] = {}
+    copied = 0
+    for chunk in raw:
+        rel = os.fsdecode(chunk)
+        key = rel.lower()
+        if key in seen:
+            raise SystemExit(
+                f"snapshot: case-only path collision: {seen[key]!r} and {rel!r}"
+            )
+        seen[key] = rel
+        src = root / rel
+        if not src.exists() and not src.is_symlink():
+            continue
+        if src.is_symlink() or not src.is_file():
+            raise SystemExit(
+                f"snapshot: tracked path is not a regular file: {rel!r}"
+            )
+        target = dest / rel
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(src, target)
+        copied += 1
+    return copied
 
 
 def trusted_hosts_file(heredoc_body: str) -> str:
@@ -721,12 +776,43 @@ def main() -> int:
              "[routing-map] exactly one orchestrator member required: 0 found",
              "routing-map-wrong-case-orchestrator")
 
-    # 3. positive runs against the real repo tree: what CI sees on a clean tree
-    for step in PINNED_STEPS:
-        rc, out = run_gate(bodies[step], ROOT)
-        assert rc == 0, (
-            f"positive run against the real tree failed for '{step}':\n{out}"
-        )
+    # Positive runs against a probe-private snapshot of the tracked tree:
+    # what CI sees on a clean checkout, isolated from local scratch. The
+    # live checkout is never renamed, moved, or restored.
+    snapshot_tmp = None
+    snapshot_root = None
+    last_error: OSError | None = None
+    for attempt_dir in (None, ROOT):
+        candidate = tempfile.TemporaryDirectory(dir=attempt_dir)
+        try:
+            snapshot_tracked(ROOT, Path(candidate.name))
+        except OSError as exc:
+            last_error = exc
+            try:
+                candidate.cleanup()
+            except OSError:
+                print(f"warning: snapshot cleanup failed: {candidate.name}")
+            continue
+        snapshot_tmp = candidate
+        snapshot_root = Path(candidate.name)
+        break
+    if snapshot_tmp is None or snapshot_root is None:
+        raise SystemExit(f"snapshot: tracked-tree copy failed: {last_error}")
+    try:
+        for step in PINNED_STEPS:
+            rc, out = run_gate(bodies[step], snapshot_root)
+            assert rc == 0, (
+                f"positive run against the tracked-tree snapshot failed "
+                f"for '{step}':\n{out}"
+            )
+    finally:
+        try:
+            snapshot_tmp.cleanup()
+        except OSError as exc:
+            print(
+                f"warning: snapshot cleanup failed, leftover at "
+                f"{snapshot_root}: {exc}"
+            )
 
     print("ci-gate probe: OK (parity, extraction, negative demos, positive runs)")
     return 0
