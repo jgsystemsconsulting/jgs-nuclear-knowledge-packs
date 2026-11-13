@@ -85,3 +85,14 @@ status: verified
 source: 2026-11-13-build-provenance-guard
 
 Provenance fallback is a maintainer procedure in existing docs only, Federal Register first and ADAMS second. No tooling fetches, parses, or validates Federal Register or ADAMS records, and no fallback URL is stored. Enforcement is pin-note review plus existing VERIFY gate in docs/PACK-BACKLOG.md acceptance checklist. Alternatives rejected: waiting for new NRC listing URL family (volatile, blocks re-checks), PDF cover sheet only (PDF body often not captured for pin-only packs), and automated listing fetch (network dependency and bot-wall variance for four metadata fields).
+## AD-15
+status: accepted
+source: 2026-11-13-nrc-non-lwr-pdc-rg-1-232
+
+Contents provenance is fixed as first pin: RG 1.232 Rev 0 (April 2018) verified via Federal Register notice 83 FR 15178 (April 9, 2018), ADAMS ML17325A611, with no prior on-record listing pin and no on-record captured RG 1.232 body. PACK.yaml follows the live single-RG tier-1 pattern: license "Public Domain (US Government work, 17 U.S.C. 105)" (the Public Domain prefix satisfies check_release licences parity and the test_ci_gate P17 pin), license_tier 1, commercial_use true, share_alike false, attribution_required false. The pack LICENSE carries the standard public domain notice for US Government work, mirroring packs/nrc-risk-informed-rg-1-174/LICENSE, naming one source. Repository tooling stays under the repository MIT licence; dispatch wording "PACK.yaml license MIT" rejected because every tier-1 RG pack records Public Domain and check_release.py licences rule 6 exempts only licences starting with "Public Domain". A live NRC listing that resolves at build but conflicts with the FR pin stops the build for maintainer re-vetting per req-31; a dead or absent listing never blocks on the FR pin alone.
+
+## AD-16
+status: accepted
+source: 2026-11-13-nrc-non-lwr-pdc-rg-1-232
+
+All nine new notes (seven chapters, glossary.md, cheatsheet.md) sit in the existing cluster "Regulatory Framework & Staff Review"; no new cluster is created despite the dispatch allowing one. The pack subject is design-criteria formulation under 10 CFR 50.34 and 10 CFR Part 52 application-content rules, the same licensing-frame family as packs/nrc-10cfr-part50-licensing-basis/ and packs/nrc-10cfr-part52-col/, and one-cluster placement keeps capability-map retrieval with those neighbours and limits THRESHOLDS edits to one cluster value (34 to 43) plus EXPECTED_NOTES_COUNT (92 to 101). A new cluster (for example Advanced Reactors & Non-LWR Licensing) is deferred until a second non-LWR pack (nrc-non-lwr-ticap-rg-1-233) ships; that later run re-clusters as one documented move. Rejected: Risk-Informed Decisionmaking (the pack is PDC development, not PRA adequacy) and a new nine-note cluster (single-pack clusters fragment retrieval and add threshold-key churn for no retrieval gain).

@@ -193,3 +193,14 @@ status: verified
 source: 2026-11-13-build-provenance-guard
 
 Change surface is closed. Only tooling/check_release.py SKIP_DIRS literal and comment block above it, docs/PACK-BACKLOG.md status catalogue note and acceptance checklist item 3, docs/SOURCE-VETTING.md cleared families note, and test or probe additions proving req-30 seeded cases may change. No pack body, PACK.yaml, LICENSE, catalogue, routing, classification, backlog row, existing pin, validate_pack.py, build_pack.py, or test_ci_gate.py logic changes. docs/superpowers/backlog.md promotion closure for b07-app-b-criteria-1 and b08-rg1200-1 stays in backlog grooming, not this run.
+## req-33
+status: accepted
+source: 2026-11-13-nrc-non-lwr-pdc-rg-1-232
+
+Pack at packs/nrc-non-lwr-pdc-rg-1-232/ with 7 chapters, glossary, and cheatsheet; registered across the full surface per the registration table (live catalog entry, SKILLS row, new Topics rows, NRC agency target, Deliverables row plus step-down, one new SOURCE-VETTING cleared row, classification-rules assignments and notes, plugin path, PACK-BACKLOG P-01 status flip to live with live-13 and Counts 12 to 13, CHANGELOG bullet, EXPECTED_NOTES_COUNT 92 to 101 and Regulatory Framework & Staff Review THRESHOLDS 34 to 43 refreshed from regen among them). validate_pack and check_release pass.
+
+## req-34
+status: accepted
+source: 2026-11-13-nrc-non-lwr-pdc-rg-1-232
+
+Content is synthesized PDC-adaptation orientation from RG 1.232 Rev 0 pin facts verified via Federal Register notice 83 FR 15178 (April 9, 2018), ML17325A611, and the closed statement list in spec 2026-11-13-nrc-non-lwr-pdc-rg-1-232 only. No verbatim SFR-DC, MHTGR-DC, or MSR-DC criterion text; verbatim excerpts capped at two sentences by licence policy and none used; no invented appendix criterion numbers, titles, or counts; no source-material URLs in shippable files. 10 CFR 50.34, 10 CFR Part 52, and 10 CFR Part 50 Appendix A GDC named as the regulatory foundation at orientation depth; detailed Part 52 and Part 50 text stays owned by the live sibling packs named in prose only. RG 1.233 and TICAP named only as a forward hook, never summarized. Functional containment and mechanistic source term framed as orientation concepts only, with no design, analysis, or acceptance method. Not legal or licensing advice; not a plant-specific licensing basis. Advice requests refused.
