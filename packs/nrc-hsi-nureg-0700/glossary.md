@@ -1,0 +1,27 @@
+# Glossary: nrc-hsi-nureg-0700
+
+Definitions are synthesized orientation notes keyed to the recorded pin (NUREG-0700 Revision 4, January 2026, ML26022A094; verified via the official NRC publication page on 2026-11-13), not substitute guideline text. Alphabetical.
+
+- **alarm system**: HSI system presenting abnormal condition alerts to operators; named here as review topic with processing and presentation concerns, no setpoint or scheme stated. (ch03)
+- **anthropometry**: discipline of human body measurement behind reach, viewing, and clearance review questions; named discipline, no table or value stated. (ch05)
+- **automation**: HSI system function carrying out control actions with operator oversight at defined levels; named here as review topic, no logic stated. (ch03)
+- **computer-based procedure**: procedure presented through computer display with navigation and placekeeping aids; named here as review topic, no procedure text stated. (ch04)
+- **control room**: main plant operating center where operators monitor and control; named here as workplace review setting, no layout judged. (ch05)
+- **degraded HSI**: HSI state with reduced capability under degraded I&C or HSI conditions; named here as review topic covering detection and safe fallback concerns, no failure mode analysed. (ch06)
+- **degraded HSI conditions**: conditions where I&C or HSI capability is reduced; named here as review topic, no plant response assessed. (ch06)
+- **design review guideline**: one review consideration an HSI design is checked against; orients staff judgment and does not itself approve or reject any design. (ch01)
+- **group-view display**: large shared display presenting plant information to the crew as a group; named here as HSI system review topic, no content or layout stated. (ch03)
+- **HSI integration**: checking alarms, displays, controls, procedures, automation, and workplace as an integrated whole for crew tasks; named here as review topic, no design stated. (ch06)
+- **human factors engineering**: discipline applying human capability knowledge to design so operators can perform safely; named here as review frame, no method stated. (ch01)
+- **human-system interface**: means by which operators interact with plant systems through displays, controls, and workplace; central review object of the guideline set. (ch01)
+- **information display**: HSI element presenting plant state to operators; named here as review topic, no value or layout stated. (ch02)
+- **local control station**: station outside the main control room where operators monitor or act; named here as review topic, no design stated. (ch05)
+- **maintainability (digital systems)**: review topic covering whether digital HSI supports test and maintenance awareness; named here as review topic, no task or procedure stated. (ch06)
+- **mode awareness**: operator understanding of current automation or system mode; named here as review concern, no design stated. (ch03)
+- **safety parameter display system**: HSI system presenting monitored safety information to operators; named here as HSI concept only, no variable, content, or layout stated, with variable criteria owned by the live accident monitoring pack. (ch03)
+- **soft control**: control implemented through display interaction rather than a dedicated device; named here as review topic, no design stated. (ch03)
+- **soft control system**: set of display-mediated controls reviewed as a system; named here as review topic, no design stated. (ch03)
+- **task support environment**: combined HSI resources supporting crew task performance; named here as integration concept, no design stated. (ch06)
+- **user-interface interaction**: operator interaction with HSI through input and display response; named here as review topic, no design stated. (ch02)
+- **workplace design**: design review topic covering control room arrangement and environment; named here as review topic family, no layout or value stated. (ch05)
+- **workstation**: operator position where displays and controls are arranged for use; named here as review topic, no dimension or layout stated. (ch05)
