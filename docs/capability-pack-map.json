@@ -280,6 +280,51 @@
           "pack": "nrc-non-lwr-pdc-rg-1-232",
           "chapter": "cheatsheet.md (support file)",
           "note": "Which chapter owns a non-LWR PDC question, the pin rule, and not-advice limits"
+        },
+        {
+          "pack": "nrc-non-lwr-ticap-rg-1-233",
+          "chapter": "ch01-rg-1-233-scope-purpose-and-lmp-relationship.md",
+          "note": "RG 1.233 frame: scope, purpose, and LMP relationship with pin facts and pack map"
+        },
+        {
+          "pack": "nrc-non-lwr-ticap-rg-1-233",
+          "chapter": "ch02-technology-inclusive-risk-informed-performance-based-framework.md",
+          "note": "Technology-inclusive risk-informed performance-based framework overview at outline depth"
+        },
+        {
+          "pack": "nrc-non-lwr-ticap-rg-1-233",
+          "chapter": "ch03-selection-of-licensing-basis-events.md",
+          "note": "Licensing basis event selection: AOO DBE BDBE families and LMP event classes named only"
+        },
+        {
+          "pack": "nrc-non-lwr-ticap-rg-1-233",
+          "chapter": "ch04-safety-classification-of-sscs.md",
+          "note": "SSC safety classification families and special treatment at definition depth, no numeric values"
+        },
+        {
+          "pack": "nrc-non-lwr-ticap-rg-1-233",
+          "chapter": "ch05-defense-in-depth-adequacy-evaluation.md",
+          "note": "Defense-in-depth adequacy: plant capability and programmatic faces at outline depth"
+        },
+        {
+          "pack": "nrc-non-lwr-ticap-rg-1-233",
+          "chapter": "ch06-content-of-application-and-pdc-integration.md",
+          "note": "Application content orientation and PDC integration: TICAP name and purpose only"
+        },
+        {
+          "pack": "nrc-non-lwr-ticap-rg-1-233",
+          "chapter": "ch07-cross-pack-neighbours-and-limits-ticap.md",
+          "note": "Neighbours and limits: sibling packs named in prose only, not-advice closer"
+        },
+        {
+          "pack": "nrc-non-lwr-ticap-rg-1-233",
+          "chapter": "glossary.md (support file)",
+          "note": "Terms the RG 1.233 pack uses, synthesized from the covered orientation notes"
+        },
+        {
+          "pack": "nrc-non-lwr-ticap-rg-1-233",
+          "chapter": "cheatsheet.md (support file)",
+          "note": "Which chapter owns a non-LWR licensing basis methodology question, the pin rule, and not-advice limits"
         }
       ]
     },

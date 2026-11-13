@@ -129,11 +129,16 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | MHTGR design criteria | MHTGR-DC, modular high-temperature gas-cooled reactor design criteria, HTGR PDC | `nrc-non-lwr-pdc-rg-1-232` |
 | MSR design criteria | MSR-DC, molten salt reactor design criteria, molten salt PDC | `nrc-non-lwr-pdc-rg-1-232` |
 | Mechanistic source term and functional containment | mechanistic source term PDC, functional containment PDC, functional containment non-LWR | `nrc-non-lwr-pdc-rg-1-232` |
+| Non-LWR licensing basis methodology | RG 1.233, non-LWR licensing basis methodology, technology-inclusive licensing, TICAP | `nrc-non-lwr-ticap-rg-1-233` |
+| Licensing Modernization Project | LMP methodology, Licensing Modernization Project, NEI 18-04 endorsement | `nrc-non-lwr-ticap-rg-1-233` |
+| Licensing basis event selection | licensing basis events non-LWR, LBE selection, AOO DBE BDBE selection | `nrc-non-lwr-ticap-rg-1-233` |
+| Non-LWR SSC safety classification | SSC classification LMP, safety-related non-safety-related special treatment, non-LWR safety classification | `nrc-non-lwr-ticap-rg-1-233` |
+| Non-LWR defense-in-depth evaluation | defense-in-depth adequacy non-LWR, plant capability programmatic DID, LMP DID evaluation | `nrc-non-lwr-ticap-rg-1-233` |
 
 ### Agency contexts
 | Agency | Keywords | Packs |
 |---|---|---|
-| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232` |
+| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232`, `nrc-non-lwr-ticap-rg-1-233` |
 
 ### Deliverables
 | Deliverable | Keywords | Draft | Review | Verify |
@@ -152,6 +157,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Appendix B criterion question list | Appendix B questions, criterion lookup questions, QA criteria checklist questions | `nrc-app-b-criteria` | `nrc-app-b-criteria` | `nrc-app-b-criteria` |
 | PRA technical adequacy question list | PRA adequacy questions, RG 1.200 question list, PRA quality checklist questions | `nrc-pra-adequacy-rg-1-200` | `nrc-pra-adequacy-rg-1-200` | `nrc-pra-adequacy-rg-1-200` |
 | Non-LWR PDC development question list | non-LWR PDC questions, RG 1.232 question list, principal design criteria outline | `nrc-non-lwr-pdc-rg-1-232` | `nrc-non-lwr-pdc-rg-1-232` | `nrc-non-lwr-pdc-rg-1-232` |
+| Non-LWR licensing basis methodology question list | RG 1.233 question list, LMP methodology questions, TICAP question list | `nrc-non-lwr-ticap-rg-1-233` | `nrc-non-lwr-ticap-rg-1-233` | `nrc-non-lwr-ticap-rg-1-233` |
 
 ### Licences
 | Pack | Licence |
@@ -186,7 +192,7 @@ noted and skipped; if none remain, fall back to route-only.
 - Deliverable stage chains come only from Deliverables rows; empty cells skip that stage.
 - `/nuclear` never overwrites an existing file without a yes at a gate.
 - **Sector charter.** Catalogue covers civilian nuclear power plant digital I&C
-software assurance, Part 50 and Part 52 licensing orientation, and non-LWR PDC development orientation under live packs
+software assurance, Part 50 and Part 52 licensing orientation, non-LWR PDC development orientation, and non-LWR licensing basis methodology orientation under live packs
 (today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232`) plus name-only
   standards signposts. It is not a general nuclear engineering library.
 - **Never route or invent content for:** nuclear weapons or weapons-design

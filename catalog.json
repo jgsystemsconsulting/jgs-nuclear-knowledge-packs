@@ -126,7 +126,18 @@
       "commercial_use": true,
       "chapters": 7,
       "status": "live"
+    },
+    {
+      "slug": "nrc-non-lwr-ticap-rg-1-233",
+      "title": "NRC RG 1.233 Rev 0 Technology-Inclusive Risk-Informed Performance-Based Methodology for Non-LWR Licensing Basis (LMP and TICAP orientation)",
+      "publisher": "U.S. Nuclear Regulatory Commission (RG 1.233); reconstructed by JG Systems Consulting Ltd",
+      "source_version": "RG 1.233 Rev 0, June 2020, ML20091L698",
+      "license": "Public Domain (US Government work, 17 U.S.C. 105)",
+      "license_tier": 1,
+      "commercial_use": true,
+      "chapters": 7,
+      "status": "live"
     }
-],
-"planned": []
+  ],
+  "planned": []
 }

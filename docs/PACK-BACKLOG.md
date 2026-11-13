@@ -119,6 +119,7 @@ See also root `README.md` § Out of scope and `/nuclear` Scope & Limits.
 | live-11 | `nrc-app-b-criteria` | content | 10 CFR Part 50 Appendix B eighteen criteria lookup (eCFR pin-check 2026-11-11); RG 1.28 and NQA-1 named only | live |
 | live-12 | `nrc-pra-adequacy-rg-1-200` | content | RG 1.200 Rev. 3 PRA technical adequacy orientation (ML20238B871; listing re-check 2026-11-11); ASME/ANS RA-Sa-2009 designation only, NUREG-1855 and SRP Chapter 19 named only | live |
 | live-13 | `nrc-non-lwr-pdc-rg-1-232` | content | RG 1.232 Rev 0 (Apr 2018; ML17325A611); verified via 83 FR 15178 on 2026-11-13; SFR-DC, MHTGR-DC, MSR-DC family-level only | live |
+| live-14 | `nrc-non-lwr-ticap-rg-1-233` | content | RG 1.233 Rev 0 (Jun 2020; ML20091L698); verified via 85 FR 35339 on 2026-11-13; LMP methodology stages outline depth only | live |
 
 ---
 
@@ -325,7 +326,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
 | P-01 | `nrc-non-lwr-pdc-rg-1-232` | 2 | content | 1 | live | **RG 1.232 Rev 0** (Apr 2018) Developing Principal Design Criteria for Non-Light Water Reactors. ML17325A611 (verified via 83 FR 15178 on 2026-11-13). | B-02 (live) | Non-LWR PDC development |
-| P-02 | `nrc-non-lwr-ticap-rg-1-233` | 2 | content | 1 | ready | **RG 1.233 Rev 0** (Jun 2020) Technology-Inclusive, Risk-Informed, Performance-Based Methodology… non-LWR. ML **VERIFY**: pin title, Rev, date, and ML from listing page at build. | P-01, D-01 (live) | TICAP / LMP-style licensing basis content |
+| P-02 | `nrc-non-lwr-ticap-rg-1-233` | 2 | content | 1 | live | **RG 1.233 Rev 0** (Jun 2020) Technology-Inclusive, Risk-Informed, Performance-Based Methodology for Non-Light Water Reactors. ML20091L698 (verified via 85 FR 35339 on 2026-11-13). | P-01, D-01 (live) | TICAP / LMP-style licensing basis content |
 | P-03 | `nrc-part53-framework` | 3 | content | 1 | idea | **10 CFR Part 53** if/when final and in eCFR (**VERIFY** rule status before start). Drafts are weak pins. | P-02 | Risk-informed advanced reactor framework |
 | P-04 | `nrc-smr-col-delta` | 3 | content | 1 | idea | SMR-specific public guidance deltas vs RG 1.206 / Part 52 (**VERIFY** set). | B-02 | SMR COL differences |
 
@@ -444,7 +445,7 @@ Offline domain knowledge filled chapter sketches and theme cuts. ML accessions f
 
 | bucket | count |
 |--------|-------|
-| Live packs/skills | 13 |
+| Live packs/skills | 14 |
 | Content candidates | ~45 |
 | Signpost candidates | ~6 |
 | Orchestrator-extend | ~4 |

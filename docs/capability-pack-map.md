@@ -15,12 +15,12 @@ Rules of construction:
 |---|---|
 | 1. Life Cycle & Requirements | 8 |
 | 2. Verification & Testing | 2 |
-| 3. Regulatory Framework & Staff Review | 43 |
+| 3. Regulatory Framework & Staff Review | 52 |
 | 4. Quality Assurance Criteria | 16 |
 | 5. Risk-Informed Decisionmaking | 16 |
 | 6. Cyber Security Programs | 8 |
 | 7. Accident Monitoring | 8 |
-| **Total** | **101** |
+| **Total** | **110** |
 
 ## 1. Life Cycle & Requirements
 
@@ -89,6 +89,15 @@ Rules of construction:
 | nrc-non-lwr-pdc-rg-1-232 | ch07-cross-pack-neighbours-and-limits.md | Neighbours and limits: Part 50, Part 52, RG 1.233, and TICAP named only, not-advice closer |
 | nrc-non-lwr-pdc-rg-1-232 | glossary.md (support file) | Terms the RG 1.232 pack uses, synthesized from the covered orientation notes |
 | nrc-non-lwr-pdc-rg-1-232 | cheatsheet.md (support file) | Which chapter owns a non-LWR PDC question, the pin rule, and not-advice limits |
+| nrc-non-lwr-ticap-rg-1-233 | ch01-rg-1-233-scope-purpose-and-lmp-relationship.md | RG 1.233 frame: scope, purpose, and LMP relationship with pin facts and pack map |
+| nrc-non-lwr-ticap-rg-1-233 | ch02-technology-inclusive-risk-informed-performance-based-framework.md | Technology-inclusive risk-informed performance-based framework overview at outline depth |
+| nrc-non-lwr-ticap-rg-1-233 | ch03-selection-of-licensing-basis-events.md | Licensing basis event selection: AOO DBE BDBE families and LMP event classes named only |
+| nrc-non-lwr-ticap-rg-1-233 | ch04-safety-classification-of-sscs.md | SSC safety classification families and special treatment at definition depth, no numeric values |
+| nrc-non-lwr-ticap-rg-1-233 | ch05-defense-in-depth-adequacy-evaluation.md | Defense-in-depth adequacy: plant capability and programmatic faces at outline depth |
+| nrc-non-lwr-ticap-rg-1-233 | ch06-content-of-application-and-pdc-integration.md | Application content orientation and PDC integration: TICAP name and purpose only |
+| nrc-non-lwr-ticap-rg-1-233 | ch07-cross-pack-neighbours-and-limits-ticap.md | Neighbours and limits: sibling packs named in prose only, not-advice closer |
+| nrc-non-lwr-ticap-rg-1-233 | glossary.md (support file) | Terms the RG 1.233 pack uses, synthesized from the covered orientation notes |
+| nrc-non-lwr-ticap-rg-1-233 | cheatsheet.md (support file) | Which chapter owns a non-LWR licensing basis methodology question, the pin rule, and not-advice limits |
 
 ## 4. Quality Assurance Criteria
 

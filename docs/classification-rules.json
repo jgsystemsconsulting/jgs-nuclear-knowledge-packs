@@ -633,6 +633,60 @@
       "chapter": "cheatsheet.md",
       "cluster": "Regulatory Framework & Staff Review",
       "is_support": true
+    },
+    {
+      "pack": "nrc-non-lwr-ticap-rg-1-233",
+      "chapter": "ch01-rg-1-233-scope-purpose-and-lmp-relationship.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-ticap-rg-1-233",
+      "chapter": "ch02-technology-inclusive-risk-informed-performance-based-framework.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-ticap-rg-1-233",
+      "chapter": "ch03-selection-of-licensing-basis-events.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-ticap-rg-1-233",
+      "chapter": "ch04-safety-classification-of-sscs.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-ticap-rg-1-233",
+      "chapter": "ch05-defense-in-depth-adequacy-evaluation.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-ticap-rg-1-233",
+      "chapter": "ch06-content-of-application-and-pdc-integration.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-ticap-rg-1-233",
+      "chapter": "ch07-cross-pack-neighbours-and-limits-ticap.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-ticap-rg-1-233",
+      "chapter": "glossary.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-non-lwr-ticap-rg-1-233",
+      "chapter": "cheatsheet.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": true
     }
   ]
 }

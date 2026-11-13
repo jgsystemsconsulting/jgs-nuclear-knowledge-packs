@@ -32,7 +32,7 @@ MAP_PATH = ROOT / "docs" / "capability-pack-map.json"
 MD_PATH = ROOT / "docs" / "capability-pack-map.md"
 
 # Live overrides notes count; bump on mint.
-EXPECTED_NOTES_COUNT = 101
+EXPECTED_NOTES_COUNT = 110
 
 CANONICAL_LIVE_HEADER = """# Capability to Knowledge-Pack Map
 
