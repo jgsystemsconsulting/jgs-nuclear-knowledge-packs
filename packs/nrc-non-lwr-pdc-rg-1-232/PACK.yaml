@@ -1,0 +1,27 @@
+slug: nrc-non-lwr-pdc-rg-1-232
+title: "NRC RG 1.232 Rev 0 Developing Principal Design Criteria for Non-Light Water Reactors (non-LWR PDC adaptation orientation)"
+publisher: "U.S. Nuclear Regulatory Commission (RG 1.232); reconstructed by JG Systems Consulting Ltd"
+source_version: "RG 1.232 Rev 0, April 2018, ML17325A611"
+license: "Public Domain (US Government work, 17 U.S.C. 105)"
+license_tier: 1
+commercial_use: true
+share_alike: false
+attribution_required: false
+build:
+  method: "reconstructed reference notes RG 1.232 Rev 0 pin facts verified via Federal Register notice 83 FR 15178 and ADAMS accession ML17325A611; guide PDF body not captured; synthesized orientation, zero quotations"
+  chapters: 7
+  built_on: "2026-11-13"
+notes: >
+  US Government work, public domain under 17 U.S.C. 105 for RG-derived
+  notes. Commercial use is allowed. No attribution obligation and no
+  share-alike obligation. NRC does not endorse this pack. Notes are
+  synthesized orientation notes on RG 1.232 Rev 0 pinned facts
+  (ML17325A611, April 2018; verified via Federal Register notice
+  83 FR 15178 on 2026-11-13), not copied wholesale. Guide PDF body was
+  not captured. RG text is US Government work and verbatim excerpts are
+  capped at two sentences by licence policy; this pack uses none.
+  10 CFR 50.34, 10 CFR Part 52, and 10 CFR Part 50 Appendix A are named
+  as regulatory foundation at orientation depth only. RG 1.233 and TICAP
+  are named only as a forward hook. These notes are not legal or
+  licensing advice, are not plant-specific licensing basis, and carry no
+  design-basis or criterion-compliance instruction.

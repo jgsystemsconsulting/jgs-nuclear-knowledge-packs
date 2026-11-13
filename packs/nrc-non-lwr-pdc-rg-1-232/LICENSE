@@ -1,0 +1,31 @@
+nrc-non-lwr-pdc-rg-1-232 pack: content licence
+================================================
+
+This pack is derived from one source:
+
+NRC Regulatory Guide 1.232, Developing Principal Design Criteria for
+Non-Light Water Reactors, Rev. 0, April 2018
+Publisher: U.S. Nuclear Regulatory Commission. Accession ML17325A611
+
+Source licence: Public Domain (US Government work, 17 U.S.C. 105) (tier 1;
+see ../../docs/SOURCE-VETTING.md). No source-material download link published.
+
+The source work is a work of the United States Government and is not subject
+to copyright protection in the United States (17 U.S.C. 105). Anyone may
+reproduce, transform, and redistribute the guide text for any purpose,
+including commercially, without permission and without any attribution or
+share-alike obligation.
+
+Attribution to the NRC is a courtesy (see repository NOTICE), not a legal
+obligation. The NRC does not endorse this pack or its authors.
+
+Reconstruction: pack content is synthesized orientation notes keyed to the
+recorded pin (Federal Register notice 83 FR 15178, April 9, 2018;
+ADAMS accession ML17325A611). Guide PDF body was not captured. No appendix
+criterion text is reproduced. RG verbatim excerpts are capped at two
+sentences by licence policy; this pack contains zero quotations.
+10 CFR text referred to is US Government work and is owned by live sibling
+packs at orientation depth only here. RG 1.233 and TICAP are named only.
+
+NOTE: this file governs the CONTENT of this pack. Repository tooling stays
+under MIT and does not govern pack content (see ../../LICENSE).
