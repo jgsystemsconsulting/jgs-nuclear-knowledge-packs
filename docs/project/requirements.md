@@ -206,13 +206,13 @@ source: 2026-11-13-nrc-non-lwr-pdc-rg-1-232
 Content is synthesized PDC-adaptation orientation from RG 1.232 Rev 0 pin facts verified via Federal Register notice 83 FR 15178 (April 9, 2018), ML17325A611, and the closed statement list in spec 2026-11-13-nrc-non-lwr-pdc-rg-1-232 only. No verbatim SFR-DC, MHTGR-DC, or MSR-DC criterion text; verbatim excerpts capped at two sentences by licence policy and none used; no invented appendix criterion numbers, titles, or counts; no source-material URLs in shippable files. 10 CFR 50.34, 10 CFR Part 52, and 10 CFR Part 50 Appendix A GDC named as the regulatory foundation at orientation depth; detailed Part 52 and Part 50 text stays owned by the live sibling packs named in prose only. RG 1.233 and TICAP named only as a forward hook, never summarized. Functional containment and mechanistic source term framed as orientation concepts only, with no design, analysis, or acceptance method. Not legal or licensing advice; not a plant-specific licensing basis. Advice requests refused.
 
 ## req-35
-status: accepted
+status: verified
 source: 2026-11-13-nrc-non-lwr-ticap-rg-1-233
 
 Pack at packs/nrc-non-lwr-ticap-rg-1-233/ with 7 chapters, glossary, and cheatsheet; registered across the full surface per the registration table (live catalog entry, SKILLS row, new Topics rows, NRC agency target, Deliverables row plus step-down, one new SOURCE-VETTING cleared row, classification-rules assignments and notes, plugin path, PACK-BACKLOG P-02 status flip to live with live-14 and Counts 13 to 14, CHANGELOG bullet, EXPECTED_NOTES_COUNT 101 to 110 and Regulatory Framework & Staff Review THRESHOLDS 43 to 52 refreshed from regen among them). validate_pack and check_release pass.
 
 ## req-36
-status: accepted
+status: verified
 source: 2026-11-13-nrc-non-lwr-ticap-rg-1-233
 
 Content is synthesized LMP methodology orientation from RG 1.233 Rev 0 pin facts verified via Federal Register notice 85 FR 35339 (June 9, 2020), ML20091L698, and the closed statement list in spec 2026-11-13-nrc-non-lwr-ticap-rg-1-233 only. No NEI 18-04 text reproduced; NEI 18-04 Rev 1 named only as the endorsed methodology signpost. Zero quotations; verbatim excerpts capped at two sentences by licence policy and none used; no invented RG position wording, LBE frequency thresholds, dose limits, F-C target values, or SSC performance criteria stated as read from the guide body; no source-material URLs in shippable files. RG 1.232, RG 1.174, RG 1.200, and 10 CFR Part 52 neighbours named in prose only and owned by their live packs; 10 CFR Part 53 named only and never described from drafts. Not legal or licensing advice; not a PRA, LBE selection, SSC classification, or defense-in-depth adequacy how-to for any real design. Advice requests refused.
