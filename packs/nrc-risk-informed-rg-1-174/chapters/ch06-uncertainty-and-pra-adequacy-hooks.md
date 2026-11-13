@@ -13,7 +13,7 @@ Two named considerations sit behind any risk-informed decisionmaking use of a PR
 
 ## Key Concepts
 
-- RG 1.200 Rev 3 covers PRA technical adequacy for applications like this one; its criteria are not packaged here. RG 1.200 Rev 3 is dated December 2020, accession ML20238B871, owner U.S. Nuclear Regulatory Commission. No pack for it is built, and this chapter carries no adequacy criteria.
+- RG 1.200 Rev 3 covers PRA technical adequacy for applications like this one; its criteria are not packaged here. RG 1.200 Rev 3 is dated December 2020, accession ML20238B871, owner U.S. Nuclear Regulatory Commission. The RG 1.200 PRA technical adequacy pack now carries that topic; this chapter carries no adequacy criteria.
 - NUREG-1855 covers treatment of uncertainty in risk-informed decisionmaking; its methods are not packaged here. NUREG-1855 is guidance on the treatment of uncertainties associated with PRAs in risk-informed decisionmaking, owner U.S. Nuclear Regulatory Commission. This chapter carries no uncertainty methods.
 - Hook discipline: both documents are named with revision and owner only, never linked, and their text is never reproduced here.
 

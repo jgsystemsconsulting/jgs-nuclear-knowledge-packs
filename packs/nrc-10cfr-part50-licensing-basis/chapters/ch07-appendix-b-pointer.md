@@ -35,4 +35,4 @@ Do not quote or paraphrase criteria I through XVIII from this pack: the pointer 
 
 - ch02 for the 50.34 quality assurance description items.
 - ch04 for the 50.54(a) implementation and change rules.
-- The QA pack (theme C-02) for the criteria bodies, when it is built.
+- The Appendix B criteria pack for the criteria bodies.
