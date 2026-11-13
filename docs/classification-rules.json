@@ -25,7 +25,8 @@
     "Quality Assurance Criteria",
     "Risk-Informed Decisionmaking",
     "Cyber Security Programs",
-    "Accident Monitoring"
+    "Accident Monitoring",
+    "Fire Protection Programs"
   ],
   "assignments": [
     {
@@ -686,6 +687,60 @@
       "pack": "nrc-non-lwr-ticap-rg-1-233",
       "chapter": "cheatsheet.md",
       "cluster": "Regulatory Framework & Staff Review",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch01-rg-1-189-scope-regulatory-basis-and-program-goals.md",
+      "cluster": "Fire Protection Programs",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch02-fire-hazards-analysis-and-fire-defense-in-depth.md",
+      "cluster": "Fire Protection Programs",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch03-fire-prevention-combustible-and-ignition-controls.md",
+      "cluster": "Fire Protection Programs",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch04-fire-detection-and-suppression-systems.md",
+      "cluster": "Fire Protection Programs",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch05-post-fire-safe-shutdown-capability-and-circuit-analysis.md",
+      "cluster": "Fire Protection Programs",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch06-alternative-and-dedicated-shutdown-and-post-fire-procedures.md",
+      "cluster": "Fire Protection Programs",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch07-cross-pack-interfacing-nfpa-signpost-boundary-and-limits.md",
+      "cluster": "Fire Protection Programs",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "glossary.md",
+      "cluster": "Fire Protection Programs",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "cheatsheet.md",
+      "cluster": "Fire Protection Programs",
       "is_support": true
     }
   ]

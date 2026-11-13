@@ -552,6 +552,51 @@
       "pack": "nrc-non-lwr-ticap-rg-1-233",
       "chapter": "cheatsheet.md",
       "note": "Which chapter owns a non-LWR licensing basis methodology question, the pin rule, and not-advice limits"
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch01-rg-1-189-scope-regulatory-basis-and-program-goals.md",
+      "note": "RG 1.189 frame: scope, regulatory basis, and program goals with pin facts and pack map"
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch02-fire-hazards-analysis-and-fire-defense-in-depth.md",
+      "note": "Fire hazards analysis and fire defense-in-depth doctrine at orientation depth"
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch03-fire-prevention-combustible-and-ignition-controls.md",
+      "note": "Fire prevention orientation: combustible and ignition controls named only, no design values"
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch04-fire-detection-and-suppression-systems.md",
+      "note": "Fire detection and suppression systems orientation, no design or layout values"
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch05-post-fire-safe-shutdown-capability-and-circuit-analysis.md",
+      "note": "Post-fire safe shutdown capability and circuit analysis concepts, no plant verdicts"
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch06-alternative-and-dedicated-shutdown-and-post-fire-procedures.md",
+      "note": "Alternative and dedicated shutdown with post-fire procedures as human half, no feasibility verdicts"
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "ch07-cross-pack-interfacing-nfpa-signpost-boundary-and-limits.md",
+      "note": "Cross-pack interfacing with NFPA signpost boundary and limits, not-advice closer"
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "glossary.md",
+      "note": "Terms the RG 1.189 pack uses, synthesized from the covered orientation notes"
+    },
+    {
+      "pack": "nrc-fire-rg-1-189",
+      "chapter": "cheatsheet.md",
+      "note": "Which chapter owns a fire protection question, the pin rule, and not-advice limits"
     }
   ]
 }

@@ -134,11 +134,16 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Licensing basis event selection | licensing basis events non-LWR, LBE selection, AOO DBE BDBE selection | `nrc-non-lwr-ticap-rg-1-233` |
 | Non-LWR SSC safety classification | SSC classification LMP, safety-related non-safety-related special treatment, non-LWR safety classification | `nrc-non-lwr-ticap-rg-1-233` |
 | Non-LWR defense-in-depth evaluation | defense-in-depth adequacy non-LWR, plant capability programmatic DID, LMP DID evaluation | `nrc-non-lwr-ticap-rg-1-233` |
+| Fire protection program | RG 1.189, fire protection program, 10 CFR 50.48, GDC 3 fire protection | `nrc-fire-rg-1-189` |
+| Fire hazards analysis | fire hazards analysis, FHA fire protection, fire area fire barrier, combustible loading | `nrc-fire-rg-1-189` |
+| Post-fire safe shutdown | post-fire safe shutdown, fire safe shutdown, Appendix R safe shutdown, spurious operations fire | `nrc-fire-rg-1-189` |
+| Fire detection and suppression | fire detection nuclear plant, fire suppression nuclear plant, fire brigade, transient combustibles ignition control | `nrc-fire-rg-1-189` |
+| Alternative and dedicated shutdown | alternative shutdown fire, dedicated shutdown fire, remote shutdown fire, operator manual actions fire | `nrc-fire-rg-1-189` |
 
 ### Agency contexts
 | Agency | Keywords | Packs |
 |---|---|---|
-| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232`, `nrc-non-lwr-ticap-rg-1-233` |
+| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232`, `nrc-non-lwr-ticap-rg-1-233`, `nrc-fire-rg-1-189` |
 
 ### Deliverables
 | Deliverable | Keywords | Draft | Review | Verify |
@@ -158,6 +163,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | PRA technical adequacy question list | PRA adequacy questions, RG 1.200 question list, PRA quality checklist questions | `nrc-pra-adequacy-rg-1-200` | `nrc-pra-adequacy-rg-1-200` | `nrc-pra-adequacy-rg-1-200` |
 | Non-LWR PDC development question list | non-LWR PDC questions, RG 1.232 question list, principal design criteria outline | `nrc-non-lwr-pdc-rg-1-232` | `nrc-non-lwr-pdc-rg-1-232` | `nrc-non-lwr-pdc-rg-1-232` |
 | Non-LWR licensing basis methodology question list | RG 1.233 question list, LMP methodology questions, TICAP question list | `nrc-non-lwr-ticap-rg-1-233` | `nrc-non-lwr-ticap-rg-1-233` | `nrc-non-lwr-ticap-rg-1-233` |
+| Fire protection program question list | RG 1.189 question list, fire protection questions, post-fire safe shutdown questions | `nrc-fire-rg-1-189` | `nrc-fire-rg-1-189` | `nrc-fire-rg-1-189` |
 
 ### Licences
 | Pack | Licence |
@@ -192,8 +198,8 @@ noted and skipped; if none remain, fall back to route-only.
 - Deliverable stage chains come only from Deliverables rows; empty cells skip that stage.
 - `/nuclear` never overwrites an existing file without a yes at a gate.
 - **Sector charter.** Catalogue covers civilian nuclear power plant digital I&C
-software assurance, Part 50 and Part 52 licensing orientation, non-LWR PDC development orientation, and non-LWR licensing basis methodology orientation under live packs
-(today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232`, `nrc-non-lwr-ticap-rg-1-233`) plus name-only
+software assurance, Part 50 and Part 52 licensing orientation, non-LWR PDC development orientation, non-LWR licensing basis methodology orientation, and fire protection program orientation under live packs
+(today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232`, `nrc-non-lwr-ticap-rg-1-233`, `nrc-fire-rg-1-189`) plus name-only
   standards signposts. It is not a general nuclear engineering library.
 - **Never route or invent content for:** nuclear weapons or weapons-design
   physics; classified, export-controlled, or safeguards-sensitive material

@@ -1,7 +1,7 @@
 ---
 name: nuclear-signpost
 kind: signpost
-description: "Signpost (not a knowledge pack) for nuclear I&C software and safety standards named by the NRC 2013 RG family and BTP 7-14: IEEE Std 603-1991, IEEE Std 7-4.3.2-2003, IEEE Std 828-2005, IEEE Std 829-2008, IEEE Std 830-1998, IEEE Std 1008-1987, IEEE Std 1012-2004, IEEE Std 1028-2008, IEEE Std 1074-2006; IEC 60880 ed. 2.0:2006, IEC 61513 ed. 2.0:2011, IEC 62138 ed. 2.0:2018; and IAEA safety guides (SSG-39 named); additionally named at designation level only: IEEE Std 7-4.3.2-2016 (RG 1.152 Rev 4), ASME NQA-1-2017, ASME NQA-1-2019, ASME NQA-1-2022 (RG 1.28 Rev 6), NFPA 805, and ANS standards. Contains no source content: each row carries only the designation, title, edition, owner, redistributability status, and the owner's URL. Use when you need to identify, cite, or locate one of these standards; paywalled rows point to IEEE, IEC, ASME, NFPA, or ANS, the IAEA row is designation-only, and free NRC-side text lives in pack nrc-nuclear."
+description: "Signpost (not a knowledge pack) for nuclear I&C software and safety standards named by the NRC 2013 RG family and BTP 7-14: IEEE Std 603-1991, IEEE Std 7-4.3.2-2003, IEEE Std 828-2005, IEEE Std 829-2008, IEEE Std 830-1998, IEEE Std 1008-1987, IEEE Std 1012-2004, IEEE Std 1028-2008, IEEE Std 1074-2006; IEC 60880 ed. 2.0:2006, IEC 61513 ed. 2.0:2011, IEC 62138 ed. 2.0:2018; and IAEA safety guides (SSG-39 named); additionally named at designation level only: IEEE Std 7-4.3.2-2016 (RG 1.152 Rev 4), ASME NQA-1-2017, ASME NQA-1-2019, ASME NQA-1-2022 (RG 1.28 Rev 6), NFPA 805, NFPA 804, and ANS standards. Contains no source content: each row carries only the designation, title, edition, owner, redistributability status, and the owner's URL. Use when you need to identify, cite, or locate one of these standards; paywalled rows point to IEEE, IEC, ASME, NFPA, or ANS, the IAEA row is designation-only, and free NRC-side text lives in pack nrc-nuclear."
 ---
 
 # Nuclear I&C Software and Safety Standards: Signpost (pointers only)
@@ -19,7 +19,7 @@ owns it, whether a free copy exists, and where to get the authentic one.
 (name-only map X1-X16). IEEE Std 7-4.3.2-2016 anchors to that chapter and to ch09 of
 pack nrc-nuclear (packs/nrc-nuclear/chapters/ch09-rg-1-152-pdd-criteria-and-sdoe.md;
 RG 1.152 Rev 4 endorses the 2016 edition). The ASME NQA-1 editions anchor to the
-RG 1.28 Rev 6 endorsement record in pack nrc-qa-rg-1-28. NFPA 805 and ANS rows anchor
+RG 1.28 Rev 6 endorsement record in pack nrc-qa-rg-1-28. NFPA 805, NFPA 804, and ANS rows anchor
 to owner-side designation facts. Do not silently upgrade an edition. Do not quote a
 publication date or revision that a row does not carry.
 
@@ -88,6 +88,7 @@ the repo link policy bars source-material URLs everywhere else.
 | Designation | Title | Edition | Owner | Status | URL |
 |-------------|-------|---------|-------|--------|-----|
 | NFPA 805 | Performance-Based Standard for Fire Protection for Light Water Reactor Electric Generating Plants | 2025 | NFPA | Excluded: paywalled, no redistribution grant; buy from the owner | https://www.nfpa.org/product/nfpa-805-standard/p0805code |
+| NFPA 804 | Standard for Fire Protection for Advanced Light Water Reactor Electric Generating Plants | 2025 | NFPA | Excluded: paywalled, no redistribution grant; buy from owner | https://www.nfpa.org/product/nfpa-804-standard/p0804code |
 
 ## ANS
 

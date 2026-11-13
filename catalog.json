@@ -106,16 +106,16 @@
       "status": "live"
     },
     {
-"slug": "nrc-pra-adequacy-rg-1-200",
-"title": "NRC RG 1.200 Rev 3 Acceptability of Probabilistic Risk Assessment Results for Risk-Informed Activities (PRA technical adequacy orientation)",
-"publisher": "U.S. Nuclear Regulatory Commission (RG 1.200); reconstructed by JG Systems Consulting Ltd",
-"source_version": "RG 1.200 Rev 3, December 2020, ML20238B871",
-"license": "Public Domain (US Government work, 17 U.S.C. 105)",
-"license_tier": 1,
-"commercial_use": true,
-"chapters": 6,
-"status": "live"
-},
+      "slug": "nrc-pra-adequacy-rg-1-200",
+      "title": "NRC RG 1.200 Rev 3 Acceptability of Probabilistic Risk Assessment Results for Risk-Informed Activities (PRA technical adequacy orientation)",
+      "publisher": "U.S. Nuclear Regulatory Commission (RG 1.200); reconstructed by JG Systems Consulting Ltd",
+      "source_version": "RG 1.200 Rev 3, December 2020, ML20238B871",
+      "license": "Public Domain (US Government work, 17 U.S.C. 105)",
+      "license_tier": 1,
+      "commercial_use": true,
+      "chapters": 6,
+      "status": "live"
+    },
     {
       "slug": "nrc-non-lwr-pdc-rg-1-232",
       "title": "NRC RG 1.232 Rev 0 Developing Principal Design Criteria for Non-Light Water Reactors (non-LWR PDC adaptation orientation)",
@@ -132,6 +132,17 @@
       "title": "NRC RG 1.233 Rev 0 Technology-Inclusive Risk-Informed Performance-Based Methodology for Non-LWR Licensing Basis (LMP and TICAP orientation)",
       "publisher": "U.S. Nuclear Regulatory Commission (RG 1.233); reconstructed by JG Systems Consulting Ltd",
       "source_version": "RG 1.233 Rev 0, June 2020, ML20091L698",
+      "license": "Public Domain (US Government work, 17 U.S.C. 105)",
+      "license_tier": 1,
+      "commercial_use": true,
+      "chapters": 7,
+      "status": "live"
+    },
+    {
+      "slug": "nrc-fire-rg-1-189",
+      "title": "NRC RG 1.189 Rev 5 Fire Protection for Nuclear Power Plants (program orientation)",
+      "publisher": "U.S. Nuclear Regulatory Commission (RG 1.189); reconstructed by JG Systems Consulting Ltd",
+      "source_version": "RG 1.189 Rev 5, October 2023, ML23214A287",
       "license": "Public Domain (US Government work, 17 U.S.C. 105)",
       "license_tier": 1,
       "commercial_use": true,

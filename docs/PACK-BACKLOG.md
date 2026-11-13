@@ -120,6 +120,7 @@ See also root `README.md` § Out of scope and `/nuclear` Scope & Limits.
 | live-12 | `nrc-pra-adequacy-rg-1-200` | content | RG 1.200 Rev. 3 PRA technical adequacy orientation (ML20238B871; listing re-check 2026-11-11); ASME/ANS RA-Sa-2009 designation only, NUREG-1855 and SRP Chapter 19 named only | live |
 | live-13 | `nrc-non-lwr-pdc-rg-1-232` | content | RG 1.232 Rev 0 (Apr 2018; ML17325A611); verified via 83 FR 15178 on 2026-11-13; SFR-DC, MHTGR-DC, MSR-DC family-level only | live |
 | live-14 | `nrc-non-lwr-ticap-rg-1-233` | content | RG 1.233 Rev 0 (Jun 2020; ML20091L698); verified via 85 FR 35339 on 2026-11-13; LMP methodology stages outline depth only | live |
+| live-15 | `nrc-fire-rg-1-189` | content | RG 1.189 Rev 5 (Oct 2023; ML23214A287); verified via 88 FR 76989 on 2026-11-13; fire protection program orientation, framework depth only | live |
 
 ---
 
@@ -244,8 +245,8 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
-| H-01 | `nrc-fire-rg-1-189` | 2 | content | 1 | ready | **RG 1.189 Rev 5** (Oct 2023) Fire Protection for Nuclear Power Plants. | D-01 optional | Fire protection program / safe shutdown |
-| H-02 | `nrc-fire-nfpa805-signpost` | 2 | signpost | excluded | ready | NFPA 805 / 804 designation rows only; NRC RG carries agency position. | H-01 | Where NFPA text lives |
+| H-01 | `nrc-fire-rg-1-189` | 2 | content | 1 | live | **RG 1.189 Rev 5** (Oct 2023) Fire Protection for Nuclear Power Plants. ML23214A287; verified via 88 FR 76989 on 2026-11-13. | D-01 optional | Fire protection program / safe shutdown |
+| H-02 | `nrc-fire-nfpa805-signpost` | 2 | signpost | excluded | folded | NFPA 805 / 804 designation rows only; NRC RG carries agency position. Folded into `packs/nuclear-signpost/SKILL.md` in H-01 run (NFPA 804 row added beside NFPA 805); slug `nrc-fire-nfpa805-signpost` never registered; no separate pack created. | H-01 | Where NFPA text lives |
 
 ---
 
@@ -445,7 +446,7 @@ Offline domain knowledge filled chapter sketches and theme cuts. ML accessions f
 
 | bucket | count |
 |--------|-------|
-| Live packs/skills | 14 |
+| Live packs/skills | 15 |
 | Content candidates | ~45 |
 | Signpost candidates | ~6 |
 | Orchestrator-extend | ~4 |

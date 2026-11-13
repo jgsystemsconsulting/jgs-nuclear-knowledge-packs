@@ -20,7 +20,8 @@ Rules of construction:
 | 5. Risk-Informed Decisionmaking | 16 |
 | 6. Cyber Security Programs | 8 |
 | 7. Accident Monitoring | 8 |
-| **Total** | **110** |
+| 8. Fire Protection Programs | 9 |
+| **Total** | **119** |
 
 ## 1. Life Cycle & Requirements
 
@@ -166,3 +167,17 @@ Rules of construction:
 | nrc-accident-monitoring-rg-1-97 | ch06-applicability-and-licensing-basis.md | Applicability orientation: technology-neutral, Part 52 language, and the governing revision read from the plant licensing record |
 | nrc-accident-monitoring-rg-1-97 | glossary.md (support file) | Accident monitoring terms this pack uses, keyed to the RG 1.97 Rev. 5 orientation chapters |
 | nrc-accident-monitoring-rg-1-97 | cheatsheet.md (support file) | Which chapter owns the accident monitoring question, the pin rule, and the named-only limits |
+
+## 8. Fire Protection Programs
+
+| Pack | Chapter | Why it fits / one-line value |
+|---|---|---|
+| nrc-fire-rg-1-189 | ch01-rg-1-189-scope-regulatory-basis-and-program-goals.md | RG 1.189 frame: scope, regulatory basis, and program goals with pin facts and pack map |
+| nrc-fire-rg-1-189 | ch02-fire-hazards-analysis-and-fire-defense-in-depth.md | Fire hazards analysis and fire defense-in-depth doctrine at orientation depth |
+| nrc-fire-rg-1-189 | ch03-fire-prevention-combustible-and-ignition-controls.md | Fire prevention orientation: combustible and ignition controls named only, no design values |
+| nrc-fire-rg-1-189 | ch04-fire-detection-and-suppression-systems.md | Fire detection and suppression systems orientation, no design or layout values |
+| nrc-fire-rg-1-189 | ch05-post-fire-safe-shutdown-capability-and-circuit-analysis.md | Post-fire safe shutdown capability and circuit analysis concepts, no plant verdicts |
+| nrc-fire-rg-1-189 | ch06-alternative-and-dedicated-shutdown-and-post-fire-procedures.md | Alternative and dedicated shutdown with post-fire procedures as human half, no feasibility verdicts |
+| nrc-fire-rg-1-189 | ch07-cross-pack-interfacing-nfpa-signpost-boundary-and-limits.md | Cross-pack interfacing with NFPA signpost boundary and limits, not-advice closer |
+| nrc-fire-rg-1-189 | glossary.md (support file) | Terms the RG 1.189 pack uses, synthesized from the covered orientation notes |
+| nrc-fire-rg-1-189 | cheatsheet.md (support file) | Which chapter owns a fire protection question, the pin rule, and not-advice limits |
