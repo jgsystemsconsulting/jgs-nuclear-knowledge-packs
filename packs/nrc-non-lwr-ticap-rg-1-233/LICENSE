@@ -1,0 +1,34 @@
+nrc-non-lwr-ticap-rg-1-233 pack: content licence
+================================================
+
+This pack is derived from one source:
+
+NRC Regulatory Guide 1.233, Guidance for a Technology-Inclusive,
+Risk-Informed, and Performance-Based Methodology to Inform the
+Licensing Basis and Content of Applications for Licenses,
+Certifications, and Approvals for Non-Light Water Reactors,
+Rev. 0, June 2020, ADAMS accession ML20091L698
+Publisher: U.S. Nuclear Regulatory Commission
+
+Source licence: Public Domain (US Government work, 17 U.S.C. 105) (tier 1;
+see ../../docs/SOURCE-VETTING.md). No source-material download link published.
+
+The source work is a work of the United States Government and is not subject
+to copyright protection in the United States (17 U.S.C. 105). Anyone may
+use, reproduce, distribute, and create derivative works for any purpose,
+including commercially, without permission and without any attribution or
+share-alike obligation.
+
+Attribution to NRC is a courtesy (see repository NOTICE), not a legal
+obligation. NRC does not endorse this pack or its authors.
+
+Reconstruction: pack content is synthesized orientation notes keyed to the
+recorded pin (Federal Register notice 85 FR 35339, June 9, 2020; ADAMS
+accession ML20091L698). Guide PDF body was not captured. NEI 18-04 is
+copyrighted industry material named only; no NEI 18-04 text is reproduced.
+10 CFR text referred to is US Government work. 10 CFR Part 53 is named
+only. RG verbatim excerpts are capped at two sentences by licence policy;
+this pack contains zero quotations.
+
+NOTE: this file governs the CONTENT of this pack. Repository tooling stays
+under MIT and does not govern pack content (see ../../LICENSE).

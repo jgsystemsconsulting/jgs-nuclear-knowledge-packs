@@ -1,0 +1,30 @@
+slug: nrc-non-lwr-ticap-rg-1-233
+title: "NRC RG 1.233 Rev 0 Technology-Inclusive Risk-Informed Performance-Based Methodology for the Non-LWR Licensing Basis (LMP and TICAP orientation)"
+publisher: "U.S. Nuclear Regulatory Commission (RG 1.233); reconstructed by JG Systems Consulting Ltd"
+source_version: "RG 1.233 Rev 0, June 2020, ML20091L698"
+license: "Public Domain (US Government work, 17 U.S.C. 105)"
+license_tier: 1
+commercial_use: true
+share_alike: false
+attribution_required: false
+build:
+  method: "reconstructed reference notes RG 1.233 Rev 0 pin facts verified via Federal Register notice 85 FR 35339 and ADAMS accession ML20091L698; guide PDF body not captured; NEI 18-04 body not captured and named only; synthesized orientation, zero quotations"
+  chapters: 7
+  built_on: "2026-11-13"
+notes: >
+  US Government work, public domain under 17 U.S.C. 105 RG-derived
+  notes. Commercial use is allowed. No attribution obligation and no
+  share-alike obligation. NRC does not endorse pack. Notes
+  synthesized orientation notes on RG 1.233 Rev 0 pinned facts
+  (ML20091L698, June 2020; verified via Federal Register notice
+  85 FR 35339 on 2026-11-13), not copied wholesale. RG text is US
+  Government work and verbatim excerpts capped two sentences by
+  licence policy; pack uses none. Guide PDF body was not captured.
+  NEI 18-04 Rev 1 named only as endorsed methodology document,
+  copyrighted industry material, and no NEI 18-04 text is
+  reproduced. RG 1.232, RG 1.174, RG 1.200, 10 CFR Part 50, and
+  10 CFR Part 52 named orientation depth only; detailed text owned
+  by live sibling packs. 10 CFR Part 53 named only. These notes
+  not legal or licensing advice, not plant-specific licensing
+  basis, and carry no PRA, event-selection, classification, or
+  defense-in-depth adequacy instruction on any real design.
