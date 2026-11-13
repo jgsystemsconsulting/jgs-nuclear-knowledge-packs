@@ -21,7 +21,8 @@ Rules of construction:
 | 6. Cyber Security Programs | 8 |
 | 7. Accident Monitoring | 8 |
 | 8. Fire Protection Programs | 9 |
-| **Total** | **119** |
+| 9. Human Factors & HSI | 9 |
+| **Total** | **128** |
 
 ## 1. Life Cycle & Requirements
 
@@ -181,3 +182,17 @@ Rules of construction:
 | nrc-fire-rg-1-189 | ch07-cross-pack-interfacing-nfpa-signpost-boundary-and-limits.md | Cross-pack interfacing with NFPA signpost boundary and limits, not-advice closer |
 | nrc-fire-rg-1-189 | glossary.md (support file) | Terms the RG 1.189 pack uses, synthesized from the covered orientation notes |
 | nrc-fire-rg-1-189 | cheatsheet.md (support file) | Which chapter owns a fire protection question, the pin rule, and not-advice limits |
+
+## 9. Human Factors & HSI
+
+| Pack | Chapter | Why it fits / one-line value |
+|---|---|---|
+| nrc-hsi-nureg-0700 | ch01-nureg-0700-scope-purpose-and-hfe-review-process.md | NUREG-0700 frame: scope, purpose, and HFE review process with pin facts and pack map |
+| nrc-hsi-nureg-0700 | ch02-basic-hsi-elements-displays-and-interaction.md | Basic HSI elements, displays, and interaction at orientation depth |
+| nrc-hsi-nureg-0700 | ch03-control-and-automation-systems-alarms-and-soft-controls.md | Control and automation systems including alarms and soft controls orientation |
+| nrc-hsi-nureg-0700 | ch04-computer-based-procedures-and-communications.md | Computer-based procedures and communications orientation |
+| nrc-hsi-nureg-0700 | ch05-workstations-local-control-stations-and-workplace-design.md | Workstations, local control stations, and workplace design orientation |
+| nrc-hsi-nureg-0700 | ch06-maintainability-degraded-hsi-conditions-and-integration.md | Maintainability, degraded HSI conditions, and integration orientation |
+| nrc-hsi-nureg-0700 | ch07-cross-pack-interfacing-accident-monitoring-boundary-and-limits.md | Cross-pack interfacing with accident monitoring boundary and limits, not-advice closer |
+| nrc-hsi-nureg-0700 | glossary.md (support file) | Terms the NUREG-0700 pack uses, synthesized from the covered orientation notes |
+| nrc-hsi-nureg-0700 | cheatsheet.md (support file) | Which chapter owns an HSI design review question, the pin rule, and not-advice limits |

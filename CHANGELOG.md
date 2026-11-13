@@ -10,6 +10,7 @@ All notable changes to this project are documented here. Format follows
 [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
+- Add `nrc-hsi-nureg-0700`: orientation notes on human-system interface design review, synthesized NRC NUREG-0700 Revision 4, January 2026, ML26022A094, verified via official NRC publication page; synthesized HSI design review orientation, no guideline items or numeric design values packaged; registration surfaces refreshed including EXPECTED_NOTES_COUNT 119 to 128 and new Human Factors and HSI cluster; pre-1.0, no version bump.
 
 - Add `nrc-fire-rg-1-189`: orientation notes on fire protection program for nuclear power plants, synthesized from NRC RG 1.189 Rev 5, October 2023, ML23214A287 (Federal Register notice 88 FR 76989). Program orientation only; NFPA 805 and NFPA 804 named only signpost designations, no numeric design values packaged. Registration surfaces refreshed: EXPECTED_NOTES_COUNT moves 110 to 119 with new Fire Protection Programs cluster (9 entries); H-02 folded into signpost (NFPA 804 row added beside NFPA 805). Release version stays 0.3.0.
 

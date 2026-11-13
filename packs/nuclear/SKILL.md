@@ -139,11 +139,16 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Post-fire safe shutdown | post-fire safe shutdown, fire safe shutdown, Appendix R safe shutdown, spurious operations fire | `nrc-fire-rg-1-189` |
 | Fire detection and suppression | fire detection nuclear plant, fire suppression nuclear plant, fire brigade, transient combustibles ignition control | `nrc-fire-rg-1-189` |
 | Alternative and dedicated shutdown | alternative shutdown fire, dedicated shutdown fire, remote shutdown fire, operator manual actions fire | `nrc-fire-rg-1-189` |
+| HSI design review | NUREG-0700, HSI design review, human-system interface guidelines, HFE design review | `nrc-hsi-nureg-0700` |
+| Control room displays and alarms | control room display design, alarm system design review, SPDS HSI, group-view display, soft controls | `nrc-hsi-nureg-0700` |
+| Automation and operator interaction | automation HSI, mode awareness, user-interface interaction HSI, degraded HSI conditions | `nrc-hsi-nureg-0700` |
+| Computer-based procedures | computer-based procedures, CBP HSI, electronic procedures control room | `nrc-hsi-nureg-0700` |
+| Workstation and workplace design | control room workstation design, workplace design HFE, local control stations HSI, control room environment design | `nrc-hsi-nureg-0700` |
 
 ### Agency contexts
 | Agency | Keywords | Packs |
 |---|---|---|
-| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232`, `nrc-non-lwr-ticap-rg-1-233`, `nrc-fire-rg-1-189` |
+| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide, NUREG-0700 HSI | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232`, `nrc-non-lwr-ticap-rg-1-233`, `nrc-fire-rg-1-189`, `nrc-hsi-nureg-0700` |
 
 ### Deliverables
 | Deliverable | Keywords | Draft | Review | Verify |
@@ -164,6 +169,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Non-LWR PDC development question list | non-LWR PDC questions, RG 1.232 question list, principal design criteria outline | `nrc-non-lwr-pdc-rg-1-232` | `nrc-non-lwr-pdc-rg-1-232` | `nrc-non-lwr-pdc-rg-1-232` |
 | Non-LWR licensing basis methodology question list | RG 1.233 question list, LMP methodology questions, TICAP question list | `nrc-non-lwr-ticap-rg-1-233` | `nrc-non-lwr-ticap-rg-1-233` | `nrc-non-lwr-ticap-rg-1-233` |
 | Fire protection program question list | RG 1.189 question list, fire protection questions, post-fire safe shutdown questions | `nrc-fire-rg-1-189` | `nrc-fire-rg-1-189` | `nrc-fire-rg-1-189` |
+| HSI design review question list | NUREG-0700 question list, HSI design review questions, control room display and alarm questions | `nrc-hsi-nureg-0700` | `nrc-hsi-nureg-0700` | `nrc-hsi-nureg-0700` |
 
 ### Licences
 | Pack | Licence |
@@ -198,8 +204,8 @@ noted and skipped; if none remain, fall back to route-only.
 - Deliverable stage chains come only from Deliverables rows; empty cells skip that stage.
 - `/nuclear` never overwrites an existing file without a yes at a gate.
 - **Sector charter.** Catalogue covers civilian nuclear power plant digital I&C
-software assurance, Part 50 and Part 52 licensing orientation, non-LWR PDC development orientation, non-LWR licensing basis methodology orientation, and fire protection program orientation under live packs
-(today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232`, `nrc-non-lwr-ticap-rg-1-233`, `nrc-fire-rg-1-189`) plus name-only
+software assurance, Part 50 and Part 52 licensing orientation, non-LWR PDC development orientation, non-LWR licensing basis methodology orientation, fire protection program orientation, and human factors and HSI design review orientation under live packs
+(today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232`, `nrc-non-lwr-ticap-rg-1-233`, `nrc-fire-rg-1-189`, `nrc-hsi-nureg-0700`) plus name-only
   standards signposts. It is not a general nuclear engineering library.
 - **Never route or invent content for:** nuclear weapons or weapons-design
   physics; classified, export-controlled, or safeguards-sensitive material

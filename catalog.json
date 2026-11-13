@@ -148,7 +148,8 @@
       "commercial_use": true,
       "chapters": 7,
       "status": "live"
-    }
+    },
+    {"slug":"nrc-hsi-nureg-0700","title":"NRC NUREG-0700 Revision 4 Human-System Interface Design Review Guidelines (HSI design review orientation)","publisher":"U.S. Nuclear Regulatory Commission (NUREG-0700); reconstructed by JG Systems Consulting Ltd","source_version":"NUREG-0700 Revision 4, January 2026, ML26022A094","license":"Public Domain (US Government work, 17 U.S.C. 105)","license_tier":1,"commercial_use":true,"chapters":7,"status":"live"}
   ],
   "planned": []
 }

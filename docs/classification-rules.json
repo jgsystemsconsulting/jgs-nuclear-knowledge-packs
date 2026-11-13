@@ -26,7 +26,8 @@
     "Risk-Informed Decisionmaking",
     "Cyber Security Programs",
     "Accident Monitoring",
-    "Fire Protection Programs"
+    "Fire Protection Programs",
+    "Human Factors & HSI"
   ],
   "assignments": [
     {
@@ -741,6 +742,60 @@
       "pack": "nrc-fire-rg-1-189",
       "chapter": "cheatsheet.md",
       "cluster": "Fire Protection Programs",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-hsi-nureg-0700",
+      "chapter": "ch01-nureg-0700-scope-purpose-and-hfe-review-process.md",
+      "cluster": "Human Factors & HSI",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-hsi-nureg-0700",
+      "chapter": "ch02-basic-hsi-elements-displays-and-interaction.md",
+      "cluster": "Human Factors & HSI",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-hsi-nureg-0700",
+      "chapter": "ch03-control-and-automation-systems-alarms-and-soft-controls.md",
+      "cluster": "Human Factors & HSI",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-hsi-nureg-0700",
+      "chapter": "ch04-computer-based-procedures-and-communications.md",
+      "cluster": "Human Factors & HSI",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-hsi-nureg-0700",
+      "chapter": "ch05-workstations-local-control-stations-and-workplace-design.md",
+      "cluster": "Human Factors & HSI",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-hsi-nureg-0700",
+      "chapter": "ch06-maintainability-degraded-hsi-conditions-and-integration.md",
+      "cluster": "Human Factors & HSI",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-hsi-nureg-0700",
+      "chapter": "ch07-cross-pack-interfacing-accident-monitoring-boundary-and-limits.md",
+      "cluster": "Human Factors & HSI",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-hsi-nureg-0700",
+      "chapter": "glossary.md",
+      "cluster": "Human Factors & HSI",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-hsi-nureg-0700",
+      "chapter": "cheatsheet.md",
+      "cluster": "Human Factors & HSI",
       "is_support": true
     }
   ]

@@ -121,6 +121,7 @@ See also root `README.md` § Out of scope and `/nuclear` Scope & Limits.
 | live-13 | `nrc-non-lwr-pdc-rg-1-232` | content | RG 1.232 Rev 0 (Apr 2018; ML17325A611); verified via 83 FR 15178 on 2026-11-13; SFR-DC, MHTGR-DC, MSR-DC family-level only | live |
 | live-14 | `nrc-non-lwr-ticap-rg-1-233` | content | RG 1.233 Rev 0 (Jun 2020; ML20091L698); verified via 85 FR 35339 on 2026-11-13; LMP methodology stages outline depth only | live |
 | live-15 | `nrc-fire-rg-1-189` | content | RG 1.189 Rev 5 (Oct 2023; ML23214A287); verified via 88 FR 76989 on 2026-11-13; fire protection program orientation, framework depth only | live |
+| live-16 | `nrc-hsi-nureg-0700` | content | NUREG-0700 Revision 4 (Jan 2026; ML26022A094); verified via official NRC publication page on 2026-11-13; HSI design review orientation, no guideline items or numeric values packaged | live |
 
 ---
 
@@ -224,7 +225,7 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
-| F-01 | `nrc-hsi-nureg-0700` | 1 | content | 1 | ready | **NUREG-0700 Revision 4** Human-System Interface Design Review Guidelines (NRC staff listing 2026-11-05). ML **VERIFY**. Large: chapter-map carefully; may ship as multi-chapter pack. | - | Control-room / HSI design review criteria |
+| F-01 | `nrc-hsi-nureg-0700` | 1 | content | 1 | live | **NUREG-0700 Revision 4** Human-System Interface Design Review Guidelines; NUREG-0700 Revision 4 (Jan 2026; ML26022A094); verified official NRC publication page on 2026-11-13. Seven-topic HSI design review orientation pack live as live-16. | - | Control-room / HSI design review criteria |
 | F-02 | `nrc-accident-monitoring-rg-1-97` | 1 | content | 1 | live | **RG 1.97** Criteria for Accident Monitoring Instrumentation, Rev. 5, May 2019, ML18136A762 (DG-1335 issued as final Rev. 5; provenance correction recorded 2026-11-09). | none | Post-accident monitoring instrumentation |
 
 ---
@@ -446,7 +447,7 @@ Offline domain knowledge filled chapter sketches and theme cuts. ML accessions f
 
 | bucket | count |
 |--------|-------|
-| Live packs/skills | 15 |
+| Live packs/skills | 16 |
 | Content candidates | ~45 |
 | Signpost candidates | ~6 |
 | Orchestrator-extend | ~4 |
