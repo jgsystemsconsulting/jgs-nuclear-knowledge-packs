@@ -127,7 +127,7 @@ source: 2026-11-11-b08-rg1200
 Content is synthesized orientation on PRA technical adequacy from the RG 1.200 Rev. 3 listing-page pin (December 2020, ML20238B871; pin 2026-11-08, listing re-checked at build) and the closed framework statements only. Zero quotations; verbatim excerpts capped at two sentences by licence policy; no source-material URLs in shippable files. ASME/ANS RA-Sa-2009 designation and endorsement fact only, no standard text. RG 1.174 named in prose as the decision-framework neighbour and never slug-linked; NUREG-1855 and SRP Chapter 19 named only, never summarized. No plant-specific adequacy verdict, no PRA quantification how-to, no legal or licensing advice. Advice requests refused.
 
 ## req-22
-status: accepted
+status: verified
 source: 2026-11-13-b09-routing-write
 
 Terminal b-09 write verifies the routing map in packs/nuclear/SKILL.md across nrc-10cfr-part52-col, nrc-app-b-criteria, and nrc-pra-adequacy-rg-1-200; runs check_capability_map and check_release; and updates PACK-BACKLOG dependency wording left stale by B-02 and D-01 going live (P-01 and P-02 depends cells annotated `B-02 (live)` / `P-01, D-01 (live)`; A-04 confirmed read-only, no edit). No status cell changes, no routing row edits, and T-01 and T-02 rows stay byte-identical. Two stale deferral-tense lines (D-01 ch06 and Part 50 ch07) become present-tense hook-sentences under the AD-9 exception in the same write; no other pack body changes.
