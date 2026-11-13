@@ -911,9 +911,12 @@ def main() -> int:
     # packaged plugin) and legitimately holds research URLs as vetting evidence — same
     # precedent as sources/.build. .superpowers/ and docs/superpowers/ hold the same
     # class of ephemeral SDD/planning briefs (spec text quotes banned source URLs).
+    # .zcode/ holds maintainer session working state and temporary research
+    # scratch, never ships in releases, and legitimately holds research URLs
+    # as working evidence, same precedent as .planning and .superpowers.
     SKIP_DIRS = {".git", "sources", ".build", ".playwright-mcp", "__pycache__",
                  ".worktrees", ".ruff_cache", ".pytest_cache", ".venv", "venv", ".idea", ".vscode",
-                 ".planning", ".superpowers", "superpowers"}
+                 ".planning", ".superpowers", "superpowers", ".zcode"}
     text_files = [p for p in ROOT.rglob("*")
                   if p.is_file() and p.suffix in {".md", ".py", ".json", ".yaml", ".yml", ".txt", ".sh", ".ps1"}
                   and not (SKIP_DIRS & set(p.parts))]
