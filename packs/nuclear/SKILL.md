@@ -94,7 +94,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Technical specifications | 50.36, technical specifications, tech specs, limiting conditions | `nrc-10cfr-part50-licensing-basis` |
 | Conditions of licenses | 50.54, conditions of licenses, license conditions | `nrc-10cfr-part50-licensing-basis` |
 | Changes, tests, experiments | 50.59, 50.59 screening, changes tests experiments | `nrc-10cfr-part50-licensing-basis` |
-| General Design Criteria | GDC, general design criteria, Appendix A | `nrc-10cfr-part50-licensing-basis`, `nrc-nuclear` |
+| General Design Criteria | GDC, general design criteria, Appendix A | `nrc-10cfr-part50-licensing-basis`, `nrc-nuclear`, `nrc-non-lwr-pdc-rg-1-232` |
 | Licensing basis overview | licensing basis, Part 50 overview, licensing root | `nrc-10cfr-part50-licensing-basis` |
 | QA program criteria | RG 1.28, QA program criteria, quality assurance program criteria | `nrc-qa-rg-1-28` |
 | NQA-1 | NQA-1, ASME NQA-1, QA standard editions | `nrc-qa-rg-1-28` |
@@ -124,11 +124,16 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Design, procurement, and document criteria | Criterion III, design control criterion, procurement document control, document control criterion, Criterion VII | `nrc-app-b-criteria` |
 | Material, process, inspection, and test criteria | Criterion VIII, special processes criterion, test control criterion, measuring and test equipment criterion | `nrc-app-b-criteria` |
 | Status, corrective action, records, and audit criteria | Criterion XV, nonconforming material criterion, corrective action criterion, QA records criterion, Criterion XVIII audits | `nrc-app-b-criteria` |
+| Non-LWR principal design criteria | non-LWR PDC, principal design criteria non-LWR, RG 1.232, developing principal design criteria | `nrc-non-lwr-pdc-rg-1-232` |
+| SFR design criteria | SFR-DC, sodium-cooled fast reactor design criteria, sodium fast reactor PDC | `nrc-non-lwr-pdc-rg-1-232` |
+| MHTGR design criteria | MHTGR-DC, modular high-temperature gas-cooled reactor design criteria, HTGR PDC | `nrc-non-lwr-pdc-rg-1-232` |
+| MSR design criteria | MSR-DC, molten salt reactor design criteria, molten salt PDC | `nrc-non-lwr-pdc-rg-1-232` |
+| Mechanistic source term and functional containment | mechanistic source term PDC, functional containment PDC, functional containment non-LWR | `nrc-non-lwr-pdc-rg-1-232` |
 
 ### Agency contexts
 | Agency | Keywords | Packs |
 |---|---|---|
-| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200` |
+| NRC | NRC, Nuclear Regulatory Commission, NUREG-0800, SRP, Standard Review Plan, Regulatory Guide | `nrc-nuclear`, `nrc-10cfr-part50-licensing-basis`, `nrc-btp-7-18-plc`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232` |
 
 ### Deliverables
 | Deliverable | Keywords | Draft | Review | Verify |
@@ -146,6 +151,7 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 | Part 52 application-structure question list | Part 52 application questions, RG 1.206 question list, COL application outline | `nrc-10cfr-part52-col` | `nrc-10cfr-part52-col` | `nrc-10cfr-part52-col` |
 | Appendix B criterion question list | Appendix B questions, criterion lookup questions, QA criteria checklist questions | `nrc-app-b-criteria` | `nrc-app-b-criteria` | `nrc-app-b-criteria` |
 | PRA technical adequacy question list | PRA adequacy questions, RG 1.200 question list, PRA quality checklist questions | `nrc-pra-adequacy-rg-1-200` | `nrc-pra-adequacy-rg-1-200` | `nrc-pra-adequacy-rg-1-200` |
+| Non-LWR PDC development question list | non-LWR PDC questions, RG 1.232 question list, principal design criteria outline | `nrc-non-lwr-pdc-rg-1-232` | `nrc-non-lwr-pdc-rg-1-232` | `nrc-non-lwr-pdc-rg-1-232` |
 
 ### Licences
 | Pack | Licence |
@@ -180,8 +186,8 @@ noted and skipped; if none remain, fall back to route-only.
 - Deliverable stage chains come only from Deliverables rows; empty cells skip that stage.
 - `/nuclear` never overwrites an existing file without a yes at a gate.
 - **Sector charter.** Catalogue covers civilian nuclear power plant digital I&C
-  software assurance and Part 50 and Part 52 licensing orientation under live packs
-  (today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`) plus name-only
+software assurance, Part 50 and Part 52 licensing orientation, and non-LWR PDC development orientation under live packs
+(today: `nrc-nuclear`, `nrc-btp-7-18-plc`, `nrc-10cfr-part50-licensing-basis`, `nrc-qa-rg-1-28`, `nrc-risk-informed-rg-1-174`, `nrc-cyber-rg-5-71`, `nrc-accident-monitoring-rg-1-97`, `nrc-10cfr-part52-col`, `nrc-app-b-criteria`, `nrc-pra-adequacy-rg-1-200`, `nrc-non-lwr-pdc-rg-1-232`) plus name-only
   standards signposts. It is not a general nuclear engineering library.
 - **Never route or invent content for:** nuclear weapons or weapons-design
   physics; classified, export-controlled, or safeguards-sensitive material

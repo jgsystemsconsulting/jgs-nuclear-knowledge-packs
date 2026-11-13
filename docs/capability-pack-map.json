@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "map_version": "0.1.0",
-  "generated_on": "2026-11-11",
+  "generated_on": "2026-11-13",
   "clusters": [
     {
       "name": "Life Cycle & Requirements",
@@ -235,6 +235,51 @@
           "pack": "nrc-10cfr-part52-col",
           "chapter": "cheatsheet.md (support file)",
           "note": "Which chapter owns a Part 52 question, the pin rules, thin classes, and not-advice limits"
+        },
+        {
+          "pack": "nrc-non-lwr-pdc-rg-1-232",
+          "chapter": "ch01-rg-1-232-scope-purpose-and-regulatory-foundation.md",
+          "note": "RG 1.232 frame: scope, purpose, and regulatory foundation for developing non-LWR principal design criteria"
+        },
+        {
+          "pack": "nrc-non-lwr-pdc-rg-1-232",
+          "chapter": "ch02-non-lwr-pdc-adaptation-framework.md",
+          "note": "Adaptation framework: how the GDC baseline becomes non-LWR principal design criteria"
+        },
+        {
+          "pack": "nrc-non-lwr-pdc-rg-1-232",
+          "chapter": "ch03-sfr-dc-sodium-cooled-fast-reactor-criteria.md",
+          "note": "SFR-DC family orientation: sodium-cooled fast reactor criteria at family level, no criterion text"
+        },
+        {
+          "pack": "nrc-non-lwr-pdc-rg-1-232",
+          "chapter": "ch04-mhtgr-dc-modular-high-temperature-gas-cooled-criteria.md",
+          "note": "MHTGR-DC family orientation: modular high-temperature gas-cooled criteria at family level, no criterion text"
+        },
+        {
+          "pack": "nrc-non-lwr-pdc-rg-1-232",
+          "chapter": "ch05-msr-dc-molten-salt-reactor-criteria.md",
+          "note": "MSR-DC family orientation: molten salt reactor criteria at family level, no criterion text"
+        },
+        {
+          "pack": "nrc-non-lwr-pdc-rg-1-232",
+          "chapter": "ch06-functional-containment-and-mechanistic-source-term.md",
+          "note": "Functional containment and mechanistic source term orientation for PDC framing, no numeric values"
+        },
+        {
+          "pack": "nrc-non-lwr-pdc-rg-1-232",
+          "chapter": "ch07-cross-pack-neighbours-and-limits.md",
+          "note": "Neighbours and limits: Part 50, Part 52, RG 1.233, and TICAP named only, not-advice closer"
+        },
+        {
+          "pack": "nrc-non-lwr-pdc-rg-1-232",
+          "chapter": "glossary.md (support file)",
+          "note": "Terms the RG 1.232 pack uses, synthesized from the covered orientation notes"
+        },
+        {
+          "pack": "nrc-non-lwr-pdc-rg-1-232",
+          "chapter": "cheatsheet.md (support file)",
+          "note": "Which chapter owns a non-LWR PDC question, the pin rule, and not-advice limits"
         }
       ]
     },

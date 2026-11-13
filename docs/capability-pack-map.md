@@ -15,12 +15,12 @@ Rules of construction:
 |---|---|
 | 1. Life Cycle & Requirements | 8 |
 | 2. Verification & Testing | 2 |
-| 3. Regulatory Framework & Staff Review | 34 |
+| 3. Regulatory Framework & Staff Review | 43 |
 | 4. Quality Assurance Criteria | 16 |
 | 5. Risk-Informed Decisionmaking | 16 |
 | 6. Cyber Security Programs | 8 |
 | 7. Accident Monitoring | 8 |
-| **Total** | **92** |
+| **Total** | **101** |
 
 ## 1. Life Cycle & Requirements
 
@@ -80,6 +80,15 @@ Rules of construction:
 | nrc-10cfr-part52-col | ch07-manufacturing-licenses-subpart-f-and-finality.md | Manufacturing licenses and the finality pattern collected across subparts; staff-review shape at framework level |
 | nrc-10cfr-part52-col | glossary.md (support file) | Terms the Part 52 pack uses, synthesized from the covered slices |
 | nrc-10cfr-part52-col | cheatsheet.md (support file) | Which chapter owns a Part 52 question, the pin rules, thin classes, and not-advice limits |
+| nrc-non-lwr-pdc-rg-1-232 | ch01-rg-1-232-scope-purpose-and-regulatory-foundation.md | RG 1.232 frame: scope, purpose, and regulatory foundation for developing non-LWR principal design criteria |
+| nrc-non-lwr-pdc-rg-1-232 | ch02-non-lwr-pdc-adaptation-framework.md | Adaptation framework: how the GDC baseline becomes non-LWR principal design criteria |
+| nrc-non-lwr-pdc-rg-1-232 | ch03-sfr-dc-sodium-cooled-fast-reactor-criteria.md | SFR-DC family orientation: sodium-cooled fast reactor criteria at family level, no criterion text |
+| nrc-non-lwr-pdc-rg-1-232 | ch04-mhtgr-dc-modular-high-temperature-gas-cooled-criteria.md | MHTGR-DC family orientation: modular high-temperature gas-cooled criteria at family level, no criterion text |
+| nrc-non-lwr-pdc-rg-1-232 | ch05-msr-dc-molten-salt-reactor-criteria.md | MSR-DC family orientation: molten salt reactor criteria at family level, no criterion text |
+| nrc-non-lwr-pdc-rg-1-232 | ch06-functional-containment-and-mechanistic-source-term.md | Functional containment and mechanistic source term orientation for PDC framing, no numeric values |
+| nrc-non-lwr-pdc-rg-1-232 | ch07-cross-pack-neighbours-and-limits.md | Neighbours and limits: Part 50, Part 52, RG 1.233, and TICAP named only, not-advice closer |
+| nrc-non-lwr-pdc-rg-1-232 | glossary.md (support file) | Terms the RG 1.232 pack uses, synthesized from the covered orientation notes |
+| nrc-non-lwr-pdc-rg-1-232 | cheatsheet.md (support file) | Which chapter owns a non-LWR PDC question, the pin rule, and not-advice limits |
 
 ## 4. Quality Assurance Criteria
 

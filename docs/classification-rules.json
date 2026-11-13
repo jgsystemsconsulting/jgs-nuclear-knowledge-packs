@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_version": "0.1.0",
-  "generated_on": "2026-11-11",
+  "generated_on": "2026-11-13",
   "rules_of_construction": [
     "Every chapter in every pack under packs/<slug>/chapters/ is assigned to exactly one capability cluster (best fit).",
     "Cross-cutting chapters carry a remark noting the strong secondary fit.",
@@ -578,6 +578,60 @@
       "pack": "nrc-pra-adequacy-rg-1-200",
       "chapter": "cheatsheet.md",
       "cluster": "Risk-Informed Decisionmaking",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-non-lwr-pdc-rg-1-232",
+      "chapter": "ch01-rg-1-232-scope-purpose-and-regulatory-foundation.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-pdc-rg-1-232",
+      "chapter": "ch02-non-lwr-pdc-adaptation-framework.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-pdc-rg-1-232",
+      "chapter": "ch03-sfr-dc-sodium-cooled-fast-reactor-criteria.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-pdc-rg-1-232",
+      "chapter": "ch04-mhtgr-dc-modular-high-temperature-gas-cooled-criteria.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-pdc-rg-1-232",
+      "chapter": "ch05-msr-dc-molten-salt-reactor-criteria.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-pdc-rg-1-232",
+      "chapter": "ch06-functional-containment-and-mechanistic-source-term.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-pdc-rg-1-232",
+      "chapter": "ch07-cross-pack-neighbours-and-limits.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": false
+    },
+    {
+      "pack": "nrc-non-lwr-pdc-rg-1-232",
+      "chapter": "glossary.md",
+      "cluster": "Regulatory Framework & Staff Review",
+      "is_support": true
+    },
+    {
+      "pack": "nrc-non-lwr-pdc-rg-1-232",
+      "chapter": "cheatsheet.md",
+      "cluster": "Regulatory Framework & Staff Review",
       "is_support": true
     }
   ]

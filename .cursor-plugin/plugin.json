@@ -36,6 +36,7 @@
     "./packs/nrc-accident-monitoring-rg-1-97/SKILL.md",
     "./packs/nrc-app-b-criteria/SKILL.md",
     "./packs/nrc-pra-adequacy-rg-1-200/SKILL.md",
+    "./packs/nrc-non-lwr-pdc-rg-1-232/SKILL.md",
     "./packs/nuclear-signpost/SKILL.md"
   ]
 }
