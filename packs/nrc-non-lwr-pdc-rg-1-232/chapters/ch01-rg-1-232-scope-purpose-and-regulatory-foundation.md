@@ -37,7 +37,7 @@ Treating orientation notes as a substitute for RG 1.232 is the chapter's named a
 - Part 50 Appendix A GDC were written for water-cooled reactors and serve as the baseline structure for non-LWR PDC development, not as unchanged text to adopt.
 - This pack orients foundation and pin only; foundation regulatory text is owned by live sibling packs and is not restated here.
 
-## Connects To
+## Connects
 
 - ch02 for the non-LWR PDC adaptation framework (applicability, outcomes, traceability, numbering families).
 - ch03 to ch05 for SFR-DC, MHTGR-DC, and MSR-DC family-level exemplars.

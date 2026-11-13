@@ -36,7 +36,7 @@ Inventing or restating individual MHTGR-DC criterion text, numbers, titles, or c
 - Number, titles, and text of criteria inside Appendix B are not on record in this repo and are not stated in this pack.
 - Family-level statements classify where adaptation questions arise; they never decide a real design's PDC.
 
-## Connects To
+## Connects
 
 - ch01 for RG 1.232 scope, purpose, pin, and the GDC-as-baseline foundation.
 - ch02 for the criterion-area adaptation method this exemplar family illustrates.

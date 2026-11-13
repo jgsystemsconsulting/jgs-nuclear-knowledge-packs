@@ -40,7 +40,7 @@ Inventing or restating individual MSR-DC criterion text, numbers, titles, or cou
 - The three families are never ranked and never blended.
 - Family-level statements classify where adaptation questions arise; they never decide a real design's PDC.
 
-## Connects To
+## Connects
 
 - ch01 for RG 1.232 scope, purpose, pin, and the GDC-as-baseline foundation.
 - ch02 for the criterion-area adaptation method this exemplar family illustrates, and the route for designs outside the three families.

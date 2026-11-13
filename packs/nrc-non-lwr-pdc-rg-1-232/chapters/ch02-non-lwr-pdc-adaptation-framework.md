@@ -40,7 +40,7 @@ Skipping the baseline walk and drafting free-standing criteria with no GDC-area 
 - Keep the PDC set in its own numbering family while remaining traceable to the GDC baseline.
 - No appendix criterion text, numbers, titles, or counts are packaged here.
 
-## Connects To
+## Connects
 
 - ch01 for RG 1.232 scope, purpose, pin, and the GDC-as-baseline foundation.
 - ch03 for the SFR-DC family-level exemplar (RG 1.232 Appendix A).
