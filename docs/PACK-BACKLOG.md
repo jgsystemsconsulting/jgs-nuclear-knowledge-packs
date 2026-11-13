@@ -321,8 +321,8 @@ Closest to `nrc-nuclear`. Do these first after any tooling debt.
 
 | id | slug | wave | kind | tier | status | primary sources | depends | user job |
 |----|------|------|------|------|--------|-----------------|---------|----------|
-| P-01 | `nrc-non-lwr-pdc-rg-1-232` | 2 | content | 1 | ready | **RG 1.232 Rev 0** (Apr 2018) Developing Principal Design Criteria for Non-Light Water Reactors. ML **VERIFY**: pin title, Rev, date, and ML from listing page at build. | B-02 | Non-LWR PDC development |
-| P-02 | `nrc-non-lwr-ticap-rg-1-233` | 2 | content | 1 | ready | **RG 1.233 Rev 0** (Jun 2020) Technology-Inclusive, Risk-Informed, Performance-Based Methodology… non-LWR. ML **VERIFY**: pin title, Rev, date, and ML from listing page at build. | P-01, D-01 | TICAP / LMP-style licensing basis content |
+| P-01 | `nrc-non-lwr-pdc-rg-1-232` | 2 | content | 1 | ready | **RG 1.232 Rev 0** (Apr 2018) Developing Principal Design Criteria for Non-Light Water Reactors. ML **VERIFY**: pin title, Rev, date, and ML from listing page at build. | B-02 (live) | Non-LWR PDC development |
+| P-02 | `nrc-non-lwr-ticap-rg-1-233` | 2 | content | 1 | ready | **RG 1.233 Rev 0** (Jun 2020) Technology-Inclusive, Risk-Informed, Performance-Based Methodology… non-LWR. ML **VERIFY**: pin title, Rev, date, and ML from listing page at build. | P-01, D-01 (live) | TICAP / LMP-style licensing basis content |
 | P-03 | `nrc-part53-framework` | 3 | content | 1 | idea | **10 CFR Part 53** if/when final and in eCFR (**VERIFY** rule status before start). Drafts are weak pins. | P-02 | Risk-informed advanced reactor framework |
 | P-04 | `nrc-smr-col-delta` | 3 | content | 1 | idea | SMR-specific public guidance deltas vs RG 1.206 / Part 52 (**VERIFY** set). | B-02 | SMR COL differences |
 
