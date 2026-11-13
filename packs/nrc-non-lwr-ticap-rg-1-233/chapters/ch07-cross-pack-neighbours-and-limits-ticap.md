@@ -1,6 +1,6 @@
 # Chapter 7: Cross-Pack Neighbours and Limits
 
-Sources: NRC RG 1.233 Rev 0, Guidance for a Technology-Inclusive, Risk-Informed, and Performance-Based Methodology to Inform the Licensing Basis and Content of Applications for Licenses, Certifications, and Approvals for Non-Light Water Reactors, June 2020, ML20091L698; verified via Federal Register notice 85 FR 35339 on 2026-11-13. NEI 18-04 Rev 1 and 10 CFR Part 53 is named only; no rule text is packaged here and its status is not described from drafts.
+Sources: NRC RG 1.233 Rev 0, Guidance for a Technology-Inclusive, Risk-Informed, and Performance-Based Methodology to Inform the Licensing Basis and Content of Applications for Licenses, Certifications, and Approvals for Non-Light Water Reactors, June 2020, ML20091L698; verified via Federal Register notice 85 FR 35339 on 2026-11-13. NEI 18-04 Rev 1 and 10 CFR Part 53 named only, not sources.
 
 ## Core Idea
 
