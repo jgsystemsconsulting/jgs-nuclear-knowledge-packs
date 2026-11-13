@@ -75,13 +75,13 @@ source: 2026-11-13-ci-gate-probe-hardening
 Module docstring stays plain string, no raw prefix. sources\ becomes sources/ and backslash leaves docstring entirely. Section-marker and catalogue prose survive verbatim, so native triple-quote literals need no rewrite.
 
 ## AD-13
-status: accepted
+status: verified
 source: 2026-11-13-build-provenance-guard
 
 Mechanism is one name, ".zcode", added to existing SKIP_DIRS set literal in check_release.py main(), matched by path part like every other member. No allowlist parameter, no .gitignore parsing, no glob rule, and no per-scan exemption. Any directory named .zcode at any depth is skipped, matching .build and .planning semantics; tracked-tree check (git ls-files, zero .zcode paths, .gitignore line .zcode/) boundary keeps skip from hiding shippable content. Explanation extends comment block already above SKIP_DIRS; no new document.
 
 ## AD-14
-status: accepted
+status: verified
 source: 2026-11-13-build-provenance-guard
 
 Provenance fallback is a maintainer procedure in existing docs only, Federal Register first and ADAMS second. No tooling fetches, parses, or validates Federal Register or ADAMS records, and no fallback URL is stored. Enforcement is pin-note review plus existing VERIFY gate in docs/PACK-BACKLOG.md acceptance checklist. Alternatives rejected: waiting for new NRC listing URL family (volatile, blocks re-checks), PDF cover sheet only (PDF body often not captured for pin-only packs), and automated listing fetch (network dependency and bot-wall variance for four metadata fields).
