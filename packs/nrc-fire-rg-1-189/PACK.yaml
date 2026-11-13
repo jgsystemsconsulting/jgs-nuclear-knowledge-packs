@@ -1,0 +1,29 @@
+slug: nrc-fire-rg-1-189
+title: "NRC RG 1.189 Rev 5 Fire Protection for Nuclear Power Plants (program orientation)"
+publisher: "U.S. Nuclear Regulatory Commission (RG 1.189); reconstructed by JG Systems Consulting Ltd"
+source_version: "RG 1.189 Rev 5, October 2023, ML23214A287"
+license: "Public Domain (US Government work, 17 U.S.C. 105)"
+license_tier: 1
+commercial_use: true
+share_alike: false
+attribution_required: false
+build:
+  method: "Reconstructed reference notes RG 1.189 Rev 5 pin facts verified via Federal Register notice 88 FR 76989 and ADAMS accession ML23214A287; guide PDF body not captured; NFPA 805 and NFPA 804 named only signpost designations; synthesized orientation, zero quotations"
+  chapters: 7
+  built_on: "2026-11-13"
+  notes: >
+    US Government work, public domain under 17 U.S.C. 105 RG-derived
+    notes. Commercial use allowed. No attribution obligation and no
+    share-alike obligation. NRC does not endorse pack. Notes
+    synthesized orientation notes on RG 1.189 Rev 5 pinned facts
+    (ML23214A287, October 2023; verified via Federal Register notice
+    88 FR 76989 on 2026-11-13), not copied wholesale. RG text is US
+    Government work and verbatim excerpts capped two sentences by
+    licence policy; pack uses none. Guide PDF body was not captured.
+    NFPA 805 and NFPA 804 are copyrighted paywalled standards named
+    only as signpost designations, and no NFPA text is reproduced.
+    10 CFR 50.48, 10 CFR Part 50 Appendix R, and Appendix A GDC 3
+    named orientation depth only. These notes are not legal,
+    licensing, design, or fire modelling advice, are not plant-specific
+    fire hazards analysis or fire safe shutdown analysis, and carry no
+    NFPA 805 transition instruction for any real plant.
