@@ -86,7 +86,7 @@ Pack root holds `PACK.yaml` (identity and pin), `LICENSE` (content licence), and
 HSI design review orientation per NUREG-0700 Revision 4 pin facts. This pack is not the guideline document, not NUREG-0711, and not SRP Chapter 18.
 
 - Guideline architecture and review principles at orientation depth only. No guideline items, item numbers, anthropometric tables, or numeric display, reach, viewing, lighting, or acoustic values are packaged here.
-- Accident monitoring variable criteria belong to the live accident monitoring pack; this pack covers presentation and interaction design review only, and names that neighbour in prose.
+- Accident monitoring variable criteria (RG 1.97) belong to the live accident monitoring pack; this pack covers presentation and interaction design review only, and names that neighbour in prose.
 - Digital I&C platform design, cyber security program content, and post-fire safe shutdown capability are neighbour-owned and named only. No platform method, program control, or shutdown analysis is packaged here.
 - Not HFE review, not usability evaluation, and not control room design instruction for any real plant. No design finding, alarm scheme, procedure text, or layout is produced here.
 - Zero quotations. Synthesized notes keyed to the recorded pin (Revision 4, January 2026, ML26022A094); verbatim excerpts capped at two sentences by licence policy and this pack uses none. No source-material URLs in pack files.
