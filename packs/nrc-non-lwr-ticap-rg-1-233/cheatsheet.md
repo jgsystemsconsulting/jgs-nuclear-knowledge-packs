@@ -21,7 +21,7 @@ Pack pins RG 1.233 Rev 0, June 2020, ML20091L698; verified via Federal Register 
 
 - NEI 18-04 Rev 1 named only as the endorsed methodology document. Its text, figures, and tables are copyrighted industry material and are never reproduced or summarized at text depth here.
 - Principal design criteria development owned by the live RG 1.232 pack; PRA technical adequacy by the live RG 1.200 pack; operating-plant risk-informed decision framework by the live RG 1.174 pack; Part 52 application mechanics by the live Part 52 pack. All named in prose only, never restated.
-- 10 CFR Part 53 named only; no rule text packaged here and status not described drafts.
+- 10 CFR Part 53 is named only; no rule text is packaged here and its status is not described from drafts.
 
 ## Stage outline limits
 
@@ -35,7 +35,7 @@ Methodology stages sit at outline depth only. Event categories, classification f
 
 ## Honest fallback
 
-This knowledge pack provides orientation on RG 1.233 endorsed licensing basis methodology at stage outline depth; does not reproduce RG 1.233 or NEI 18-04 text or evaluate any real design. For methodology text, consult RG 1.233 and NEI 18-04; plant-specific licensing basis, consult licensed engineering personnel.
+This knowledge pack provides orientation on the RG 1.233 endorsed licensing basis methodology at stage outline depth; it does not reproduce RG 1.233 or NEI 18-04 text or evaluate any real design. For the methodology text, consult RG 1.233 and NEI 18-04; for a plant-specific licensing basis, consult licensed engineering personnel.
 
 ## Not advice
 

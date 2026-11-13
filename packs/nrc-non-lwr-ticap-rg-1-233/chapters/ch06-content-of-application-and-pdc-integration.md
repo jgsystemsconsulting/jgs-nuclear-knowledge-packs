@@ -1,6 +1,6 @@
-# Chapter 6: Content Application and Principal Design Criteria Integration
+# Chapter 6: Content of Application and Principal Design Criteria Integration
 
-Sources: NRC RG 1.233 Rev 0, Guidance Technology-Inclusive, Risk-Informed, and Performance-Based Methodology Inform Licensing Basis and Content Applications Licenses, Certifications, and Approvals Non-Light Water Reactors, June 2020, ML20091L698; verified via Federal Register notice 85 FR 35339 on 2026-11-13. Principal design criteria development owned by live RG 1.232 pack and Part 52 application mechanics live Part 52 pack; neither restated here.
+Sources: NRC RG 1.233 Rev 0, Guidance for a Technology-Inclusive, Risk-Informed, and Performance-Based Methodology to Inform the Licensing Basis and Content of Applications for Licenses, Certifications, and Approvals for Non-Light Water Reactors, June 2020, ML20091L698; verified via Federal Register notice 85 FR 35339 on 2026-11-13. Principal design criteria development is owned by the live RG 1.232 pack and Part 52 application mechanics by the live Part 52 pack; neither is restated here.
 
 ## Core Idea
 
