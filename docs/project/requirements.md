@@ -175,3 +175,21 @@ status: verified
 source: 2026-11-13-ci-gate-probe-hardening
 
 Local scratch trip notice in test_ci_gate.py docstring rewritten to describe probe-private snapshot mechanic; manual move-aside, fresh-clone or worktree precondition, and restore step no longer documented as run requirements.
+
+## req-30
+status: accepted
+source: 2026-11-13-build-provenance-guard
+
+tooling/check_release.py main() SKIP_DIRS includes ".zcode" beside ".planning" and ".superpowers", and whole-repo leak sentinel and source-material link scans skip every path with a .zcode part. Comment above SKIP_DIRS states .zcode/ holds maintainer session working state and temporary research scratch, never ships in releases, and legitimately holds research URLs as working evidence, same precedent as .planning and .superpowers. Seeded scratch file under .zcode/ holding leak sentinel and source-material URL does not fail check_release.py; same seeded content outside .zcode/ still fails. No other SKIP_DIRS member and no scan logic changes.
+
+## req-31
+status: accepted
+source: 2026-11-13-build-provenance-guard
+
+NRC listing-page provenance fallback is documented in docs/PACK-BACKLOG.md status catalogue note, docs/PACK-BACKLOG.md per-pack acceptance checklist item 3, and docs/SOURCE-VETTING.md cleared families note. Rule reads: NRC listing-page URL families are volatile post NRC site restructure and may return 404 (dead listing, not bot-wall); when listing re-check fails, verify title, revision, date, and ML accession number first from Federal Register publication notice of RG or NUREG (FR-first), and then ADAMS accession lookup if FR notice lacks any field. If a live listing resolves but conflicts with recorded pin values, stop for maintainer re-vetting; fallback does not overrule a live listing. Pin note records fallback used and FR notice number and citation or ADAMS lookup date. Already recorded listing-page pins stay valid without retroactive re-pin. If neither fallback confirms all four fields, VERIFY stays uncleared and packaging does not proceed. No listing, FR, or ADAMS URL is stored in any shippable file.
+
+## req-32
+status: accepted
+source: 2026-11-13-build-provenance-guard
+
+Change surface is closed. Only tooling/check_release.py SKIP_DIRS literal and comment block above it, docs/PACK-BACKLOG.md status catalogue note and acceptance checklist item 3, docs/SOURCE-VETTING.md cleared families note, and test or probe additions proving req-30 seeded cases may change. No pack body, PACK.yaml, LICENSE, catalogue, routing, classification, backlog row, existing pin, validate_pack.py, build_pack.py, or test_ci_gate.py logic changes. docs/superpowers/backlog.md promotion closure for b07-app-b-criteria-1 and b08-rg1200-1 stays in backlog grooming, not this run.
