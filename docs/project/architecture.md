@@ -55,7 +55,7 @@ source: 2026-11-13-b09-routing-write
 A terminal routing write is the routing or touch run earlier pack specs defer cross-pack staleness to. It may fix a stale deferral-tense line in a live pack body if the change is one line, names the now-live replacement in prose only with no slug link and no source-material URL, adds no substance or structure, and preserves named-only and pointer discipline. Everything beyond that narrow class stays owned by a future pack-touch run.
 
 ## AD-10
-status: accepted
+status: verified
 source: 2026-11-13-ci-gate-probe-hardening
 
 Snapshot, never mutate. Positive runs take cwd inside probe-private TemporaryDirectory. Input set is tracked file list from git ls-files -z at ROOT. Copies land in tree mirroring recorded relative paths with bytes copied, no links, so .git and untracked or gitignored inputs never enter.
@@ -63,13 +63,13 @@ Listing failure (no git, nonzero exit, empty listing, unparseable path) raises S
 Alternatives rejected: skip-on-sources, canonical move-aside with unique temp stash (still renames live checkout and needs restore protocol), allowlist parameter on consumer side (name collision class stays open).
 
 ## AD-11
-status: accepted
+status: verified
 source: 2026-11-13-ci-gate-probe-hardening
 
 Child decode in run_gate and check_release.py short-SHA call pinned encoding="utf-8", errors="replace" beside text=True. Child subprocess environment sets PYTHONIOENCODING="utf-8" so child stdout emits UTF-8 across all platforms. Never switch to raw bytes mode: text mode universal-newline translation preserved, so demo needles keep matching CRLF child output on Windows.
 
 ## AD-12
-status: accepted
+status: verified
 source: 2026-11-13-ci-gate-probe-hardening
 
 Module docstring stays plain string, no raw prefix. sources\ becomes sources/ and backslash leaves docstring entirely. Section-marker and catalogue prose survive verbatim, so native triple-quote literals need no rewrite.

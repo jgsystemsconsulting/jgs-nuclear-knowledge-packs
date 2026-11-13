@@ -133,31 +133,31 @@ source: 2026-11-13-b09-routing-write
 Terminal b-09 write verifies the routing map in packs/nuclear/SKILL.md across nrc-10cfr-part52-col, nrc-app-b-criteria, and nrc-pra-adequacy-rg-1-200; runs check_capability_map and check_release; and updates PACK-BACKLOG dependency wording left stale by B-02 and D-01 going live (P-01 and P-02 depends cells annotated `B-02 (live)` / `P-01, D-01 (live)`; A-04 confirmed read-only, no edit). No status cell changes, no routing row edits, and T-01 and T-02 rows stay byte-identical. Two stale deferral-tense lines (D-01 ch06 and Part 50 ch07) become present-tense hook-sentences under the AD-9 exception in the same write; no other pack body changes.
 
 ## req-23
-status: accepted
+status: verified
 source: 2026-11-13-ci-gate-probe-hardening
 
 Importing tooling/test_ci_gate.py under python -W error::SyntaxWarning emits no SyntaxWarning. Module docstring has no invalid escape sequence; sources/ prose carries no backslash.
 
 ## req-24
-status: accepted
+status: verified
 source: 2026-11-13-ci-gate-probe-hardening
 
 run_gate in tooling/test_ci_gate.py passes encoding="utf-8", errors="replace" next to text=True and ensures child stdio uses UTF-8. Probe exits 0 on clean checkout under plain python, under python -I, and under python -I with PYTHONUTF8=1.
 
 ## req-25
-status: accepted
+status: verified
 source: 2026-11-13-ci-gate-probe-hardening
 
 Evidence artefact proves child decode fix covers cp1252 fault: pre-fix cp1252 decode of child output containing non-ASCII characters (such as section sign and middot) results in mojibake or decode error, whereas explicit UTF-8 decode cleanly reproduces the expected characters.
 
 ## req-26
-status: accepted
+status: verified
 source: 2026-11-13-ci-gate-probe-hardening
 
 Every text read and write in tooling/test_ci_gate.py and tooling/check_release.py names encoding= explicitly; second subprocess decode in check_release.py (git short SHA) pinned too. Strict kept where present; existing errors="ignore" sites kept; none added.
 
 ## req-27
-status: accepted
+status: verified
 source: 2026-11-13-ci-gate-probe-hardening
 
 Section 4 of tooling/test_ci_gate.py main() runs nine positive gates against probe-private snapshot under TemporaryDirectory: tracked file list from git ls-files -z, any listing failure aborts run, copied bytes only, snapshot contains no .git entry and no sources/ entry beyond tracked sources/.gitkeep.
@@ -165,13 +165,13 @@ With local sources/ inputs present probe exits 0 and sources/ tree hash before a
 Two probes run at once against one checkout both exit 0; killing probe mid snapshot leaves checkout byte-identical.
 
 ## req-28
-status: accepted
+status: verified
 source: 2026-11-13-ci-gate-probe-hardening
 
 .github/workflows/validate.yml unchanged. No gate logic, threshold, version, or heredoc literal moves. Every pinned parity pair in test_ci_gate.py still resolves; check_release.py edit, if any, touches decode arguments only.
 
 ## req-29
-status: accepted
+status: verified
 source: 2026-11-13-ci-gate-probe-hardening
 
 Local scratch trip notice in test_ci_gate.py docstring rewritten to describe probe-private snapshot mechanic; manual move-aside, fresh-clone or worktree precondition, and restore step no longer documented as run requirements.
